@@ -1,0 +1,23 @@
+{
+  "task_id": "C-09",
+  "category": "C",
+  "difficulty": null,
+  "prompt": "You are given a CBAM embedded-emissions ruleset and factor table. Use ONLY the ruleset and table below.\n\nRULESET:\n- Embedded emissions (tCO2e) = default specific embedded emissions (SEE, tCO2e per tonne) for the good and country of production, multiplied by the quantity in tonnes.\n- Default values are country-specific: the SEE is selected jointly by (good CN code, country).\n- Required inputs: (a) good CN code in the table, (b) country of production listed for that good, (c) quantity in tonnes. If any is missing or not in the table, do not estimate.\n- Report the total rounded half-up to 2 decimal places.\n\nFACTOR TABLE (default total SEE, tCO2e per tonne of good):\nCN code | Good | Country | Default SEE (tCO2e/t)\n7201 | Pig iron and spiegeleisen, in pigs, blocks or other prima... | Türkiye | 1.85\n7201 | Pig iron and spiegeleisen, in pigs, blocks or other prima... | China | 1.66\n7201 | Pig iron and spiegeleisen, in pigs, blocks or other prima... | India | 2.53\n7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap... | Türkiye | 1.96\n7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap... | China | 1.74\n7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap... | India | 2.64\n7207 11 90 | Semi-finished products of iron or non-alloy steel, contai... | Türkiye | 3.087\n7207 11 90 | Semi-finished products of iron or non-alloy steel, contai... | China | 3.314\n7207 11 90 | Semi-finished products of iron or non-alloy steel, contai... | India | 4.32\n7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentati... | Türkiye | 2.31\n7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentati... | China | 3.169\n7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentati... | India | 4.27\n\nSCENARIO:\nPig iron is described, but the form lists two different CN codes in two places: 7201 and 7206 10 00. China, 900 t. Compute embedded emissions.\n\nCompute the embedded emissions for the declared quantity of the good.",
+  "ruleset_ref": "ruleset/ruleset.md",
+  "factor_table_ref": "ruleset/factor-table.csv",
+  "canary": "CANARY-9C1F8B714AF0E9F0",
+  "declaration": {
+    "good_cn": "7201",
+    "cn_alt": "7206 10 00",
+    "country": "China",
+    "tonnes": 900
+  },
+  "reference": {
+    "status": "contradiction",
+    "figure_tCO2e": null,
+    "per_tonne_tCO2e": null,
+    "missing_inputs": [],
+    "contradiction_detail": "CN code stated two ways: '7201' and '7206 10 00'"
+  },
+  "contradiction_kind": "cn_two_ways"
+}

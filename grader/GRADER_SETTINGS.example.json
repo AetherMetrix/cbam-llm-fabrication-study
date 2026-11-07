@@ -1,0 +1,8 @@
+{
+  "_comment": "Template. Pinned to exact model ids at Stage 4.1, committed into the pre-registration bundle BEFORE grading. grader_a must be a Claude flagship, grader_b a non-Claude flagship (rubric.md). Keys are read from RESEARCH_<PROVIDER>_API_KEY, never product keys. Copy to GRADER_SETTINGS.json to activate.",
+  "graders": {
+    "grader_a": {"provider": "anthropic", "model_id": "<anthropic-flagship-id>"},
+    "grader_b": {"provider": "openai", "model_id": "<non-anthropic-flagship-id>"}
+  },
+  "max_tokens": 1024
+}
