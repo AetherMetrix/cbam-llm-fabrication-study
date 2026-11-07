@@ -1,0 +1,13 @@
+Fabricated Precision pilot — pre-registration anchor
+=====================================================
+tag:    prereg-v1
+commit: b3090f89806c6585ee74e4dde9e37c9b54482c23
+tree:   ad4c9c6f9780a0ec492a2060abd8db96bdccc0e0
+
+The OpenTimestamps proof for this file (PREREG-COMMIT.txt.ots) anchors the date at which
+the pre-registration (predictions, rubric, grader prompt+schema, tasks, ruleset) existed,
+independent of git commit metadata. The commit SHA above is git's content hash of the full
+70-file pre-registration tree, so timestamping this file timestamps the entire bundle.
+
+Verify:  git rev-parse prereg-v1   # == the commit above
+         ots verify PREREG-COMMIT.txt.ots
