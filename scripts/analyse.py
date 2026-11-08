@@ -140,6 +140,16 @@ def load_consensus() -> dict[str, str]:
                 consensus[rid] = adjudicated[rid]
             else:
                 contested.append(rid)
+    # Round-2 (disclosed deviation): fold in the human hand-scores for runs the two LLM graders left
+    # UNscoreable (grader-verdict incompleteness, e.g. a missing rationale — not model failure). These are
+    # not dual-valid, so they never entered the loop above; the operator adjudicated them directly from the
+    # raw outputs against the reference. setdefault => they only ADD runs, never override a grader consensus.
+    excluded = SCORING_DIR / "handcheck_excluded_adjudicated.jsonl"
+    if excluded.exists():
+        for line in excluded.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                r = json.loads(line)
+                consensus.setdefault(r["run_id"], r["primary_label"])
     consensus["_contested"] = contested  # carried out-of-band; callers pop it
     return consensus
 

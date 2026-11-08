@@ -1,6 +1,6 @@
 # Analysis report (auto-generated)
 
-- graded runs: **1865**  |  contested (excluded): **0**
+- graded runs: **1971**  |  contested (excluded): **0**
 - models: m1, m2, m3, m4
 
 | # | Prediction | Result |
