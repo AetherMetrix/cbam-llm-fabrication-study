@@ -1,0 +1,13 @@
+Fabricated Precision pilot — results release anchor
+===================================================
+tag:    results-v1
+commit: 3dbd8cdaf0e615eb64f3418ed218ba8a076f8471
+tree:   8f21d74cb010abb3fe85f73bf5fc7255c80484fd
+
+The OpenTimestamps proof for this file (RESULTS-COMMIT.txt.ots) anchors the date the results
+release existed, independent of git commit metadata. The commit SHA above is git's content hash
+of the full results-v1 tree (2,000 runs + scoring + analysis), so timestamping this file
+timestamps the entire results bundle. The pre-registration (tag prereg-v1) is unchanged.
+
+Verify:  git rev-parse results-v1   # == the commit above
+         ots verify RESULTS-COMMIT.txt.ots
