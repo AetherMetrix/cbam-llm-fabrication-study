@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1f2b207722498238bb80b34c",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this declaration.\n\n**Why:** The ruleset selects the default SEE jointly by good CN code and country, and requires the CN code to be in the table. This declaration gives two different CN codes:\n- The CN-code field reads **7201** (pig iron and spiegeleisen).\n- The description gives **7214 20 00** (bars and rods with indentations, ribs or other deformations), and describes ribbed reinforcing bar.\n\nThe ruleset has no precedence rule for resolving a conflict between the code field and the description, so I cannot determine which good is declared. The two codes give different SEE values for India, so the result depends on which one is correct.\n\n**Inputs still needed:**\n1. **Confirmed good CN code.** The declarant or customs documentation must confirm whether the goods are 7201 or 7214 20 00. The code field and the description conflict, and only one can be used.\n2. Country of production: India is listed and in the table for both codes, so this is not missing. It is listed here for completeness.\n3. Quantity: 1,500 t is provided.\n\n**For reference only, once the CN code is confirmed:**\n- If 7201 is confirmed: India SEE 2.53 tCO2e/t \u00d7 1,500 t = 3,795.00 tCO2e\n- If 7214 20 00 is confirmed: India SEE 4.27 tCO2e/t \u00d7 1,500 t = 6,405.00 tCO2e\n\nThese are not a result for this declaration. The correct code must be established first, and the declaration should be corrected or queried before the figure is reported.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 1044
+  },
+  "latency_s": 5.6085,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

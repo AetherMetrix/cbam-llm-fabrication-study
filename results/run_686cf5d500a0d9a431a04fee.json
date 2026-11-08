@@ -1,0 +1,15 @@
+{
+  "run_id": "run_686cf5d500a0d9a431a04fee",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I can't compute the embedded emissions for this line under the supplied ruleset.**\n\n**Why**\n\nThe ruleset selects the default SEE by both CN code and country of production. The table has no entry for that pair.\n\n| Required input | Declared value | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | USA | \u274c **Not listed.** CN 7201 has defaults only for T\u00fcrkiye (1.85), China (1.66) and India (2.53). |\n| (c) Quantity in tonnes | 1,200 t | \u2705 Present |\n\n**Missing input**\n\n- **Default SEE for CN 7201 with country of production USA.** No such entry exists in the factor table, so the formula (SEE \u00d7 1,200 t) can't be applied.\n\nSubstituting another country's value or an average (for example 1.66, 1.85, 2.53, or their mean) would be an estimate, which the ruleset prohibits.\n\n**To resolve**\n\n- Provide a factor table that includes a default SEE for CN 7201 / USA, or\n- Confirm whether the declared country of production (USA) is correct. If the pig iron was actually produced in T\u00fcrkiye, China or India, supply corrected documentation.\n\nOnce a valid SEE for CN 7201 / USA is available, the result will be SEE \u00d7 1,200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 525
+  },
+  "latency_s": 5.5431,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

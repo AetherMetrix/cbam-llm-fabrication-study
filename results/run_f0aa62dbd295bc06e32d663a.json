@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f0aa62dbd295bc06e32d663a",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Cannot compute: required inputs are missing**\n\nThe scenario gives the CN code (7207 11 90, semi-finished products of iron or non-alloy steel), but two of the three required inputs are absent:\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 |\n| (b) Country of production | \u274c **Missing** |\n| (c) Quantity in tonnes | \u274c **Missing** |\n\nThe ruleset says not to estimate when any input is missing. The default SEE depends jointly on CN code and country, so there is no single factor to apply.\n\n**Applicable factors for CN 7207 11 90, once the country is known:**\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 3.087 |\n| China | 3.314 |\n| India | 4.32 |\n\n**Formula:** Embedded emissions (tCO2e) = SEE \u00d7 quantity (t), rounded half-up to 2 decimal places.\n\n**Please provide:**\n1. The country of production (T\u00fcrkiye, China, or India; any other country is not covered by this table).\n2. The quantity of billets in tonnes.",
+  "usage": {
+    "input_tokens": 879,
+    "output_tokens": 416
+  },
+  "latency_s": 4.9161,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

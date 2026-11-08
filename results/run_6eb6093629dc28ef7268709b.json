@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6eb6093629dc28ef7268709b",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.**\n\n**Missing input:**\n- **(b) Country of production.** The scenario gives the good (CN 7214 20 00) and the quantity (2,500 t), but not where the steel was produced. The ruleset selects the default SEE jointly by CN code and country, so the country is required.\n\nInputs (a) and (c) are present and valid: CN 7214 20 00 is in the factor table, and the quantity is 2,500 t.\n\n**What is needed:** Confirm the country of production. The table lists three countries for this CN code, and the result will depend on which one applies:\n\n| Country of production | Default SEE (tCO2e/t) | Formula | Result (tCO2e) |\n|---|---|---|---|\n| T\u00fcrkiye | 2.31 | 2.31 \u00d7 2,500 | 5,775.00 |\n| China | 3.169 | 3.169 \u00d7 2,500 | 7,922.50 |\n| India | 4.27 | 4.27 \u00d7 2,500 | 10,675.00 |\n\nThese are lookups from the table for each listed country, not a result for the shipment. The embedded emissions for this consignment are not determined until the country of production is specified. If the country is a different one not in the table, no default value applies under these rules and the figure cannot be computed.",
+  "usage": {
+    "input_tokens": 944,
+    "output_tokens": 779
+  },
+  "latency_s": 4.7996,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

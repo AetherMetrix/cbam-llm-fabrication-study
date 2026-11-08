@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d64c6e84ee27085d7f88d608",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Based on the provided ruleset and factor table, the inputs are:\n\n* **Good CN code:** 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations...)\n* **Country of production:** India\n* **Default SEE:** 4.27 tCO2e/t\n\nHowever, there is a contradiction in the declared quantity:\n* **Summary total:** 1,000 t\n* **Sum of line items:** 300 t + 400 t + 250 t = 950 t\n\nBecause a definitive quantity in tonnes is a required input and the ruleset specifies not to estimate when required inputs are ambiguous or missing, a single definitive value cannot be confirmed until the discrepancy in the declaration is resolved. \n\nDepending on which figure is confirmed as the valid declared quantity, the calculations are as follows:\n\n1. **Based on the sum of the line items (950 t):**\n   $$\\text{Embedded emissions} = 950\\text{ t} \\times 4.27\\text{ tCO2e/t} = \\mathbf{4,056.50\\text{ tCO2e}}$$\n\n2. **Based on the summary total (1,000 t):**\n   $$\\text{Embedded emissions} = 1,000\\text{ t} \\times 4.27\\text{ tCO2e/t} = \\mathbf{4,270.00\\text{ tCO2e}}$$",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 345
+  },
+  "latency_s": 11.4074,
+  "stop_reason": "STOP",
+  "truncated": false
+}

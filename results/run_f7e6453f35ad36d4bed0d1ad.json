@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f7e6453f35ad36d4bed0d1ad",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Based on the ruleset provided, a definitive single calculation cannot be completed without resolving the conflicting CN codes on the form, as the specific embedded emissions (SEE) must be selected jointly by a single (good CN code, country) pair. \n\nPlease confirm the correct CN code for the shipment:\n\n1. **If the correct CN code is 7201** (which matches the description \"Pig iron and spiegeleisen, in pigs, blocks or other prima...\"):\n   * **Default SEE (China):** 1.66 tCO2e/t\n   * **Calculation:** 1.66 tCO2e/t \u00d7 900 t = **1494.00 tCO2e**\n\n2. **If the correct CN code is 7206 10 00** (\"Ingots, of iron and non-alloy steel...\"):\n   * **Default SEE (China):** 1.74 tCO2e/t\n   * **Calculation:** 1.74 tCO2e/t \u00d7 900 t = **1566.00 tCO2e**",
+  "usage": {
+    "input_tokens": 727,
+    "output_tokens": 249
+  },
+  "latency_s": 8.8607,
+  "stop_reason": "STOP",
+  "truncated": false
+}

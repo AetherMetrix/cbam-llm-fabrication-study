@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d9ff45f5a24cce7085e4ace7",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Embedded emissions: 1,850.00 tCO2e\n\n**Required inputs**\n\n| Input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7201 (Pig iron and spiegeleisen) | Yes |\n| (b) Country of production | T\u00fcrkiye | Yes, listed for CN 7201 |\n| (c) Quantity | 1,000 tonnes | Yes |\n\nAll required inputs are present, so a definitive figure can be computed.\n\n**Default SEE**\n\nThe table value for CN 7201 produced in T\u00fcrkiye is **1.85 tCO2e per tonne**.\n\n**Calculation**\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 1.85 tCO2e/t \u00d7 1,000 t\n= **1,850.00 tCO2e**",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 310
+  },
+  "latency_s": 3.2354,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

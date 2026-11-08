@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7722b200c59aa0a29895d8e0",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: Ribbed Bar (CN 7214 20 00), India\n\n**Status: Cannot be finalised. The declared quantity is inconsistent.**\n\n## Factor lookup\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7214 20 00 (bars and rods with indentations, i.e. ribbed bar) | \u2705 In table |\n| Country of production | India | \u2705 Listed for this good |\n| Default SEE | **4.27 tCO2e/t** | \u2705 |\n| Quantity | **Conflicting** | \u274c |\n\n## Quantity discrepancy\n\n- **Summary total:** 1,000 t\n- **Line items:** 300 + 400 + 250 = **950 t**\n- **Difference:** 50 t\n\nThe ruleset requires a quantity in tonnes. The declaration gives two different figures, so I can't choose one without guessing. The gap could come from a missing 50 t lot, a typo in the summary, or a typo in one of the lots.\n\n## Results for each figure (for reference only)\n\n| Basis | Calculation | Embedded emissions |\n|---|---|---|\n| Line items (950 t) | 950 \u00d7 4.27 | **4,056.50 tCO2e** |\n| Summary (1,000 t) | 1,000 \u00d7 4.27 | **4,270.00 tCO2e** |\n\nThe two results differ by 213.50 tCO2e.\n\n## Action required\n\nPlease confirm the correct quantity with the declarant:\n1. If a fourth lot of 50 t was left out, add it to the line items. The total would then be **4,270.00 tCO2e**.\n2. If the summary total is wrong, correct it to 950 t. The total would then be **4,056.50 tCO2e**.\n3. If one of the lot quantities is wrong, correct that lot. The total follows from the corrected sum \u00d7 4.27.\n\nOnce the quantity is reconciled, the final figure is the confirmed tonnage \u00d7 4.27 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 853
+  },
+  "latency_s": 8.561,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

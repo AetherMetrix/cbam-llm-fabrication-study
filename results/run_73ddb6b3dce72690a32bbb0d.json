@@ -1,0 +1,15 @@
+{
+  "run_id": "run_73ddb6b3dce72690a32bbb0d",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "Cannot compute the embedded emissions under the supplied rules.\n\n- **CN code:** 7214 20 00 \u2014 listed.\n- **Quantity:** 1,200 tonnes \u2014 provided.\n- **Required input unavailable:** A country of production listed for this CN code. The declared country, **United States**, is not in the table, so no applicable default SEE is provided.\n\nThe rules do not permit estimating or substituting another country\u2019s factor.",
+  "usage": {
+    "input_tokens": 652,
+    "output_tokens": 93
+  },
+  "latency_s": 3.5174,
+  "stop_reason": "completed",
+  "truncated": false
+}

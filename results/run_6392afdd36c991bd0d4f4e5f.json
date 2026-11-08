@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6392afdd36c991bd0d4f4e5f",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# I cannot compute a definitive embedded-emissions figure\n\nThe good's CN code is ambiguous, so I can't select a single default SEE under the ruleset.\n\n## Why\n\nThe ruleset selects the SEE by **CN code and country together**. The scenario gives two different CN codes for the same good:\n\n| Source in scenario | CN code | Good | T\u00fcrkiye default SEE |\n|---|---|---|---|\n| Product description (text) | 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 tCO2e/t |\n| Declared line item | 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations | 2.31 tCO2e/t |\n\nThese are different goods with different default values. The rules give no way to decide which one applies, so picking either would be an estimate.\n\n## Status of required inputs\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | **Unresolved.** It conflicts between 7207 11 90 and 7214 20 00. |\n| (b) Country of production | Provided: T\u00fcrkiye. It is listed for both candidate codes. |\n| (c) Quantity in tonnes | Provided: 1,100 t. |\n\n## Missing input\n\n- **A single, confirmed CN code for the good.** Either correct the line item to match the product description, or correct the description to match the line item.\n\nOnce the CN code is confirmed, the calculation is: embedded emissions = T\u00fcrkiye default SEE for that code \u00d7 1,100 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 778
+  },
+  "latency_s": 8.7351,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

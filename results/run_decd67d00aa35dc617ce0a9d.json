@@ -1,0 +1,15 @@
+{
+  "run_id": "run_decd67d00aa35dc617ce0a9d",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# CBAM Embedded Emissions: HRC, CN 7208, 5,000 t, China\n\n**Result: Cannot be calculated. CN 7208 is not in the factor table.**\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7208 (hot-rolled coil) | \u274c Not listed |\n| (b) Country listed for that good | China | Cannot be checked without a matching CN code |\n| (c) Quantity in tonnes | 5,000 t | \u2705 |\n\nThe table only covers these CN codes:\n- 7201 (pig iron)\n- 7206 10 00 (ingots)\n- 7207 11 90 (semi-finished products)\n- 7214 20 00 (bars and rods with indentations, i.e. rebar)\n\nHot-rolled flat products (heading 7208) have no default SEE in the table.\n\n## Why no substitute value is used\n\nThe ruleset says that if a required input is not in the table, the value must not be estimated. China SEEs for related goods exist, such as 3.314 for semi-finished products (7207 11 90) and 3.169 for bars and rods (7214 20 00). However, these are different goods with different process routes. Using either one as a proxy for HRC would be an estimate and would not comply with the ruleset.\n\n## To complete the calculation, please provide one of the following:\n\n1. **An updated factor table** that includes the China default SEE for the HRC's CN code. Also confirm the full 8-digit code, since 7208 has many subheadings by thickness, width, and pattern. Once received, the calculation is: SEE \u00d7 5,000 t, rounded half-up to 2 decimals.\n2. **Confirmation that the good was misclassified** and actually falls under one of the listed CN codes.\n3. **Actual installation-specific emissions data** from the producing mill. This falls outside the default-value method in this ruleset and would need to be verified separately.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 677
+  },
+  "latency_s": 6.9652,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

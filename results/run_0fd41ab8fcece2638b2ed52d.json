@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0fd41ab8fcece2638b2ed52d",
+  "task_id": "A04",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions: 23,520.00 tCO2e**\n\n**Inputs:**\n- CN code: 7206 10 00 (ingots of iron and non-alloy steel), listed in the table\n- Country of production: T\u00fcrkiye, listed for this CN code\n- Quantity: 12,000 t\n\n**Calculation:**\n- Default SEE for 7206 10 00 and T\u00fcrkiye: 1.96 tCO2e/t\n- Embedded emissions = 1.96 tCO2e/t \u00d7 12,000 t = 23,520.00 tCO2e",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 236
+  },
+  "latency_s": 1.2251,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

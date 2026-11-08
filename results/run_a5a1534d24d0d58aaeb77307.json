@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a5a1534d24d0d58aaeb77307",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions for this consignment because the country of production is missing.\n\n**Inputs received and checked:**\n- **CN code:** 7207 11 90 (present in the factor table)\n- **Quantity:** 3,300 t (provided)\n- **Country of production:** missing\n\n**Missing input:**\n- **Country of production.** The email says it is on the mill certificate, which was not attached. The default SEE is selected by the pair (CN code, country), so the calculation cannot proceed without it. The table lists values for this CN code for three countries: T\u00fcrkiye, China, and India. Please confirm which one applies and provide the certificate or the country in writing.\n\nOnce the country is confirmed, I will multiply the matching default SEE by 3,300 t and report the total rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 996,
+    "output_tokens": 495
+  },
+  "latency_s": 3.0269,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

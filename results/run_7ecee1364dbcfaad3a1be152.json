@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7ecee1364dbcfaad3a1be152",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Why:** The ruleset selects the default SEE jointly by CN code and country of production, and it requires exactly one country of production for the good. The scenario gives two conflicting origins for the same 750 t of CN 7206 10 00 ingots:\n- One field states India, which would select SEE 2.64 tCO2e/t.\n- Another field states T\u00fcrkiye, which would select SEE 1.96 tCO2e/t.\n\nBecause the country of production is not uniquely determined, the SEE cannot be selected, and the rules prohibit estimating or choosing between the two values.\n\n**Input needed to proceed:**\n1. **Country of production (single, verified value):** Confirm whether the ingots were produced in India or T\u00fcrkiye. The record must be corrected or the conflicting field resolved so that only one origin remains.\n\nThe CN code (7206 10 00, which is in the table) and quantity (750 t) are present and valid, so no other inputs are missing.\n\nOnce the country is confirmed, the calculation is: embedded emissions = 750 t \u00d7 the default SEE for CN 7206 10 00 and the confirmed country, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 951,
+    "output_tokens": 618
+  },
+  "latency_s": 3.5207,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

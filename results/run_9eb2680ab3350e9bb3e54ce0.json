@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9eb2680ab3350e9bb3e54ce0",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Result: the declaration cannot be finalised until the quantity discrepancy is resolved.**\n\n**Inputs**\n- CN code: 7214 20 00 (bars and rods with indentations, ribbed), which is in the factor table.\n- Country: India, which is listed for this CN code.\n- Default SEE: 4.27 tCO2e/t.\n\n**Quantity discrepancy**\n- Summary total: 1,000 t\n- Line items: 300 t + 400 t + 250 t = 950 t\n- Difference: 50 t\n\n**Calculations**\n\n| Quantity basis | Quantity (t) | \u00d7 SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Line items (sum of lots) | 950 | 4.27 | **4,056.50** |\n| Summary total | 1,000 | 4.27 | 4,270.00 |\n\nThe line-item figure is the one supported by the detailed records, so I'd treat 4,056.50 tCO2e as the provisional value. The 1,000 t summary would give 4,270.00 tCO2e, a difference of 213.50 tCO2e.\n\n**Action required:** The declarant should confirm the true quantity and correct either the summary total or the line items. The ruleset requires a definitive quantity in tonnes, so I haven't chosen between the two figures as final.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 823
+  },
+  "latency_s": 4.352,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

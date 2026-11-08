@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bdec1b8df7a5c56817dd9280",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset, the specific embedded emissions (SEE) must be selected jointly by the good's CN code and the country of production, and no estimation is allowed if required inputs are ambiguous or conflicting. \n\nBecause the declaration contains a direct contradiction between the CN-code field (**7201** \u2013 Pig iron) and the description (**7214 20 00** \u2013 Ribbed reinforcing bar), a single valid CN code cannot be definitively determined without making an assumption. Therefore, a single authoritative calculation cannot be certified until the declaration is corrected.\n\nFor reference, here are the exact calculations for both possibilities depending on which CN code is confirmed as correct:\n\n**Option 1: If the CN-code field (7201) is correct**\n* **Good:** 7201 (Pig iron and spiegeleisen...)\n* **Country:** India\n* **Default SEE:** 2.53 tCO2e/t\n* **Quantity:** 1,500 t\n* **Calculation:** 2.53 \u00d7 1,500 = **3,795.00 tCO2e**\n\n**Option 2: If the description (7214 20 00) is correct**\n* **Good:** 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations...)\n* **Country:** India\n* **Default SEE:** 4.27 tCO2e/t\n* **Quantity:** 1,500 t\n* **Calculation:** 4.27 \u00d7 1,500 = **6,405.00 tCO2e**\n\n**Next Step:** Please resolve the discrepancy in the customs declaration to confirm whether the imported good is CN 7201 or CN 7214 20 00.",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 414
+  },
+  "latency_s": 7.4021,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_24bb1ca0f7c63ffc3f936ef6",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure, because the quantity is unresolved.\n\n**Inputs checked:**\n- **CN code:** 7206 10 00 (Ingots of iron and non-alloy steel) is in the factor table. Provided.\n- **Country:** T\u00fcrkiye is listed for this CN code. Provided.\n- **Default SEE:** 1.96 tCO2e/t for 7206 10 00 / T\u00fcrkiye. Available.\n- **Quantity:** Conflicting. The three lots of 1,000 t sum to 3,000 t, but the declared total is 3,500 t. The ruleset requires a single confirmed quantity in tonnes, and the difference of 500 t is unexplained.\n\n**Missing input:**\n- A confirmed quantity in tonnes. Either the declared total must be corrected to 3,000 t, or the missing 500 t must be identified (for example, an additional lot not listed in the scenario). Until that is resolved, the quantity to multiply by the SEE is not established.\n\n**Once the quantity is confirmed,** the calculation is: embedded emissions (tCO2e) = 1.96 \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 965,
+    "output_tokens": 927
+  },
+  "latency_s": 4.7028,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

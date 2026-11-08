@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e21067dad8eaeb4f3962e664",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**No estimate can be given.** The country of production is blank on the data form, and the ruleset requires it to select the default SEE value. The CN code (7201) and quantity (1,500 t) are present, but the calculation cannot proceed without the country.\n\n**To complete the calculation, please provide the country of production.** For CN 7201 (pig iron), the factor table lists three countries:\n- T\u00fcrkiye\n- China\n- India\n\nOnce the country is confirmed, the embedded emissions will be calculated as: default SEE for (7201, country) \u00d7 1,500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 384
+  },
+  "latency_s": 2.6566,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

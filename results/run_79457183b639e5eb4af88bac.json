@@ -1,0 +1,15 @@
+{
+  "run_id": "run_79457183b639e5eb4af88bac",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded emissions not calculated: CN code missing\n\nI can't compute the embedded emissions because the scenario lacks a required input.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in the table | \"To be confirmed\" | \u274c Missing |\n| (b) Country of production listed for that good | T\u00fcrkiye | \u2705 Listed for all goods in the table |\n| (c) Quantity (tonnes) | 1,000 t | \u2705 |\n\nThe ruleset selects the default SEE by both CN code and country. \"Steel long product (exact heading TBD by mill)\" could fall under several table entries, and the T\u00fcrkiye factors differ substantially between them:\n\n| CN code | Good | T\u00fcrkiye default SEE (tCO2e/t) |\n|---|---|---|\n| 7206 10 00 | Ingots, iron/non-alloy steel | 1.96 |\n| 7207 11 90 | Semi-finished products, iron/non-alloy steel | 3.087 |\n| 7214 20 00 | Bars and rods with indentations (rebar) | 2.31 |\n\nThe heading could also be one that isn't in this table at all. Under the ruleset, I won't guess or apply a range.\n\n## To complete the calculation\n\n1. Get the confirmed 8-digit CN code from the mill or on the final PO.\n2. If the code is in the table, the calculation will be: **Embedded emissions = T\u00fcrkiye default SEE for that CN code \u00d7 1,000 t**, rounded half-up to 2 decimal places.\n3. If the confirmed code isn't in the table, the default-value method here can't be applied, and a further factor source would be needed.\n\nSend the confirmed CN code and I'll return the result.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 820
+  },
+  "latency_s": 8.5256,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

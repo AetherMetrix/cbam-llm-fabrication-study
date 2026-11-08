@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b314fb2c6539463d8d486c76",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "Using the **declared quantity of 3,500 tonnes** and the SEE for CN **7206 10 00**, T\u00fcrkiye:\n\nEmbedded emissions = 3,500 \u00d7 1.96 = **6,860.00 tCO\u2082e**.\n\nNote: The three lots total 3,000 tonnes, which conflicts with the declared total. As requested, this calculation uses the declared quantity.",
+  "usage": {
+    "input_tokens": 669,
+    "output_tokens": 127
+  },
+  "latency_s": 4.3001,
+  "stop_reason": "completed",
+  "truncated": false
+}

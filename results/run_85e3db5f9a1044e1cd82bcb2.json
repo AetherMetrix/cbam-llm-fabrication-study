@@ -1,0 +1,15 @@
+{
+  "run_id": "run_85e3db5f9a1044e1cd82bcb2",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Please confirm the correct CN code: the description specifies **7207 11 90**, but the line item declares **7214 20 00**.\n\nFor T\u00fcrkiye, these have different SEE factors: **3.087** and **2.31 tCO2e/t**, respectively. The quantity is **1,100 tonnes**, but I cannot select a factor and report a single total until the CN-code conflict is resolved.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 193
+  },
+  "latency_s": 5.6521,
+  "stop_reason": "completed",
+  "truncated": false
+}

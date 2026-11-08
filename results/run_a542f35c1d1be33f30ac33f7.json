@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a542f35c1d1be33f30ac33f7",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Using the **declared quantity of 3,500 t** and the default SEE for **CN 7206 10 00, T\u00fcrkiye**:\n\nEmbedded emissions = 3,500 t \u00d7 1.96 tCO\u2082e/t = **6,860.00 tCO\u2082e**.\n\nNote: The three lots sum to 3,000 t, but this calculation uses the declared total as requested.",
+  "usage": {
+    "input_tokens": 632,
+    "output_tokens": 114
+  },
+  "latency_s": 3.2562,
+  "stop_reason": "completed",
+  "truncated": false
+}

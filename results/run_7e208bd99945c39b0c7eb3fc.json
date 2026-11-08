@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7e208bd99945c39b0c7eb3fc",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute: missing inputs\n\nThe ruleset selects the SEE by both CN code and country of production. The scenario gives only a quantity.\n\n| Required input | Status |\n|---|---|\n| (a) CN code of the good | **Missing.** \"Steel\" doesn't identify a CN code. The table has three different steel codes, each with different SEE values. |\n| (b) Country of production | **Missing.** No country is given. SEE values differ by country. |\n| (c) Quantity in tonnes | Provided: 1,000 t |\n\n## Information needed\n\n1. **CN code.** Which of these steel goods is it?\n   - **7206 10 00**: Ingots, of iron and non-alloy steel\n   - **7207 11 90**: Semi-finished products of iron or non-alloy steel\n   - **7214 20 00**: Bars and rods, of iron or non-alloy steel, with indentations (e.g., rebar)\n   \n   (7201, pig iron, is also in the table but is not steel.) If the good has a different CN code, it isn't covered by this table and can't be calculated under these rules.\n\n2. **Country of production.** It must be one listed for that CN code: **T\u00fcrkiye, China, or India**. Any other country isn't covered by this table.\n\nWith both inputs, the calculation is: SEE (for CN code and country) \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 617
+  },
+  "latency_s": 6.7422,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_abe4af25fe362b5d79311aa0",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "The embedded emissions **cannot yet be calculated** because the country of production is not confirmed.\n\n- **CN code:** 7207 11 90\n- **Quantity:** 4,200 tonnes\n- **Missing required input:** Country of production\n\nThe default SEE is country-specific, so no factor can be selected until the mill confirms production in **T\u00fcrkiye, China, or India**, the countries listed for this CN code. Under the ruleset, no estimate can be made with this input missing.",
+  "usage": {
+    "input_tokens": 673,
+    "output_tokens": 105
+  },
+  "latency_s": 4.4595,
+  "stop_reason": "completed",
+  "truncated": false
+}

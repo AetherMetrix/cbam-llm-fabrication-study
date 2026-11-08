@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dc5e2156026cb5348d61114e",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**No embedded emissions estimate is issued.** The form gives two different CN codes, and the ruleset requires a single good CN code that is in the table.\n\n- **7201** (Pig iron and spiegeleisen, in pigs, blocks or other primary forms) matches the described good.\n- **7206 10 00** (Ingots, of iron and non-alloy steel) is a different product, and the form does not say which one applies.\n\nBoth codes have a China entry in the factor table, so the country and quantity are not the problem. The CN code is.\n\n**To proceed, please confirm the correct CN code.** Once confirmed, the calculation is:\n\n- If **7201** is correct: 1.66 tCO2e/t \u00d7 900 t = **1,494.00 tCO2e**\n- If **7206 10 00** is correct: 1.74 tCO2e/t \u00d7 900 t = **1,566.00 tCO2e**\n\nThe form should also be corrected so that it lists only one CN code.",
+  "usage": {
+    "input_tokens": 901,
+    "output_tokens": 619
+  },
+  "latency_s": 3.5935,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

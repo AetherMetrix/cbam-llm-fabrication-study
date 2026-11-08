@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3542215e47ed789934c7fffb",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "The country of production is missing. For CN **7214 20 00**, the default SEE is country-specific, so embedded emissions for **2,500 t** cannot be calculated yet.\n\nWas the reinforcing bar produced in **T\u00fcrkiye, China, or India**?",
+  "usage": {
+    "input_tokens": 615,
+    "output_tokens": 58
+  },
+  "latency_s": 2.4064,
+  "stop_reason": "completed",
+  "truncated": false
+}

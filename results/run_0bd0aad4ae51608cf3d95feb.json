@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0bd0aad4ae51608cf3d95feb",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "For **CN 7207 11 90 produced in India**, the default SEE is **4.32 tCO\u2082e/t**.\n\nUsing the declared summary quantity of **4,000 t**:\n**4,000 \u00d7 4.32 = 17,280.00 tCO\u2082e**.\n\n**Quantity discrepancy:** The line items total **3,500 t** (2,000 + 1,500), which would yield **15,120.00 tCO\u2082e**. Please confirm which quantity is correct before finalising the declaration.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 208
+  },
+  "latency_s": 5.5248,
+  "stop_reason": "completed",
+  "truncated": false
+}

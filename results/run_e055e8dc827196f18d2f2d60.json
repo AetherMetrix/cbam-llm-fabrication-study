@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e055e8dc827196f18d2f2d60",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Cannot compute: required inputs are missing.**\n\nThe ruleset requires three inputs, and the scenario provides only one:\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201 (Pig iron and spiegeleisen) |\n| (b) Country of production | \u274c **Not provided** |\n| (c) Quantity in tonnes | \u274c **Not provided** |\n\nDefault values depend on both the CN code and the country, so I can't select an SEE without the country. Without a quantity, there is nothing to multiply. The ruleset prohibits estimating, so I have not assumed either value.\n\n**Available SEE values for CN 7201:**\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\n**To complete the calculation, please provide:**\n1. The country of production (T\u00fcrkiye, China, or India; other countries aren't covered by the table).\n2. The quantity in tonnes.\n\nThe result will then be: Embedded emissions = SEE (country) \u00d7 quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 407
+  },
+  "latency_s": 4.4872,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

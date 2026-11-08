@@ -1,0 +1,15 @@
+{
+  "run_id": "run_543a8353f5e09fb66b429c70",
+  "task_id": "B-S10",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the embedded emissions figure under the supplied rules because the provided data is insufficient. \n\nThe following required input is missing:\n- **Country of production** (must be listed for CN code 7206 10 00 in the factor table: T\u00fcrkiye, China, or India). *Note: The locations of the buyer (Germany) and seller (Geneva) are provided, but the country of production is not stated.*",
+  "usage": {
+    "input_tokens": 782,
+    "output_tokens": 96
+  },
+  "latency_s": 6.1147,
+  "stop_reason": "STOP",
+  "truncated": false
+}

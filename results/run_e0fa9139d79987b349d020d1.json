@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e0fa9139d79987b349d020d1",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Missing input: the CN code.** The scenario says \"steel goods,\" which does not identify a single good in the factor table. The default SEE is selected jointly by CN code and country, so both are needed. The country (India) and quantity (3,000 t) are provided.\n\nThe factor table has India entries for four CN codes, each with a different SEE value:\n\n| CN code | Good | India default SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | 2.53 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap ingots) | 2.64 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 4.32 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations | 4.27 |\n\nPlease confirm which CN code applies to the 3,000 t of goods. Once it is confirmed, the calculation is embedded emissions = SEE \u00d7 3,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 757
+  },
+  "latency_s": 3.9462,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

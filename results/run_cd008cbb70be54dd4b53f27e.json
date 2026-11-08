@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cd008cbb70be54dd4b53f27e",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Result: Cannot compute\n\nI cannot compute the embedded emissions for this line under the supplied ruleset.\n\n## Missing input\n\n- **Default SEE for CN 7201 produced in the USA.** The table lists CN 7201 (pig iron) only for T\u00fcrkiye (1.85), China (1.66) and India (2.53). The USA is not listed.\n\nThe ruleset selects the SEE jointly by CN code and country, and says not to estimate if the country isn't listed for that good. Using another country's value, an average, or any proxy would therefore be an estimate, so none is applied.\n\n## Inputs that are valid\n\n| Input | Declared value | Status |\n|---|---|---|\n| (a) CN code | 7201 | In table |\n| (b) Country of production | USA | **Not listed for CN 7201** |\n| (c) Quantity | 1,200 t | Provided |\n\n## What is needed to complete the calculation\n\nYou need an authoritative default SEE value for CN 7201 with the USA as country of production, added to the factor table. With that value, the calculation would be:\n\nEmbedded emissions = SEE(7201, USA) \u00d7 1,200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 440
+  },
+  "latency_s": 4.3454,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

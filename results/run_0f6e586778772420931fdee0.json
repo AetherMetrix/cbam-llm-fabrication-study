@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0f6e586778772420931fdee0",
+  "task_id": "A06",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 8,791.20 tCO2e**\n\n**Inputs:**\n- **CN code:** 7206 10 00 (Ingots, of iron and non-alloy steel), which is in the factor table.\n- **Country of production:** India, which is listed for this CN code.\n- **Quantity:** 3,330 t, as declared.\n\n**Default SEE:** 2.64 tCO2e/t (CN 7206 10 00, India)\n\n**Calculation:**\n3,330 t \u00d7 2.64 tCO2e/t = 8,791.20 tCO2e",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 338
+  },
+  "latency_s": 1.9511,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

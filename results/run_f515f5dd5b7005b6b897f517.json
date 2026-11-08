@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f515f5dd5b7005b6b897f517",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the embedded emissions for this scenario.\n\n**Missing input:** The factor table has no default SEE for CN 7201 produced in Brazil. For CN 7201, the table lists only T\u00fcrkiye (1.85), China (1.66), and India (2.53) tCO2e/t. Under the ruleset, the SEE is selected jointly by CN code and country, and a good and country pair that is not in the table means no estimate can be made.\n\n**Inputs that are present:**\n- Good CN code: 7201 (in the table)\n- Quantity: 800 t\n- Country of production: Brazil (not listed for CN 7201)\n\n**What would allow a calculation:** A default SEE (tCO2e/t) for CN 7201 with Brazil as the country of production, added to the factor table. The result would then be 800 t \u00d7 that SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 481
+  },
+  "latency_s": 2.7669,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

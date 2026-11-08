@@ -1,0 +1,15 @@
+{
+  "run_id": "run_148536ad6c1b7a2f02923837",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The declared CN code is inconsistent, and the ruleset requires a single good CN code in the factor table.\n\n**Conflicting input:**\n- The form lists two CN codes for the same good: **7201** in one place and **7206 10 00** in another.\n- The two codes have different default SEE values for China: 1.66 tCO2e/t for 7201 and 1.74 tCO2e/t for 7206 10 00.\n- The good description (\"pig iron\") matches the 7201 row, but the ruleset does not allow me to choose a code from the description. The declarant must confirm which CN code applies.\n\n**Inputs confirmed:**\n- Country of production: China, which is listed for both candidate codes.\n- Quantity: 900 t.\n\n**Conditional results, for reference only (not a final figure):**\n- If the CN code is **7201**: 900 t \u00d7 1.66 tCO2e/t = **1,494.00 tCO2e**\n- If the CN code is **7206 10 00**: 900 t \u00d7 1.74 tCO2e/t = **1,566.00 tCO2e**\n\nTo finalize, the declarant must confirm a single CN code. The corrected form should then be resubmitted for calculation.",
+  "usage": {
+    "input_tokens": 959,
+    "output_tokens": 773
+  },
+  "latency_s": 4.1857,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_37a8eec024b89a64b27c5480",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Embedded emissions cannot be calculated from the supplied table.**\n\nThe ruleset selects the default SEE by both CN code and country of production. If the country is not listed for that good, no estimate may be made.\n\n**Input check:**\n\n| Required input | Declared value | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods with indentations, i.e. ribbed rebar) | \u2705 In table |\n| (b) Country of production | Ukraine | \u274c **Not listed for 7214 20 00** |\n| (c) Quantity | 2,600 t | \u2705 Provided |\n\nThe table lists 7214 20 00 only for T\u00fcrkiye (2.31), China (3.169) and India (4.27). There is no Ukraine entry. Using another country's value would be an estimate, which the ruleset prohibits.\n\n**Result:** Not determinable. No tCO2e figure is reported.\n\n**To complete the calculation, you would need one of the following:**\n1. The official default SEE for CN 7214 20 00 with Ukraine as the country of production, added to the factor table.\n2. A confirmation that the country of production was entered incorrectly and is actually T\u00fcrkiye, China or India.\n\nOnce a valid SEE is available, the result is SEE \u00d7 2,600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 922,
+    "output_tokens": 465
+  },
+  "latency_s": 4.9908,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

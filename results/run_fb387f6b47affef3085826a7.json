@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fb387f6b47affef3085826a7",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: Cannot be computed. No estimate provided.**\n\n**Input check**\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7214 20 00 (rebar) | \u2705 Yes |\n| (b) Country of production | United States | \u274c No |\n| (c) Quantity | 1,200 t | \u2705 Yes |\n\n**Why it fails**\n\nThe ruleset selects the default SEE by both CN code and country. For CN 7214 20 00, the table lists only:\n\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for the United States. The ruleset says not to estimate when a required input is missing from the table. Using another country's value, an average, or any proxy would break that rule.\n\n**What's needed to proceed**\n\n- A default SEE for CN 7214 20 00 with country = United States, added to the factor table, **or**\n- Verified actual installation-level emissions data from the U.S. producer, if a revised ruleset permits it.\n\nFor reference only, once a U.S. value is available: Embedded emissions = SEE(US) \u00d7 1,200 t, rounded half-up to 2 decimals.",
+  "usage": {
+    "input_tokens": 874,
+    "output_tokens": 433
+  },
+  "latency_s": 4.3095,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

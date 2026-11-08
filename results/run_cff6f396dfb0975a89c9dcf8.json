@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cff6f396dfb0975a89c9dcf8",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: declared quantity is inconsistent\n\nI cannot compute a definitive embedded-emissions figure because the scenario gives two conflicting quantities.\n\n## Inputs check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country listed for that good | \u2705 India, with a default SEE of **4.32 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Not definitively established** |\n\n## The discrepancy\n\n- The line items are 2,000 t + 1,500 t, which sum to **3,500 t**.\n- The summary total is **4,000 t**.\n\nThese differ by 500 t. The data doesn't show whether a line item is missing, whether the summary total is wrong, or whether some other quantity applies.\n\n## Missing input\n\n1. **A confirmed quantity of CN 7207 11 90 produced in India.** This means either a corrected summary total that matches the line items, or the complete line-item list (including any missing 500 t entry) that supports the 4,000 t total.\n\nOnce the quantity is confirmed, embedded emissions = **4.32 tCO2e/t \u00d7 confirmed tonnes**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 723
+  },
+  "latency_s": 8.0039,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

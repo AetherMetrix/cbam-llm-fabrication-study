@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ae3f220e71c9300302552abd",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: CN code missing\n\nI can't compute the embedded emissions because the ruleset requires the good's CN code, and the datasheet doesn't provide one.\n\n## Input check\n\n| Required input | Status | Value |\n|---|---|---|\n| (a) Good CN code in the table | **Missing** | Not stated |\n| (b) Country of production listed for that good | Provided | India (listed for all four CN codes) |\n| (c) Quantity in tonnes | Provided | 600 t |\n\n## Why the CN code can't be inferred\n\nThe ruleset selects the SEE by CN code and country together. The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") matches more than one table row, and the Indian defaults differ widely:\n\n- 7206 10 00 (ingots, iron/non-alloy steel): 2.64 tCO2e/t\n- 7207 11 90 (semi-finished products, iron/non-alloy steel): 4.32 tCO2e/t\n\n7207 11 90 looks closest, but its table description is truncated, so I can't confirm the product meets all its criteria (such as carbon threshold, cross-section and production method). Choosing one of these rows would be an estimate, which the ruleset doesn't allow.\n\n## What's needed\n\n**The confirmed CN code** for this product, from the customs declaration, commercial invoice or supplier classification. If it matches one of the table's CN codes, the calculation will be:\n\n> Embedded emissions = SEE (CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places\n\nIf the confirmed code isn't in the table, the figure still can't be computed under the supplied ruleset.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 1110
+  },
+  "latency_s": 11.578,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

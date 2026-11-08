@@ -1,0 +1,15 @@
+{
+  "run_id": "run_55f0a3836c79f69695078fbc",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**No estimate can be given yet.** The email provides a valid CN code and quantity, but not the country of production, which is a required input.\n\n**Inputs check:**\n\n| Input | Status | Value |\n|---|---|---|\n| (a) CN code in table | Present and valid | 7214 20 00 (bars and rods, indentations/ribs from rolling) |\n| (b) Country of production | **Missing** | Not stated in the email. The mill cert and mill-test report are referenced as attached but were not provided to me. |\n| (c) Quantity (tonnes) | Present | 2,000 t net |\n\n**What's needed:** Confirm the country of production for the consignment. The mill cert or mill-test report should state the production site. The factor table lists 7214 20 00 for T\u00fcrkiye, China, and India only. If the country is anything else, the good-country pair is not in the table and the calculation cannot be made under this ruleset.\n\n**Once the country is confirmed,** the calculation is:\n\nEmbedded emissions (tCO2e) = SEE for (7214 20 00, country) \u00d7 2,000 t\n\nApplicable SEE values:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nHeat numbers H-4471/H-4472, EXW terms, and the dispatch date are not inputs to this calculation. They may still be needed for the CBAM declaration itself.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 812
+  },
+  "latency_s": 4.761,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

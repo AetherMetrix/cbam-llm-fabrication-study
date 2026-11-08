@@ -1,0 +1,15 @@
+{
+  "run_id": "run_40711478cad37e66a3aa0487",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute: conflicting CN code\n\nI cannot compute a definitive embedded emissions figure for this declaration.\n\n## Why\n\nThe ruleset requires a single CN code because the default SEE is selected jointly by CN code and country. The form gives two codes, and each points to a different factor for China:\n\n| CN code | Good | Country | Default SEE (tCO2e/t) |\n|---|---|---|---|\n| 7201 | Pig iron and spiegeleisen | China | 1.66 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel | China | 1.74 |\n\nThe conflict changes the result, so it cannot be ignored. The text description (\"pig iron\") matches 7201, but the ruleset selects factors by CN code, not description. The form itself is internally inconsistent, so choosing one code would be an assumption.\n\n## Inputs status\n\n| Required input | Status |\n|---|---|\n| (a) CN code | **Missing/ambiguous.** Two conflicting codes are declared (7201 and 7206 10 00). |\n| (b) Country of production | Provided: China, which is listed for both codes. |\n| (c) Quantity | Provided: 900 t. |\n\n## Missing input needed\n\n- **One confirmed CN code** for the imported good. The declarant should correct the form so the code is consistent throughout.\n\nOnce the code is confirmed, the calculation is: confirmed SEE \u00d7 900 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 959,
+    "output_tokens": 846
+  },
+  "latency_s": 9.6622,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

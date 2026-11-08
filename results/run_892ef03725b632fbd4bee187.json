@@ -1,0 +1,15 @@
+{
+  "run_id": "run_892ef03725b632fbd4bee187",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions cannot be calculated for this line.**\n\n**Check of required inputs**\n\n| Input | Declared | In table? |\n|---|---|---|\n| (a) CN code | 7201 (pig iron) | \u2705 Yes |\n| (b) Country of production | Viet Nam | \u274c No |\n| (c) Quantity | 1,800 t | \u2705 Provided |\n\n**Why**\n\n- The ruleset selects the default SEE by CN code and country together.\n- For CN 7201, the table lists only T\u00fcrkiye (1.85), China (1.66) and India (2.53) tCO2e/t.\n- There is no entry for Viet Nam, so no applicable SEE exists.\n- The ruleset says that if any required input is not in the table, the value must not be estimated. Using another country's factor, an average of the listed factors, or a factor based on the blast-furnace route would all be estimates.\n\n**Result:** No embedded-emissions total is reported for 1,800 t of CN 7201 from Viet Nam.\n\n**To resolve, either:**\n1. Obtain the official default SEE for CN 7201 from Viet Nam and add it to the factor table, or\n2. Use actual (installation-specific) emissions data from the producer, if your wider compliance framework allows it.\n\nOnce a valid Viet Nam factor is supplied, the total is that factor \u00d7 1,800 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 496
+  },
+  "latency_s": 4.9036,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

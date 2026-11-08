@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2b0c020d107e115ec1ac99a3",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Embedded emissions cannot be computed because a required input\u2014the **country of production**\u2014is missing. \n\nAccording to the ruleset, default specific embedded emissions (SEE) values are country-specific and must be selected jointly by the good's CN code and the country of production (e.g., T\u00fcrkiye, China, or India for CN code 7201). Since the country of production is blank and estimating is not permitted, the calculation cannot be completed. Please provide the country of production to proceed.",
+  "usage": {
+    "input_tokens": 744,
+    "output_tokens": 109
+  },
+  "latency_s": 5.5732,
+  "stop_reason": "STOP",
+  "truncated": false
+}

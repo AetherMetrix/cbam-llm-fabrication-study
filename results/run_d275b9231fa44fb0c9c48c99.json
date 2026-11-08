@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d275b9231fa44fb0c9c48c99",
+  "task_id": "A13",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: Pig Iron (CN 7201), India\n\n**Embedded emissions: 25,300.00 tCO2e**\n\n## Required Inputs\n\n| Input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7201 (Pig iron and spiegeleisen) | Yes |\n| (b) Country of production | India | Yes, listed for CN 7201 |\n| (c) Quantity | 10,000 t | Yes |\n\nAll required inputs are present, so the figure can be computed under the ruleset.\n\n## Factor Selection\n\nThe default SEE is selected by the pair (CN 7201, India), which gives **2.53 tCO2e/t**.\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 quantity\n= 2.53 tCO2e/t \u00d7 10,000 t\n= **25,300.00 tCO2e**",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 343
+  },
+  "latency_s": 3.4715,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

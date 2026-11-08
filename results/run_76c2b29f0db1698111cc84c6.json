@@ -1,0 +1,15 @@
+{
+  "run_id": "run_76c2b29f0db1698111cc84c6",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the definitive embedded emissions figure because the provided data is insufficient under the supplied ruleset. \n\nSpecifically, the following required input is missing:\n- **Country of production** (for CN code 7201, the country must be specified as T\u00fcrkiye, China, or India to select the appropriate default specific embedded emissions value).",
+  "usage": {
+    "input_tokens": 740,
+    "output_tokens": 74
+  },
+  "latency_s": 6.6263,
+  "stop_reason": "STOP",
+  "truncated": false
+}

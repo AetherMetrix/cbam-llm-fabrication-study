@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b23c094efed5208d08ef29a5",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute the embedded emissions for this lot.** The datasheet does not provide a CN code, which is required input (a). Without it, the factor table lookup (CN code + country) cannot be completed.\n\n**Missing input:**\n- **(a) CN code.** The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") matches more than one heading in the factor table, including 7206 10 00 (ingots) and 7207 11 90 (semi-finished products of non-alloy steel). Choosing between them requires the declared CN code.\n\n**Inputs that are present:**\n- (b) Country of production: India, which is listed for the rows in the table.\n- (c) Quantity: 600 t.\n\n**To complete the calculation:** Provide the CN code for the lot, confirmed against the goods classification. Once the code is given, the calculation is: default SEE for (that CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places. If the CN code is not in the factor table for India, the figure cannot be computed under these rules.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 960
+  },
+  "latency_s": 5.1994,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

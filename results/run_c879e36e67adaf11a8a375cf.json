@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c879e36e67adaf11a8a375cf",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 1,189.08 tCO2e**\n\n**Inputs**\n- CN code 7207 11 90 (semi-finished products of iron or non-alloy steel) is in the table.\n- India is listed for this CN code.\n- Quantity is 275.25 t.\n\n**Factor**\nThe default SEE for CN 7207 11 90 from India is **4.32 tCO2e/t**.\n\n**Calculation**\n275.25 t \u00d7 4.32 tCO2e/t = **1,189.08 tCO2e**",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 247
+  },
+  "latency_s": 2.4952,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

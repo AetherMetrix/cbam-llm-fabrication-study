@@ -1,0 +1,15 @@
+{
+  "run_id": "run_db02fd6bba639095985e6679",
+  "task_id": "A03",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: Pig Iron (CN 7201), India\n\n**Inputs**\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7201 (Pig iron and spiegeleisen) | In table |\n| Country of production | India | Listed for CN 7201 |\n| Quantity | 500.5 tonnes | Provided |\n\n**Factor:** The default SEE for CN 7201 and India is **2.53 tCO2e/t**.\n\n**Calculation**\n\nEmbedded emissions = 2.53 tCO2e/t \u00d7 500.5 t = 1,266.265 tCO2e\n\nRounded to 2 decimal places, using round-half-up: **1,266.27 tCO2e**\n\n**Result: 1,266.27 tCO2e**",
+  "usage": {
+    "input_tokens": 867,
+    "output_tokens": 311
+  },
+  "latency_s": 3.2232,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

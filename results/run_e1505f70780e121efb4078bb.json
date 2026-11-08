@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e1505f70780e121efb4078bb",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: Not computable under the provided ruleset.**\n\n**Input check:**\n\n| Required input | Declared value | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | USA | \u274c **Not listed** |\n| (c) Quantity in tonnes | 1,200 t | \u2705 Present |\n\n**Why no value can be given:**\n- The SEE must be selected using both the CN code and the country.\n- For CN 7201, the table only has values for **T\u00fcrkiye (1.85)**, **China (1.66)** and **India (2.53)**.\n- There is no entry for the **USA**.\n- The ruleset says that if an input is not in the table, do not estimate. So I have not substituted another country's value, an average, or any proxy.\n\n**What is needed to complete this line:**\n1. A default SEE value for CN 7201 produced in the USA, from an updated factor table, **or**\n2. Confirmation that the country of production was entered incorrectly. If the pig iron was actually produced in T\u00fcrkiye, China or India, the calculation can be done directly. For example, it would be 1,200 t \u00d7 the SEE for that country.\n\n**Embedded emissions for this line: not determined. Missing input: country-specific default SEE for CN 7201 / USA.**",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 456
+  },
+  "latency_s": 5.2252,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

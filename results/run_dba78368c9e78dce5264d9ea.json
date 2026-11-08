@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dba78368c9e78dce5264d9ea",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the definitive embedded emissions figure based on the information provided. \n\nUnder the supplied ruleset, the following required inputs are missing from the scenario:\n* **Country of production** (must be listed for CN code 7201 in the factor table: T\u00fcrkiye, China, or India).\n* **Quantity in tonnes** of the declared good.",
+  "usage": {
+    "input_tokens": 733,
+    "output_tokens": 79
+  },
+  "latency_s": 6.201,
+  "stop_reason": "STOP",
+  "truncated": false
+}

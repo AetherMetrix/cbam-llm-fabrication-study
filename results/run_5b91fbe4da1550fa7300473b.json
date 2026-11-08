@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5b91fbe4da1550fa7300473b",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions cannot be finalised yet because the country of production is contradictory.** The ruleset selects the default SEE by the pair (CN code, country), and the country must be a single verified input. The ruleset doesn't specify which source takes precedence, so I haven't chosen one.\n\n**Inputs**\n- CN code: 7201 (in table)\n- Quantity: 1,000 t\n- Country: conflicting. Cover note says China; customs form says India. Both are listed for 7201.\n\n**Calculation under each country**\n\n| Country of production | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| India (customs form) | 2.53 | 1,000 | **2,530.00** |\n| China (cover note) | 1.66 | 1,000 | **1,660.00** |\n\n**Next step:** Confirm the country of production with the supplier or the importer's documentation, then report the matching figure. The difference is 870.00 tCO2e, so the discrepancy is material and should be resolved before submission.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 684
+  },
+  "latency_s": 4.1685,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

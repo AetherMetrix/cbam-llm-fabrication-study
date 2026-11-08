@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3fa390978ebf5dd6075d4e8b",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: conflicting CN codes\n\n**I cannot compute a definitive embedded-emissions figure.** The good's CN code cannot be determined from the information provided.\n\n## Why\n\nThe ruleset selects the default SEE by **CN code and country together**. The scenario gives two different CN codes for the same good:\n\n| Source | CN code | Good | SEE for T\u00fcrkiye (tCO2e/t) |\n|---|---|---|---|\n| Product description (text) | 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| Line-item declaration | 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations | 2.31 |\n\nThese codes describe different goods and carry different default values. The ruleset gives no way to decide which source takes precedence, so choosing one would be an estimate.\n\n## Inputs confirmed\n\n- **Country of production:** T\u00fcrkiye (listed for both candidate codes)\n- **Quantity:** 1,100 t\n\n## Input missing\n\n- **(a) A single confirmed CN code for the good.** You need to resolve whether the good is classified under 7207 11 90 or 7214 20 00, for example by correcting either the product description or the line-item declaration.\n\nOnce you confirm the CN code, I can calculate the total as SEE \u00d7 1,100 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 736
+  },
+  "latency_s": 8.5914,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

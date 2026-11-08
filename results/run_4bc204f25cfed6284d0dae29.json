@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4bc204f25cfed6284d0dae29",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute a definitive figure\n\nThe embedded emissions cannot be determined because the **country of production is in conflict** between the two sources:\n\n| Source | Country of production |\n|---|---|\n| Email | T\u00fcrkiye |\n| Declaration header | China |\n\nUnder the ruleset, the default SEE is selected jointly by CN code and country, so the factor depends on which country is correct. Choosing one would be an estimate, which the ruleset does not allow.\n\n## What is confirmed\n\n| Input | Status |\n|---|---|\n| (a) CN code 7214 20 00 | \u2705 In the table |\n| (b) Country of production | \u274c **Conflicting (T\u00fcrkiye vs. China)** |\n| (c) Quantity: 2,000 t | \u2705 Provided |\n\n## Missing input\n\n1. **A confirmed, single country of production for the ribbed bar (CN 7214 20 00).** This should be resolved with authoritative documentation, such as a certificate of origin, mill test certificate, or corrected declaration.\n\n## Possible results (for reference only, not a determination)\n\n| If country is\u2026 | SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| T\u00fcrkiye | 2.31 | 2.31 \u00d7 2,000 | 4,620.00 tCO2e |\n| China | 3.169 | 3.169 \u00d7 2,000 | 6,338.00 tCO2e |\n\nThe two outcomes differ by 1,718.00 tCO2e. Once the country of production is confirmed, the matching row above gives the final figure.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 673
+  },
+  "latency_s": 6.6427,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d0d2a434c0cca5c47baca415",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can't calculate embedded emissions for this line because the country of production is not in the factor table.\n\n- **Good (CN 7201):** Valid. The table lists Pig iron and spiegeleisen under CN 7201.\n- **Quantity:** 1,200 t, provided.\n- **Country (USA):** Not listed for CN 7201. The table covers only T\u00fcrkiye, China, and India for this code.\n\nUnder the ruleset, if any required input is missing or not in the table, no estimate is made. The embedded emissions for this line are therefore **not calculated**.\n\nTo proceed, one of the following is needed:\n1. Confirm that the country of production is one of the listed countries (T\u00fcrkiye, China, or India) and provide the corrected declaration.\n2. Supply a factor for CN 7201 and USA from an approved source. This would need to be added to the table before a calculation could be made.",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 324
+  },
+  "latency_s": 5.3252,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

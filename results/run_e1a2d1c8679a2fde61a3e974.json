@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e1a2d1c8679a2fde61a3e974",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Please confirm the correct CN code: the product description specifies **7207 11 90**, but the line item declares **7214 20 00**.\n\nThese codes have different SEE factors for T\u00fcrkiye, so I cannot report a single emissions total for **1,100 tonnes** until the code is resolved.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 146
+  },
+  "latency_s": 5.6677,
+  "stop_reason": "completed",
+  "truncated": false
+}

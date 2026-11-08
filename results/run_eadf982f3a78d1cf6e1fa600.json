@@ -1,0 +1,15 @@
+{
+  "run_id": "run_eadf982f3a78d1cf6e1fa600",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset, I cannot compute a single definitive embedded emissions value because the required input for **country of production** is ambiguous/conflicting between the provided documents (the cover note states China, while the customs form states India). Per the ruleset, default values are country-specific and selected jointly by the good's CN code and the country of production, and I must not estimate when required inputs are not clearly established.\n\nPlease clarify and confirm the authoritative country of production for CBAM reporting. Depending on which country is confirmed, the calculation for **1,000 tonnes of Pig iron (CN 7201)** would be:\n\n* **If the country of production is China:**\n  * Default SEE (CN 7201, China) = 1.66 tCO2e/t\n  * Embedded emissions = 1.66 \u00d7 1,000 t = **1,660.00 tCO2e**\n\n* **If the country of production is India:**\n  * Default SEE (CN 7201, India) = 2.53 tCO2e/t\n  * Embedded emissions = 2.53 \u00d7 1,000 t = **2,530.00 tCO2e**",
+  "usage": {
+    "input_tokens": 725,
+    "output_tokens": 283
+  },
+  "latency_s": 6.5637,
+  "stop_reason": "STOP",
+  "truncated": false
+}

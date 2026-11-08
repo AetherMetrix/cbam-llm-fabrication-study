@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7623c05fda97948b1d620183",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 1,850.00 tCO2e**\n\n**Inputs:**\n- **Good:** Pig iron, CN 7201 (in the table)\n- **Country of production:** T\u00fcrkiye (listed for CN 7201)\n- **Quantity:** 1,000 tonnes\n\n**Factor:** The default SEE for CN 7201 from T\u00fcrkiye is 1.85 tCO2e per tonne.\n\n**Calculation:**\n1.85 tCO2e/t \u00d7 1,000 t = **1,850.00 tCO2e**",
+  "usage": {
+    "input_tokens": 873,
+    "output_tokens": 204
+  },
+  "latency_s": 3.9616,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

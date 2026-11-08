@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bbf6d4ee18e61049b49d7181",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions for the declared quantity: 6,860.00 tCO2e**\n\nCalculation:\n- Good: CN 7206 10 00 (ingots of iron and non-alloy steel)\n- Country: T\u00fcrkiye\n- Default SEE: 1.96 tCO2e/t\n- Declared quantity: 3,500 t\n- 1.96 \u00d7 3,500 = **6,860.00 tCO2e**\n\n**Discrepancy to resolve before filing:** The three lots of 1,000 t each sum to 3,000 t, not 3,500 t. At the same SEE, the lots give 1.96 \u00d7 3,000 = **5,880.00 tCO2e**. The 500 t difference accounts for 980.00 tCO2e.\n\nThe ruleset applies to the quantity in tonnes, so the 3,500 t declared total and the 3,000 t lot-level sum need to be reconciled against the underlying records (missing lot, transcription error, or a different quantity basis). I have not chosen between them. The 6,860.00 figure is correct only if 3,500 t is confirmed as the actual quantity.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 812
+  },
+  "latency_s": 4.4451,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_21c6b6388e470b05a8a342dd",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure. The scenario gives two conflicting CN codes for the same line item, and the ruleset requires one good CN code that is in the factor table.\n\n**Conflicting input:**\n- **Good CN code:** The text says CN 7207 11 90 (Semi-finished products of iron or non-alloy steel, T\u00fcrkiye SEE = 3.087 tCO2e/t). The line-item CN is 7214 20 00 (Bars and rods, T\u00fcrkiye SEE = 2.31 tCO2e/t). The two codes select different default SEE values, so the result depends on which code is correct.\n\n**Inputs that are present and valid:**\n- Country of production: T\u00fcrkiye, which is listed for both candidate codes.\n- Quantity: 1,100 t.\n\n**Required to finalize:**\n1. A single confirmed good CN code, supported by the commercial or customs documentation, that reconciles the text description with the line-item code. The ruleset does not allow choosing between them.\n\nOnce the code is confirmed, the calculation is 1,100 t \u00d7 the T\u00fcrkiye SEE for that code, rounded half-up to 2 decimal places. The two possible results are:\n- If 7207 11 90 is confirmed: 1,100 \u00d7 3.087 = 3,395.70 tCO2e\n- If 7214 20 00 is confirmed: 1,100 \u00d7 2.31 = 2,541.00 tCO2e\n\nNeither figure is a determination until the code is resolved.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 1045
+  },
+  "latency_s": 5.7142,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

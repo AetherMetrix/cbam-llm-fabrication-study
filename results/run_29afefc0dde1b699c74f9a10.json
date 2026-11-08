@@ -1,0 +1,15 @@
+{
+  "run_id": "run_29afefc0dde1b699c74f9a10",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the embedded emissions figure because one required input is missing.\n\n**Inputs check**\n\n| Required input | Status | Source |\n|---|---|---|\n| (a) Good CN code in table | Present: 7214 20 00 (ribbed reinforcing bar) | Email |\n| (b) Country of production listed for that good | **Missing** | Not stated in the email |\n| (c) Quantity in tonnes | Present: 2,000 tonnes net | Email |\n\n**Missing input**\n\n- **Country of production.** The email says the mill certificate and mill-test report are attached, but their contents were not provided to me. The email does not name the country where the steel was produced. The default SEE is selected jointly by CN code and country, so I cannot choose a factor.\n\nThe table has three SEE values for 7214 20 00 (T\u00fcrkiye 2.31, China 3.169, India 4.27 tCO2e/t). I have not multiplied any of them by 2,000 t, because selecting one without confirmed country of production would be an estimate.\n\n**To complete the calculation, please provide:**\n\n1. The country of production for the heat numbers H-4471 and H-4472, taken from the mill certificate or mill-test report, or confirmed by the mill in writing.\n2. If the consignment combines heats from more than one country, the tonnage attributable to each country, so each portion can be calculated separately.\n\nOnce the country is confirmed, the calculation is: SEE for (7214 20 00, country) \u00d7 2,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 1050,
+    "output_tokens": 757
+  },
+  "latency_s": 4.1884,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

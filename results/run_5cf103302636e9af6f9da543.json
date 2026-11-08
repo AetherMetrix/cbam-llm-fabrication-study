@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5cf103302636e9af6f9da543",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from the information provided.\n\n**Missing input:**\n- **(a) Good CN code.** \"Steel goods\" is not a CN code, and the factor table is keyed by CN code and country together. The declared quantity and country alone do not identify a default SEE value.\n\n**Inputs received:**\n- (b) Country of production: India. This is listed for the four CN codes in the table: 7201, 7206 10 00, 7207 11 90, and 7214 20 00.\n- (c) Quantity: 3,000 t.\n\n**What is needed to proceed:** Confirm the CN code of the goods. Once it is confirmed, the calculation is:\n\nEmbedded emissions (tCO2e) = India default SEE for that CN code (tCO2e/t) \u00d7 3,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 575
+  },
+  "latency_s": 3.5045,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

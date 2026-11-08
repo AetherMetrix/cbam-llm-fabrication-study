@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1d81391c95c35a267f6be5ce",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n* **Good CN code in the table:** The requested good, ferro-chromium (CN code 7202 41), is not listed in the factor table, meaning there is no default specific embedded emissions (SEE) value available for CN 7202 41 from China.",
+  "usage": {
+    "input_tokens": 741,
+    "output_tokens": 93
+  },
+  "latency_s": 5.9155,
+  "stop_reason": "STOP",
+  "truncated": false
+}

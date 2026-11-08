@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2568b880dbd4205c84bedf6a",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Status: not calculated.** The country of production is a required input, and it isn't in the email. The mill certificate is attached separately and wasn't provided to me.\n\n**What I have:**\n- CN code: 7207 11 90 (in the factor table)\n- Quantity: 3,300 t\n- Country of production: **missing**\n\n**What's needed:** The country of production from the mill certificate, or confirmation of it from the supplier. For CN 7207 11 90, the table has default values for T\u00fcrkiye, China, and India, so the country must match one of these for a calculation to proceed.\n\nOnce the country is confirmed, I'll calculate:\n\nEmbedded emissions (tCO2e) = SEE (tCO2e/t, for CN 7207 11 90 and that country) \u00d7 3,300 t, rounded half-up to 2 decimal places.\n\nPlease send the certificate or the country name, and I'll run the calculation.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 500
+  },
+  "latency_s": 2.9337,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

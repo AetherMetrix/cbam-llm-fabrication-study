@@ -1,0 +1,15 @@
+{
+  "run_id": "run_483bdb3d878c16b67f2989ff",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data contains conflicting information regarding a required input. \n\n**Missing/Unresolved Input:**\n- **Definitive country of production:** The scenario presents a contradiction between the email (which states the mill is in T\u00fcrkiye) and the declaration header (which lists China as the country of production). Because the default specific embedded emissions (SEE) are country-specific (2.31 tCO2e/t for T\u00fcrkiye vs. 3.169 tCO2e/t for China for CN 7214 20 00), a single, verified country of production is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 766,
+    "output_tokens": 142
+  },
+  "latency_s": 9.9081,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1de9900091238a2badec4a80",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# CBAM Embedded Emissions: T\u00fcrkiye, 1,100 t\n\n**I can't report a single figure because the CN code is ambiguous.** The ruleset selects the default SEE by CN code and country together. Here the goods description and the line-item CN code point to different table entries with different factors, so the required input \"good CN code\" isn't clearly established. Choosing one would be an estimate, which the ruleset doesn't allow.\n\n## The conflict\n\n| Source | CN code | Good | T\u00fcrkiye SEE (tCO2e/t) |\n|---|---|---|---|\n| Goods description | 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| Line-item CN | 7214 20 00 | Bars and rods, with indentations (rebar) | 2.31 |\n\nThese are different products, and their factors differ by about 34%.\n\n## Result under each code (for reference only)\n\n**If the correct code is 7207 11 90:**\n1,100 t \u00d7 3.087 tCO2e/t = **3,395.70 tCO2e**\n\n**If the correct code is 7214 20 00:**\n1,100 t \u00d7 2.31 tCO2e/t = **2,541.00 tCO2e**\n\nThe difference is 854.70 tCO2e.\n\n## Action needed\n\nConfirm the correct CN classification with the declarant or customs documentation (for example the commercial invoice, the customs declaration, or a technical description of the goods).\n- If the goods are billets, blooms or slabs, 7207 11 90 likely applies.\n- If they are finished rebar, 7214 20 00 applies.\n\nOnce the code is confirmed, the matching figure above becomes the reportable total.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 762
+  },
+  "latency_s": 8.628,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

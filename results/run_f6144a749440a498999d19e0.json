@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f6144a749440a498999d19e0",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions cannot be calculated. The country of production is not in the factor table for this good.**\n\n**Input check (per ruleset)**\n\n| Required input | Scenario value | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (rebar: bars and rods with indentations) | \u2705 Present |\n| (b) Country of production listed for that good | United States | \u274c **Not listed** |\n| (c) Quantity in tonnes | 1,200 t | \u2705 Present |\n\n**Why no figure is given**\n\n- Default SEE values are selected by CN code and country together.\n- For CN 7214 20 00, the table only has values for T\u00fcrkiye (2.31), China (3.169) and India (4.27). It has none for the United States.\n- The ruleset says that if a required input is not in the table, the value must not be estimated. Using another country's value or an average would break that rule.\n\n**Result:** No embedded-emissions value can be reported for 1,200 t of CN 7214 20 00 produced in the United States.\n\n**To resolve this, one of the following is needed:**\n1. A default SEE value for CN 7214 20 00 / United States added to the factor table, or\n2. Confirmation that the stated country of production is wrong, if the goods were actually produced in a listed country.",
+  "usage": {
+    "input_tokens": 874,
+    "output_tokens": 438
+  },
+  "latency_s": 5.0772,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

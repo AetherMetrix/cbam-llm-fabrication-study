@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1fff5728703b4ea422daf2d1",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Result: Cannot compute a definitive embedded-emissions figure\n\n## Why\n\nThe ruleset selects the default SEE jointly by **(CN code, country of production)**. The country of production for this shipment is ambiguous:\n\n| Source | Country of production |\n|---|---|\n| Email | T\u00fcrkiye |\n| Declaration header | China |\n\nBoth countries are in the table for CN 7214 20 00, but with different factors:\n\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n\nThe ruleset gives no way to decide which source is correct, so selecting either factor would be an estimate.\n\n## Inputs Status\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7214 20 00 (Bars and rods, with indentations/ribs) |\n| (b) Country of production | \u274c **Unresolved:** conflicting sources (T\u00fcrkiye vs. China) |\n| (c) Quantity in tonnes | \u2705 2,000 t |\n\n## Missing Input\n\n1. **A confirmed country of production** for the 2,000 t of ribbed bar. This should come from authoritative documentation, such as a corrected or confirmed customs declaration, a certificate of origin, or a mill test certificate identifying the producing installation.\n\n## Next Step\n\nOnce the country is confirmed, the figure is:\n\n**Embedded emissions = 2,000 t \u00d7 SEE (7214 20 00, confirmed country)**, rounded half-up to 2 decimal places.\n\nIf the email and the declaration header refer to different consignments or a split shipment, provide the tonnage for each country of production so each portion can be calculated separately.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 812
+  },
+  "latency_s": 8.9649,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

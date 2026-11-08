@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2fa85d46c3c24104dd651e16",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: the CN code is missing\n\nThe ruleset requires three inputs before any calculation can be made:\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | **Missing.** None is declared on the datasheet. |\n| (b) Country of production listed for that good | India (listed for every code in the table) |\n| (c) Quantity in tonnes | 600 t |\n\nThe ruleset says that if any input is missing, the emissions must not be estimated. The CN code cannot be inferred from the description either. \"Semi-finished steel, continuously cast, ~0.2% C\" could fall under more than one heading in the table. The two most plausible are:\n\n- **7206 10 00**, ingots of iron and non-alloy steel: India SEE = 2.64 tCO2e/t\n- **7207 11 90**, semi-finished products of iron or non-alloy steel: India SEE = 4.32 tCO2e/t\n\nDefault values are selected by CN code and country together. So choosing between these headings would be classification guesswork, and the result would change substantially: about 1,584 vs. 2,592 tCO2e for 600 t. These figures only show how much the choice matters. Neither is a reportable result.\n\n**Action needed:** Get the declared CN code (8-digit) from the importer or customs declaration. Once it is provided, the calculation is:\n\n> Embedded emissions = SEE (CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 828
+  },
+  "latency_s": 8.7693,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

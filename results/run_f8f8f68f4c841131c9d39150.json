@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f8f8f68f4c841131c9d39150",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the quantity is inconsistent:\n\n- Line items: 2,000 + 1,500 = **3,500 t**\n- Summary total: **4,000 t**\n\n**Required input:** confirmation of the correct declared quantity in tonnes.\n\nFor CN **7207 11 90**, produced in **India**, the applicable SEE is **4.32 tCO2e/t**.",
+  "usage": {
+    "input_tokens": 671,
+    "output_tokens": 92
+  },
+  "latency_s": 3.7453,
+  "stop_reason": "completed",
+  "truncated": false
+}

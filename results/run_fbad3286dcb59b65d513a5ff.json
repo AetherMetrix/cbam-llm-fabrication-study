@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fbad3286dcb59b65d513a5ff",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute: missing required input\n\nI cannot compute a definitive embedded-emissions figure for this declaration because a required input is missing.\n\n## Input check against the ruleset\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron and spiegeleisen) | \u2705 Present and in table |\n| (b) Country of production listed for that good | *blank* | \u274c **Missing** |\n| (c) Quantity in tonnes | 1500 t | \u2705 Present |\n\n## Missing input\n\n**Country of production.** The form leaves this field empty. Under the ruleset, the default SEE is selected jointly by CN code and country. For CN 7201, the table lists three different values, so the factor cannot be determined without the country.\n\n## Inputs that do not affect the calculation\n\n- **Production route (blast furnace):** The ruleset does not use production route to select the default SEE.\n- **Installation (Works 2):** This does not identify the country, and the ruleset does not use installation-level data.\n\n## To complete the calculation\n\nPlease provide the country of production. To be computable under this table, it must be one of the countries listed for CN 7201: **T\u00fcrkiye, China, or India**. The result will then be:\n\nEmbedded emissions = SEE (CN 7201, country) \u00d7 1500 t, rounded half-up to 2 decimal places.\n\nIf the country is not one of these three, the figure cannot be computed under the supplied ruleset and table.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 655
+  },
+  "latency_s": 7.2408,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

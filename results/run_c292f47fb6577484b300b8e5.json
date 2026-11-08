@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c292f47fb6577484b300b8e5",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: country of production is missing\n\nI can't calculate a definitive embedded-emissions figure for this declaration because one required input is missing.\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) CN code in the table | 7201 (pig iron) | \u2705 Present and in the table |\n| (b) Country of production listed for that good | Not stated | \u274c **Missing** |\n| (c) Quantity in tonnes | 1,000 t | \u2705 Present |\n\n## Why the country is required\n\nUnder the ruleset, the default SEE is selected jointly by CN code and country. CN 7201 has three different values in the table:\n\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\nWithout the country, there is no single applicable SEE, so I won't select or average one.\n\n## To proceed\n\nPlease provide the country of production for the 1,000 t of pig iron. It must be one of T\u00fcrkiye, China or India to use this table. If it's another country, the table contains no default value and the figure still can't be computed under these rules.",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 532
+  },
+  "latency_s": 5.8048,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

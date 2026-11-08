@@ -1,0 +1,15 @@
+{
+  "run_id": "run_31f56143b8b21a1f4b6b6396",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: conflicting country of production\n\nI cannot compute a definitive embedded-emissions figure for this consignment.\n\n## Why\n\nThe ruleset selects the default SEE jointly by CN code and country of production. The scenario gives two conflicting countries:\n\n| Source | Country of production | Default SEE for CN 7201 (tCO2e/t) |\n|---|---|---|\n| Cover note | China | 1.66 |\n| Customs form | India | 2.53 |\n\nBoth countries are in the table for CN 7201, so either could apply. The ruleset gives no basis for preferring one document over the other, and choosing one would be an estimate.\n\n## Inputs check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201 (Pig iron), present |\n| (b) Country of production listed for that good | \u274c **Unresolved: China vs. India** |\n| (c) Quantity in tonnes | \u2705 1,000 t |\n\n## Missing input\n\n- **A single, confirmed country of production for the 1,000 t of pig iron (CN 7201).** Please reconcile the cover note with the customs form, for example by obtaining the supplier's certificate of origin or a corrected customs record.\n\nOnce the country is confirmed, the figure is the confirmed SEE (1.66 for China or 2.53 for India) \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 725
+  },
+  "latency_s": 7.6301,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_caafba00c2e89f9d6246aaf3",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# I can't compute the embedded emissions yet\n\n**I cannot compute a definitive embedded-emissions figure for this shipment.** The ruleset selects the SEE jointly by CN code and country of production, and the country has not been provided.\n\n## Input check\n\n| Required input | Status | Value |\n|---|---|---|\n| (a) CN code in table | \u2705 Provided | 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country of production listed for that good | \u274c **Missing** | \"One of our partner plants.\" Origin is to be confirmed by the mill's certificate, which isn't attached. |\n| (c) Quantity in tonnes | \u2705 Provided | 4,200 t |\n\n## Missing input\n\n1. **Country of production** of the CN 7207 11 90 billets. It must be one of the countries listed for this CN code in the factor table (T\u00fcrkiye, China or India) for a default SEE to apply.\n\n## Why this matters\n\nThe default SEE for CN 7207 11 90 varies significantly by country in the table (3.087, 3.314 and 4.32 tCO2e/t). So the result depends entirely on the confirmed origin. Under the ruleset, I will not assume or estimate the country.\n\n## Next step\n\nPlease send the mill's certificate or another confirmation of the country of production. Once I have it, the calculation is:\n\n**Embedded emissions = SEE (CN 7207 11 90, confirmed country) \u00d7 4,200 t**, rounded half-up to 2 decimal places.\n\nIf the confirmed country is not T\u00fcrkiye, China or India, the table has no default value for it, and I still won't be able to compute the figure under this ruleset.",
+  "usage": {
+    "input_tokens": 1020,
+    "output_tokens": 821
+  },
+  "latency_s": 8.7705,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

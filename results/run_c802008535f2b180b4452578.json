@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c802008535f2b180b4452578",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following required input is missing from the factor table:\n- **Country of production listed for the good:** A default specific embedded emissions (SEE) factor for **Brazil** under CN code **7201** is not present in the provided factor table (only T\u00fcrkiye, China, and India are listed).",
+  "usage": {
+    "input_tokens": 736,
+    "output_tokens": 81
+  },
+  "latency_s": 4.9305,
+  "stop_reason": "STOP",
+  "truncated": false
+}

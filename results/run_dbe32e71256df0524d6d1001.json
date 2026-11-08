@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dbe32e71256df0524d6d1001",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and scenario, there is a discrepancy in the required quantity input: the declaration summary states **1,000 tonnes**, while the sum of the individual line items (300 t + 400 t + 250 t) equals **950 tonnes**. \n\nUnder the ruleset, required inputs must be clear and we cannot estimate when data is ambiguous or conflicting. Below are the exact calculations for both possible quantities so you can apply the correct one once the declaration discrepancy is resolved:\n\n**1. Factors Applied:**\n* **CN Code:** 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations...)\n* **Country of Production:** India\n* **Default SEE:** 4.27 tCO2e/t\n\n**2. Calculation Options:**\n* **If using the sum of the line items (950 tonnes):**\n  $$\\text{Embedded Emissions} = 950\\text{ t} \\times 4.27\\text{ tCO2e/t} = \\mathbf{4,056.50\\text{ tCO2e}}$$\n\n* **If using the summary total (1,000 tonnes):**\n  $$\\text{Embedded Emissions} = 1,000\\text{ t} \\times 4.27\\text{ tCO2e/t} = \\mathbf{4,270.00\\text{ tCO2e}}$$\n\nPlease verify the actual net mass of the imported goods (950 t vs. 1,000 t) from the customs declaration to select the final compliant figure.",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 370
+  },
+  "latency_s": 9.6805,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0a8dcf19aac755a2d63aaa7c",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Result: Cannot compute a single figure, because the country of production is contradictory\n\n**Why:** The default SEE depends on both the CN code and the country of production. The scenario gives two different origins for the same consignment (India in one field, T\u00fcrkiye in another). Since the ruleset says not to estimate when a required input is missing, I can't choose one country.\n\n## The two possible results\n\nFor reference, these are the figures each origin would give for CN 7206 10 00 (Ingots, iron/non-alloy steel), 750 t:\n\n| Country of production | Default SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| India | 2.64 | 2.64 \u00d7 750 | **1,980.00 tCO2e** |\n| T\u00fcrkiye | 1.96 | 1.96 \u00d7 750 | **1,470.00 tCO2e** |\n\nThe two results differ by **510.00 tCO2e**, so the choice of country has a large effect on the declaration.\n\n## Next steps\n\n- Confirm the actual **country of production**, meaning where the ingots were made. This is not necessarily the country of dispatch or export. For example, if the goods were made in India and shipped through T\u00fcrkiye, India applies.\n- Check supporting documents such as the certificate of origin, operator or installation details, and the commercial invoice.\n- Once the country is confirmed, use the matching row above as the final figure.",
+  "usage": {
+    "input_tokens": 893,
+    "output_tokens": 548
+  },
+  "latency_s": 6.0975,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

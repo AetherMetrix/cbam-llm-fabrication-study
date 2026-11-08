@@ -1,0 +1,15 @@
+{
+  "run_id": "run_864ed09f53a2ee901515fbf1",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the country of production is conflicting: the cover note states **China**, while the customs form states **India**. The supplied rules do not specify which document takes precedence.\n\n**Required input:** A confirmed country of production\u2014China or India\u2014to select the applicable SEE.\n\nCN **7201** and the quantity of **1,000 tonnes** are provided.",
+  "usage": {
+    "input_tokens": 671,
+    "output_tokens": 85
+  },
+  "latency_s": 3.3196,
+  "stop_reason": "completed",
+  "truncated": false
+}

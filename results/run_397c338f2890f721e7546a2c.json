@@ -1,0 +1,15 @@
+{
+  "run_id": "run_397c338f2890f721e7546a2c",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data contains a contradiction regarding the quantity of the good, making a required input ambiguous.\n\n**Missing / Unresolved Input:**\n* **Quantity in tonnes:** The scenario states there are \"three equal lots of 1,000 t each\" (which equals 3,000 tonnes) while simultaneously stating that \"the declared total says 3,500 t.\" Because the ruleset provides no rule for resolving conflicting quantity figures, a single verified quantity in tonnes must be confirmed before the calculation can be performed.",
+  "usage": {
+    "input_tokens": 765,
+    "output_tokens": 122
+  },
+  "latency_s": 7.8364,
+  "stop_reason": "STOP",
+  "truncated": false
+}

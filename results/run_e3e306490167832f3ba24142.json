@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e3e306490167832f3ba24142",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**Embedded emissions: 577.50 tCO2e**\n\n**Inputs**\n- **CN code:** 7214 20 00, bars and rods of iron or non-alloy steel with indentations or ribs. Ribbed rebar fits this description.\n- **Country of production:** T\u00fcrkiye, which is listed for this CN code.\n- **Quantity:** 250 t\n- **Default SEE (7214 20 00, T\u00fcrkiye):** 2.31 tCO2e/t\n\n**Calculation**\n250 t \u00d7 2.31 tCO2e/t = **577.50 tCO2e**",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 268
+  },
+  "latency_s": 6.9463,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_564cffdd0770413eae2bdb75",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the embedded-emissions figure for this shipment with the ruleset and factor table provided.\n\n**Inputs checked:**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in table | Present: 7206 10 00 (ingots of iron and non-alloy steel) |\n| (b) Country of production listed for that good | **Missing:** the table lists 7206 10 00 only for T\u00fcrkiye (1.96), China (1.74), and India (2.64). Brazil is not listed. |\n| (c) Quantity in tonnes | Present: 900 t |\n\nThe default SEE is selected jointly by CN code and country, and the ruleset does not allow a substitute, so I have not applied a value from another country.\n\n**To complete the calculation, one of the following is needed:**\n- A default SEE value for CN 7206 10 00 with Brazil as country of production, from a table that covers Brazil. Once supplied, the calculation is 900 t \u00d7 that SEE, rounded half-up to 2 decimal places.\n- Confirmation that the good was produced in a listed country (T\u00fcrkiye, China, or India). This would apply only if the Belo Horizonte facility's production is actually attributed to one of those countries, which would be unusual and should be verified rather than assumed.\n\nThe email refers to an attached invoice and packing list, but those documents were not included in what I received. They are not needed for this calculation under the given ruleset, since the only inputs used are CN code, country, and quantity.",
+  "usage": {
+    "input_tokens": 1018,
+    "output_tokens": 670
+  },
+  "latency_s": 3.8965,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

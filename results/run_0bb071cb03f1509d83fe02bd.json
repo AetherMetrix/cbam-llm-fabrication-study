@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0bb071cb03f1509d83fe02bd",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**No estimate can be given yet, because the country of production is missing.** The ruleset requires the good's CN code, a country of production listed for that good, and the quantity. CN 7201 and 1,000 t are provided, but the country is not.\n\nOnce the country is confirmed, the calculation is:\n\n| Country of production | Default SEE (tCO2e/t) | Embedded emissions for 1,000 t (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye | 1.85 | 1,850.00 |\n| China | 1.66 | 1,660.00 |\n| India | 2.53 | 2,530.00 |\n\nPlease confirm the country of production and I will report the single applicable total.",
+  "usage": {
+    "input_tokens": 877,
+    "output_tokens": 481
+  },
+  "latency_s": 2.8499,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

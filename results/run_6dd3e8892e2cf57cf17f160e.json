@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6dd3e8892e2cf57cf17f160e",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**No estimate can be given for this line.** The required inputs are not all satisfied.\n\n- **CN code 7201** is in the factor table, so that input is met.\n- **Country of production, Viet Nam**, is not listed for CN 7201. The table covers only T\u00fcrkiye, China and India for this code. Under the ruleset, the SEE is selected jointly by CN code and country, so no default SEE value applies.\n- **Quantity, 1,800 t**, is provided.\n\nBecause the country is not in the table for this good, I have not calculated embedded emissions. The \"basic blast-furnace route\" detail does not change this, since the ruleset selects the default value only by CN code and country.\n\nTo proceed, the declarant would need to supply a default SEE for CN 7201 from Viet Nam, or the product would need to be reported under a country that has a table entry (T\u00fcrkiye, China or India), if that matches the actual production origin.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 355
+  },
+  "latency_s": 2.2838,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

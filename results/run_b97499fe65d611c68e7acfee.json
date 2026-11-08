@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b97499fe65d611c68e7acfee",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: Cannot be calculated. No embedded-emissions figure can be reported for this scenario.**\n\n**Input check:**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (rebar) | \u2705 Present |\n| (b) Country of production listed for that good | United States | \u274c **Not listed** |\n| (c) Quantity in tonnes | 1,200 t | \u2705 Present |\n\n**Reason:** The ruleset requires the default SEE to be selected jointly by CN code and country of production. For CN 7214 20 00, the factor table has default values only for:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for the United States. The ruleset says that if a required input is not in the table, the value must not be estimated. Substituting another country's factor, or an average of the listed factors, would break that rule.\n\n**To proceed, one of the following is needed:**\n1. A default SEE for CN 7214 20 00 with United States as the country of production, added to the factor table, or\n2. Corrected country-of-production information, if the rebar was actually produced in T\u00fcrkiye, China, or India.\n\nOnce a valid factor is available, the calculation is: Embedded emissions = SEE (tCO2e/t) \u00d7 1,200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 874,
+    "output_tokens": 491
+  },
+  "latency_s": 4.9601,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

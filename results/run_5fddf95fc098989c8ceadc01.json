@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5fddf95fc098989c8ceadc01",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute the embedded emissions under the supplied rules because **CN 7202 41 (ferro-chromium) is not in the factor table**.\n\nMissing input:\n- A default SEE for **CN 7202 41 produced in China**.\n\nThe country (China) and quantity (1,000 tonnes) are provided, but no other CN code\u2019s factor may be substituted.",
+  "usage": {
+    "input_tokens": 649,
+    "output_tokens": 83
+  },
+  "latency_s": 3.5501,
+  "stop_reason": "completed",
+  "truncated": false
+}

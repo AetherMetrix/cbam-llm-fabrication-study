@@ -1,0 +1,15 @@
+{
+  "run_id": "run_21006e8a561cc713fbfa0cd8",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**Result: Cannot compute. No embedded-emissions figure can be provided.**\n\n**Input check against the ruleset:**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in the table | 7202 41 (ferro-chromium, > 4% carbon) | \u274c **Not in the factor table** |\n| (b) Country of production listed for that good | India | \u274c No India entry exists for CN 7202 41, because the code itself is absent |\n| (c) Quantity in tonnes | 700 t | \u2705 Provided |\n\n**Missing input:**\n- **The default SEE (tCO2e/t) for CN 7202 41 (ferro-chromium, > 4% C) produced in India.** The table covers only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00.\n\n**Why no substitute value was used:**\nThe ruleset selects the SEE jointly by CN code and country, and says not to estimate when a code is missing. Values for other goods, such as pig iron (7201, India: 2.53 tCO2e/t), are not valid proxies for ferro-chromium. Using one would produce a non-compliant figure.\n\n**To complete the calculation:**\nProvide a factor table entry for CN 7202 41 / India. The result will then be: Embedded emissions = SEE \u00d7 700 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 975,
+    "output_tokens": 523
+  },
+  "latency_s": 5.1885,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

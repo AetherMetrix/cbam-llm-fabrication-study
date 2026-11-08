@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c8a0dde3920ef87c4cd02309",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The country of production is missing, so embedded emissions cannot be calculated under the ruleset.\n\nFor **1,000 t of pig iron (CN 7201)**, please specify the country of production: **T\u00fcrkiye, China, or India**.",
+  "usage": {
+    "input_tokens": 611,
+    "output_tokens": 54
+  },
+  "latency_s": 2.251,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6a9c93a1226aad5f1b15ab11",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure from the data provided.**\n\nThe declaration gives two different CN codes for the good:\n\n- **CN-code field:** 7201 (pig iron and spiegeleisen). This code is in the factor table, and India is listed for it.\n- **Good description:** ribbed reinforcing bar, with CN 7214 20 00 cited. This code is also in the table, and India is listed for it.\n\nThe ruleset selects the default SEE jointly by good CN code and country, so the CN code determines which factor applies. The two codes give different factors for India (2.53 vs. 4.27 tCO2e/t), so I cannot choose between them without guessing. The description also does not override the CN-code field under the ruleset, and I have not assumed either code is correct.\n\n**Inputs needed before the calculation can be completed:**\n\n1. **Confirmed good CN code.** The declaration must state one CN code, and it must match the good actually declared. Either 7201 or 7214 20 00 must be confirmed or the declaration corrected.\n2. **Country of production:** India is listed and is not in question.\n3. **Quantity:** 1,500 t is provided and is not in question.\n\n**Calculation once the CN code is confirmed:**\n\nEmbedded emissions (tCO2e) = default SEE for (confirmed CN code, India) \u00d7 1,500 t, rounded half-up to 2 decimal places.\n\n- If the code is **7201**: SEE = 2.53 tCO2e/t\n- If the code is **7214 20 00**: SEE = 4.27 tCO2e/t\n\nNeither product should be reported until the CN code is resolved.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 1227
+  },
+  "latency_s": 6.5039,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cf1febbd2ea094acb66d3d16",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n- **Default SEE (tCO2e/t) for the specified country of production and good**: The country of production provided in the scenario (\"Russian Federation\") is not listed in the factor table for CN code `7214 20 00` (which only lists T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 767,
+    "output_tokens": 97
+  },
+  "latency_s": 5.175,
+  "stop_reason": "STOP",
+  "truncated": false
+}

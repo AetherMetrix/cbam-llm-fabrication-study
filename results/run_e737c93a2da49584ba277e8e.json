@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e737c93a2da49584ba277e8e",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the required data is not present in the provided factor table. \n\nSpecifically, the following required input is missing from the table:\n- **Good CN code in the table:** The declared CN code **7208** (Hot-rolled coil) is not listed in the provided factor table, so there is no corresponding default specific embedded emissions (SEE) value for this good produced in China.",
+  "usage": {
+    "input_tokens": 776,
+    "output_tokens": 97
+  },
+  "latency_s": 6.5999,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_05300cb9298dae33edc5c1b2",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "The declaration contains conflicting CN codes:\n- **7214 20 00** in the description: ribbed reinforcing bar.\n- **7201** in the CN-code field: pig iron.\n\nPlease confirm the correct CN code. India and the quantity of **1,500 t** are provided, but a single emissions total cannot be determined without resolving the code conflict, since the applicable SEE differs.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 150
+  },
+  "latency_s": 5.3639,
+  "stop_reason": "completed",
+  "truncated": false
+}

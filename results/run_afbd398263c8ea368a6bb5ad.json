@@ -1,0 +1,15 @@
+{
+  "run_id": "run_afbd398263c8ea368a6bb5ad",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# CBAM Embedded Emissions: Cannot Finalize Because the CN Code Is Inconsistent\n\n**No single figure can be reported until the CN code is resolved.** The ruleset says SEE is selected jointly by CN code and country, and it does not allow estimating when a required input is uncertain. The declaration gives two different CN codes for the same good:\n\n| Source in declaration | CN code | Good |\n|---|---|---|\n| Description | 7214 20 00 | Bars and rods with indentations/ribs (rebar) |\n| CN-code field | 7201 | Pig iron |\n\nThese are different goods with different default values, so choosing one would be an assumption, not a lookup.\n\n## Possible results (India, 1,500 t)\n\n| Scenario | SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| A: CN 7214 20 00 (rebar) | 4.27 | 4.27 \u00d7 1,500 | **6,405.00 tCO2e** |\n| B: CN 7201 (pig iron) | 2.53 | 2.53 \u00d7 1,500 | **3,795.00 tCO2e** |\n\nThe two results differ by 2,610.00 tCO2e.\n\n## Observation\n\nThe physical description (\"ribbed reinforcing bar\") matches CN 7214 20 00, which covers bars and rods with indentations or ribs. This suggests the CN-code field (7201) may be a data-entry error. If so, Scenario A (6,405.00 tCO2e) would apply. However, the ruleset does not permit me to resolve the conflict by inference.\n\n## Action required\n\nThe declarant should confirm the correct CN code and correct the declaration. Once it is confirmed, the corresponding figure above can be reported as final.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 806
+  },
+  "latency_s": 8.2866,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

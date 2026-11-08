@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e723336a3df095db7cb94e47",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the **good\u2019s CN code is missing**. \u201cSteel goods\u201d does not identify which country-specific SEE applies.\n\nPlease provide the applicable CN code from the table: **7201, 7206 10 00, 7207 11 90, or 7214 20 00**.\n\nThe country (**India**) and quantity (**3,000 tonnes**) are provided.",
+  "usage": {
+    "input_tokens": 649,
+    "output_tokens": 93
+  },
+  "latency_s": 2.833,
+  "stop_reason": "completed",
+  "truncated": false
+}

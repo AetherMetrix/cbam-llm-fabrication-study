@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a9c1f67a101d9b0645f7b625",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute the embedded emissions for this lot.** The ruleset requires a good CN code that appears in the factor table, and the datasheet does not provide one.\n\n**Missing or unresolved inputs:**\n\n1. **CN code (required, not provided).** The datasheet gives only a description: \"semi-finished steel product, continuously cast, carbon ~0.2%.\" That description does not identify a single CN code. It could plausibly relate to more than one table heading, such as 7206 10 00 (ingots) or 7207 11 90 (semi-finished products of non-alloy steel). Classifying the good is a determination that the supplied data does not support, so I have not assigned a code.\n\n2. **Confirmation that the code is an exact table entry.** Even if the classification is narrowed to the semi-finished heading, the table lists only 7207 11 90. The datasheet does not state the full subheading, so it cannot be confirmed that 7207 11 90 applies rather than another 7207 subheading that is not in the table.\n\n**Inputs that are present:**\n- Country of production: India (the table has an India entry for each candidate heading)\n- Quantity: 600 t\n\n**To proceed, the datasheet needs:** a CN code (8-digit) that matches a row in the factor table for the good in question. Once that is supplied, the calculation is the table SEE for that CN code and India, multiplied by 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 1195
+  },
+  "latency_s": 6.1398,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

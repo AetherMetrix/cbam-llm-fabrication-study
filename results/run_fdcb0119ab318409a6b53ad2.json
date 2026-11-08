@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fdcb0119ab318409a6b53ad2",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and scenario, the embedded emissions **cannot be calculated**. \n\n**Reason:**\nTo calculate embedded emissions, three required inputs must be provided:\n1. **Good CN code:** `7214 20 00` (Provided, and present in the factor table)\n2. **Quantity in tonnes:** `2,000 tonnes` (Provided)\n3. **Country of production:** **Missing**\n\nPer the ruleset, default SEE values are country-specific and selected jointly by the good CN code and the country of production. Because the country of production is not stated in the scenario, an estimate cannot be made. \n\nTo proceed with the CBAM declaration, please confirm the **country of production** (e.g., T\u00fcrkiye, China, or India, as listed in the factor table for CN 7214 20 00).",
+  "usage": {
+    "input_tokens": 783,
+    "output_tokens": 194
+  },
+  "latency_s": 6.7977,
+  "stop_reason": "STOP",
+  "truncated": false
+}

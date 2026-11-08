@@ -1,0 +1,15 @@
+{
+  "run_id": "run_241fedefb55c6c62ce106c79",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I need two missing inputs to calculate embedded emissions for **CN 7207 11 90**:\n\n- **Country of production:** T\u00fcrkiye, China, or India\n- **Quantity in tonnes**\n\nPlease provide both. Under the supplied ruleset, I cannot estimate emissions without them.",
+  "usage": {
+    "input_tokens": 613,
+    "output_tokens": 61
+  },
+  "latency_s": 2.8978,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_36f516b0599b14ef326d7c0e",
+  "task_id": "B-O04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the provided data is insufficient. \n\nThe following specific input is missing:\n- **Good CN code** (needed to identify the specific steel product in the factor table).",
+  "usage": {
+    "input_tokens": 732,
+    "output_tokens": 51
+  },
+  "latency_s": 6.0489,
+  "stop_reason": "STOP",
+  "truncated": false
+}

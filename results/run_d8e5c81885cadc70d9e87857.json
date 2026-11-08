@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d8e5c81885cadc70d9e87857",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Result: the quantity is inconsistent, so the total cannot be finalised yet.**\n\nThe good (CN 7207 11 90), country (India), and SEE are all valid in the factor table. The SEE is **4.32 tCO2e/t**. However, the quantities don't reconcile:\n\n- Line items: 2,000 t + 1,500 t = **3,500 t**\n- Summary total: **4,000 t**\n- Difference: 500 t\n\n**Calculations at each quantity:**\n\n| Basis | Quantity (t) | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Line item 1 | 2,000 | 2,000 \u00d7 4.32 | 8,640.00 |\n| Line item 2 | 1,500 | 1,500 \u00d7 4.32 | 6,480.00 |\n| Line items total | 3,500 | 3,500 \u00d7 4.32 | **15,120.00** |\n| Summary total | 4,000 | 4,000 \u00d7 4.32 | **17,280.00** |\n\nThe line-item total (15,120.00 tCO2e) is the figure supported by the detailed records. The summary (17,280.00 tCO2e) would apply only if there is an additional 500 t that isn't itemised.\n\n**Recommended action:** Reconcile the 4,000 t summary against the underlying line items, or identify the missing 500 t, before reporting. Once the correct quantity is confirmed, the total is that quantity \u00d7 4.32, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 906
+  },
+  "latency_s": 4.7331,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fdf1c9e151516cbe24c63d12",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: the declared quantity is ambiguous, so the total cannot be finalised until the discrepancy is resolved.**\n\n**Inputs**\n- CN code: 7207 11 90 (in table)\n- Country: India (listed for this CN code)\n- Default SEE: 4.32 tCO2e/t\n- Quantity: line items 2,000 t + 1,500 t = **3,500 t**; summary states **4,000 t**. These do not match.\n\n**Calculations**\n\n| Quantity basis | Calculation | Embedded emissions |\n|---|---|---|\n| Line item 1 (2,000 t) | 2,000 \u00d7 4.32 | 8,640.00 tCO2e |\n| Line item 2 (1,500 t) | 1,500 \u00d7 4.32 | 6,480.00 tCO2e |\n| Sum of line items (3,500 t) | 3,500 \u00d7 4.32 | **15,120.00 tCO2e** |\n| Summary total (4,000 t) | 4,000 \u00d7 4.32 | **17,280.00 tCO2e** |\n\n**Action required:** The 500 t difference (17,280.00 \u2212 15,120.00 = 2,160.00 tCO2e) needs to be reconciled before reporting. Check whether a line item is missing from the detail or whether the summary total is wrong. Once the correct tonnage is confirmed, the embedded emissions are that tonnage \u00d7 4.32 tCO2e/t, rounded to 2 decimal places.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 879
+  },
+  "latency_s": 4.2025,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

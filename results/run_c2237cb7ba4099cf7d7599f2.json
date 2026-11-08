@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c2237cb7ba4099cf7d7599f2",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The input data conflicts on the good's identity.\n\n**The conflict:**\n- The semi-finished product description points to **CN 7207 11 90**.\n- The line-item CN code is **7214 20 00** (bars and rods).\n\nThe ruleset requires the good CN code to identify the default SEE value, and the two codes have different factors for T\u00fcrkiye. Choosing one would be a guess, so I have not calculated a figure.\n\n**Inputs needed to proceed:**\n1. **Confirmed good CN code.** Confirm whether the goods are CN 7207 11 90 or CN 7214 20 00, and correct the record that does not match. The description and line item must agree.\n2. **Country of production:** T\u00fcrkiye is listed for both codes, so this input is not in question, but it should be confirmed as part of the same record correction.\n3. **Quantity:** 1,100 t is provided and is sufficient once the code is resolved.\n\nOnce the CN code is confirmed, the calculation is: Embedded emissions (tCO2e) = default SEE for the confirmed CN code and T\u00fcrkiye \u00d7 1,100 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 817
+  },
+  "latency_s": 4.487,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9b886e47000b33732cdea99a",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The quantity needed for the calculation is inconsistent in the scenario data.\n\n**What is established:**\n- CN code 7207 11 90 is in the factor table.\n- India is listed as a country of production for that code.\n- The default SEE for 7207 11 90 / India is **4.32 tCO2e/t**.\n\n**What is missing or conflicting:**\n- **Quantity (tonnes):** The line items sum to 2,000 t + 1,500 t = **3,500 t**, but the summary states **4,000 t**. The ruleset requires one declared quantity, and the two sources disagree by 500 t. The correct quantity must be confirmed (for example, by checking the source invoices or shipping records and correcting the erroneous figure) before the calculation can be finalized.\n\n**Once the quantity is confirmed:**\nEmbedded emissions (tCO2e) = quantity (t) \u00d7 4.32 tCO2e/t, rounded half-up to 2 decimal places.\n\nFor reference only, this is the arithmetic each quantity would produce. Neither is a determination until the quantity is resolved:\n- If 3,500 t is confirmed: 3,500 \u00d7 4.32 = 15,120.00 tCO2e\n- If 4,000 t is confirmed: 4,000 \u00d7 4.32 = 17,280.00 tCO2e",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 1014
+  },
+  "latency_s": 5.1122,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

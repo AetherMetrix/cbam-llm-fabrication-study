@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c7b81f3eacb2f565e6218417",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from the data provided.\n\n**What is established:**\n- CN code 7214 20 00 is in the factor table.\n- Country of production, India, is listed for that code.\n- The default SEE for this pair is 4.27 tCO2e/t.\n\n**What is not established:**\n- **Quantity (tonnes).** The declaration gives two different values:\n  - Summary total: 1,000 t\n  - Sum of line items: 300 t + 400 t + 250 t = 950 t\n\n  The 50 t difference means the required input (quantity in tonnes) is not definitively established. The ruleset does not say which figure takes precedence, so I have not chosen one.\n\n**Missing input needed to finish the calculation:**\n- A confirmed quantity for the declared good, with the discrepancy resolved. This could come from the declarant correcting either the summary total or a line item, or from supporting documentation showing which figure is right.\n\nOnce the quantity is confirmed as Q tonnes, the calculation is:\n\nEmbedded emissions = 4.27 tCO2e/t \u00d7 Q t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 976
+  },
+  "latency_s": 5.311,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

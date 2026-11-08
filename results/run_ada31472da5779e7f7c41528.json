@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ada31472da5779e7f7c41528",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# CBAM Embedded Emissions: Cannot Calculate Yet\n\n**I can't compute the embedded emissions because the country of production is missing.**\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 (Semi-finished products of iron or non-alloy steel) |\n| (b) Country of production | \u274c **Missing.** The email says it's on the mill certificate, which wasn't included. |\n| (c) Quantity in tonnes | \u2705 3,300 t |\n\n## Why I'm not estimating\n\nThe default SEE depends on both the CN code and the country. For CN 7207 11 90, the table's values differ significantly by country, so picking or averaging one would give an unreliable figure. The ruleset says not to estimate when a required input is missing.\n\n## What I need\n\nPlease send the **country of production** from the mill certificate. Note:\n\n- The table covers CN 7207 11 90 only for **T\u00fcrkiye, China, and India**.\n- If the certificate shows any other country, the table has no default value for it, and I still won't be able to calculate under this ruleset.\n\nOnce I have the country, I'll calculate SEE \u00d7 3,300 t and report the total rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 585
+  },
+  "latency_s": 6.64,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

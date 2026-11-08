@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7cab0ab58726abef664fad28",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data contains a contradiction regarding a required input, and I am instructed not to estimate when data is insufficient.\n\n**Specific input missing/unresolved:**\n* **Quantity in tonnes:** There is a discrepancy in the scenario between the sum of the individual lots (\"Three equal lots of 1,000 t each\", which equals 3,000 t) and the \"declared total\" (3,500 t). A single, unambiguous quantity in tonnes is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 765,
+    "output_tokens": 116
+  },
+  "latency_s": 6.8758,
+  "stop_reason": "STOP",
+  "truncated": false
+}

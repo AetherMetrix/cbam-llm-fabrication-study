@@ -1,0 +1,15 @@
+{
+  "run_id": "run_60d1442c1b6333dd639dda0b",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute the embedded emissions. \n\nAccording to the provided ruleset, all required inputs must be present in the factor table, and if any is not in the table, no estimate should be made. The declared CN code **7202 11** (ferro-manganese) is not listed in the provided factor table.",
+  "usage": {
+    "input_tokens": 727,
+    "output_tokens": 74
+  },
+  "latency_s": 3.5988,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0ca8ae05056663726dbf1da6",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the quantity is not established.\n\n**The inputs conflict:**\n- Three equal lots of 1,000 t each sum to **3,000 t**.\n- The declared total is **3,500 t**.\n\nThe ruleset requires a single, verified quantity in tonnes, and I cannot determine which figure is correct from the information provided.\n\n**Inputs that are valid:**\n- CN code 7206 10 00 is in the factor table.\n- T\u00fcrkiye is a listed country of production for that code.\n- Default SEE = 1.96 tCO2e/t.\n\n**Inputs that are missing or unresolved:**\n- A confirmed total quantity in tonnes. Either the declared 3,500 t must be corrected to match the lots, or a missing 500 t lot must be documented.\n\n**Arithmetic for each candidate quantity (not a determination):**\n- 3,000 t \u00d7 1.96 = 5,880.00 tCO2e (if the three lots are the full quantity)\n- 3,500 t \u00d7 1.96 = 6,860.00 tCO2e (if the declared total is correct)\n\nOnce the quantity is confirmed, the result can be reported as the quantity multiplied by 1.96, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 965,
+    "output_tokens": 800
+  },
+  "latency_s": 3.8669,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

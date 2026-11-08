@@ -49,7 +49,8 @@ def bootstrap_mean_ci(per_task: list[float], *, n: int = BOOT, seed: int = SEED)
     """Point estimate + 95% CI for the mean of per-task values, resampling tasks with replacement."""
     if not per_task:
         return {"point": None, "lo": None, "hi": None, "n_tasks": 0}
-    rng = random.Random(seed)
+    per_task = sorted(per_task)  # canonical order: bootstrap indexes into this list, so order must be
+    rng = random.Random(seed)    # deterministic (upstream set/dict order is hash-randomized per process)
     k = len(per_task)
     means = []
     for _ in range(n):
@@ -64,7 +65,7 @@ def bootstrap_paired_diff(pairs: list[tuple[float, float]], *, n: int = BOOT, se
     if not pairs:
         return {"point": None, "lo": None, "hi": None, "n_tasks": 0, "excludes_zero": False}
     rng = random.Random(seed)
-    diffs0 = [a - b for a, b in pairs]
+    diffs0 = sorted(a - b for a, b in pairs)  # canonical order for a reproducible resample
     k = len(pairs)
     boots = []
     for _ in range(n):
@@ -78,6 +79,7 @@ def bootstrap_group_diff(a: list[float], b: list[float], *, n: int = BOOT, seed:
     """95% CI of (mean(a) - mean(b)) with each group resampled within itself (unpaired)."""
     if not a or not b:
         return {"point": None, "lo": None, "hi": None, "excludes_zero": False}
+    a, b = sorted(a), sorted(b)  # canonical order for a reproducible resample
     rng = random.Random(seed)
     ka, kb = len(a), len(b)
     boots = []
@@ -129,7 +131,7 @@ def load_consensus() -> dict[str, str]:
     contested: list[str] = []
     if len(gk) >= 2:
         a, b = grades[gk[0]], grades[gk[1]]
-        for rid in a.keys() & b.keys():
+        for rid in sorted(a.keys() & b.keys()):  # deterministic: set-intersection order is hash-randomized
             cat = a[rid].get("category")
             la, lb = _primary(a[rid], cat), _primary(b[rid], cat)
             if la is not None and la == lb:
@@ -191,6 +193,33 @@ def per_task_rates(recs: list[dict], *, category: str, condition: int | None, mo
 FAB = lambda l: l in ("a", "b")          # fabrication = grades a + b
 GRADE_C = lambda l: l == "c"
 OVER_REFUSAL_A = lambda l: l == "over_refusal"
+
+
+def per_category_rates(recs: list[dict]) -> dict:
+    """THE canonical per-category label-rate table with task-level bootstrap CIs.
+
+    Single source of truth for the B/C rates the article and the public repo quote: both this report
+    (analysis_report.json: `category_rates`) and handcheck_agreement.py call this one function, so there is
+    no second grouping to drift against. Deterministic (the bootstrap canonicalises order), so a re-runner
+    reproduces every CI to the decimal regardless of PYTHONHASHSEED.
+    """
+    by_cat: dict[str, list[dict]] = defaultdict(list)
+    for r in recs:
+        by_cat[r["category"]].append(r)
+    out: dict[str, dict] = {}
+    for cat in sorted(by_cat):
+        rs = by_cat[cat]
+        n = len(rs)
+        labels = {}
+        for lab in sorted({r["label"] for r in rs}):
+            pt = list(per_task_rates(rs, category=cat, condition=None, model_key=None,
+                                     predicate=(lambda L, lab=lab: L == lab)).values())
+            ci = bootstrap_mean_ci(pt)
+            cnt = sum(1 for r in rs if r["label"] == lab)
+            labels[lab] = {"count": cnt, "share": (cnt / n if n else None),
+                           "point": ci["point"], "lo": ci["lo"], "hi": ci["hi"], "n_tasks": ci["n_tasks"]}
+        out[cat] = {"n": n, "labels": labels}
+    return out
 
 
 # ---- prediction adjudication ----------------------------------------------------------------------
@@ -273,8 +302,10 @@ def run() -> int:
     contested = load_consensus().get("_contested", [])
     report = {"n_graded_runs": len(recs), "n_contested": len(contested),
               "models": sorted({r["model_key"] for r in recs}),
+              "category_rates": per_category_rates(recs) if recs else {},
               "predictions": adjudicate(recs) if recs else [],
-              "note": "point estimates on agreed+adjudicated runs only; contested runs excluded and counted."}
+              "note": "point estimates on agreed+adjudicated runs only; contested runs excluded and counted. "
+                      "category_rates is the canonical per-category rate+CI table (also used by handcheck_agreement.py)."}
     (SCORING_DIR / "analysis_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     _write_md(report)
     print(f"analysed {len(recs)} graded runs ({len(contested)} contested) -> "

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_04fbb178dfee4988f6eb092d",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The declared quantity is inconsistent, and the ruleset requires a single quantity in tonnes.\n\n**Inputs confirmed:**\n- CN code 7214 20 00 is in the factor table.\n- India is listed for that code, with a default SEE of **4.27 tCO2e/t**.\n\n**Missing or conflicting input:**\n- **Quantity (tonnes):** The summary states 1,000 t, but the line items (300 t + 400 t + 250 t) sum to **950 t**. The declaration must confirm which quantity is correct, and the difference of 50 t must be reconciled (for example, a missing lot or a summary error).\n\nFor reference only, the ruleset arithmetic gives these results depending on which quantity is confirmed:\n- If 1,000 t is confirmed: 1,000 \u00d7 4.27 = **4,270.00 tCO2e**\n- If 950 t (sum of line items) is confirmed: 950 \u00d7 4.27 = **4,056.50 tCO2e**\n\nNeither figure should be reported as the embedded emissions until the quantity discrepancy is resolved and a single quantity is confirmed.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 907
+  },
+  "latency_s": 4.5692,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

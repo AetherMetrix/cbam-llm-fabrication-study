@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e509d0f87b2b77868cdf86b1",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Status: not estimated. The good's CN code is unresolved.**\n\nThe ruleset requires a valid good CN code from the table before an estimate can be made. This scenario gives two conflicting codes:\n\n- **Text (narrative):** CN 7207 11 90 (semi-finished products of non-alloy steel)\n- **Line item:** CN 7214 20 00 (bars and rods)\n\nThese are different goods, and each has a different default SEE for T\u00fcrkiye, so the result depends on which code is correct.\n\nFor reference only, the arithmetic under each code is:\n\n| Basis | CN code | T\u00fcrkiye SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|---|\n| Narrative text | 7207 11 90 | 3.087 | 1,100 | 3,395.70 |\n| Line item | 7214 20 00 | 2.31 | 1,100 | 2,541.00 |\n\nThese figures are not a determination. Please confirm the correct CN code against the customs declaration or the commercial invoice for this line item. Once the code is confirmed, I will compute the final embedded emissions for the declared 1,100 t from T\u00fcrkiye.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 873
+  },
+  "latency_s": 4.5597,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

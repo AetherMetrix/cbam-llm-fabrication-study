@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6d6cad6a829b88acdf7e0fc9",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "For **CN 7207 11 90 produced in India**, the default SEE is **4.32 tCO2e/t**.\n\nEmbedded emissions = 275.25 t \u00d7 4.32 tCO2e/t = **1,189.08 tCO2e**.",
+  "usage": {
+    "input_tokens": 648,
+    "output_tokens": 102
+  },
+  "latency_s": 2.9007,
+  "stop_reason": "completed",
+  "truncated": false
+}

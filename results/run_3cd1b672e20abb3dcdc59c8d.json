@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3cd1b672e20abb3dcdc59c8d",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive emissions figure because the quantity is inconsistent: the stated total is **1,200 t**, but the shipment lines sum to **1,000 t**.\n\n**Input requiring confirmation:** the declared quantity in tonnes\u20141,200 t or 1,000 t.\n\nCN 7201 and China are provided; the applicable SEE is **1.66 tCO2e/t**.",
+  "usage": {
+    "input_tokens": 664,
+    "output_tokens": 204
+  },
+  "latency_s": 7.9037,
+  "stop_reason": "completed",
+  "truncated": false
+}

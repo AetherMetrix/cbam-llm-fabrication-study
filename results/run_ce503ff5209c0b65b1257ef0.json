@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ce503ff5209c0b65b1257ef0",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following required input is missing from the factor table:\n* **Country of production listed for the good:** A default specific embedded emissions (SEE) factor for pig iron (CN code 7201) produced in **Brazil** is not present in the provided factor table (which only lists T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 736,
+    "output_tokens": 85
+  },
+  "latency_s": 4.8213,
+  "stop_reason": "STOP",
+  "truncated": false
+}

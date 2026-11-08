@@ -1,0 +1,15 @@
+{
+  "run_id": "run_14470c47f59c0ce9aa76ec47",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: Embedded emissions cannot be calculated from the supplied table.**\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (bars and rods with indentations, i.e., ribbed bar) | \u2705 Listed |\n| (b) Country of production listed for that good | Russian Federation | \u274c Not listed |\n| (c) Quantity in tonnes | 2,200 t | \u2705 Provided |\n\n**Why no figure is given**\n\nDefault SEE values depend on both the CN code and the country. For CN 7214 20 00, the table only covers:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for the Russian Federation. The ruleset says not to estimate when a required input is missing from the table, so I have not substituted another country's value or an average.\n\n**To complete the calculation, you need one of the following:**\n1. The country-specific default SEE for CN 7214 20 00 / Russian Federation, added to the factor table, **or**\n2. A correction to the country of production, if \"Russian Federation\" was entered in error.\n\nFor reference, once a valid SEE is available: Embedded emissions = SEE \u00d7 2,200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 915,
+    "output_tokens": 480
+  },
+  "latency_s": 8.8254,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

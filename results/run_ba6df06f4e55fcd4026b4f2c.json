@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ba6df06f4e55fcd4026b4f2c",
+  "task_id": "A11",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided CBAM ruleset and factor table, here is the calculation for the embedded emissions:\n\n**Inputs:**\n* **Good CN code:** 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations...)\n* **Country of production:** China\n* **Quantity:** 1500 tonnes\n* **Default SEE:** 3.169 tCO2e/t (from the factor table for CN 7214 20 00 and China)\n\n**Calculation:**\n* Embedded emissions = 3.169 tCO2e/t \u00d7 1500 tonnes = 4753.5 tCO2e\n\n**Total Embedded Emissions:**\n**4753.50 tCO2e**",
+  "usage": {
+    "input_tokens": 703,
+    "output_tokens": 181
+  },
+  "latency_s": 6.2151,
+  "stop_reason": "STOP",
+  "truncated": false
+}

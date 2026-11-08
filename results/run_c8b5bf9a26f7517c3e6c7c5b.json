@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c8b5bf9a26f7517c3e6c7c5b",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Result: Cannot be calculated. Brazil is not in the factor table for CN 7201.**\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (pig iron) | \u2705 Listed |\n| (b) Country of production listed for that good | Brazil | \u274c Not listed |\n| (c) Quantity in tonnes | 800 t | \u2705 Provided |\n\n**Why no result is given**\n\nThe ruleset selects default SEE values jointly by CN code and country. For CN 7201, the table only has values for:\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\nThere is no Brazil entry. The ruleset says that if a required input is not in the table, I must not estimate. So I have not substituted another country's value, averaged the listed values, or applied a proxy.\n\n**Options to resolve this**\n1. Provide the Brazil-specific default SEE for CN 7201, for example from the official EU Commission CBAM default values publication, and add it to the factor table.\n2. Use actual (installation-specific) embedded emissions data from the Brazilian producer, if your ruleset allows it.\n3. Confirm whether a fallback rule applies when no country-specific default exists. The ruleset given here does not include one.\n\nOnce a valid Brazil factor is supplied, the calculation is: 800 t \u00d7 SEE (Brazil, 7201), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 529
+  },
+  "latency_s": 5.2959,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

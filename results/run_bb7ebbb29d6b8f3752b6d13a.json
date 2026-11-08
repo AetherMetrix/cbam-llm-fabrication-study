@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bb7ebbb29d6b8f3752b6d13a",
+  "task_id": "A06",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions: 8,791.20 tCO2e**\n\n**Inputs**\n- Good: CN 7206 10 00, ingots of iron and non-alloy steel. This code is in the table.\n- Country of production: India. India is listed for this CN code.\n- Quantity: 3,330 t\n\n**Factor**\n- The default SEE for (7206 10 00, India) is 2.64 tCO2e/t.\n\n**Calculation**\nEmbedded emissions = 2.64 tCO2e/t \u00d7 3,330 t = 8,791.20 tCO2e",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 217
+  },
+  "latency_s": 2.5157,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

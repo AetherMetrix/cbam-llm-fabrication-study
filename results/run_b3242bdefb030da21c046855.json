@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b3242bdefb030da21c046855",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "I can't calculate embedded emissions for this shipment. CN 7208 (hot-rolled coil) is not in the factor table, and the ruleset requires the good's CN code to be listed before an estimate can be made.\n\n**Inputs check:**\n- **CN code:** 7208 is not in the table, so the required input fails.\n- **Country:** China is listed for other goods in the table, but the table has no China entry for 7208, so it cannot be paired with this code.\n- **Quantity:** 5,000 t is provided.\n\n**Result:** No estimate. Total embedded emissions: not calculated.\n\n**What would allow a calculation:** A default SEE value for CN 7208 produced in China, from the applicable CBAM default values, would need to be added to the factor table. Once that value is available, the calculation is SEE \u00d7 5,000 t, rounded half-up to 2 decimal places.\n\n**Closest table entries, for reference only (not applicable to this shipment):**\n- CN 7207 11 90, China: 3.314 tCO2e/t (semi-finished steel). Using this would give 16,570.00 tCO2e, but it is a different good and I have not used it.\n- CN 7214 20 00, China: 3.169 tCO2e/t (bars and rods). Using this would give 15,845.00 tCO2e, but it is also a different good.\n\nIf you can confirm the correct CN code for the product, I can run the calculation against the table.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 493
+  },
+  "latency_s": 2.78,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

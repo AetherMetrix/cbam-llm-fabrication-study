@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6530f102a39ddd25aadb3004",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from this scenario because the country of production is missing.\n\n**Inputs status**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | Provided: 7214 20 00 (in table) |\n| (b) Country of production listed for that good | **Missing.** The email gives no country of production. \"EXW\" is an Incoterm, not a production country, and the mill cert and mill-test report are referenced as attached but were not included in the data I was given. |\n| (c) Quantity in tonnes | Provided: 2,000 tonnes net |\n\n**Missing input to obtain**\n\n- The country of production for the 7214 20 00 consignment (heat numbers H-4471 and H-4472). The mill certificate or mill-test report may state this, but I can only use it if its contents are supplied to me.\n\n**Once the country is confirmed**, the calculation is the default SEE for (7214 20 00, country) \u00d7 2,000 t, rounded half-up to 2 decimal places. The table contains three possible countries for this code:\n\n- T\u00fcrkiye: 2.31 \u00d7 2,000 = 4,620.00 tCO2e\n- China: 3.169 \u00d7 2,000 = 6,338.00 tCO2e\n- India: 4.27 \u00d7 2,000 = 8,540.00 tCO2e\n\nThese are not a determination. The applicable figure depends on the confirmed country of production. If the country is not in the table for this code, the figure cannot be computed under the ruleset.",
+  "usage": {
+    "input_tokens": 1050,
+    "output_tokens": 988
+  },
+  "latency_s": 4.887,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

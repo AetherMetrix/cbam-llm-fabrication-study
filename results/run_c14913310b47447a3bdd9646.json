@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c14913310b47447a3bdd9646",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute a single figure: the country of production is ambiguous\n\nThe ruleset selects the default SEE jointly by CN code and country of production. The scenario gives two conflicting origins (India and T\u00fcrkiye), and both are listed for CN 7206 10 00 with different default values. Choosing one would be an estimate, which the ruleset does not allow (\"If any is missing or not in the table, do not estimate\").\n\n## Inputs check\n\n| Required input | Status |\n|---|---|\n| CN code 7206 10 00 (Ingots, iron/non-alloy steel) | \u2705 In table |\n| Quantity: 750 t | \u2705 Provided |\n| Country of production | \u274c **Conflicting: India vs. T\u00fcrkiye** |\n\n## What each origin would give (for reference only, not a determination)\n\n| Country | Default SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| India | 2.64 | 2.64 \u00d7 750 | **1,980.00 tCO2e** |\n| T\u00fcrkiye | 1.96 | 1.96 \u00d7 750 | **1,470.00 tCO2e** |\n\nThe difference is 510.00 tCO2e (about 35% higher if India is the origin), so the choice materially affects the declaration.\n\n## Action required\n\nConfirm the actual **country of production** for this consignment, for example from the certificate of origin, the supplier/installation data, or the customs declaration. Note that the country of production is where the good was produced, which may differ from the country of dispatch or export. Once confirmed, the corresponding figure above applies.",
+  "usage": {
+    "input_tokens": 893,
+    "output_tokens": 619
+  },
+  "latency_s": 6.4301,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

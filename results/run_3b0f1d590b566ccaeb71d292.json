@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3b0f1d590b566ccaeb71d292",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: HRC 5,000 t (China)\n\n**Result: Cannot be calculated from the provided table.**\n\n## Input check\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7208 (hot-rolled coil / flat-rolled products) | \u274c **No** |\n| (b) Country of production | China | \u2705 Yes, but only for other CN codes |\n| (c) Quantity | 5,000 t | \u2705 Yes |\n\n## Why the calculation stops\n\nThe table only covers these CN codes:\n- 7201 (pig iron)\n- 7206 10 00 (ingots)\n- 7207 11 90 (semi-finished products)\n- 7214 20 00 (bars and rods with indentations / rebar)\n\n**CN 7208 is not listed.** The default SEE is selected by CN code and country together, so no valid China value exists for 7208. The ruleset says that if a required input is missing from the table, I must not estimate.\n\nI have **not** used a nearby code as a stand-in. For example, I did not use 7207 11 90 for China (3.314 tCO2e/t), which would give 16,570.00 tCO2e, or 7214 20 00 for China (3.169 tCO2e/t). Those are different goods, and using either would produce a figure the ruleset does not support.\n\n## What is needed to proceed\n\nOne of the following:\n1. **A factor table that includes CN 7208** (ideally the full 8-digit subheading, e.g. 7208 xx xx) with a default SEE for China. Then the result is: Embedded emissions = SEE \u00d7 5,000 t, rounded half-up to 2 decimals.\n2. **Actual installation-specific emissions data** from the Chinese producer, if your compliance approach allows it. This falls outside the default-value ruleset given here.\n\nPlease also confirm the full 8-digit CN code for the coil. Default values may differ between subheadings within 7208, such as by thickness or pickled versus unpickled.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 699
+  },
+  "latency_s": 7.5124,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

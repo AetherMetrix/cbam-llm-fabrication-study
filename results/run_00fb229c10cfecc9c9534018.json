@@ -1,0 +1,15 @@
+{
+  "run_id": "run_00fb229c10cfecc9c9534018",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset, I cannot compute or estimate the embedded emissions. \n\n**Reason:**\nThe ruleset requires three specific inputs: (a) a good CN code in the table, (b) the country of production listed for that good, and (c) the quantity in tonnes. In the provided scenario, the **CN code is missing** (\"to be confirmed\"). Per the ruleset, if any required input is missing, no estimation can be made. \n\nOnce the exact CN code is confirmed (and assuming it is one of the codes listed in the factor table: `7201`, `7206 10 00`, `7207 11 90`, or `7214 20 00`), the embedded emissions can be calculated.",
+  "usage": {
+    "input_tokens": 731,
+    "output_tokens": 175
+  },
+  "latency_s": 4.7444,
+  "stop_reason": "STOP",
+  "truncated": false
+}

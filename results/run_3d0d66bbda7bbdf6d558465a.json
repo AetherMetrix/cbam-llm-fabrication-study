@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3d0d66bbda7bbdf6d558465a",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded emissions figure because the provided data is inconsistent and therefore insufficient under the supplied rules. \n\nSpecifically, the following required input is missing or unresolved:\n- **A definitive quantity in tonnes**: The declaration summary states a total quantity of 1,000 tonnes, which contradicts the sum of the listed line items (300 t + 400 t + 250 t = 950 tonnes). Because the ruleset does not specify whether the summary total or the sum of line items takes precedence, a confirmed, reconciled net mass in tonnes is required before the calculation can be performed.",
+  "usage": {
+    "input_tokens": 782,
+    "output_tokens": 134
+  },
+  "latency_s": 4.8736,
+  "stop_reason": "STOP",
+  "truncated": false
+}

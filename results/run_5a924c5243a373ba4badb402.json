@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5a924c5243a373ba4badb402",
+  "task_id": "A12",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "For CN **7214 20 00** produced in **India**, the default SEE is **4.27 tCO\u2082e/t**.\n\nEmbedded emissions = 9,999 t \u00d7 4.27 tCO\u2082e/t = **42,695.73 tCO\u2082e**.",
+  "usage": {
+    "input_tokens": 647,
+    "output_tokens": 89
+  },
+  "latency_s": 3.5541,
+  "stop_reason": "completed",
+  "truncated": false
+}

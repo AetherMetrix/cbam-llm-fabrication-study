@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ef58213c5a65f1360c3e9f8a",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset, I cannot compute the embedded emissions because a required input is missing: the **country of production**. \n\nPer the ruleset, default values are country-specific and selected jointly by the good's CN code and the country of production (e.g., T\u00fcrkiye, China, or India for CN 7201). Since the country of production is not specified in the scenario, an estimate cannot be made. Please provide the country of production to complete the calculation.",
+  "usage": {
+    "input_tokens": 703,
+    "output_tokens": 106
+  },
+  "latency_s": 4.1388,
+  "stop_reason": "STOP",
+  "truncated": false
+}

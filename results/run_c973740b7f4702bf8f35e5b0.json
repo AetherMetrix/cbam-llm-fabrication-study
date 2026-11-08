@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c973740b7f4702bf8f35e5b0",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this shipment because one required input is missing.\n\n**Inputs received:**\n- CN code: 7207 11 90. This is in the factor table.\n- Quantity: 3,300 t. This is provided.\n- Country of production: **missing**. The email says it is on the mill certificate, but that document was not provided.\n\n**Missing input:**\n- Country of production for CN 7207 11 90, which must be taken from the mill certificate. The table has default values for this CN code only for T\u00fcrkiye, China, and India. If the country is not one of these, no default value applies and the calculation cannot be done under the supplied ruleset.\n\n**Once the country is confirmed,** the calculation is:\nEmbedded emissions (tCO2e) = Default SEE for (7207 11 90, country) \u00d7 3,300 t, rounded half-up to 2 decimal places.\n\nPlease send the mill certificate or confirm the country of production, and I will complete the calculation.",
+  "usage": {
+    "input_tokens": 996,
+    "output_tokens": 669
+  },
+  "latency_s": 3.9467,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

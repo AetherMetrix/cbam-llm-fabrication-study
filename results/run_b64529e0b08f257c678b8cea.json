@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b64529e0b08f257c678b8cea",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "For **CN 7206 10 00 produced in T\u00fcrkiye**, the default SEE is **1.96 tCO\u2082e/t**.\n\nUsing the **declared quantity of 3,500 t**:\n\nEmbedded emissions = 3,500 \u00d7 1.96 = **6,860.00 tCO\u2082e**.\n\nNote: The three lots total 3,000 t, which differs from the declared total. As requested, this calculation uses the declared total.",
+  "usage": {
+    "input_tokens": 632,
+    "output_tokens": 126
+  },
+  "latency_s": 3.9364,
+  "stop_reason": "completed",
+  "truncated": false
+}

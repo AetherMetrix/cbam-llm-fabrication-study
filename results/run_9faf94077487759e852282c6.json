@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9faf94077487759e852282c6",
+  "task_id": "B-O04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**No embedded-emissions figure can be calculated yet.** The scenario doesn't specify a CN code, and the ruleset requires one to select the default SEE value.\n\n**Inputs status:**\n- **CN code:** Missing. \"Steel product\" doesn't identify a code in the table.\n- **Country of production:** China. This is listed for all four goods in the table.\n- **Quantity:** 500 t. This is provided.\n\n**CN codes in the table with a China default value:**\n\n| CN code | Good | Default SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | 1.66 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap ingots) | 1.74 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.314 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations | 3.169 |\n\nOnce you confirm the CN code, the calculation is:\n\n**Embedded emissions = SEE \u00d7 500 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 869,
+    "output_tokens": 740
+  },
+  "latency_s": 3.7947,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

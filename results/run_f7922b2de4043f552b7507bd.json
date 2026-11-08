@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f7922b2de4043f552b7507bd",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is insufficient and contains a contradiction. \n\nSpecifically, the following required input is missing or unresolved:\n* **Unambiguous good CN code:** The scenario provides conflicting classifications for the good\u2014describing it as a semi-finished product under **CN 7207 11 90** (which has a default SEE of 3.087 tCO2e/t for T\u00fcrkiye) while stating the line-item code is **CN 7214 20 00** (which has a default SEE of 2.31 tCO2e/t for T\u00fcrkiye). \n\nTo compute the embedded emissions without estimating, please clarify and confirm the single correct CN code that applies to the 1,100 tonnes of goods produced in T\u00fcrkiye.",
+  "usage": {
+    "input_tokens": 772,
+    "output_tokens": 178
+  },
+  "latency_s": 4.2497,
+  "stop_reason": "STOP",
+  "truncated": false
+}

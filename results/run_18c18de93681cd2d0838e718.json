@@ -1,0 +1,15 @@
+{
+  "run_id": "run_18c18de93681cd2d0838e718",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: country of production is missing\n\nThe embedded emissions figure for this shipment can't be computed. The ruleset selects the default SEE by both CN code and country of production, and the country isn't given.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90, which is in the table |\n| (b) Country of production listed for that good | \u274c **Missing.** The email says it is on the mill certificate, which wasn't provided. |\n| (c) Quantity in tonnes | \u2705 3,300 t |\n\n## Missing input\n\n- **Country of production** for the CN 7207 11 90 semi-finished steel, from the mill certificate. For this CN code, the table lists factors only for **T\u00fcrkiye, China, and India**. If the certificate shows any other country, the ruleset still won't allow a calculation.\n\n## Once the country is confirmed\n\nEmbedded emissions = 3,300 t \u00d7 default SEE for (7207 11 90, country). The result is reported rounded half-up to 2 decimal places.\n\nFor reference, the result for each listed country would be:\n\n| Country | Default SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye | 3.087 | 10,187.10 |\n| China | 3.314 | 10,936.20 |\n| India | 4.32 | 14,256.00 |\n\nThese are not a declared figure. Only one applies, depending on the country on the mill certificate. Please send the certificate or confirm the country of production, and I'll finalize the calculation.",
+  "usage": {
+    "input_tokens": 996,
+    "output_tokens": 834
+  },
+  "latency_s": 8.5973,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

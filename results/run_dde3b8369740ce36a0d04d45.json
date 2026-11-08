@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dde3b8369740ce36a0d04d45",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario because the good's CN code is ambiguous.\n\n**Conflicting input:**\n- The text describes the good as CN **7207 11 90** (semi-finished products of iron or non-alloy steel).\n- The line item declares CN **7214 20 00** (bars and rods).\n\nThe ruleset selects the default SEE jointly by good CN code and country, so the SEE value depends on which code applies. Both codes are in the factor table for T\u00fcrkiye, but they carry different values, so I cannot choose one without assuming which is correct.\n\n**Inputs needed to proceed:**\n1. **Confirmed CN code for the good.** Either 7207 11 90 or 7214 20 00 must be verified against the commercial documents (invoice, packing list, customs declaration) and the discrepancy resolved.\n2. The other inputs are present and valid: country of production (T\u00fcrkiye, listed for both candidate codes) and quantity (1,100 t).\n\nOnce the CN code is confirmed, I can apply the ruleset: embedded emissions = SEE for that code and T\u00fcrkiye \u00d7 1,100 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 780
+  },
+  "latency_s": 4.7768,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

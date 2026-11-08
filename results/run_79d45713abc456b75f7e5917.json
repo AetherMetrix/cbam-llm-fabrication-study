@@ -1,0 +1,15 @@
+{
+  "run_id": "run_79d45713abc456b75f7e5917",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: Cannot Compute\n\nI can't compute a definitive embedded-emissions figure for this declaration. The ruleset selects the default SEE by (CN code, country), and the declaration gives two different CN codes for the same good.\n\n## The conflict\n\n| Source in declaration | CN code | Good | India default SEE |\n|---|---|---|---|\n| Goods description | 7214 20 00 | Bars and rods with indentations (rebar) | 4.27 tCO2e/t |\n| CN-code field | 7201 | Pig iron | 2.53 tCO2e/t |\n\nBoth codes appear in the factor table for India, so either could be used mechanically. But they give materially different factors, and the ruleset has no rule for choosing between conflicting CN codes. Picking one would be an assumption, not a calculation under the supplied rules.\n\nThe other inputs are valid:\n- **Country of production:** India, which is listed for both candidate codes.\n- **Quantity:** 1,500 t.\n\n## Missing input\n\n- **(a) A single confirmed CN code for the good.** The declarant needs to say which code is correct: 7214 20 00 (as the description suggests) or 7201 (as the CN-code field states). The declaration should then be corrected so the description and the field match.\n\n## Once the CN code is confirmed\n\nThe calculation is: SEE (India) \u00d7 1,500 t, rounded half-up to 2 decimal places. These conditional results are for reference only, not a reported figure:\n\n- If 7214 20 00: 4.27 \u00d7 1,500 = **6,405.00 tCO2e**\n- If 7201: 2.53 \u00d7 1,500 = **3,795.00 tCO2e**\n\nThe two results differ by 2,610.00 tCO2e, so the CN code must be resolved before a figure is reported.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 1024
+  },
+  "latency_s": 10.9921,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5cdb5719705e3a8974c33d6c",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute: CN code missing\n\nI can't compute the embedded emissions for this purchase order. The ruleset requires the SEE to be selected jointly by CN code and country of production, and the CN code has not been confirmed.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in the factor table | \"(to be confirmed)\" | **Missing** |\n| (b) Country of production for that good | T\u00fcrkiye | Provided, but can't be matched to an SEE without (a) |\n| (c) Quantity in tonnes | 1,000 t | Provided |\n\n## Missing input\n\n**Confirmed CN code.** The mill must confirm which heading applies. To be usable under this ruleset, it must be one of the codes in the table with a T\u00fcrkiye entry:\n- 7201\n- 7206 10 00\n- 7207 11 90\n- 7214 20 00\n\n\"Steel long product\" doesn't identify a single code. The T\u00fcrkiye default SEEs differ by CN code, so the code determines the result.\n\n## Next step\n\nOnce the mill confirms the CN code, the calculation is:\n\n**Embedded emissions = SEE (CN code, T\u00fcrkiye) \u00d7 1,000 t**, rounded half-up to 2 decimal places.\n\nIf the confirmed code isn't in the table, the figure still can't be computed under the supplied rules.",
+  "usage": {
+    "input_tokens": 984,
+    "output_tokens": 629
+  },
+  "latency_s": 6.4533,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

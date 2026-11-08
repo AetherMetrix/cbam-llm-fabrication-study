@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9afc131fcc95653151882268",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "Using the **declared total of 1,200 tonnes** and China\u2019s SEE for CN 7201:\n\n1,200 t \u00d7 1.66 tCO2e/t = **1,992.00 tCO2e**\n\n**Discrepancy:** The shipment lines total 1,000 t, not 1,200 t. This calculation uses the declared total as requested; the 200 t difference should be reconciled.",
+  "usage": {
+    "input_tokens": 664,
+    "output_tokens": 239
+  },
+  "latency_s": 8.4506,
+  "stop_reason": "completed",
+  "truncated": false
+}

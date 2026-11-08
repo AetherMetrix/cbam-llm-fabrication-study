@@ -1,0 +1,15 @@
+{
+  "run_id": "run_acc5857473a5237528f0c2ed",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Cannot compute a single definitive embedded emissions value because the required input for **country of production** is ambiguous/conflicting between the provided documents (the cover note states China, while the customs form states India). Per the ruleset, the default SEE is country-specific and selected jointly by the good CN code and country of production, and no estimation or assumption about which document takes precedence can be made without additional rules.\n\nTo finalize the calculation, please clarify the verified country of production. For reference, the conditional calculations based on the provided factor table for **CN 7201** (1,000 tonnes) are:\n\n* **If Country of Production is China:**\n  * Default SEE = 1.66 tCO2e/t\n  * Embedded emissions = $1.66 \\times 1,000 = \\mathbf{1,660.00\\text{ tCO2e}}$\n\n* **If Country of Production is India:**\n  * Default SEE = 2.53 tCO2e/t\n  * Embedded emissions = $2.53 \\times 1,000 = \\mathbf{2,530.00\\text{ tCO2e}}$",
+  "usage": {
+    "input_tokens": 725,
+    "output_tokens": 264
+  },
+  "latency_s": 8.7941,
+  "stop_reason": "STOP",
+  "truncated": false
+}

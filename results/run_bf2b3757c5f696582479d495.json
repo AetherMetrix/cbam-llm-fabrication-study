@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bf2b3757c5f696582479d495",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "For **CN 7201 produced in China**, the default SEE is **1.66 tCO2e/t**.\n\nUsing the declared total of **1,200 t**:\n**Embedded emissions = 1,200 \u00d7 1.66 = 1,992.00 tCO2e.**\n\n**Quantity discrepancy:** The shipment lines sum to 1,000 t, not 1,200 t. The calculation above uses the declared total; reconcile the 200 t difference before reporting.",
+  "usage": {
+    "input_tokens": 627,
+    "output_tokens": 160
+  },
+  "latency_s": 4.5969,
+  "stop_reason": "completed",
+  "truncated": false
+}

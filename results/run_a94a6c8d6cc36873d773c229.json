@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a94a6c8d6cc36873d773c229",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the definitive embedded emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n* **Good CN code in the table:** The declared CN code **7202 41** (ferro-chromium, > 4% carbon) is not listed in the factor table, so there is no corresponding default specific embedded emissions (SEE) value for this good produced in India.",
+  "usage": {
+    "input_tokens": 766,
+    "output_tokens": 94
+  },
+  "latency_s": 4.4258,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5d4dbf0e78ef1f013a773ce3",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Cannot calculate: country of production is missing\n\nThe ruleset sets default SEE values by both **CN code and country of production**, and it says not to estimate when a required input is missing. The country field on the form is blank, so I can't select a factor or report a total.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| CN code | 7201 (Pig iron) | \u2705 In table |\n| Quantity | 1,500 t | \u2705 Provided |\n| Country of production | *(blank)* | \u274c **Missing** |\n\nThe production route (blast furnace) and installation (Works 2) don't affect the calculation, because default values depend only on CN code and country.\n\n## What's needed\n\nPlease confirm the **country of production** for the pig iron from Works 2. The table has CN 7201 factors for these countries:\n\n| Country | Default SEE (tCO\u2082e/t) | Result for 1,500 t (tCO\u2082e) |\n|---|---|---|\n| T\u00fcrkiye | 1.85 | 2,775.00 |\n| China | 1.66 | 2,490.00 |\n| India | 2.53 | 3,795.00 |\n\nThese are lookups for reference only, not an estimate. The figures differ by up to about 1,305 tCO\u2082e, so the declared total can't be reported until the country is confirmed.\n\nIf the country is not T\u00fcrkiye, China or India, this table has no default value for it, and a factor would need to come from an approved source outside this ruleset.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 711
+  },
+  "latency_s": 8.2108,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

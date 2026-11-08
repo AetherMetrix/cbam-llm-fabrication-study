@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ec8f4b6c0da8d1c426942037",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**Result: I cannot compute the embedded emissions for this declaration line.**\n\n**Inputs checked against the ruleset:**\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7201 (pig iron) | \u2705 Yes |\n| (b) Country of production | Viet Nam | \u274c **No.** CN 7201 is listed only for T\u00fcrkiye, China and India. |\n| (c) Quantity | 1,800 t | \u2705 Yes |\n\n**Missing input:**\n- **The default SEE (tCO2e/t) for CN 7201 with Viet Nam as the country of production.** The supplied factor table has no entry for this pair.\n\n**Why no estimate is given:**\n- The ruleset selects the SEE jointly by CN code and country. If the country is not listed for that good, it says not to estimate.\n- Using the T\u00fcrkiye (1.85), China (1.66) or India (2.53) values would mean picking a factor the rules don't allow. Those values would give totals from 2,988.00 to 4,554.00 tCO2e. That wide spread shows why substituting a factor would be misleading.\n- The \"basic blast-furnace route\" detail does not change anything. The supplied ruleset does not use production route to choose a factor.\n\n**To complete the calculation:** provide the default SEE for CN 7201 / Viet Nam. The total would then be SEE \u00d7 1,800 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 552
+  },
+  "latency_s": 5.5678,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

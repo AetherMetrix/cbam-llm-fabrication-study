@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cea56bafa176285472472e8a",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**No estimate can be given.** The embedded emissions calculation requires a CN code from the factor table, and the datasheet doesn't provide one.\n\n**Missing input:** The datasheet has no CN code. The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") fits more than one table entry, and the table's headings differ in their SEE values for India:\n\n- **7206 10 00** (ingots of non-alloy steel): India, 2.64 tCO2e/t\n- **7207 11 90** (semi-finished products of non-alloy steel): India, 4.32 tCO2e/t\n- **7214 20 00** (bars and rods with indentations): India, 4.27 tCO2e/t\n\nBecause the SEE is selected jointly by CN code and country, the emissions factor depends on which heading applies. Selecting one without documentation would be an assumption, not a calculation.\n\n**What is needed to proceed:**\n1. The CN code declared for this lot, confirmed from the commercial invoice, customs declaration, or the producer's documentation. The \"semi-finished, continuously cast\" wording points toward 7207, but the code must be stated by the source, not inferred.\n2. The country of production is already given as India, which is listed for all three candidate codes.\n3. The quantity is given as 600 t.\n\nOnce the CN code is confirmed, the calculation is: embedded emissions (tCO2e) = SEE for that code and India \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 789
+  },
+  "latency_s": 4.5597,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

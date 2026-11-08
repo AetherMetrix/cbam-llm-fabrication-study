@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dc786ac1b311227be5da5790",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "I can't give a single final figure yet, because the declaration gives two different CN codes for the same good.\n\n**The conflict**\n- The CN-code field reads **7201** (pig iron and spiegeleisen).\n- The good description (\"ribbed reinforcing bar\") and the CN code written in the description, **7214 20 00** (bars and rods with indentations, ribs or grooves), point to 7214 20 00.\n\nBoth codes are in the factor table, and India is listed for both, so the lookup works for either code. But the ruleset requires a single good CN code, and the declaration does not establish which one applies.\n\n**Conditional results (quantity 1,500 t, country India)**\n\n| CN code used | Default SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|\n| 7201 (CN field as written) | 2.53 | 3,795.00 |\n| 7214 20 00 (matches the description) | 4.27 | 6,405.00 |\n\n**Recommended action**\nThe product description is more specific and matches 7214 20 00, so the 7201 entry looks like a classification error. Confirm the correct CN code with the declarant or the importer's customs documents before filing. Once confirmed, the result is 6,405.00 tCO2e if 7214 20 00 is correct, or 3,795.00 tCO2e if 7201 is confirmed. Using 7201 would understate the emissions by 2,610.00 tCO2e if the good is actually reinforcing bar.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 884
+  },
+  "latency_s": 5.0188,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -31,8 +32,10 @@ import blinding
 
 ROOT = Path(__file__).resolve().parents[1]
 TASKS_DIR = ROOT / "tasks"
-RESULTS_DIR = ROOT / "results"
-SCORING_DIR = ROOT / "scoring"
+# Env-overridable so the Stage-4.1 smoke can extract from results_smoke/ into scoring_smoke/ without touching
+# the pre-registered 2,000-run dataset (run_eval.py --smoke prints the exact FPP_* invocation).
+RESULTS_DIR = Path(os.environ.get("FPP_RESULTS_DIR", ROOT / "results"))
+SCORING_DIR = Path(os.environ.get("FPP_SCORING_DIR", ROOT / "scoring"))
 
 # A number token: optional sign, digit groups separated by comma/space/thin-space, optional decimal.
 _NUM = re.compile(r"[-+]?\d{1,3}(?:[ ,  ]\d{3})+(?:\.\d+)?|[-+]?\d+(?:\.\d+)?")

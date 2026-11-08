@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7b596c6c39b4f1d807e48bae",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset and factor table, there is a discrepancy in the required quantity input: the declaration summary states a total of **1,000 t**, whereas the individual line items sum to **950 t** (300 t + 400 t + 250 t). \n\nPer the ruleset, we cannot estimate or assume which quantity is correct when the required input is ambiguous. Below are the exact calculations for both figures using the default SEE for **CN 7214 20 00** from **India** (**4.27 tCO2e/t**), so you can apply the one that corresponds to your verified customs documentation:\n\n* **Option 1: Based on the sum of the line items (950 tonnes)**\n  $$\\text{Embedded Emissions} = 950\\text{ t} \\times 4.27\\text{ tCO2e/t} = \\mathbf{4,056.50\\text{ tCO2e}}$$\n  *(By lot: 300 t = 1,281.00 tCO2e; 400 t = 1,708.00 tCO2e; 250 t = 1,067.50 tCO2e)*\n\n* **Option 2: Based on the summary total (1,000 tonnes)**\n  $$\\text{Embedded Emissions} = 1,000\\text{ t} \\times 4.27\\text{ tCO2e/t} = \\mathbf{4,270.00\\text{ tCO2e}}$$\n\nPlease reconcile the 50-tonne discrepancy in the declaration before finalizing the report.",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 390
+  },
+  "latency_s": 6.9387,
+  "stop_reason": "STOP",
+  "truncated": false
+}

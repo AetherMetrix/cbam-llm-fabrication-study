@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6d141c3c857a914ca5024563",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the provided data contains conflicting information regarding a required input.\n\n**Missing / Unresolved Input:**\n* **Quantity in tonnes (c):** There is a discrepancy in the declared quantity for the good (CN 7214 20 00 from India). The declaration summary states a total of 1,000 t, whereas the sum of the individual line items (300 t + 400 t + 250 t) equals 950 t. A single, reconciled quantity in tonnes is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 782,
+    "output_tokens": 133
+  },
+  "latency_s": 4.0863,
+  "stop_reason": "STOP",
+  "truncated": false
+}

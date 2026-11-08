@@ -1,0 +1,15 @@
+{
+  "run_id": "run_97427590a67bf30053f779cb",
+  "task_id": "A02",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions: 4,150.00 tCO2e**\n\n**Input check:**\n- **CN code:** 7201 (pig iron and spiegeleisen) is in the table.\n- **Country of production:** China is listed for CN 7201.\n- **Quantity:** 2,500 t.\n\n**Factor selected:** The default SEE for CN 7201 produced in China is 1.66 tCO2e/t.\n\n**Calculation:**\n2,500 t \u00d7 1.66 tCO2e/t = 4,150.00 tCO2e",
+  "usage": {
+    "input_tokens": 867,
+    "output_tokens": 201
+  },
+  "latency_s": 2.5093,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

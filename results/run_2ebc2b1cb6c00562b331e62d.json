@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2ebc2b1cb6c00562b331e62d",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded emissions: not calculated\n\n**Reason:** The **country of production is blank** on the data form. Under the ruleset, the default SEE is selected by **CN code and country together**, and if a required input is missing, no estimate may be made.\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| CN code in table | 7201 (Pig iron) | \u2705 |\n| Country of production | (blank) | \u274c Missing |\n| Quantity (t) | 1500 | \u2705 |\n\nThe production route (\"blast furnace\") and installation (\"Works 2\") don't affect the default-value calculation under this ruleset. They can't stand in for the country.\n\n**Next step:** Please provide the country of production. For CN 7201, the table covers **T\u00fcrkiye, China, and India**. If the pig iron was produced elsewhere, the table has no default value for it, and the calculation still can't be done under this ruleset.\n\nOnce the country is confirmed, the calculation is:\n**Embedded emissions = SEE (CN 7201, country) \u00d7 1500 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 486
+  },
+  "latency_s": 5.8423,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

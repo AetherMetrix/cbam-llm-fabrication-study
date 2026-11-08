@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9703d4f2a9c823b76d17bbf9",
+  "task_id": "A12",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 42,695.73 tCO2e**\n\n**Inputs used:**\n- **CN code:** 7214 20 00 (in the factor table)\n- **Country of production:** India (listed for this CN code)\n- **Quantity:** 9,999 t\n- **Default SEE:** 4.27 tCO2e/t (CN 7214 20 00, India)\n\n**Calculation:**\n9,999 t \u00d7 4.27 tCO2e/t = 42,695.73 tCO2e",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 396
+  },
+  "latency_s": 2.3163,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

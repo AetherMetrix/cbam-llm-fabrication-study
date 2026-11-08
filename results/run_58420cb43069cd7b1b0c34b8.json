@@ -1,0 +1,15 @@
+{
+  "run_id": "run_58420cb43069cd7b1b0c34b8",
+  "task_id": "A08",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 13,918.80 tCO2e**\n\n**Inputs check:**\n- CN code 7207 11 90 is in the factor table.\n- China is listed as a production country for this code.\n- Quantity is given as 4,200 tonnes.\n\n**Calculation:**\n- Default SEE (CN 7207 11 90, China) = 3.314 tCO2e/t\n- Embedded emissions = 3.314 tCO2e/t \u00d7 4,200 t = 13,918.80 tCO2e",
+  "usage": {
+    "input_tokens": 875,
+    "output_tokens": 257
+  },
+  "latency_s": 1.4899,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_64f2306182a6bb4f0848b356",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Conflicting input: country of production (required input b)**\n\nThe scenario gives two different countries of production for the same consignment:\n- One field states **India**.\n- Another field states **T\u00fcrkiye**.\n\nThe default SEE is selected jointly by CN code and country, so the country determines which factor applies. Under the ruleset, I cannot choose between the two sources, so the country of production is not established.\n\n**Inputs that are present and valid**\n- Good CN code: 7206 10 00 (Ingots, of iron and non-alloy steel) is in the factor table.\n- Quantity: 750 t.\n\n**Input needed to proceed**\n- A single, confirmed country of production for the CN 7206 10 00 ingots, supported by a reconciled origin document (for example, the origin or production record that the two conflicting fields should be checked against).\n\nOnce the country is confirmed, the calculation is:\n\nEmbedded emissions (tCO2e) = Default SEE for (7206 10 00, confirmed country) \u00d7 750 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 951,
+    "output_tokens": 698
+  },
+  "latency_s": 3.889,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

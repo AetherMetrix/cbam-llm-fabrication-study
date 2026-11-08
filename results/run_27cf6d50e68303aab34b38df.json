@@ -1,0 +1,15 @@
+{
+  "run_id": "run_27cf6d50e68303aab34b38df",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "For **CN 7214 20 00 produced in India**, the default SEE is **4.27 tCO\u2082e/t**.\n\nUsing the declared summary quantity of **1,000 t**:\n\\[\n1{,}000 \\times 4.27 = \\boxed{4{,}270.00\\ \\text{tCO\u2082e}}\n\\]\n\n**Quantity discrepancy:** The lots total **950 t** (300 + 400 + 250), not 1,000 t. If the line-item total is correct, emissions would instead be **4,056.50 tCO\u2082e**. Reconcile the quantity before finalising the declaration.",
+  "usage": {
+    "input_tokens": 646,
+    "output_tokens": 238
+  },
+  "latency_s": 7.4805,
+  "stop_reason": "completed",
+  "truncated": false
+}

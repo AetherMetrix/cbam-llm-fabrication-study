@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c40bf9cb57d908fffac2bb69",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "I can't compute the embedded emissions yet because the scenario is missing two required inputs:\n\n1. **Country of production.** CN 7201 has default values for three countries:\n\n   | Country | Default SEE (tCO2e/t) |\n   |---|---|\n   | T\u00fcrkiye | 1.85 |\n   | China | 1.66 |\n   | India | 2.53 |\n\n2. **Quantity in tonnes.** The scenario doesn't state how much pig iron was declared.\n\nOnce you provide the country and the quantity, I'll calculate:\n\n**Embedded emissions (tCO2e) = SEE (tCO2e/t) \u00d7 quantity (t)**, rounded half-up to 2 decimal places.\n\nFor example, 100 t from T\u00fcrkiye would be 100 \u00d7 1.85 = 185.00 tCO2e.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 393
+  },
+  "latency_s": 2.062,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8581db7d1c117d3b1ab75e66",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# I cannot compute a definitive embedded-emissions figure\n\nThe country of production is contradictory, and the ruleset selects the default SEE by both CN code and country.\n\n## Inputs\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201 (Pig iron) is in the table |\n| (b) Country of production | \u274c **Conflicting**: the cover note says China, but the customs form says India |\n| (c) Quantity in tonnes | \u2705 1,000 t |\n\n## Why the conflict matters\n\nBoth countries are listed for CN 7201, but their default SEEs differ:\n\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\nThe result therefore depends entirely on which country is correct. Choosing one would be an estimate, which the ruleset does not allow.\n\n## Missing input\n\n1. **A single, confirmed country of production for the 1,000 t of pig iron (CN 7201).** You can resolve this by reconciling the cover note with the customs form, for example through a corrected customs declaration, a certificate of origin, or the supplier's installation details.\n\nOnce the country is confirmed, the calculation is:\n**Embedded emissions = 1,000 t \u00d7 SEE (China or India, CN 7201)**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 702
+  },
+  "latency_s": 7.6765,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

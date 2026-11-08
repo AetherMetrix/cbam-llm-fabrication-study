@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6e485e0aed506132c54c674e",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# CBAM Embedded Emissions: CN 7207 11 90, India\n\n## The declared quantity is inconsistent\n\n| Source | Quantity |\n|---|---|\n| Line item 1 | 2,000 t |\n| Line item 2 | 1,500 t |\n| **Sum of line items** | **3,500 t** |\n| **Stated summary total** | **4,000 t** |\n\nThe line items and the summary total differ by **500 t**. The ruleset requires a definite quantity in tonnes and does not allow estimating. So I cannot give one definitive total until the quantity is reconciled.\n\n## Factor lookup\n\n- **CN code:** 7207 11 90 (Semi-finished products of iron or non-alloy steel) is in the table.\n- **Country:** India is listed for this CN code.\n- **Default SEE:** **4.32 tCO2e/t**\n\n## Calculations for each candidate quantity\n\n**Basis A: line items (3,500 t)**\n- Line 1: 2,000 t \u00d7 4.32 = 8,640.00 tCO2e\n- Line 2: 1,500 t \u00d7 4.32 = 6,480.00 tCO2e\n- **Total: 15,120.00 tCO2e**\n\n**Basis B: summary total (4,000 t)**\n- 4,000 t \u00d7 4.32 = **17,280.00 tCO2e**\n\nThe difference is 2,160.00 tCO2e, which equals 500 t \u00d7 4.32.\n\n## Result\n\n| Basis | Quantity | Embedded emissions |\n|---|---|---|\n| Line items | 3,500 t | **15,120.00 tCO2e** |\n| Summary total | 4,000 t | **17,280.00 tCO2e** |\n\n**Final figure withheld pending reconciliation.** Please confirm which is correct:\n1. The line items are complete and the summary total is wrong. Use 15,120.00 tCO2e.\n2. A line item of about 500 t is missing. Add it, and the total becomes 17,280.00 tCO2e if the missing line is also Indian-origin CN 7207 11 90.\n3. One of the line quantities is misstated. Provide the corrected figures.\n\nOnce the quantity is confirmed, the embedded emissions are that quantity \u00d7 4.32 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 966
+  },
+  "latency_s": 9.2253,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

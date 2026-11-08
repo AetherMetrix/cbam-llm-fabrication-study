@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8941daf5d91b576b62c515dd",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.** The quantity input is inconsistent.\n\n**What is established:**\n- CN code 7201 is in the factor table.\n- Country of production, China, is listed for CN 7201.\n- The default SEE for (7201, China) is **1.66 tCO2e/t**.\n\n**What is missing or conflicting:**\n- **Quantity (tonnes):** The stated total is 1,200 t, but the two shipment lines sum to 1,000 t (500 t + 500 t). The 200 t difference is unexplained. The ruleset requires a single quantity in tonnes, and the inputs do not establish one.\n\n**What is needed to finalise:**\n1. Confirm the correct declared quantity for CN 7201 from China: 1,200 t (stated total) or 1,000 t (sum of shipment lines), or identify the shipment line that accounts for the missing 200 t.\n\nOnce the quantity Q is confirmed, the result is:\n\n**Embedded emissions = 1.66 \u00d7 Q tCO2e**, rounded half-up to 2 decimal places.\n\nFor reference only, and not as a determination, the table arithmetic gives 1,660.00 tCO2e if Q = 1,000 t and 1,992.00 tCO2e if Q = 1,200 t. Neither should be reported until the quantity is confirmed.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 931
+  },
+  "latency_s": 4.5046,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

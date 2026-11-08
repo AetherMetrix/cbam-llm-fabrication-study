@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d45612e0ef3039ffdb156a9c",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is conflicting and insufficient under the supplied ruleset. \n\nSpecifically, the following required input is missing or unambiguous:\n* **Country of production**: The scenario lists two conflicting origins (India and T\u00fcrkiye) for the 750 tonnes of ingots (CN 7206 10 00). Because the default specific embedded emissions (SEE) value is country-specific (2.64 tCO2e/t for India vs. 1.96 tCO2e/t for T\u00fcrkiye), a single definitive country of production (or the exact tonnage breakdown between the two countries) is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 754,
+    "output_tokens": 146
+  },
+  "latency_s": 8.2677,
+  "stop_reason": "STOP",
+  "truncated": false
+}

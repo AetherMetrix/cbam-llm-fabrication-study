@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ed65fc6a519c790720993d70",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions for the declared quantity (3,500 t): 6,860.00 tCO2e**\n\nCalculation: 1.96 tCO2e/t (CN 7206 10 00, T\u00fcrkiye) \u00d7 3,500 t = 6,860.00 tCO2e\n\n**The declared total doesn't match the lots.** Three lots of 1,000 t sum to 3,000 t, not 3,500 t. Using the lot-level quantity:\n\n1.96 \u00d7 3,000 t = **5,880.00 tCO2e**\n\nThe 500 t difference accounts for 980.00 tCO2e. Confirm the correct tonnage with the source documentation (weighbridge, bills of lading, or commercial invoices) before reporting. If the 3,500 t figure is correct, one or more lots is missing from the records. If the lots are correct, the declared total is wrong.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 677
+  },
+  "latency_s": 3.7034,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

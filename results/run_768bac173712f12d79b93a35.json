@@ -1,0 +1,15 @@
+{
+  "run_id": "run_768bac173712f12d79b93a35",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Embedded emissions **cannot be calculated from the supplied table**. For CN **7214 20 00**, the table lists T\u00fcrkiye, China, and India, but not the declared country of production, **Russian Federation**.\n\nAlthough the quantity is **2,200 tonnes**, the required country-specific SEE is unavailable. Under the ruleset, no estimate can be made.",
+  "usage": {
+    "input_tokens": 637,
+    "output_tokens": 78
+  },
+  "latency_s": 2.714,
+  "stop_reason": "completed",
+  "truncated": false
+}

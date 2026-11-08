@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6e751a576132ae547f0f5aed",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "I can't calculate an embedded-emissions total for this line. The factor table has no default SEE for CN 7201 from Viet Nam.\n\nFor CN 7201, the table lists only:\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\nThe ruleset requires the good, country, and quantity to all match a table entry, and says not to estimate otherwise. The quantity (1,800 t) and CN code (7201) are valid, but the country of production is not covered for this good, so no embedded-emissions total is reported.\n\nTo proceed, one of the following is needed:\n- Confirm whether the production country is one of the listed countries (T\u00fcrkiye, China, or India). If so, the corresponding SEE applies.\n- Provide a default SEE value for Viet Nam from an authorised source that is outside the provided ruleset and table. It would need to be added to the table before a calculation could be made.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 354
+  },
+  "latency_s": 2.3581,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_21a8bd057cf4e1912e821a14",
+  "task_id": "A12",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 42,695.73 tCO2e**\n\n**Inputs:**\n- CN code: 7214 20 00 (bars and rods of iron or non-alloy steel, with indentations, twisted or rolled after rolling). This is in the factor table.\n- Country of production: India. This is listed for CN 7214 20 00.\n- Quantity: 9,999 t.\n\n**Calculation:**\n- Default SEE for 7214 20 00, India = 4.27 tCO2e/t\n- Embedded emissions = 4.27 tCO2e/t \u00d7 9,999 t = 42,695.73 tCO2e",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 348
+  },
+  "latency_s": 1.7871,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

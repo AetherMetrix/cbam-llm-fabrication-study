@@ -1,0 +1,15 @@
+{
+  "run_id": "run_60b5c014ffd7c6d374947048",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this shipment under the supplied ruleset and factor table.\n\n**Inputs status:**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code | Provided: 7206 10 00. It is in the table. |\n| (b) Country of production, listed for that good | **Missing.** The email gives Brazil (near Belo Horizonte), but the table has no Brazil entry for CN 7206 10 00. The listed countries for this code are T\u00fcrkiye (1.96), China (1.74), and India (2.64). |\n| (c) Quantity in tonnes | Provided: 900 t, as stated in the email. The attached invoice and packing list were not included, so I have not verified this figure against them. |\n\n**Missing input:** A default SEE value for CN 7206 10 00 with country of production = Brazil. The ruleset selects the SEE jointly by CN code and country, so I cannot substitute a value from another country.\n\nOnce a Brazil default SEE for 7206 10 00 is added to the factor table, I can calculate:\n\nEmbedded emissions (tCO2e) = Brazil SEE (tCO2e/t) \u00d7 900 t, rounded half-up to 2 decimal places.\n\nI have not used the T\u00fcrkiye, China, or India values as a proxy.",
+  "usage": {
+    "input_tokens": 1018,
+    "output_tokens": 602
+  },
+  "latency_s": 3.1452,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

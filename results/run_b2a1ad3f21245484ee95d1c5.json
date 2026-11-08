@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b2a1ad3f21245484ee95d1c5",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions for 1,000 t of Pig Iron (CN 7201): Cannot Be Computed\n\nThe ruleset requires the default SEE to be chosen by both CN code and country of production. The scenario does not state the country.\n\n**Inputs provided:**\n- (a) CN code: 7201. This is in the table.\n- (c) Quantity: 1,000 t.\n\n**Missing input:**\n- (b) **Country of production.** The table lists three country-specific default values for CN 7201: T\u00fcrkiye, China and India. These values differ, so the applicable SEE cannot be determined.\n\nIf you provide the country of production, and it is one listed for CN 7201, I can compute the embedded emissions as SEE \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 390
+  },
+  "latency_s": 4.4082,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

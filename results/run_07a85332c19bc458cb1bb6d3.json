@@ -1,0 +1,15 @@
+{
+  "run_id": "run_07a85332c19bc458cb1bb6d3",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this lot.** The datasheet does not give the inputs the ruleset requires.\n\n**Missing or unresolved inputs:**\n\n1. **Good CN code (required, not provided).** The datasheet gives only a description, \"semi-finished steel product, continuously cast, carbon ~0.2%.\" The ruleset requires a CN code that appears in the factor table. The description does not establish one. It could plausibly relate to more than one table heading (for example 7206, 7207, or 7214), and each has a different default SEE for India. The ruleset does not allow choosing among them from a description.\n\n2. **Confirmation that the country of production is India for that CN code.** The datasheet states India, and India is listed for all rows in the table. This input is present but can only be applied once the CN code is fixed, because the SEE is selected jointly by CN code and country.\n\n**Inputs that are provided and valid:**\n- Country of production: India\n- Quantity: 600 t\n\nThe carbon content (~0.2%) is not an input to the ruleset and does not affect the calculation.\n\n**To proceed:** Provide the CN code for the declared good (for example, from the commercial invoice, customs declaration, or supplier documentation). Once the code is in the table, the calculation is: default SEE for (CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 904
+  },
+  "latency_s": 4.9203,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

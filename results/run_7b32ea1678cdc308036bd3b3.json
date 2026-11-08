@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7b32ea1678cdc308036bd3b3",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The country of production is conflicting: the cover note states **China**, while the customs form states **India**. The ruleset provides no priority between these sources, so a single total cannot be determined without clarification.\n\nFor the declared **1,000 t of CN 7201**:\n- **If China is confirmed:** 1,000 \u00d7 1.66 = **1,660.00 tCO\u2082e**\n- **If India is confirmed:** 1,000 \u00d7 2.53 = **2,530.00 tCO\u2082e**\n\nPlease confirm the country of production.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 125
+  },
+  "latency_s": 3.8784,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5f2927876fefd402d0694085",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "The production country is conflicting: the email indicates **T\u00fcrkiye**, while the declaration lists **China**. A single total cannot be confirmed until this is resolved.\n\nFor CN **7214 20 00**, quantity **2,000 t**:\n- **China (declaration):** 2,000 \u00d7 3.169 = **6,338.00 tCO2e**\n- **T\u00fcrkiye (email):** 2,000 \u00d7 2.31 = **4,620.00 tCO2e**\n\nPlease confirm the country of production to finalize the calculation.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 187
+  },
+  "latency_s": 5.7156,
+  "stop_reason": "completed",
+  "truncated": false
+}

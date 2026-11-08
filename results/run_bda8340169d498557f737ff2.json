@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bda8340169d498557f737ff2",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Result: Cannot compute a definitive figure\n\nThe quantity in the declaration is inconsistent, so I can't produce a definitive embedded-emissions figure.\n\n**Inputs that are valid:**\n| Input | Value | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods, ribbed) | In the table |\n| (b) Country of production | India | Listed for this CN code |\n| Default SEE | 4.27 tCO2e/t | Selected by CN code and country |\n\n**Input that is missing: (c) quantity in tonnes**\n- The summary states **1,000 t**.\n- The line items (300 t + 400 t + 250 t) total **950 t**.\n- There is a **50 t discrepancy**, and nothing in the ruleset says which source takes precedence.\n\n**What's needed to finish:** a single confirmed quantity for the goods, either:\n- a corrected summary total that matches the line items, or\n- corrected line items (for example, a missing or misstated lot) that sum to the summary total.\n\nOnce the quantity is confirmed, embedded emissions = **confirmed tonnes \u00d7 4.27 tCO2e/t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 765
+  },
+  "latency_s": 8.5427,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

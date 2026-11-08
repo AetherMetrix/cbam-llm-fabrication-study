@@ -1,0 +1,15 @@
+{
+  "run_id": "run_11e337621c4281c51525ab43",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "An unambiguous single embedded emissions total cannot be computed because there is a contradiction in the required input for the country of production (the cover note states **China**, whereas the customs form records **India**). Under the ruleset, the specific embedded emissions (SEE) factor must be selected jointly by the good CN code and the country of production, and no estimation or assumption can be made when a required input is not clearly established.\n\nOnce you resolve the discrepancy and confirm the actual country of production, the calculation for **1,000 tonnes** of **CN 7201** is as follows for each candidate country:\n\n* **If the country of production is China:**\n  * Default SEE (CN 7201, China) = $1.66\\text{ tCO}_2\\text{e/t}$\n  * $\\text{Embedded emissions} = 1.66\\text{ tCO}_2\\text{e/t} \\times 1,000\\text{ t} = \\mathbf{1,660.00\\text{ tCO}_2\\text{e}}$\n\n* **If the country of production is India:**\n  * Default SEE (CN 7201, India) = $2.53\\text{ tCO}_2\\text{e/t}$\n  * $\\text{Embedded emissions} = 2.53\\text{ tCO}_2\\text{e/t} \\times 1,000\\text{ t} = \\mathbf{2,530.00\\text{ tCO}_2\\text{e}}$\n\nPlease clarify which document reflects the true country of production to finalize the compliance figure.",
+  "usage": {
+    "input_tokens": 725,
+    "output_tokens": 372
+  },
+  "latency_s": 8.5612,
+  "stop_reason": "STOP",
+  "truncated": false
+}

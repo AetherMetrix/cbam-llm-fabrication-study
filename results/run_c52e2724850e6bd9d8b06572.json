@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c52e2724850e6bd9d8b06572",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Embedded emissions: no single figure can be reported yet\n\nThe good's CN code is ambiguous. The ruleset selects the default SEE by CN code and country together, so I can't compute one result until the code is confirmed.\n\n## Conflict\n\n| Source | CN code | Good |\n|---|---|---|\n| Description text | 7207 11 90 | Semi-finished products of iron or non-alloy steel |\n| Line-item CN | 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations |\n\nBoth codes are in the table for T\u00fcrkiye, but their SEE values differ. Picking one would be an estimate, which the ruleset does not allow.\n\n## Possible results, depending on which code is correct\n\nCountry: T\u00fcrkiye. Quantity: 1,100 t.\n\n| If the correct CN is | Default SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| 7207 11 90 | 3.087 | 3.087 \u00d7 1,100 | **3,395.70 tCO2e** |\n| 7214 20 00 | 2.31 | 2.31 \u00d7 1,100 | **2,541.00 tCO2e** |\n\nThe two results differ by 854.70 tCO2e, so the choice matters.\n\n## Action required\n\nConfirm the correct CN classification for this line item. For example, check whether the goods are semi-finished billets or blooms (7207) or indented rebar (7214). Once confirmed, report the matching figure above. The declaration should also be corrected so the description and the line-item CN agree.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 726
+  },
+  "latency_s": 6.8236,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

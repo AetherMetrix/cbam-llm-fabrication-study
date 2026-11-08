@@ -1,0 +1,15 @@
+{
+  "run_id": "run_04305eae6bf24abcfd93f091",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided scenario, there is a conflict in the required input for the good's CN code: the text description identifies the good as a semi-finished product under **CN 7207 11 90**, whereas the line-item specifies **CN 7214 20 00** (which corresponds to bars and rods in the factor table). \n\nBecause the ruleset states that the default Specific Embedded Emissions (SEE) must be selected jointly by the `(good CN code, country)` and prohibits estimating when required inputs are ambiguous or conflicting, a single definitive calculation cannot be confirmed until the correct CN code is verified. \n\nBelow are the exact calculations for both CN codes listed in your scenario for **T\u00fcrkiye** and a quantity of **1,100 tonnes**:\n\n### Option 1: Using the Line-Item CN Code (7214 20 00)\n* **Good:** Bars and rods, of iron or non-alloy steel, with indentations...\n* **Country:** T\u00fcrkiye\n* **Default SEE:** 2.31 tCO2e/t\n* **Quantity:** 1,100 t\n* **Calculation:** $2.31 \\text{ tCO2e/t} \\times 1,100 \\text{ t} = 2,541$\n* **Total Embedded Emissions:** **2541.00 tCO2e**\n\n---\n\n### Option 2: Using the Text Description CN Code (7207 11 90)\n* **Good:** Semi-finished products of iron or non-alloy steel, containing...\n* **Country:** T\u00fcrkiye\n* **Default SEE:** 3.087 tCO2e/t\n* **Quantity:** 1,100 t\n* **Calculation:** $3.087 \\text{ tCO2e/t} \\times 1,100 \\text{ t} = 3,395.7$\n* **Total Embedded Emissions:** **3395.70 tCO2e**\n\nPlease verify the customs declaration to confirm which CN code applies to the consignment.",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 473
+  },
+  "latency_s": 11.688,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_098f2e8214dd2e1095609674",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute a definitive figure: conflicting quantity\n\nI can't compute the embedded emissions because the declared quantity is ambiguous.\n\n## Inputs checked\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7214 20 00 (bars and rods, ribbed) |\n| (b) Country listed for that good | \u2705 India, with a default SEE of **4.27 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The quantity conflict\n\n- The summary total states **1,000 t**.\n- The line items add up to **950 t** (300 t + 400 t + 250 t).\n\nThe two figures differ by 50 t. The ruleset requires a single quantity, and I won't pick one or reconcile the difference by assumption.\n\n## Missing input\n\n**A confirmed quantity of CN 7214 20 00 produced in India.** This means one of the following:\n- confirmation that the summary total of 1,000 t is correct, and details of the missing 50 t lot(s), or\n- confirmation that the line items (950 t) are complete and the summary total is an error.\n\n## Once resolved\n\nEmbedded emissions = 4.27 tCO2e/t \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 725
+  },
+  "latency_s": 7.6286,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9672cd7e611e09f4a55e6f4a",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Cannot compute the embedded emissions using the supplied table.\n\n- **Missing input:** A default SEE for **CN 7202 11 (ferro-manganese), produced in China**. This CN code is not listed in the table.\n- **Provided inputs:** Country of production: China; quantity: 500 tonnes.\n\nThe rules do not permit estimating or substituting a factor for another CN code.",
+  "usage": {
+    "input_tokens": 671,
+    "output_tokens": 85
+  },
+  "latency_s": 3.9994,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2693b535afd6f53ffb12cf1c",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure from the data provided.**\n\nThe ruleset requires one good CN code that is in the factor table. The scenario gives two:\n\n- **7201** (pig iron and spiegeleisen, in pigs, blocks or other primary forms). This matches the described good and is in the table for China.\n- **7206 10 00** (ingots of iron and non-alloy steel). This is also in the table for China, but it does not match the description of pig iron.\n\nThe default SEE is selected jointly by CN code and country, so the two codes give different factors for China. Calculating with either one would mean choosing between them without a basis in the supplied rules.\n\n**Missing or unresolved input:**\n1. **Single authoritative CN code for the good.** The form must state one code, and it must be the one that matches the goods declared. If the good is pig iron, the code is 7201, but this needs to be confirmed from the declaration or the source documentation, not assumed.\n\n**Inputs confirmed as available:**\n- Country of production: China, which is listed for both codes.\n- Quantity: 900 t.\n\nOnce the CN code is confirmed as one of the two listed, the calculation is direct: look up the China SEE for that code in the factor table, multiply by 900 t, and round half-up to 2 decimal places. I have not performed that multiplication, because the code is not yet confirmed.",
+  "usage": {
+    "input_tokens": 959,
+    "output_tokens": 843
+  },
+  "latency_s": 4.7648,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8ae89fa94e00016f4079dc99",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the form lists conflicting CN codes: **7201** and **7206 10 00**.\n\n**Required clarification:** Confirm the correct CN code for the good. The China-specific SEE differs between these codes, so neither can be selected without resolving the conflict.\n\nCountry of production (**China**) and quantity (**900 tonnes**) are provided.",
+  "usage": {
+    "input_tokens": 668,
+    "output_tokens": 82
+  },
+  "latency_s": 3.2984,
+  "stop_reason": "completed",
+  "truncated": false
+}

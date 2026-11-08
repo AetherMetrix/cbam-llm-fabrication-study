@@ -1,0 +1,15 @@
+{
+  "run_id": "run_136dfa11443dec9caabcf79c",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: Semi-Finished Steel (CN 7207 11 90), India\n\n**No single total can be reported yet.** The declared quantity is inconsistent, and the ruleset requires a valid quantity in tonnes before calculating.\n\n## Inputs\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7207 11 90 | \u2705 In table |\n| Country of production | India | \u2705 Listed for this good |\n| Default SEE | **4.32 tCO2e/t** | \u2705 From table (CN 7207 11 90 \u00d7 India) |\n| Quantity | 3,500 t (line items) vs. 4,000 t (summary) | \u274c **Conflict** |\n\n## Quantity Discrepancy\n\n- The line items are 2,000 t + 1,500 t, which sum to **3,500 t**.\n- The stated summary total is **4,000 t**.\n- The difference is **500 t**, which could be a missing line item, a typo in the summary, or a data-entry error.\n\nChoosing one figure would mean guessing the declared quantity. The ruleset does not allow estimating when a required input is not established.\n\n## Results for Each Possible Quantity\n\nNeither figure below is final until the quantity is confirmed.\n\n**If the line items are correct (3,500 t):**\n- 2,000 t \u00d7 4.32 = 8,640.00 tCO2e\n- 1,500 t \u00d7 4.32 = 6,480.00 tCO2e\n- **Total = 15,120.00 tCO2e**\n\n**If the summary is correct (4,000 t), for example because a 500 t line item is missing:**\n- 4,000 t \u00d7 4.32 = **17,280.00 tCO2e**\n\nThe two results differ by **2,160.00 tCO2e** (500 t \u00d7 4.32).\n\n## Action Required\n\nPlease confirm the correct declared quantity. If a third line item of 500 t exists, provide its details. Also confirm that it has the same CN code (7207 11 90) and the same country of production (India), since a different origin would change the SEE.\n\nOnce the quantity is confirmed, the final total is the confirmed tonnage \u00d7 4.32 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 932
+  },
+  "latency_s": 12.5448,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

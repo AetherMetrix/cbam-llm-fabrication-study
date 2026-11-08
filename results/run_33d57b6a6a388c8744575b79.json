@@ -1,0 +1,15 @@
+{
+  "run_id": "run_33d57b6a6a388c8744575b79",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "The country of production is conflicting: the email says **T\u00fcrkiye**, while the declaration header says **China**. Because the default SEE depends on both the CN code and country, a single embedded-emissions total cannot be determined reliably.\n\nPlease confirm the country of production for the **2,000 t of CN 7214 20 00**.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 123
+  },
+  "latency_s": 5.1681,
+  "stop_reason": "completed",
+  "truncated": false
+}

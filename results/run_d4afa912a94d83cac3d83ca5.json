@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d4afa912a94d83cac3d83ca5",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron (CN 7201), 1,000 t\n\n**I can't give a single figure yet because the country of production is unresolved.** The ruleset selects the default SEE by both CN code and country, so the country determines the result. The cover note says China, while the customs form says India. Choosing one would be an estimate, which the ruleset doesn't allow.\n\n## Input Check\n\n| Required input | Status |\n|---|---|\n| CN code 7201 | \u2705 In table |\n| Quantity: 1,000 t | \u2705 Provided |\n| Country of production | \u26a0\ufe0f **Conflicting:** China (cover note) vs. India (customs form) |\n\n## Results for Each Country\n\n| Country | Default SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| China | 1.66 | 1.66 \u00d7 1,000 | **1,660.00 tCO2e** |\n| India | 2.53 | 2.53 \u00d7 1,000 | **2,530.00 tCO2e** |\n\nThe two results differ by **870.00 tCO2e**, about 52% higher if India is correct.\n\n## Next Steps\n\n1. **Confirm the country of production** with the importer or supplier using origin documentation, such as a certificate of origin or the mill or installation identity.\n2. Check the customs form first. It is the formal declaration, but the discrepancy should still be documented and resolved, not assumed away.\n3. Once the country is confirmed, the declared figure is:\n   - **China \u2192 1,660.00 tCO2e**\n   - **India \u2192 2,530.00 tCO2e**\n\nIf the inconsistency stays in the CBAM records, verifiers or customs authorities may question it, so correct whichever document is wrong.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 746
+  },
+  "latency_s": 7.4359,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

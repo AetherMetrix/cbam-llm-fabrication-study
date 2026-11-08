@@ -1,0 +1,15 @@
+{
+  "run_id": "run_92e6ed1c953c23659641afa2",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Embedded emissions **cannot be calculated yet** because the required CN code is unconfirmed. The description \u201csteel long product\u201d does not identify a table entry.\n\nProvided inputs:\n- Quantity: **1,000 t**\n- Country of production: **T\u00fcrkiye**\n\nPlease confirm the good\u2019s CN code from the table. Under the ruleset, no SEE may be selected or emissions estimated until that input is confirmed.",
+  "usage": {
+    "input_tokens": 638,
+    "output_tokens": 85
+  },
+  "latency_s": 3.4722,
+  "stop_reason": "completed",
+  "truncated": false
+}

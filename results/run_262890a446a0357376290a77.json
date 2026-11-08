@@ -1,0 +1,15 @@
+{
+  "run_id": "run_262890a446a0357376290a77",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Using the **declared quantity of 3,500 t** and the SEE for CN 7206 10 00 produced in T\u00fcrkiye:\n\n3,500 t \u00d7 1.96 tCO\u2082e/t = **6,860.00 tCO\u2082e**.\n\nNote: The three lots sum to 3,000 t, which conflicts with the declared total. As requested, this calculation uses the declared total.",
+  "usage": {
+    "input_tokens": 669,
+    "output_tokens": 130
+  },
+  "latency_s": 4.3896,
+  "stop_reason": "completed",
+  "truncated": false
+}

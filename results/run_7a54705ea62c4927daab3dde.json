@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7a54705ea62c4927daab3dde",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions: CN Code Conflict, Single Figure Withheld\n\nI can't report one final figure because the form gives two different CN codes for the same good. The ruleset selects the default SEE jointly by CN code and country, so the CN code directly sets the factor. Choosing one would be an estimate, which the ruleset prohibits.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code | **Conflicting:** the form lists both 7201 and 7206 10 00 |\n| (b) Country of production | China (listed for both codes) |\n| (c) Quantity | 900 t |\n\n## Result under each code\n\n| CN code | Good (per table) | Default SEE, China | Calculation | Embedded emissions |\n|---|---|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 1.66 tCO2e/t | 1.66 \u00d7 900 | **1,494.00 tCO2e** |\n| 7206 10 00 | Ingots of iron and non-alloy steel | 1.74 tCO2e/t | 1.74 \u00d7 900 | **1,566.00 tCO2e** |\n\nThe two results differ by 72.00 tCO2e.\n\n## Observation\n\nThe goods description (\"pig iron\") matches the table entry for **CN 7201**. CN 7206 10 00 covers ingots of iron and non-alloy steel, a different product. If the declarant confirms CN 7201, the embedded emissions are **1,494.00 tCO2e**.\n\n## Action required\n\nConfirm the correct CN code with the declarant and correct the form so both fields agree. After that, the figure for the confirmed code above can be reported as final.",
+  "usage": {
+    "input_tokens": 901,
+    "output_tokens": 786
+  },
+  "latency_s": 8.7003,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

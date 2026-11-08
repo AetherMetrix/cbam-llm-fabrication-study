@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4000f7428783c147b2b4cce1",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: Cannot compute. The embedded-emissions figure is not determinable under the provided ruleset.**\n\n**Input check**\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7206 10 00 (ingots, iron/non-alloy steel) | \u2705 Yes |\n| (b) Country of production | Brazil | \u274c **No.** The table only lists T\u00fcrkiye, China and India for this code |\n| (c) Quantity | 900 t | \u2705 Yes |\n\n**Why no figure is given**\n\n- The ruleset selects the default SEE jointly by CN code and country of production.\n- The table has no entry for (7206 10 00, Brazil).\n- The ruleset says that if any required input is not in the table, I must not estimate.\n- So I have not substituted another country's value (T\u00fcrkiye 1.96, China 1.74 or India 2.64 tCO2e/t). Doing so would be an estimate the ruleset forbids and would misstate the declaration.\n\n**What's needed to proceed (any one of these)**\n\n1. A default SEE for CN 7206 10 00 with Brazil as country of production, added to the factor table.\n2. Confirmation that the country of production is actually one of the listed countries. Please verify against the certificate of origin, not just the shipping or invoicing location.\n3. Actual installation-specific emissions data from the Brazilian facility, if the importer's methodology allows this outside the default-value ruleset.\n\nOnce a valid SEE is available, the calculation is: **900 t \u00d7 SEE (tCO2e/t)**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 960,
+    "output_tokens": 560
+  },
+  "latency_s": 8.458,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

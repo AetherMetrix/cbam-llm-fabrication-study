@@ -1,0 +1,15 @@
+{
+  "run_id": "run_08e8eb668057feeb72d26f0c",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded emissions figure under the supplied rules. \n\nThe following specific input is missing or ambiguous:\n- **A single, definitive good CN code:** The scenario provides two conflicting CN codes on the form (`7201` and `7206 10 00`). Under the provided ruleset, the specific embedded emissions (SEE) factor must be selected jointly by the good CN code and the country of production, and no estimation or assumption is permitted to resolve conflicting codes.",
+  "usage": {
+    "input_tokens": 764,
+    "output_tokens": 109
+  },
+  "latency_s": 5.8643,
+  "stop_reason": "STOP",
+  "truncated": false
+}

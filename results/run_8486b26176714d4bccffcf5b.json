@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8486b26176714d4bccffcf5b",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute: the CN code is ambiguous\n\nI cannot compute a definitive embedded-emissions figure because the declaration gives two conflicting CN codes. Under the ruleset, the default SEE is selected jointly by CN code and country, so the factor cannot be determined until the code is resolved.\n\n## The conflict\n\n| Source in declaration | CN code | Good |\n|---|---|---|\n| Goods description | 7214 20 00 | Bars and rods with indentations (ribbed rebar) |\n| CN-code field | 7201 | Pig iron |\n\nThe description of ribbed reinforcing bar is consistent with 7214 20 00, which suggests the CN-code field may be wrong. However, the ruleset does not say which source governs, so I won't choose one.\n\n## Inputs status\n\n- **(a) CN code:** \u274c **Missing (ambiguous).** A single confirmed CN code is needed: either 7214 20 00 or 7201.\n- **(b) Country of production:** \u2705 India (listed for both candidate codes)\n- **(c) Quantity:** \u2705 1,500 t\n\n## How the result depends on the code\n\nThese figures are shown only to show what the correction affects. Neither is the declared result.\n\n- If confirmed as **7214 20 00** (India, 4.27 tCO2e/t): 1,500 \u00d7 4.27 = **6,405.00 tCO2e**\n- If confirmed as **7201** (India, 2.53 tCO2e/t): 1,500 \u00d7 2.53 = **3,795.00 tCO2e**\n\nThe difference is 2,610.00 tCO2e, so the CN code must be resolved before filing.\n\n**Action required:** Confirm the correct CN code and correct the declaration's CN-code field or description so they match. I can then report the definitive figure.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 820
+  },
+  "latency_s": 8.5978,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

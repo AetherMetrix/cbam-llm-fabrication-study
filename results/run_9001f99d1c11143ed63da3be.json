@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9001f99d1c11143ed63da3be",
+  "task_id": "A15",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Based on the ruleset and factor table provided, here is the calculation for the embedded emissions:\n\n* **Good CN code:** 7207 11 90 (Semi-finished products of iron or non-alloy steel...)\n* **Country of production:** China\n* **Default SEE:** 3.314 tCO2e/t\n* **Quantity:** 15,000 tonnes\n\n**Calculation:**\n3.314 tCO2e/t \u00d7 15,000 tonnes = 49,710.00 tCO2e\n\n**Total Embedded Emissions:** 49,710.00 tCO2e",
+  "usage": {
+    "input_tokens": 740,
+    "output_tokens": 153
+  },
+  "latency_s": 4.1714,
+  "stop_reason": "STOP",
+  "truncated": false
+}

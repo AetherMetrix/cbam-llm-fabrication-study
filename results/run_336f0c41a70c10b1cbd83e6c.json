@@ -1,0 +1,15 @@
+{
+  "run_id": "run_336f0c41a70c10b1cbd83e6c",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the provided data is insufficient. \n\nThe following specific input is missing:\n- **Good CN code** (which must correspond to a CN code listed in the factor table: `7201`, `7206 10 00`, `7207 11 90`, or `7214 20 00`).",
+  "usage": {
+    "input_tokens": 739,
+    "output_tokens": 95
+  },
+  "latency_s": 4.9303,
+  "stop_reason": "STOP",
+  "truncated": false
+}

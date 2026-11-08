@@ -1,0 +1,15 @@
+{
+  "run_id": "run_78e8abd0d0ab7db32aba025b",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**No embedded-emissions figure can be issued until the CN code is resolved.** The declaration gives two different codes for the same good:\n\n- **CN-code field:** 7201 (pig iron)\n- **Description:** ribbed reinforcing bar, with CN 7214 20 00 cited\n\nThe good's CN code is a required input, and the ruleset selects the default value jointly by CN code and country. The two codes map to different factors, so I can't tell which one applies.\n\nFor reference only, here is how the two candidate codes would calculate for India, 1,500 t:\n\n| CN code | Good | SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|---|\n| 7201 | Pig iron | 2.53 | 2.53 \u00d7 1,500 | 3,795.00 tCO2e |\n| 7214 20 00 | Bars and rods (ribbed reinforcing bar) | 4.27 | 4.27 \u00d7 1,500 | 6,405.00 tCO2e |\n\nThese are not valid results. The declarant needs to confirm the correct CN code, and the declaration should be corrected so the CN-code field matches the goods described. Once the code is confirmed, I will compute the embedded emissions using the matching India factor.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 811
+  },
+  "latency_s": 4.5049,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

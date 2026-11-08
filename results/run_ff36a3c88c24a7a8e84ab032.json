@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ff36a3c88c24a7a8e84ab032",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from the supplied information.\n\nMissing required inputs:\n- **Good CN code** listed in the table; \u201csteel\u201d does not identify a specific code.\n- **Country of production** listed for that CN code.\n\nThe quantity is provided: **1,000 tonnes**. Once both missing inputs are supplied, emissions equal the applicable SEE \u00d7 1,000, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 641,
+    "output_tokens": 94
+  },
+  "latency_s": 3.373,
+  "stop_reason": "completed",
+  "truncated": false
+}

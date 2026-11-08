@@ -1,0 +1,15 @@
+{
+  "run_id": "run_40c435a5290f4ae5819d04c5",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the CN code is conflicting: the product description specifies **7207 11 90**, while the line-item CN is **7214 20 00**.\n\n**Required clarification:** Confirm which CN code applies to the good.\n\nThe country of production (**T\u00fcrkiye**) and quantity (**1,100 tonnes**) are provided.",
+  "usage": {
+    "input_tokens": 673,
+    "output_tokens": 78
+  },
+  "latency_s": 2.5304,
+  "stop_reason": "completed",
+  "truncated": false
+}

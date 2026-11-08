@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6f7e1b419a0e31d595c37405",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Embedded emissions **cannot be calculated using the provided table**. CN 7201 and the quantity of 1,200 tonnes are supplied, but **USA is not a listed country of production for CN 7201**.\n\nThe rules prohibit estimation when the good\u2013country combination is not in the table; no emissions total can be reported.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 72
+  },
+  "latency_s": 3.3014,
+  "stop_reason": "completed",
+  "truncated": false
+}

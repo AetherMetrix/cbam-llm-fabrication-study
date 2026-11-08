@@ -1,0 +1,15 @@
+{
+  "run_id": "run_60d54867a394d7e0570bb6e8",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Using the **declared summary quantity of 4,000 t**, the default SEE for **CN 7207 11 90, India** is **4.32 tCO\u2082e/t**.\n\nEmbedded emissions = 4,000 \u00d7 4.32 = **17,280.00 tCO\u2082e**.\n\n**Quantity discrepancy:** The line items total 3,500 t, not 4,000 t. Using the line-item total would give **15,120.00 tCO\u2082e**. Please reconcile the quantities before finalising the declaration.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 198
+  },
+  "latency_s": 5.6689,
+  "stop_reason": "completed",
+  "truncated": false
+}

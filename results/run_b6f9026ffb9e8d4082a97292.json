@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b6f9026ffb9e8d4082a97292",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions total because the **country of production is missing**; the mill\u2019s origin certificate has not yet been provided.\n\nInputs available:\n- **CN code:** 7207 11 90\n- **Quantity:** 4,200 tonnes\n\nMissing input:\n- **Country of production:** must be T\u00fcrkiye, China, or India to use the supplied table for this CN code.\n\nOnce confirmed, the calculation is **4,200 \u00d7 the country-specific SEE**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 710,
+    "output_tokens": 112
+  },
+  "latency_s": 3.5519,
+  "stop_reason": "completed",
+  "truncated": false
+}

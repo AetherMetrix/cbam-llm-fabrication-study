@@ -1,0 +1,15 @@
+{
+  "run_id": "run_87e95612db3a8d0a996fe909",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Embedded emissions **cannot be calculated using the provided table** because Brazil is not listed for CN 7201.\n\nThe quantity (800 t) and CN code are provided, but the required country-specific SEE is unavailable. Under the ruleset, no estimate can be made.",
+  "usage": {
+    "input_tokens": 607,
+    "output_tokens": 58
+  },
+  "latency_s": 2.9435,
+  "stop_reason": "completed",
+  "truncated": false
+}

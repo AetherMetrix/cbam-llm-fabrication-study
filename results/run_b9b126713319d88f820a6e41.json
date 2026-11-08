@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b9b126713319d88f820a6e41",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: No estimate can be produced.**\n\nThe CN code is \"(to be confirmed),\" and the ruleset requires a good CN code that appears in the factor table. Without it, the default SEE cannot be selected, because SEE is determined jointly by CN code and country. The other inputs are present: quantity is 1,000 t and country is T\u00fcrkiye.\n\n**To complete the calculation, the PO needs a confirmed CN code.** The description \"steel long product\" does not identify a single heading. For T\u00fcrkiye, the table contains these candidates:\n\n| CN code | Good | Default SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | 1.85 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap ingots) | 1.96 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations, ribs, grooves or other deformations | 2.31 |\n\nOnce the mill confirms the heading, the calculation is:\n\nEmbedded emissions = SEE \u00d7 1,000 t\n\nFor example, if the code is confirmed as 7214 20 00, the result would be 2.31 \u00d7 1,000 = 2,310.00 tCO2e. I have not treated that as the answer, because the code has not been confirmed. The PO should not be booked with an emissions figure until the CN code is supplied.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 765
+  },
+  "latency_s": 3.8247,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

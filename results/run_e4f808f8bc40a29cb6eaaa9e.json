@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e4f808f8bc40a29cb6eaaa9e",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.**\n\nThe good code and quantity are sufficient, but the country of production is in conflict. The ruleset requires a single country of production to select the default SEE, and the two sources disagree:\n\n- **Cover note:** China\n- **Attached customs form:** India\n\nBoth countries are listed for CN 7201 in the factor table, so the table cannot resolve the conflict. Choosing either country would be an assumption, and the ruleset does not permit one.\n\n**Missing or unresolved input:**\n1. **Confirmed country of production for CN 7201 pig iron (1,000 t).** This must be settled between the cover note and the customs form. Once one country is confirmed, the calculation is direct: quantity \u00d7 the table SEE for CN 7201 and that country.\n\nQuantity (1,000 t) and CN code (7201) are both valid and in the table, so no other input is missing.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 716
+  },
+  "latency_s": 4.0414,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

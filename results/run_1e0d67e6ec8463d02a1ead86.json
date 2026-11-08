@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1e0d67e6ec8463d02a1ead86",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute a definitive figure: quantity is inconsistent\n\nThe good and country are valid under the ruleset, but the quantity input conflicts, so I cannot report a definitive embedded-emissions total.\n\n## Inputs checked\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7206 10 00 (Ingots, iron and non-alloy steel) | \u2705 Valid |\n| (b) Country listed for that good | T\u00fcrkiye | \u2705 Valid: SEE = **1.96 tCO2e/t** |\n| (c) Quantity in tonnes | 3 lots \u00d7 1,000 t = **3,000 t** vs. declared total **3,500 t** | \u274c **Conflicting** |\n\n## Why I cannot compute\nThe ruleset requires a single quantity in tonnes. The scenario gives two irreconcilable values:\n- The sum of the lots is 3 \u00d7 1,000 t = **3,000 t**\n- The declared total is **3,500 t**\n\nThe 500 t gap could have several causes, such as a missing fourth lot, misstated lot sizes, or an error in the declared total. The ruleset gives no basis for choosing between them. Picking either value would be an estimate, which the rules prohibit.\n\n## Missing input\n- **A single verified quantity (tonnes) of CN 7206 10 00 ingots produced in T\u00fcrkiye.** This means either:\n  - confirmation that the declared total of 3,500 t is correct, with the lot breakdown corrected to match, or\n  - confirmation that the three lots of 1,000 t (3,000 t total) are correct, with the declared total amended.\n\n## Once the quantity is confirmed\nEmbedded emissions = confirmed quantity (t) \u00d7 1.96 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 965,
+    "output_tokens": 1092
+  },
+  "latency_s": 11.217,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

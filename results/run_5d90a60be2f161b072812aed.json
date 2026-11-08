@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5d90a60be2f161b072812aed",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No estimate can be given.** The embedded emissions calculation cannot be completed for this scenario.\n\n**Check against the required inputs:**\n\n| Input | Supplied | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 | Valid. Listed for bars and rods. |\n| (b) Country listed for that good | Russian Federation | **Not listed.** The table covers only T\u00fcrkiye, China and India for 7214 20 00. |\n| (c) Quantity in tonnes | 2,200 t | Provided. |\n\nThe default SEE is selected jointly by CN code and country. Because the Russian Federation has no default value for CN 7214 20 00 in the supplied table, the ruleset requires that no estimate be made.\n\n**Options to proceed:**\n- Supply a default SEE for the Russian Federation and CN 7214 20 00 from an authorised source, and the calculation can then be run as Quantity \u00d7 SEE.\n- If the actual country of production is one of the listed countries (T\u00fcrkiye, China or India), provide that country and the calculation can be completed using the matching factor.\n\nFor reference only, the quantity is 2,200 t. The table's values for this CN code are 2.31 (T\u00fcrkiye), 3.169 (China) and 4.27 (India) tCO2e/t, which would give 5,082.00, 6,971.80 and 9,394.00 tCO2e respectively. These are not applicable to the declared country and are not the reported result.",
+  "usage": {
+    "input_tokens": 915,
+    "output_tokens": 543
+  },
+  "latency_s": 3.4195,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

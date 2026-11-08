@@ -1,0 +1,15 @@
+{
+  "run_id": "run_94928ef0cbe0f78aed61f5df",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The declaration gives two different CN codes for the good, and the ruleset requires the good's CN code to be established before the default SEE can be selected.\n\n**Conflicting inputs:**\n- The CN-code field reads **7201** (pig iron and spiegeleisen), which is in the factor table for India at **2.53 tCO2e/t**.\n- The description reads **ribbed reinforcing bar** and cites **CN 7214 20 00** (bars and rods with indentations), which is in the table for India at **4.27 tCO2e/t**.\n\nThe two codes describe different goods, so the declaration must be corrected or clarified before a single SEE can be selected.\n\n**Conditional arithmetic (for reference only, not a determination):**\n- If the good is confirmed as CN 7201 (India, 2.53 tCO2e/t) \u00d7 1,500 t = **3,795.00 tCO2e**\n- If the good is confirmed as CN 7214 20 00 (India, 4.27 tCO2e/t) \u00d7 1,500 t = **6,405.00 tCO2e**\n\nThe difference is 2,610.00 tCO2e, so the choice matters materially.\n\n**Information needed to proceed:**\n1. The confirmed CN code of the good (7201 or 7214 20 00, or another code), resolved against the commodity description and the supporting documents.\n2. A corrected CN-code field in the declaration, if the code is an error.\n\nThe country (India) and quantity (1,500 t) are present and listed in the table for both candidate codes, so once the CN code is confirmed the calculation can be completed directly under the ruleset.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 1084
+  },
+  "latency_s": 5.5985,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

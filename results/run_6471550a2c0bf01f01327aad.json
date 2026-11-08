@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6471550a2c0bf01f01327aad",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Because there is a contradiction between the text description (\"Semi-finished product\", CN 7207 11 90) and the declared line-item CN code (7214 20 00, which corresponds to \"Bars and rods...\"), the exact CN code to apply is ambiguous. Per the ruleset, we cannot guess which input is the intended one, so the calculation is provided for both listed CN codes below. You must confirm the correct CN classification before finalizing your declaration.\n\n**Option 1: Based on the line-item CN code (7214 20 00)**\n* **Good:** Bars and rods, of iron or non-alloy steel, with indentations... (CN 7214 20 00)\n* **Country of production:** T\u00fcrkiye\n* **Default SEE:** 2.31 tCO2e/t\n* **Quantity:** 1,100 t\n* **Calculation:** 2.31 tCO2e/t \u00d7 1,100 t = 2,541\n* **Total Embedded Emissions:** **2541.00 tCO2e**\n\n**Option 2: Based on the text description / CN code (7207 11 90)**\n* **Good:** Semi-finished products of iron or non-alloy steel... (CN 7207 11 90)\n* **Country of production:** T\u00fcrkiye\n* **Default SEE:** 3.087 tCO2e/t\n* **Quantity:** 1,100 t\n* **Calculation:** 3.087 tCO2e/t \u00d7 1,100 t = 3,395.7\n* **Total Embedded Emissions:** **3395.70 tCO2e**",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 406
+  },
+  "latency_s": 6.9394,
+  "stop_reason": "STOP",
+  "truncated": false
+}

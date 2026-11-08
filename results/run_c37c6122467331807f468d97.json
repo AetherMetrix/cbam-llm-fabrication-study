@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c37c6122467331807f468d97",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Based on the provided ruleset, I cannot compute the embedded emissions because a required input is missing:\n\n* **Good CN code:** 7207 11 90 (Provided)\n* **Quantity:** 3,300 tonnes (Provided)\n* **Country of production:** Missing (The scenario states it is on a separately attached mill certificate not included in the prompt).\n\nPer the ruleset, default values are country-specific and selected jointly by the CN code and country of production. Because the country of production is missing, no calculation or estimation can be performed. Please provide the country of production (e.g., T\u00fcrkiye, China, or India) to proceed.",
+  "usage": {
+    "input_tokens": 753,
+    "output_tokens": 147
+  },
+  "latency_s": 7.9759,
+  "stop_reason": "STOP",
+  "truncated": false
+}

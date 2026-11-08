@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d9408ab3c70a0b17ae284593",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Embedded emissions cannot be calculated because the **CN code is missing** and the description does not uniquely identify a code in the table.\n\nThe country of production (**India**) and quantity (**600 tonnes**) are provided. Please supply the good\u2019s CN code so the corresponding country-specific SEE can be selected. Under the ruleset, no estimate can be made without it.",
+  "usage": {
+    "input_tokens": 644,
+    "output_tokens": 76
+  },
+  "latency_s": 4.3952,
+  "stop_reason": "completed",
+  "truncated": false
+}

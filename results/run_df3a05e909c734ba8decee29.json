@@ -1,0 +1,15 @@
+{
+  "run_id": "run_df3a05e909c734ba8decee29",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**Cannot compute: required inputs are missing.**\n\nUnder the ruleset, embedded emissions = default SEE (selected by CN code **and** country of production) \u00d7 quantity in tonnes. The scenario gives only the good and CN code, so I cannot determine the figure. Per the ruleset, I have not estimated.\n\n**Inputs status:**\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 Provided: 7201 (Pig iron), which is listed |\n| (b) Country of production | \u274c **Missing** |\n| (c) Quantity in tonnes | \u274c **Missing** |\n\n**Missing inputs needed:**\n1. **Country of production.** The SEE for CN 7201 depends on the country, and the table lists three options:\n   - T\u00fcrkiye: 1.85 tCO2e/t\n   - China: 1.66 tCO2e/t\n   - India: 2.53 tCO2e/t\n\n   If production was in a country not on this list, the table has no default value for it, and the figure still cannot be computed under these rules.\n2. **Quantity of the good in tonnes.** No declared quantity was provided.\n\nOnce both are supplied, the result will be SEE \u00d7 tonnes, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 458
+  },
+  "latency_s": 4.768,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

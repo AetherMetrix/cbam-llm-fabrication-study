@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0bd6a46e216df2b62d1406e3",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Embedded emissions cannot be calculated because the **country of production is missing**. The ruleset requires a country-specific SEE and prohibits estimation when a required input is missing.\n\nPlease specify **T\u00fcrkiye, China, or India** for CN code **7201**. The calculation will then be:\n\n**Embedded emissions = 1,500 t \u00d7 country-specific SEE**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 651,
+    "output_tokens": 84
+  },
+  "latency_s": 3.4577,
+  "stop_reason": "completed",
+  "truncated": false
+}

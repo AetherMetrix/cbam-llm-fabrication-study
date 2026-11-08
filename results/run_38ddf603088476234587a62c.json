@@ -1,0 +1,15 @@
+{
+  "run_id": "run_38ddf603088476234587a62c",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: CN 7206 10 00 (Ingots), T\u00fcrkiye\n\n## Factor Lookup\n\n| CN code | Good | Country | Default SEE |\n|---|---|---|---|\n| 7206 10 00 | Ingots, of iron and non-alloy steel | T\u00fcrkiye | **1.96 tCO2e/t** |\n\nThe good and country are both in the table.\n\n## The Quantity Is Inconsistent\n\nThe scenario gives two figures that don't match:\n\n- **Lot breakdown:** 3 lots \u00d7 1,000 t = **3,000 t**\n- **Declared total:** **3,500 t**\n\nThe 500 t difference has no explanation, so I can't confirm the correct quantity. The ruleset says not to estimate when a required input is unreliable, so I've calculated both figures rather than choosing one.\n\n## Calculations\n\n| Basis | Quantity (t) | SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Declared total | 3,500 | 1.96 | **6,860.00** |\n| Sum of lots | 3,000 | 1.96 | **5,880.00** |\n\n- 1.96 \u00d7 3,500 = 6,860.00 tCO2e\n- 1.96 \u00d7 3,000 = 5,880.00 tCO2e\n\nThe two figures differ by **980.00 tCO2e**.\n\n## Result\n\n- **For the declared quantity (3,500 t), as you requested: 6,860.00 tCO2e.**\n- **Before submitting, resolve the discrepancy.** You could:\n  - Check customs and import documents for a missing fourth lot or a 500 t partial lot.\n  - Check whether one or more lots weigh more than 1,000 t.\n  - Correct the declared total to 3,000 t if the lot breakdown is accurate. In that case, the correct figure is **5,880.00 tCO2e**.\n\nOnce the actual imported tonnage is confirmed, use the matching figure above.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 898
+  },
+  "latency_s": 8.4151,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

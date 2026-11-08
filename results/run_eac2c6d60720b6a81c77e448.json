@@ -1,0 +1,15 @@
+{
+  "run_id": "run_eac2c6d60720b6a81c77e448",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the ruleset and factor table provided, the embedded emissions cannot be calculated. \n\n**Reason:** The declared good has **CN code 7208** (Hot-rolled coil), which is not present in the provided factor table. According to the ruleset, if the good's CN code is not in the table, an estimate must not be made.",
+  "usage": {
+    "input_tokens": 739,
+    "output_tokens": 81
+  },
+  "latency_s": 7.1517,
+  "stop_reason": "STOP",
+  "truncated": false
+}

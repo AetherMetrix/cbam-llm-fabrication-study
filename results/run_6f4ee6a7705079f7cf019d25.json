@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6f4ee6a7705079f7cf019d25",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the embedded emissions for this consignment.\n\n**Input check:**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | **Missing.** CN 7202 11 (ferro-manganese) does not appear in the factor table. |\n| (b) Country of production listed for that good | **Missing.** The table has no row for CN 7202 11 with China (or any other country). |\n| (c) Quantity in tonnes | Provided: 500 t. |\n\n**Missing input required to compute:**\n- A default SEE value (tCO2e/t) for CN 7202 11, ferro-manganese, produced in China, from the factor table.\n\nThe table's China rows cover CN 7201 (1.66), 7206 10 00 (1.74), 7207 11 90 (3.314), and 7214 20 00 (3.169). None of these is the same good as ferro-manganese, so I have not substituted any of them.\n\nOnce a factor row for CN 7202 11 / China is added to the table, the calculation is 500 t \u00d7 that SEE, reported to 2 decimal places.",
+  "usage": {
+    "input_tokens": 968,
+    "output_tokens": 553
+  },
+  "latency_s": 3.2757,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

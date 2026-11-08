@@ -1,0 +1,15 @@
+{
+  "run_id": "run_90ebbc4c4e065dd0edee8878",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: CN 7207 11 90 (Semi-finished steel billets), India\n\n## Input check\n| Required input | Value | Status |\n|---|---|---|\n| CN code | 7207 11 90 | \u2705 In table |\n| Country of production | India | \u2705 Listed for this CN code |\n| Quantity | 275.25 t | \u2705 Provided |\n\n## Factor selected\nMatching on **CN 7207 11 90 + India** gives a default SEE of **4.32 tCO2e/t**.\n\n## Calculation\nEmbedded emissions = SEE \u00d7 Quantity\n= 4.32 tCO2e/t \u00d7 275.25 t\n= (4.32 \u00d7 275) + (4.32 \u00d7 0.25)\n= 1,188.00 + 1.08\n= **1,189.08 tCO2e**\n\n## Result\n**Total embedded emissions: 1,189.08 tCO2e**",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 358
+  },
+  "latency_s": 3.6034,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

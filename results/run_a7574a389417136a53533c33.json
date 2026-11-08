@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a7574a389417136a53533c33",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can't calculate embedded emissions for this line because the country of production is not in the factor table.\n\n- **CN code 7201** is in the table, but only for T\u00fcrkiye (1.85 tCO2e/t), China (1.66 tCO2e/t), and India (2.53 tCO2e/t).\n- **Country of production \"USA\"** is not listed for CN 7201. Under the ruleset, the default SEE is selected jointly by CN code and country, so no default value applies.\n\nPer the ruleset, I have not estimated a value for this line. The quantity (1,200 t) and CN code are valid, so the declaration would be calculable if the country of production were corrected to one listed for CN 7201 (T\u00fcrkiye, China, or India), or if default values for the USA were added to the factor table.",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 283
+  },
+  "latency_s": 1.9561,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

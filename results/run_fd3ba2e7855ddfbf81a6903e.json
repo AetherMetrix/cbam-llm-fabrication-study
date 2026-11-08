@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fd3ba2e7855ddfbf81a6903e",
+  "task_id": "B-O04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is insufficient under the supplied ruleset. \n\nThe following required input is missing:\n- **Good CN code**: The scenario only states \"a steel product\" without specifying the exact good or its corresponding CN code from the factor table (e.g., 7201, 7206 10 00, 7207 11 90, or 7214 20 00).",
+  "usage": {
+    "input_tokens": 732,
+    "output_tokens": 110
+  },
+  "latency_s": 4.6767,
+  "stop_reason": "STOP",
+  "truncated": false
+}

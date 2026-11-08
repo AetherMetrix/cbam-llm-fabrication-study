@@ -1,0 +1,15 @@
+{
+  "run_id": "run_261850aec5c9d9f164d9cb6a",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions for Pig Iron (CN 7201), 1,000 t\n\n**I can't give a single figure because the country of production is in conflict.**\n\n## The Conflict\n\n| Source | Country of production |\n|---|---|\n| Cover note | China |\n| Customs form | India |\n\nUnder the ruleset, the default SEE depends jointly on the CN code and the country. A single verified country is a required input. The two sources disagree, and the ruleset gives no rule for deciding which one wins. Choosing one would be an estimate, which the ruleset forbids.\n\n## Results Under Each Possible Country\n\n| Scenario | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| If China | 1.66 | 1,000 | **1,660.00** |\n| If India | 2.53 | 1,000 | **2,530.00** |\n\nThe two results differ by **870.00 tCO2e**. India's figure is about 52% higher, so the choice of country matters a great deal.\n\n## Next Step\n\nPlease confirm the actual country of production. The usual way is to check against the supplier's installation details or other production documents. Once it is confirmed, the matching figure above applies.\n\n- Customs records are often the reference document for import declarations. Even so, the conflicting cover note should be investigated and resolved before filing.\n- If the record is not corrected, the discrepancy could raise questions in a verification or audit.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 628
+  },
+  "latency_s": 7.5076,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

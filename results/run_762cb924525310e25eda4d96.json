@@ -1,0 +1,15 @@
+{
+  "run_id": "run_762cb924525310e25eda4d96",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can't compute embedded emissions for this datasheet because the required CN code is missing. The ruleset requires a good CN code that appears in the factor table, and the description alone matches more than one heading.\n\nThe India rows that could plausibly fit \"semi-finished steel, continuously cast\" are:\n\n- **7206 10 00**: Ingots of iron and non-alloy steel (India default SEE: 2.64 tCO2e/t)\n- **7207 11 90**: Semi-finished products of iron or non-alloy steel, containing less than 0.25% carbon (India default SEE: 4.32 tCO2e/t)\n\nThe 0.2% carbon figure points toward the 7207 heading, which covers semi-finished products with less than 0.25% carbon. However, I can't assign a code from the description alone. The heading must be confirmed from the product's customs classification or the declaration, for example the commercial invoice or the customs declaration.\n\nOnce you confirm the CN code, I can calculate the embedded emissions for the 600 t lot using the India default SEE for that code.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 826
+  },
+  "latency_s": 4.7354,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

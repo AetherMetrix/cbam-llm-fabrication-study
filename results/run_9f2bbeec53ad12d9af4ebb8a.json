@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9f2bbeec53ad12d9af4ebb8a",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Result: cannot be calculated. The good is not in the factor table.**\n\n**Check of required inputs:**\n\n| Input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7202 41 (ferro-chromium, > 4% carbon) | **No.** The table only covers 7201, 7206 10 00, 7207 11 90 and 7214 20 00. |\n| (b) Country of production | India | India is listed, but only for the goods above. There is no 7202 41 / India entry. |\n| (c) Quantity | 700 t | Yes |\n\n**Why I did not estimate:**\n- The ruleset selects the default SEE by CN code and country together. Without a 7202 41 / India row, there is no factor to apply.\n- The ruleset says that if any required input is not in the table, no estimate is made.\n- Using a factor from another good (e.g., pig iron 7201 / India at 2.53 tCO2e/t) would not comply. Ferro-chromium is a different product with a different emissions profile.\n\n**To complete the calculation:**\nProvide the default SEE for CN 7202 41, country India, from the applicable CBAM default-value publication. Alternatively, provide actual installation-specific emissions data if the ruleset allows it. The result would then be:\n\nEmbedded emissions = SEE (7202 41, India) \u00d7 700 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 917,
+    "output_tokens": 483
+  },
+  "latency_s": 6.9568,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

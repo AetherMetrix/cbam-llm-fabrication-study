@@ -1,0 +1,15 @@
+{
+  "run_id": "run_214f9e5f238dc42e2d1d77ae",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute: the CN code is unresolved\n\nI can't compute a definitive embedded-emissions figure because the declaration gives two conflicting CN codes.\n\n## The conflict\n\n| Source in declaration | CN code | Good per factor table | India default SEE |\n|---|---|---|---|\n| CN-code field | 7201 | Pig iron and spiegeleisen | 2.53 tCO2e/t |\n| Goods description | 7214 20 00 | Bars and rods, with indentations (rebar) | 4.27 tCO2e/t |\n\nThe ruleset selects the SEE by both CN code and country. Since the two codes map to different factors, the result depends entirely on which code is correct. Choosing one would be an estimate, which the ruleset doesn't allow.\n\n## Status of required inputs\n\n| Input | Status |\n|---|---|\n| (a) Good CN code in the table | **Missing (ambiguous).** Two conflicting codes (7201 vs. 7214 20 00) are declared. A single confirmed code is needed. |\n| (b) Country of production listed for that good | Provided: India, which is listed for both candidate codes. |\n| (c) Quantity in tonnes | Provided: 1,500 t. |\n\n## Needed to proceed\n\nPlease give a single confirmed CN code for the imported good. For example, correct the CN-code field or confirm that the description is wrong. Once that is resolved, the calculation is SEE (India, confirmed code) \u00d7 1,500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 776
+  },
+  "latency_s": 8.2629,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

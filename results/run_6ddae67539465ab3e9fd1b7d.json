@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6ddae67539465ab3e9fd1b7d",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the embedded emissions figure under the supplied ruleset. \n\nThe following required input is missing from the factor table:\n* **Country of production listed for the good (Default SEE for CN 7206 10 00 from Brazil):** The declared country of production is Brazil, which is not listed in the factor table for CN code 7206 10 00 (only T\u00fcrkiye, China, and India are listed).",
+  "usage": {
+    "input_tokens": 787,
+    "output_tokens": 100
+  },
+  "latency_s": 6.8134,
+  "stop_reason": "STOP",
+  "truncated": false
+}

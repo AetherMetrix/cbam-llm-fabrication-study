@@ -1,0 +1,15 @@
+{
+  "run_id": "run_56769bbfa4756aed183bc4f5",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Based on the provided ruleset, I cannot compute the embedded emissions because a required input is missing: the **country of production**. \n\nPer the ruleset:\n- Default values are country-specific and must be selected jointly by the good CN code and the country.\n- The required inputs are (a) good CN code, (b) country of production listed for that good, and (c) quantity in tonnes. If any is missing, no estimate is to be made.\n\nPlease provide the country of production (e.g., T\u00fcrkiye, China, or India) to complete the calculation.",
+  "usage": {
+    "input_tokens": 703,
+    "output_tokens": 127
+  },
+  "latency_s": 4.5258,
+  "stop_reason": "STOP",
+  "truncated": false
+}

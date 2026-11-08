@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e12a2588ea32a343a1bebcf6",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "I can\u2019t calculate the embedded emissions because two required inputs are missing:\n\n- **Country of production:** T\u00fcrkiye, China, or India\n- **Declared quantity in tonnes**\n\nPlease provide both for **CN 7201 (pig iron)**.",
+  "usage": {
+    "input_tokens": 606,
+    "output_tokens": 52
+  },
+  "latency_s": 2.2306,
+  "stop_reason": "completed",
+  "truncated": false
+}

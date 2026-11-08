@@ -1,0 +1,15 @@
+{
+  "run_id": "run_41f72c10367f83daf900c098",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the country of production is conflicting: India versus T\u00fcrkiye.\n\n**Required clarification:** Confirm the country of production for the 750 t of ingots (CN 7206 10 00). The CN code and quantity are provided, but the applicable country-specific SEE cannot be selected until this conflict is resolved.",
+  "usage": {
+    "input_tokens": 660,
+    "output_tokens": 75
+  },
+  "latency_s": 4.1556,
+  "stop_reason": "completed",
+  "truncated": false
+}

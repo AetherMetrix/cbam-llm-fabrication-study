@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1cbe9dc981fad5d1c42c81eb",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Embedded emissions **cannot be calculated from the supplied table** because Russian Federation is not listed for CN **7214 20 00**.\n\nThe declared quantity is **2,200 tonnes**, but no applicable country-specific SEE is available. Under the ruleset, no estimate or substitute country factor may be used.",
+  "usage": {
+    "input_tokens": 637,
+    "output_tokens": 66
+  },
+  "latency_s": 2.8528,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_604b2b5bfb8feb6b53df58d2",
+  "task_id": "B-O04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.**\n\n## Why\n\nUnder the ruleset, the default SEE is selected jointly by **(CN code, country)**. The scenario gives the country (China) and the quantity (500 t), but describes the good only as \"a steel product.\" That does not identify a CN code. The table lists four different goods with China values, and each has a different SEE:\n\n| CN code | Good | China SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 1.66 |\n| 7206 10 00 | Ingots, iron/non-alloy steel | 1.74 |\n| 7207 11 90 | Semi-finished products, iron/non-alloy steel | 3.314 |\n| 7214 20 00 | Bars and rods, iron/non-alloy steel | 3.169 |\n\nBecause the SEE cannot be determined, the rule \"if any required input is missing, do not estimate\" applies. I have not calculated a range, an average, or a \"most likely\" value.\n\n## Input status\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | **Missing.** \"Steel product\" does not map to a single CN code. |\n| (b) Country of production listed for that good | Provided (China). It can only be confirmed against a specific CN code once (a) is known. |\n| (c) Quantity in tonnes | Provided (500 t). |\n\n## What is needed\n\nPlease provide the **specific CN code** of the good, which must be one of 7201, 7206 10 00, 7207 11 90, or 7214 20 00. If the good's CN code is not in the table, the figure cannot be computed under this ruleset.\n\nOnce the CN code is supplied, the calculation is: embedded emissions = China SEE for that CN code \u00d7 500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 706
+  },
+  "latency_s": 7.1665,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

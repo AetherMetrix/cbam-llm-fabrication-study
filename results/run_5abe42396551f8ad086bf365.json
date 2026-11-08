@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5abe42396551f8ad086bf365",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions cannot be calculated. \n\n**Reason:**\n- **Good CN code:** 7214 20 00 (Listed in the table)\n- **Quantity:** 1,200 tonnes (Provided)\n- **Country of production:** United States (**Not listed** in the table for CN 7214 20 00; only T\u00fcrkiye, China, and India are available).\n\nPer the ruleset, if the country of production is not listed in the table for the specified good, an estimate must not be made.",
+  "usage": {
+    "input_tokens": 708,
+    "output_tokens": 134
+  },
+  "latency_s": 4.0738,
+  "stop_reason": "STOP",
+  "truncated": false
+}

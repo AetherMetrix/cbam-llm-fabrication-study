@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c45e2bf276da08eac22110a9",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**No estimate can be given for this scenario.**\n\nThe CN code is valid, but the country is not in the factor table:\n\n- **CN code 7214 20 00** (bars and rods with indentations, ribbed, etc.) is in the table.\n- **Country of production: Russian Federation** is not listed for this code. The table covers only T\u00fcrkiye, China, and India.\n- **Quantity: 2,200 t** is supplied.\n\nUnder the ruleset, the default SEE is selected jointly by CN code and country, and if the country is not listed for that good, the calculation must not be estimated. No default SEE exists for 7214 20 00 from the Russian Federation in the provided table, so embedded emissions cannot be computed from this table.\n\nTo proceed, you would need one of the following:\n- A verified country of production that is listed for CN 7214 20 00 (T\u00fcrkiye, China, or India), which would allow calculation at 2.31, 3.169, or 4.27 tCO2e/t respectively.\n- A source of country-specific embedded emissions data for the Russian Federation, outside this ruleset, which would need to be supplied and assessed under the applicable CBAM rules.",
+  "usage": {
+    "input_tokens": 915,
+    "output_tokens": 435
+  },
+  "latency_s": 2.6766,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

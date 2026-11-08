@@ -1,0 +1,15 @@
+{
+  "run_id": "run_75e57e5007e8835356942fd9",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "The country of production is missing, so embedded emissions cannot be calculated under the ruleset.\n\nFor CN **7214 20 00** and **2,500 tonnes**, please specify the country of production: **T\u00fcrkiye, China, or India**.",
+  "usage": {
+    "input_tokens": 615,
+    "output_tokens": 55
+  },
+  "latency_s": 2.3291,
+  "stop_reason": "completed",
+  "truncated": false
+}

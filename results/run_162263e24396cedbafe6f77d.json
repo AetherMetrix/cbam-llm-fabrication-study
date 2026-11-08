@@ -1,0 +1,15 @@
+{
+  "run_id": "run_162263e24396cedbafe6f77d",
+  "task_id": "B-S10",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded emissions figure under the supplied rules because required data is missing.\n\n**Missing Input:**\n* **Country of production:** While the scenario states that the buyer is in Germany and the seller is a desk in Geneva, it does not specify the actual country of production (e.g., T\u00fcrkiye, China, or India) required to select the default specific embedded emissions (SEE) factor for CN code 7206 10 00.",
+  "usage": {
+    "input_tokens": 782,
+    "output_tokens": 101
+  },
+  "latency_s": 5.5138,
+  "stop_reason": "STOP",
+  "truncated": false
+}

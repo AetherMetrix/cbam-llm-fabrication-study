@@ -1,0 +1,15 @@
+{
+  "run_id": "run_14fa458dcaab610e2d5e3b8f",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\n**Missing/Unresolved Input:**\n* **Country of production:** A single, unambiguous country of production is required to select the default specific embedded emissions (SEE) value. The scenario provides conflicting origins (India and T\u00fcrkiye), which have different default SEE values for CN code 7206 10 00 (2.64 tCO2e/t for India vs. 1.96 tCO2e/t for T\u00fcrkiye).",
+  "usage": {
+    "input_tokens": 754,
+    "output_tokens": 112
+  },
+  "latency_s": 6.277,
+  "stop_reason": "STOP",
+  "truncated": false
+}

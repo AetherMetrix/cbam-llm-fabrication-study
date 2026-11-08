@@ -1,0 +1,15 @@
+{
+  "run_id": "run_44ff465ed700b72c882179df",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions under the supplied rules because **USA is not listed for CN 7201** in the factor table.\n\n- CN code: **7201** \u2014 provided and in the table.\n- Quantity: **1,200 tonnes** \u2014 provided.\n- Missing required input: **a country of production listed for CN 7201**. The table lists only T\u00fcrkiye, China, and India; no USA-specific SEE is supplied.\n\nNo other country\u2019s factor can be substituted.",
+  "usage": {
+    "input_tokens": 676,
+    "output_tokens": 103
+  },
+  "latency_s": 3.2922,
+  "stop_reason": "completed",
+  "truncated": false
+}

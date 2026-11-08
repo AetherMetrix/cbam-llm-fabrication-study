@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e758daefa53c6eb02785383f",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: country of production is missing\n\nUnder the ruleset, the default SEE is selected jointly by **CN code and country of production**, and all three inputs are required:\n\n| Required input | Provided? |\n|---|---|\n| (a) CN code in table | \u2705 7201 (pig iron) |\n| (b) Country of production listed for that good | \u274c **Not provided** |\n| (c) Quantity in tonnes | \u2705 1,000 t |\n\nCN 7201 has three different default values depending on country, so no single SEE can be selected. The ruleset says not to estimate when an input is missing, so I have not chosen a country, averaged the values, or used the highest or lowest.\n\n## Needed to proceed\n\nPlease specify the **country of production**. For CN 7201, the table lists:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 1.85 |\n| China | 1.66 |\n| India | 2.53 |\n\nOnce the country is confirmed, the calculation will be:\n\n**Embedded emissions = SEE (CN 7201, country) \u00d7 1,000 t**, rounded half-up to 2 decimal places.\n\nIf the country of production is not one of these three, the table has no default value for it, and the emissions cannot be computed under this ruleset.",
+  "usage": {
+    "input_tokens": 877,
+    "output_tokens": 702
+  },
+  "latency_s": 7.9013,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

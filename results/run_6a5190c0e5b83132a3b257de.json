@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6a5190c0e5b83132a3b257de",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is insufficient under the supplied ruleset. \n\nSpecifically, the following required input is missing or unresolved:\n* **Country of production:** There is conflicting information regarding the country of production (the email states the mill is in T\u00fcrkiye, while the declaration header lists China). Because the default specific embedded emissions (SEE) are country-specific (2.31 tCO2e/t for T\u00fcrkiye vs. 3.169 tCO2e/t for China for CN 7214 20 00), a single confirmed country of production is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 766,
+    "output_tokens": 138
+  },
+  "latency_s": 5.2732,
+  "stop_reason": "STOP",
+  "truncated": false
+}

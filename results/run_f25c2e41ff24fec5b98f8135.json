@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f25c2e41ff24fec5b98f8135",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot give a definitive embedded-emissions figure because the quantity is inconsistent.\n\n**Inputs**\n- CN code: 7206 10 00 (in table)\n- Country: T\u00fcrkiye (listed for this code)\n- Default SEE: 1.96 tCO2e/t\n- Quantity: **conflicting**\n  - Three lots of 1,000 t each sum to 3,000 t.\n  - The declared total is 3,500 t.\n\nThe ruleset requires a single quantity in tonnes. The lot sum and the declared total differ by 500 t, and the data does not show which is correct (for example, a fourth lot of 500 t, a lot-size error, or a typo in the total).\n\n**Conditional arithmetic (not a determination)**\n- If the quantity is 3,000 t (lot sum): 1.96 \u00d7 3,000 = **5,880.00 tCO2e**\n- If the quantity is 3,500 t (declared total): 1.96 \u00d7 3,500 = **6,860.00 tCO2e**\n\n**To finalize, please confirm:**\n1. The correct total quantity in tonnes: 3,000 t or 3,500 t, or another verified figure.\n2. If there is a fourth lot of 500 t, its quantity and origin, since the same SEE applies only if it is also T\u00fcrkiye-produced ingot under CN 7206 10 00.\n\nOnce the quantity is confirmed, I will report the total rounded to 2 decimal places.",
+  "usage": {
+    "input_tokens": 965,
+    "output_tokens": 1010
+  },
+  "latency_s": 4.9423,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

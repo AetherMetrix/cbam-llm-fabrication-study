@@ -1,0 +1,15 @@
+{
+  "run_id": "run_530d7d74d05e82738c85fd4a",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can't calculate embedded emissions for this shipment because CN code 7202 11 (ferro-manganese, >2% carbon) is not in the factor table. Under the ruleset, a good must be in the table to produce an estimate, so I have not estimated a figure.\n\nThe table covers only these CN codes:\n- 7201 (pig iron and spiegeleisen)\n- 7206 10 00 (ingots of iron and non-alloy steel)\n- 7207 11 90 (semi-finished products of iron or non-alloy steel)\n- 7214 20 00 (bars and rods with indentations)\n\nThe quantity (500 t) and country (China) are provided, but they cannot be used without a matching default SEE for CN 7202 11 and China.\n\nTo proceed, you would need to supply a default SEE value for CN 7202 11 produced in China from an authorised source, or confirm whether a different CN code applies to the good. Once a table entry exists, the calculation is 500 t \u00d7 the China SEE for that code, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 910,
+    "output_tokens": 377
+  },
+  "latency_s": 2.4615,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

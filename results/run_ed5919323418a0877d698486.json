@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ed5919323418a0877d698486",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is inconsistent and insufficient to determine the exact quantity of the good. \n\nSpecifically, the following required input is missing or unresolved:\n- **A single, reconciled quantity in tonnes:** The scenario provides conflicting quantity figures\u2014two line items that sum to 3,500 tonnes (2,000 t + 1,500 t) alongside a summary total of 4,000 tonnes. Clarification is required on whether the declared quantity is 3,500 tonnes, 4,000 tonnes (with a missing 500-tonne line item), or another reconciled figure.",
+  "usage": {
+    "input_tokens": 769,
+    "output_tokens": 143
+  },
+  "latency_s": 4.4186,
+  "stop_reason": "STOP",
+  "truncated": false
+}

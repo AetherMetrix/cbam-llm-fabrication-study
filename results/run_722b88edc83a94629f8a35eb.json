@@ -1,0 +1,15 @@
+{
+  "run_id": "run_722b88edc83a94629f8a35eb",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the embedded-emissions figure for this shipment.\n\nThe good and quantity are usable, but the country is not covered by the factor table:\n\n- **CN code 7206 10 00** (ingots of iron and non-alloy steel): present in the table.\n- **Quantity: 900 t**: provided in the email. I have not seen the attached invoice or packing list, so this figure is taken from the email text only.\n- **Country of production: Brazil** (Belo Horizonte facility): **not listed** for CN 7206 10 00. The table covers only T\u00fcrkiye (1.96), China (1.74), and India (2.64). Under the ruleset, the default SEE is selected jointly by CN code and country, so no value can be applied.\n\n**Missing input:** a default SEE value (tCO2e/t) for CN 7206 10 00 with country of production = Brazil, from a factor table that includes it.\n\nOnce that value is supplied, the calculation is: embedded emissions (tCO2e) = Brazil SEE \u00d7 900 t, rounded half-up to 2 decimal places. I have not used any other country's value as a substitute.",
+  "usage": {
+    "input_tokens": 1018,
+    "output_tokens": 560
+  },
+  "latency_s": 3.094,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

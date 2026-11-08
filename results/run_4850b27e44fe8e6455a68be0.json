@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4850b27e44fe8e6455a68be0",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: the CN code conflict must be resolved before a single figure can be reported.**\n\nThe scenario gives two different CN codes for the same goods:\n- Description text: CN 7207 11 90 (semi-finished products)\n- Line-item code: CN 7214 20 00 (bars and rods)\n\nBoth codes are in the factor table, and the T\u00fcrkiye factor exists for each, so the calculation can run under either one. The ruleset does not say which code takes precedence, so I have not chosen one.\n\n**Option A: line-item CN 7214 20 00**\n- SEE (T\u00fcrkiye) = 2.31 tCO2e/t\n- 1,100 t \u00d7 2.31 = **2,541.00 tCO2e**\n\n**Option B: text CN 7207 11 90**\n- SEE (T\u00fcrkiye) = 3.087 tCO2e/t\n- 1,100 t \u00d7 3.087 = **3,395.70 tCO2e**\n\nThe two results differ by 854.70 tCO2e, so the discrepancy is material.\n\n**Recommended action:** Confirm the correct CN code against the product's actual classification (for example, the import declaration or the commercial invoice) and correct whichever record is wrong. Once the code is confirmed, the embedded emissions figure can be reported. If the line-item code is confirmed as correct, the figure is 2,541.00 tCO2e.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 782
+  },
+  "latency_s": 3.9575,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

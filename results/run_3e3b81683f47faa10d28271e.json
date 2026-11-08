@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3e3b81683f47faa10d28271e",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No embedded emissions figure can be calculated yet.** The country of production is missing from the scenario.\n\nThe email gives the CN code (7214 20 00, which is in the factor table) and the quantity (2,000 tonnes net). The ruleset requires the default SEE to be selected by both CN code and country of production, so the country must be confirmed before a figure can be produced. The mill certificate and mill-test report are mentioned as attachments, but their contents are not provided here.\n\n**To proceed, please confirm the country of production** (the mill certificate or mill-test report is the likely source). The CN 7214 20 00 options in the factor table are:\n\n| Country of production | Default SEE (tCO2e/t) | Result for 2,000 t (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye | 2.31 | 4,620.00 |\n| China | 3.169 | 6,338.00 |\n| India | 4.27 | 8,540.00 |\n\nThese are the calculated results for each listed country, not an estimate for this consignment. The correct figure depends on which country is confirmed, and a figure is only valid for the country that matches the production records.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 589
+  },
+  "latency_s": 3.3675,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

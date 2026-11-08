@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1f249f3929efa65b70511e6d",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the data provided is contradictory and therefore insufficient to establish a single valid input for the calculation. \n\nSpecifically, the following required input is missing or unresolved:\n* **Country of production:** There is a conflict in the provided scenario regarding the country of production for the good (CN 7214 20 00). The email indicates the mill is in **T\u00fcrkiye** (which has a default SEE of 2.31 tCO2e/t), while the declaration header lists **China** (which has a default SEE of 3.169 tCO2e/t). Because default values are country-specific and must be selected jointly by the good CN code and a single verified country of production, a definitive confirmed country of production is required before the calculation can be performed.",
+  "usage": {
+    "input_tokens": 766,
+    "output_tokens": 181
+  },
+  "latency_s": 18.2248,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_00ddac2a4fc034f8d8e2dffe",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 3,087.00 tCO2e**\n\n**Inputs:**\n- **CN code:** 7207 11 90 is in the factor table (semi-finished products of iron or non-alloy steel).\n- **Country of production:** T\u00fcrkiye is listed for this CN code.\n- **Quantity:** 1,000 t.\n\n**Calculation:**\n- Default SEE (7207 11 90, T\u00fcrkiye) = 3.087 tCO2e/t\n- Embedded emissions = 3.087 tCO2e/t \u00d7 1,000 t = **3,087.00 tCO2e**\n\nThe table's description for 7207 11 90 is truncated, so I matched the code to the scenario's \"semi-finished steel billets\" using the CN code alone. The ruleset selects the default value by CN code and country, so this does not change the result.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 452
+  },
+  "latency_s": 2.3357,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f664a4e23e2a464c18a9a6f2",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Embedded emissions cannot be calculated because the **country of production is missing**. The rules require a country-specific SEE and prohibit estimation when a required input is missing.\n\nPlease specify whether the 1,500 tonnes of CN **7201** pig iron were produced in **T\u00fcrkiye, China, or India**.",
+  "usage": {
+    "input_tokens": 651,
+    "output_tokens": 65
+  },
+  "latency_s": 3.0516,
+  "stop_reason": "completed",
+  "truncated": false
+}

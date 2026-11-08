@@ -1,0 +1,15 @@
+{
+  "run_id": "run_58d79008ff8ec5f0c3c1d352",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded-emissions total for this line.\n\n**Inputs check:**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | Present: CN 7201 (pig iron) |\n| (b) Country of production listed for that good | **Missing:** Viet Nam is not listed for CN 7201. The table covers only T\u00fcrkiye, China, and India. |\n| (c) Quantity in tonnes | Present: 1,800 t |\n\n**Missing input:**\n- A default SEE value (tCO2e/t) for CN 7201 with country of production = Viet Nam.\n\nThe declared route (basic blast-furnace) is not a selection variable in the ruleset, so it does not affect the lookup. I have not used the T\u00fcrkiye, China, or India values as a substitute, since the ruleset selects the SEE jointly by good and country.\n\nTo compute the total, the factor table would need a CN 7201 / Viet Nam row. The result would then be SEE \u00d7 1,800 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 558
+  },
+  "latency_s": 3.129,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

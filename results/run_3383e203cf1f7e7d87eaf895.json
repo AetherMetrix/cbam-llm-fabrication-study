@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3383e203cf1f7e7d87eaf895",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No embedded emissions estimate can be given yet.** The CN code is marked \"(to be confirmed),\" and the ruleset requires a CN code that is in the factor table before any calculation. The description (\"steel long product, exact heading TBD by mill\") doesn't identify a single heading either.\n\n**What's needed to complete the calculation:**\n\n1. **Confirmed CN code** that appears in the factor table. The table includes these headings with T\u00fcrkiye factors:\n\n| CN code | Good (abbreviated) | T\u00fcrkiye default SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | 1.85 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel | 1.96 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations, ribs, grooves or other deformations | 2.31 |\n\n2. **Country of production:** T\u00fcrkiye is listed, so this input is satisfied, provided the CN code is one of the rows above.\n\n3. **Quantity:** 1,000 t is provided.\n\n**Once the CN code is confirmed,** the calculation is:\n\nEmbedded emissions = SEE (CN code, T\u00fcrkiye) \u00d7 1,000 t, rounded half-up to 2 decimal places.\n\nThe mill should confirm the heading from the actual product specification, such as whether the product is a bar or rod with indentations (7214 20 00), since \"long product\" alone does not determine the code. If the confirmed code is not one of the table entries, no estimate can be produced under this ruleset.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 934
+  },
+  "latency_s": 5.0275,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

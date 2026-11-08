@@ -1,0 +1,15 @@
+{
+  "run_id": "run_29151a4c9bf582abaa99fc79",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Because there is a contradiction in the scenario regarding the good's classification\u2014the text description specifies a semi-finished product (CN 7207 11 90), while the line-item code is declared as CN 7214 20 00 (Bars and rods)\u2014a single definitive calculation cannot be confirmed without resolving which CN code is the legally valid declaration. \n\nPer the ruleset, we cannot estimate when a required input (the exact good CN code) is ambiguous. However, based strictly on the provided factor table for **T\u00fcrkiye** and a quantity of **1,100 tonnes**, here are the exact calculations for both cited CN codes so you can apply the one that corresponds to your verified customs declaration:\n\n**Option 1: Based on the line-item CN code (7214 20 00)**\n* **Good:** Bars and rods, of iron or non-alloy steel... (CN 7214 20 00)\n* **Country of Production:** T\u00fcrkiye\n* **Default SEE:** 2.31 tCO2e/t\n* **Quantity:** 1,100 t\n* **Calculation:** 2.31 \u00d7 1,100 = 2,541\n* **Total Embedded Emissions:** **2541.00 tCO2e**\n\n**Option 2: Based on the text description CN code (7207 11 90)**\n* **Good:** Semi-finished products of iron or non-alloy steel... (CN 7207 11 90)\n* **Country of Production:** T\u00fcrkiye\n* **Default SEE:** 3.087 tCO2e/t\n* **Quantity:** 1,100 t\n* **Calculation:** 3.087 \u00d7 1,100 = 3,395.7\n* **Total Embedded Emissions:** **3395.70 tCO2e**",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 438
+  },
+  "latency_s": 11.9688,
+  "stop_reason": "STOP",
+  "truncated": false
+}

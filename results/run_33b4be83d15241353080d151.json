@@ -1,0 +1,15 @@
+{
+  "run_id": "run_33b4be83d15241353080d151",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The country of production is conflicting: the email says **T\u00fcrkiye**, while the declaration header says **China**. The ruleset does not specify which source takes precedence.\n\nFor **CN 7214 20 00**, quantity **2,000 t**:\n- **If T\u00fcrkiye:** 2,000 \u00d7 2.31 = **4,620.00 tCO2e**\n- **If China:** 2,000 \u00d7 3.169 = **6,338.00 tCO2e**\n\nPlease confirm the country of production before selecting the final total.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 248
+  },
+  "latency_s": 7.4349,
+  "stop_reason": "completed",
+  "truncated": false
+}

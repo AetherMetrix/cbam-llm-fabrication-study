@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ffef023f1705877a1dfb99bc",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot Compute: Missing Required Input\n\nI cannot compute a definitive embedded-emissions figure. The ruleset requires the SEE to be selected jointly by **CN code and country**, and the scenario does not identify the good's CN code.\n\n## Input Check\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) Good CN code in the table | \u274c No | **Missing.** \"Steel goods\" is not a CN code. |\n| (b) Country of production listed for that good | \u2705 India | Listed for every CN code in the table |\n| (c) Quantity in tonnes | \u2705 3,000 t | Valid |\n\n## Why \"Steel goods\" Is Insufficient\n\nSeveral CN codes in the table could describe steel goods, and each has a different default SEE for India:\n\n| CN code | Good | India SEE (tCO2e/t) |\n|---|---|---|\n| 7206 10 00 | Ingots, of iron and non-alloy steel | 2.64 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 4.32 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations\u2026 | 4.27 |\n\n(7201, pig iron and spiegeleisen, is listed too, but it is not normally classified as a steel good.)\n\nChoosing among these would be an estimate, which the ruleset prohibits.\n\n## What I Need to Complete the Calculation\n\n**The specific CN code of the goods produced**, for example 7206 10 00, 7207 11 90, or 7214 20 00.\n\nOnce you confirm the CN code, I will calculate:\n\n> Embedded emissions = India SEE for that CN code \u00d7 3,000 t, rounded half-up to 2 decimal places.\n\nIf the 3,000 t covers more than one type of steel good, please also give the tonnage for each CN code so each line can be calculated separately.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 861
+  },
+  "latency_s": 9.1516,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_604aa7a478bb7a8168150dda",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "An exact embedded emissions calculation cannot be conclusively finalized because the declaration contains conflicting CN codes (7201 and 7206 10 00). According to the ruleset, the specific embedded emissions (SEE) must be selected jointly by a single definitive (good CN code, country) pair. \n\nTo proceed with compliance reporting, you must clarify which CN code is authoritative. For reference, here are the calculations for both listed CN codes based on the provided factor table (Country: China, Quantity: 900 t):\n\n1. **If CN code 7201 applies** (matches the text description \"Pig iron...\"):\n   * **Default SEE:** 1.66 tCO2e/t\n   * **Calculation:** 1.66 tCO2e/t \u00d7 900 t = **1494.00 tCO2e**\n\n2. **If CN code 7206 10 00 applies** (\"Ingots, of iron and non-alloy steel...\"):\n   * **Default SEE:** 1.74 tCO2e/t\n   * **Calculation:** 1.74 tCO2e/t \u00d7 900 t = **1566.00 tCO2e**",
+  "usage": {
+    "input_tokens": 727,
+    "output_tokens": 281
+  },
+  "latency_s": 7.9189,
+  "stop_reason": "STOP",
+  "truncated": false
+}

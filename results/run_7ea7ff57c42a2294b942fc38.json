@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7ea7ff57c42a2294b942fc38",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: 250 t Reinforcing Bar from T\u00fcrkiye\n\n**Embedded emissions: 577.50 tCO2e**\n\n## Inputs\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations/ribs) | Yes |\n| (b) Country of production | T\u00fcrkiye | Yes, listed for this CN code |\n| (c) Quantity | 250 t | Yes |\n\nAll three required inputs are present.\n\n## Calculation\n\n- Default SEE for (CN 7214 20 00, T\u00fcrkiye) = **2.31 tCO2e/t**\n- Embedded emissions = 2.31 tCO2e/t \u00d7 250 t = **577.50 tCO2e**",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 360
+  },
+  "latency_s": 4.3056,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

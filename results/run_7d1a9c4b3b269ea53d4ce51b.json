@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7d1a9c4b3b269ea53d4ce51b",
+  "task_id": "B-S10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Cannot compute embedded emissions because the **country of production is missing**. The buyer\u2019s location in Germany and seller\u2019s Geneva desk do not establish production origin.\n\nFor **850 tonnes of CN 7206 10 00**, please confirm the country of production: **T\u00fcrkiye, China, or India**. The supplied table only provides factors for these countries.",
+  "usage": {
+    "input_tokens": 653,
+    "output_tokens": 75
+  },
+  "latency_s": 3.3891,
+  "stop_reason": "completed",
+  "truncated": false
+}

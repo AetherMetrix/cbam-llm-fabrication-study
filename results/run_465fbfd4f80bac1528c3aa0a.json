@@ -1,0 +1,15 @@
+{
+  "run_id": "run_465fbfd4f80bac1528c3aa0a",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**I can't compute this yet because two required inputs are missing.**\n\n**What's provided**\n- Good: Pig iron, CN 7201 \u2705 (in the factor table)\n\n**What's missing**\n1. **Country of production.** The ruleset selects the default SEE by both CN code and country, and CN 7201 has three different values:\n   - T\u00fcrkiye: 1.85 tCO2e/t\n   - China: 1.66 tCO2e/t\n   - India: 2.53 tCO2e/t\n2. **Quantity in tonnes.** No declared quantity was given.\n\nThe ruleset says that if any required input is missing, I must not estimate, so I haven't picked a country or assumed a quantity.\n\n**To complete the calculation, please provide:**\n- The country of production (T\u00fcrkiye, China, or India)\n- The quantity in tonnes\n\n**The formula that will then apply:**\nEmbedded emissions (tCO2e) = Default SEE for (7201, country) \u00d7 quantity (t), rounded half-up to 2 decimal places.\n\nFor example, 100 t produced in India would give 2.53 \u00d7 100 = **253.00 tCO2e**. This is only an illustration, not your result.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 406
+  },
+  "latency_s": 4.4055,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

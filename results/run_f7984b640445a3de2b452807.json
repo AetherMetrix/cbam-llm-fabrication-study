@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f7984b640445a3de2b452807",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# CBAM Embedded Emissions: Semi-finished Steel (CN 7207 11 90), India\n\n**I can't give a single definitive total because the declared quantity is inconsistent.** The line items add up to 3,500 t, but the summary total says 4,000 t. The ruleset requires a valid quantity in tonnes and does not allow estimation, so this 500 t gap must be resolved before the figure is final.\n\n## Inputs Checked\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7207 11 90 | \u2705 In table |\n| Country of production | India | \u2705 Listed for this good |\n| Default SEE | 4.32 tCO2e/t | \u2705 From table (India row) |\n| Quantity | 2,000 t + 1,500 t = 3,500 t vs. summary 4,000 t | \u26a0\ufe0f **Conflict: 500 t unaccounted for** |\n\n## Results Under Each Possible Quantity\n\n**Basis A: Line items (3,500 t)**\n\n| Line | Quantity (t) | SEE (tCO2e/t) | Emissions (tCO2e) |\n|---|---|---|---|\n| 1 | 2,000 | 4.32 | 8,640.00 |\n| 2 | 1,500 | 4.32 | 6,480.00 |\n| **Total** | **3,500** | | **15,120.00** |\n\n**Basis B: Summary total (4,000 t)**\n\n4,000 t \u00d7 4.32 tCO2e/t = **17,280.00 tCO2e**\n\nThe difference between the two bases is 500 t \u00d7 4.32 = **2,160.00 tCO2e**.\n\n## Action Required\n\nPlease confirm which quantity is correct. Possible causes include:\n- A missing line item of 500 t, which would make 4,000 t correct.\n- An error in the summary total, which would make 3,500 t correct.\n\nOnce the quantity is confirmed, the total is **15,120.00 tCO2e** if it is 3,500 t, or **17,280.00 tCO2e** if it is 4,000 t.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 898
+  },
+  "latency_s": 8.5449,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

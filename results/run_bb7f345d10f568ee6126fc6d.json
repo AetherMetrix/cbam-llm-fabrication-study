@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bb7f345d10f568ee6126fc6d",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute a definitive figure: the declared quantity is inconsistent\n\n**What can be confirmed**\n\n| Input | Value | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods, ribbed) | \u2705 In table |\n| (b) Country of production | India | \u2705 Listed for this CN code |\n| Default SEE | 4.27 tCO2e/t | \u2705 Selected by (7214 20 00, India) |\n| (c) Quantity (tonnes) | **Conflicting** | \u274c Not determinable |\n\n**The quantity conflict**\n\n- Summary total: **1,000 t**\n- Sum of line items: 300 + 400 + 250 = **950 t**\n- Difference: **50 t**\n\nThe ruleset requires one quantity in tonnes. The declaration gives two figures, and nothing in the declaration or the ruleset says which one is correct. Choosing either would be an estimate, so no total is reported.\n\n**Missing input to resolve**\n\n1. **The confirmed quantity of CN 7214 20 00 from India, in tonnes.** Specifically, one of the following is needed:\n   - Confirmation that the summary total of 1,000 t is correct, plus the missing or corrected line item(s) accounting for the 50 t, **or**\n   - Confirmation that the line items (950 t) are correct and the summary total is an error, **or**\n   - A corrected set of line items and a matching summary total.\n\nOnce the quantity is confirmed, the embedded emissions will be calculated as quantity \u00d7 4.27 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 879
+  },
+  "latency_s": 9.4912,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

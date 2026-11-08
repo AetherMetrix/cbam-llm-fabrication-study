@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1424b43f49cf92be34e72090",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this PO.\n\n**Missing required input:**\n\n- **(a) CN code:** The PO lists it as \"(to be confirmed).\" The default SEE is selected jointly by CN code and country, so the code is required. The description \"steel long product (exact heading TBD by mill)\" does not identify a single code. Several table entries are for T\u00fcrkiye, and the description alone does not determine which one applies.\n\n**Inputs that are present and valid:**\n\n- **(b) Country of production:** T\u00fcrkiye, which is listed in the table for every good.\n- **(c) Quantity:** 1,000 t.\n\n**What is needed to proceed:** Confirm the CN code with the mill (for example, the exact heading and subheading from the commercial invoice or mill certificate). The code must also appear in the factor table. Once it is confirmed, the calculation is the T\u00fcrkiye SEE for that code multiplied by 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 984,
+    "output_tokens": 557
+  },
+  "latency_s": 3.3212,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

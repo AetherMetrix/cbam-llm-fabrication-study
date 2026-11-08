@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a8581882a305e90daf9034db",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# CBAM Embedded-Emissions Calculation: Cannot Be Completed Yet\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90, semi-finished products of iron or non-alloy steel |\n| (b) Country of production | \u274c **Missing.** The email says origin is \"to be confirmed by the mill's cert, not yet attached\" |\n| (c) Quantity in tonnes | \u2705 4,200 t |\n\n## Why I can't calculate\n\nDefault SEE values depend on both the CN code and the country of production. CN 7207 11 90 has three country-specific values that differ widely:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 3.087 |\n| China | 3.314 |\n| India | 4.32 |\n\nThe ruleset says not to estimate when any required input is missing. Without the country, I can't pick an SEE, so I can't report an embedded-emissions figure. \"Partner plant\" and the DAP delivery terms don't establish where the good was produced.\n\n## Next steps\n\n1. **Get the mill certificate** (or other origin documentation) confirming the country of production.\n2. **Check that the country is in the table** (T\u00fcrkiye, China, or India for this CN code). If it's another country, the table can't be used.\n3. **Run the calculation** once the country is confirmed:\n   Embedded emissions = SEE for (7207 11 90, confirmed country) \u00d7 4,200 t, rounded half-up to 2 decimal places.\n\nSend the confirmed country of production and I'll complete the calculation right away.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 788
+  },
+  "latency_s": 10.9611,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

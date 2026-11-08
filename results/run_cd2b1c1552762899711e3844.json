@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cd2b1c1552762899711e3844",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided CBAM ruleset and factor table, here is the calculation for the embedded emissions:\n\n* **Good CN Code:** 7201\n* **Country of Production:** T\u00fcrkiye\n* **Default SEE:** 1.85 tCO2e/t\n* **Quantity:** 1000 tonnes\n\n**Calculation:**\n$$\\text{Embedded emissions} = 1.85 \\text{ tCO2e/t} \\times 1000 \\text{ tonnes} = 1850.00 \\text{ tCO2e}$$\n\n**Total Embedded Emissions:** **1850.00 tCO2e**",
+  "usage": {
+    "input_tokens": 698,
+    "output_tokens": 148
+  },
+  "latency_s": 5.8541,
+  "stop_reason": "STOP",
+  "truncated": false
+}

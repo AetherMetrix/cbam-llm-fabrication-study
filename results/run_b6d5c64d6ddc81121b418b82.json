@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b6d5c64d6ddc81121b418b82",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: CN 7207 11 90, T\u00fcrkiye\n\n**Total embedded emissions = 3,087.00 tCO2e**\n\n## Inputs\n\n| Required input | Value | In table? |\n|---|---|---|\n| (a) CN code | 7207 11 90 (semi-finished products of iron or non-alloy steel) | Yes |\n| (b) Country of production | T\u00fcrkiye | Yes, listed for this CN code |\n| (c) Quantity | 1,000 t | Provided |\n\nAll three required inputs are present and valid.\n\n## Factor Selection\n\nThe default SEE is selected jointly by CN code and country:\n- CN 7207 11 90 + T\u00fcrkiye \u2192 **3.087 tCO2e/t**\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 quantity\n= 3.087 tCO2e/t \u00d7 1,000 t\n= **3,087.00 tCO2e**",
+  "usage": {
+    "input_tokens": 876,
+    "output_tokens": 347
+  },
+  "latency_s": 4.0608,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

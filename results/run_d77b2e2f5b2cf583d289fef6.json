@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d77b2e2f5b2cf583d289fef6",
+  "task_id": "A10",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Based on the provided ruleset and factor table, here is the calculation for the embedded emissions:\n\n**1. Inputs:**\n* **Good CN code:** 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations...)\n* **Country of production:** T\u00fcrkiye\n* **Quantity:** 6,000 tonnes\n\n**2. Default Factor Selection:**\n* **Default SEE (7214 20 00, T\u00fcrkiye):** 2.31 tCO2e/t\n\n**3. Calculation:**\n* **Embedded emissions** = 2.31 tCO2e/t \u00d7 6,000 t = 13,860 tCO2e\n\n**Total Embedded Emissions:** **13860.00 tCO2e**",
+  "usage": {
+    "input_tokens": 704,
+    "output_tokens": 185
+  },
+  "latency_s": 7.4757,
+  "stop_reason": "STOP",
+  "truncated": false
+}

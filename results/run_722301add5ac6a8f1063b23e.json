@@ -1,0 +1,15 @@
+{
+  "run_id": "run_722301add5ac6a8f1063b23e",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the **country of production is missing**.\n\nFor CN code **7201** and quantity **1,500 tonnes**, the SEE must be selected by country. Please provide the country of production: **T\u00fcrkiye, China, or India**, as listed in the supplied table.",
+  "usage": {
+    "input_tokens": 688,
+    "output_tokens": 68
+  },
+  "latency_s": 2.9186,
+  "stop_reason": "completed",
+  "truncated": false
+}

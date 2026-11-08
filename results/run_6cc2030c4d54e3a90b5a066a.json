@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6cc2030c4d54e3a90b5a066a",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions: 3,087.00 tCO2e**\n\n**Inputs check:**\n- CN code: 7207 11 90 is in the table.\n- Country: T\u00fcrkiye is listed for this code.\n- Quantity: 1,000 t is declared.\n\n**Calculation:**\n- Default SEE (7207 11 90, T\u00fcrkiye) = 3.087 tCO2e/t\n- Embedded emissions = 3.087 tCO2e/t \u00d7 1,000 t = 3,087.00 tCO2e",
+  "usage": {
+    "input_tokens": 876,
+    "output_tokens": 221
+  },
+  "latency_s": 1.3752,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

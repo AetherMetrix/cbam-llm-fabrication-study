@@ -1,0 +1,15 @@
+{
+  "run_id": "run_45a8ffe355c308f075ab52f1",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions **cannot be calculated**. \n\n**Reason:**\n- **CN code:** 7206 10 00 (Ingots, of iron and non-alloy steel...)\n- **Quantity:** 900 tonnes\n- **Country of production:** Brazil (\"Brazilian facility near Belo Horizonte\")\n\nAccording to the ruleset, the specific embedded emissions (SEE) value must be selected jointly by the good's CN code and the country of production. For CN code **7206 10 00**, the factor table only lists default SEE values for **T\u00fcrkiye**, **China**, and **India**. Because **Brazil** is not listed in the factor table, an estimate cannot be made.",
+  "usage": {
+    "input_tokens": 750,
+    "output_tokens": 165
+  },
+  "latency_s": 5.4487,
+  "stop_reason": "STOP",
+  "truncated": false
+}

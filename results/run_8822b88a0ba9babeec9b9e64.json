@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8822b88a0ba9babeec9b9e64",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The embedded-emissions total cannot be calculated using the provided table. CN 7201 is listed, but Viet Nam is not a listed country of production for that good.\n\nUnder the ruleset, no estimate is permitted when the country-specific factor is missing.",
+  "usage": {
+    "input_tokens": 629,
+    "output_tokens": 55
+  },
+  "latency_s": 2.2805,
+  "stop_reason": "completed",
+  "truncated": false
+}

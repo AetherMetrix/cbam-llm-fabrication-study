@@ -1,0 +1,15 @@
+{
+  "run_id": "run_09afc682799960008dbac830",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "The line items and the summary total don't agree, so I can't give a single confirmed figure yet.\n\n**Factor lookup:** CN 7207 11 90, India: SEE = 4.32 tCO2e/t (found in the table).\n\n**Quantity discrepancy:**\n- Line items: 2,000 t + 1,500 t = **3,500 t**\n- Summary total: **4,000 t**\n- Difference: 500 t\n\n**Possible results:**\n\n| Quantity basis | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|\n| Line items (3,500 t) | 3,500 \u00d7 4.32 | **15,120.00** |\n| Summary total (4,000 t) | 4,000 \u00d7 4.32 | **17,280.00** |\n\nThe 2,160.00 tCO2e difference equals 500 t \u00d7 4.32.\n\n**Recommendation:** Confirm the correct declared quantity before reporting. The line-item figure of 15,120.00 tCO2e is supported by the itemized entries. If the 4,000 t summary is correct, there may be a missing line item of 500 t, which would need to be documented. Once the quantity is confirmed, the total is the quantity multiplied by 4.32, rounded to 2 decimal places.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 765
+  },
+  "latency_s": 4.0239,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

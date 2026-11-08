@@ -1,0 +1,15 @@
+{
+  "run_id": "run_473df8e8769233403a12e919",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**Embedded emissions: 3,087.00 tCO2e**\n\n**Calculation:**\n- CN code: 7207 11 90 (found in the table)\n- Country of production: T\u00fcrkiye (listed for this code)\n- Default SEE: 3.087 tCO2e/t\n- Quantity: 1,000 t\n\nEmbedded emissions = 3.087 tCO2e/t \u00d7 1,000 t = **3,087.00 tCO2e**\n\nThe table's description for 7207 11 90 is truncated, so I matched the good by CN code, which is the key the ruleset uses. The code and country both match a table entry, so no inputs are missing.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 426
+  },
+  "latency_s": 2.5686,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

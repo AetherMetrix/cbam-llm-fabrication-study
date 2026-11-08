@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7fcd4f9334f2a93a6630959b",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**No estimate can be produced for this scenario.** The required inputs fail the ruleset's validity check.\n\n**Input check:**\n\n| Input | Declared | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 | In table (bars and rods, ribbed/indented) |\n| (b) Country of production | Russian Federation | **Not listed** for 7214 20 00 |\n| (c) Quantity | 2,200 t | Provided |\n\nThe factor table lists default SEE values for 7214 20 00 only for T\u00fcrkiye (2.31 tCO2e/t), China (3.169 tCO2e/t), and India (4.27 tCO2e/t). The ruleset requires the country to be listed for that good, and it does not permit a substitute value from another country or a generic average. Because the (good CN code, country) pair is absent, the SEE cannot be selected.\n\n**Result:** Embedded emissions not calculated.\n\n**To proceed, one of the following is needed:**\n- Confirm the country of production as T\u00fcrkiye, China, or India, if that is correct. The calculation would then be 2,200 \u00d7 SEE for that country (for example, 2,200 \u00d7 2.31 = 5,082.00 tCO2e for T\u00fcrkiye).\n- Provide a factor table that includes Russian Federation for CN 7214 20 00. The current table does not support this.",
+  "usage": {
+    "input_tokens": 915,
+    "output_tokens": 486
+  },
+  "latency_s": 2.8456,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

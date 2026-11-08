@@ -1,0 +1,15 @@
+{
+  "run_id": "run_53f7fbfe51b76f69200cb1e2",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: 1,992.00 tCO2e** for the stated total of 1,200 t, but the input has a quantity discrepancy that should be resolved before this figure is used.\n\n**Inputs**\n- CN code: 7201 (Pig iron and spiegeleisen, in pigs, blocks or other primary forms). In table: yes.\n- Country: China. Listed for 7201: yes, SEE = 1.66 tCO2e/t.\n- Quantity: the stated total is 1,200 t, but the two shipment lines (500 t + 500 t) sum to 1,000 t. The 200 t difference is unexplained.\n\n**Calculation**\n\nUsing the stated total (1,200 t):\n1,200 t \u00d7 1.66 tCO2e/t = **1,992.00 tCO2e**\n\nUsing only the itemized shipment lines (1,000 t):\n1,000 t \u00d7 1.66 tCO2e/t = **1,660.00 tCO2e**\n\n**Action needed:** The 200 t gap must be reconciled. Confirm whether the 1,200 t total includes a third shipment not itemized, or whether the total is an error. The emissions figure depends directly on which quantity is correct: 1,992.00 tCO2e if 1,200 t is confirmed, or 1,660.00 tCO2e if 1,000 t is confirmed. I have not chosen between them.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 748
+  },
+  "latency_s": 3.7227,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

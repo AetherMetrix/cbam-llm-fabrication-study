@@ -1,0 +1,15 @@
+{
+  "run_id": "run_71f854112486f7b7bd8c53f8",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following specific input is missing/ambiguous:\n- **Unambiguous good CN code:** The scenario provides two conflicting CN codes (7201 and 7206 10 00), which have different default specific embedded emissions (SEE) values for China (1.66 tCO2e/t and 1.74 tCO2e/t, respectively). A single, definitive CN code is required to select the appropriate SEE from the factor table.",
+  "usage": {
+    "input_tokens": 764,
+    "output_tokens": 120
+  },
+  "latency_s": 6.2409,
+  "stop_reason": "STOP",
+  "truncated": false
+}

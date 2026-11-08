@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5b64a5d70ae5079a0ad05abe",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions for CN **7207 11 90** because these required inputs are missing:\n\n- **Country of production**: T\u00fcrkiye, China, or India.\n- **Quantity in tonnes**.\n\nThe country determines the applicable SEE, which is then multiplied by the quantity.",
+  "usage": {
+    "input_tokens": 650,
+    "output_tokens": 63
+  },
+  "latency_s": 2.5723,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_32b3051b2ad05092b038f685",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: Cannot Be Finalized Until the CN Code Is Confirmed\n\n**I can't report a single verified total because the form lists two conflicting CN codes.** Under the ruleset, the SEE is selected jointly by CN code and country, so the good's classification must be fixed before a value can be applied. Both codes appear in the table, so I've calculated both outcomes for reference.\n\n## Inputs\n\n| Input | Value | Status |\n|---|---|---|\n| Good description | Pig iron | Provided |\n| CN code | 7201 **and** 7206 10 00 | \u26a0\ufe0f Conflicting |\n| Country of production | China | \u2705 In table for both codes |\n| Quantity | 900 t | \u2705 Provided |\n\n## Conditional Calculations\n\n| Scenario | CN Code | Good | SEE (China) | Calculation | Embedded Emissions |\n|---|---|---|---|---|---|\n| A | 7201 | Pig iron and spiegeleisen | 1.66 tCO2e/t | 1.66 \u00d7 900 | **1,494.00 tCO2e** |\n| B | 7206 10 00 | Ingots, of iron and non-alloy steel | 1.74 tCO2e/t | 1.74 \u00d7 900 | **1,566.00 tCO2e** |\n\nThe two results differ by **72.00 tCO2e**.\n\n## Observations\n\n- The description \"pig iron\" matches the table's description for **CN 7201**. CN 7206 10 00 covers steel ingots, a different product. This suggests 7201 is likely the intended code.\n- However, the description alone doesn't settle the classification. The CN code drives the default value, and the form itself is inconsistent. Possible explanations include a data-entry error or a mis-described good.\n\n## Required Action\n\nPlease confirm the correct CN code using the customs declaration, commercial invoice, or the declarant's classification. Once confirmed:\n- If **7201**, the embedded emissions are **1,494.00 tCO2e**.\n- If **7206 10 00**, the embedded emissions are **1,566.00 tCO2e**, and the \"pig iron\" description should be corrected.",
+  "usage": {
+    "input_tokens": 901,
+    "output_tokens": 877
+  },
+  "latency_s": 8.6269,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

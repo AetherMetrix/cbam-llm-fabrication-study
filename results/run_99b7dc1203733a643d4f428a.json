@@ -1,0 +1,15 @@
+{
+  "run_id": "run_99b7dc1203733a643d4f428a",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this partial PO.**\n\n**Missing input:**\n- **CN code:** The PO lists it as \"(to be confirmed).\" The ruleset requires a CN code that appears in the factor table, and the default SEE is selected jointly by CN code and country. The description \"steel long product (exact heading TBD by mill)\" does not identify a single heading.\n\n**Inputs that are present:**\n- Quantity: 1,000 t (usable once the CN code is confirmed)\n- Country of production: T\u00fcrkiye (listed in the table for all four candidate headings)\n\n**Next step:** Once the mill confirms the CN code, the calculation is: Embedded emissions (tCO2e) = SEE for (CN code, T\u00fcrkiye) \u00d7 1,000 t, rounded half-up to 2 decimal places. The T\u00fcrkiye default SEE values in the table are:\n\n| CN code | Good | Default SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | 1.85 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap ingots) | 1.96 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations, ribs, grooves | 2.31 |\n\nThese values are the only candidates in the table for T\u00fcrkiye. The result will differ depending on which code is confirmed, so the result should not be finalised until the CN code is fixed. Note that 7214 20 00 is the bar-and-rod heading closest to \"long product,\" but the mill must confirm it; I have not assumed it.",
+  "usage": {
+    "input_tokens": 984,
+    "output_tokens": 872
+  },
+  "latency_s": 4.0656,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_495fef76da2bc05ce3f693b5",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The declaration contains conflicting CN codes, so a single emissions total cannot be determined without clarification:\n\n- **CN 7201 (pig iron), India:** SEE = **2.53 tCO\u2082e/t**\n- **CN 7214 20 00 (ribbed reinforcing bar), India:** SEE = **4.27 tCO\u2082e/t**\n\nPlease confirm which CN code applies to the **1,500 tonnes**. The supplied rules do not specify whether the CN-code field or description takes precedence.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 158
+  },
+  "latency_s": 5.2929,
+  "stop_reason": "completed",
+  "truncated": false
+}

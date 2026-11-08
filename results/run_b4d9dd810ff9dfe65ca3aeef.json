@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b4d9dd810ff9dfe65ca3aeef",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron, China, 900 t\n\n## The CN code is ambiguous, so I can't give a single definitive figure\n\nThe form lists two different CN codes for the same good:\n- **7201**: Pig iron and spiegeleisen\n- **7206 10 00**: Ingots, of iron and non-alloy steel\n\nThe ruleset selects the default SEE by (CN code, country). With two conflicting codes, the required input \"good CN code\" is not uniquely established. Both codes have China entries with different factors, so the choice changes the result.\n\n## Results for each code\n\n| CN code | Country | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|---|\n| 7201 | China | 1.66 | 900 | **1,494.00** |\n| 7206 10 00 | China | 1.74 | 900 | **1,566.00** |\n\nThe two results differ by 72.00 tCO2e.\n\n## Assessment\n\n- The goods description (\"pig iron\") matches the wording of **CN 7201**. If 7201 is confirmed, the embedded emissions are **1,494.00 tCO2e**.\n- CN 7206 10 00 covers steel ingots, which is a different product from pig iron. That code may be a data-entry error, but the ruleset doesn't let me resolve the conflict by assumption.\n\n## Action required\n\nConfirm the correct CN code with the declarant, for example from the customs declaration or commercial invoice, and correct the form so it shows a single code. Once the code is confirmed, the matching figure above applies.",
+  "usage": {
+    "input_tokens": 901,
+    "output_tokens": 751
+  },
+  "latency_s": 7.9542,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

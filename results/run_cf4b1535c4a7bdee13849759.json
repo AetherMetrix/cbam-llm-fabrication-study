@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cf4b1535c4a7bdee13849759",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "## No figure can be calculated: Brazil is not in the factor table\n\n**Inputs from the scenario**\n\n| Input | Value | In table? |\n|---|---|---|\n| CN code | 7206 10 00 (ingots, iron/non-alloy steel) | \u2705 Yes |\n| Country of production | Brazil (facility near Belo Horizonte) | \u274c No |\n| Quantity | 900 t | \u2705 Provided |\n\n**Why no figure**\n\nThe ruleset selects the default SEE by both CN code and country. For CN 7206 10 00, the table lists only T\u00fcrkiye (1.96), China (1.74), and India (2.64). Brazil has no entry. The ruleset says that if the country is not in the table, do not estimate. Using another country's value or an average would break that rule.\n\n**For reference only (not valid for this shipment)**\n\nThese show what 900 t would give under the listed countries. They are **not** the embedded emissions for Brazilian-produced ingots:\n- T\u00fcrkiye: 900 \u00d7 1.96 = 1,764.00 tCO2e\n- China: 900 \u00d7 1.74 = 1,566.00 tCO2e\n- India: 900 \u00d7 2.64 = 2,376.00 tCO2e\n\n**What's needed to proceed**\n1. A default SEE for CN 7206 10 00 produced in **Brazil**, added to the factor table, **or**\n2. Actual installation-specific emissions data from the Belo Horizonte facility, if the importer can use actual rather than default values. This is outside the provided ruleset and would need its own methodology.\n\nOnce a Brazil value is provided, the result is simply 900 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 960,
+    "output_tokens": 583
+  },
+  "latency_s": 9.7887,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

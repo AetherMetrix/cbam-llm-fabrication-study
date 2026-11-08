@@ -1,0 +1,15 @@
+{
+  "run_id": "run_775522765f5c8687300acadd",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: cannot be computed. No embedded-emissions total is returned.**\n\n**Input check**\n\n| Required input | Declared | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | Viet Nam | \u274c **Not in table** |\n| (c) Quantity in tonnes | 1,800 t | \u2705 Present |\n\n**Why it stops here**\n\n- The ruleset selects the SEE jointly by CN code and country.\n- For CN 7201, the table lists default SEE values only for T\u00fcrkiye (1.85), China (1.66) and India (2.53). There is no entry for Viet Nam.\n- The ruleset says that if a required input is not in the table, do not estimate. So I have not substituted another country's value, an average, or a route-based figure. The \"basic blast-furnace route\" detail does not change this, because the table is keyed by country, not by route.\n\n**What's needed to proceed**\n\nEither of these would let the line be calculated:\n1. An official default SEE for CN 7201 with country of production Viet Nam, added to the factor table, or\n2. Confirmation that the country of production is actually one of the listed countries, if Viet Nam was recorded in error.\n\nOnce a valid factor is available, the calculation will be: Embedded emissions = SEE (Viet Nam, 7201) \u00d7 1,800 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 499
+  },
+  "latency_s": 5.2373,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

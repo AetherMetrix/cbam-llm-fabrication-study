@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5f3788a80aa7025055dd96d3",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The quantity input is missing or conflicting.\n\n**What is established:**\n- CN code 7207 11 90 is in the factor table.\n- Country of production, India, is listed for that code.\n- The default SEE for this pairing is 4.32 tCO2e/t.\n\n**What is missing or conflicting:**\n- **Quantity (tonnes):** The line items (2,000 t and 1,500 t) sum to 3,500 t, but the summary total states 4,000 t. The ruleset requires a single declared quantity, and the two sources disagree by 500 t. The discrepancy must be reconciled (for example, by identifying a missing line item, a transcription error, or an incorrect summary) before the calculation can proceed.\n\n**Once the quantity is confirmed:**\nEmbedded emissions (tCO2e) = 4.32 \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 916
+  },
+  "latency_s": 4.7719,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

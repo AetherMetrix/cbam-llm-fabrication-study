@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e58fbe196be5bc677d109dab",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the declared CN code is ambiguous.\n\n**Required clarification:** Confirm whether the correct CN code is **7201** or **7206 10 00**. The table assigns different SEE values for China to these codes.\n\nThe country of production (**China**) and quantity (**900 tonnes**) are provided; neither is missing.",
+  "usage": {
+    "input_tokens": 668,
+    "output_tokens": 78
+  },
+  "latency_s": 3.512,
+  "stop_reason": "completed",
+  "truncated": false
+}

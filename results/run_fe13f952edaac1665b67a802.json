@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fe13f952edaac1665b67a802",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: not finalized.** The inputs conflict on the country of production, so I can't select one SEE value without guessing. The ruleset requires a single country of production for the good.\n\n**Inputs**\n- CN code: 7214 20 00 (ribbed bar), which is in the table\n- Quantity: 2,000 t\n- Country of production: **conflicting**\n  - Email: T\u00fcrkiye\n  - Declaration header: China\n\n**Conditional calculations (each uses the table SEE for 7214 20 00)**\n\n| Country of production | Default SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye (per email) | 2.31 | 2.31 \u00d7 2,000 = **4,620.00** |\n| China (per declaration header) | 3.169 | 3.169 \u00d7 2,000 = **6,338.00** |\n\nThe two figures differ by 1,718.00 tCO2e.\n\n**Next step:** Confirm the country of production from the supplier's documentation or the mill's origin records, then correct whichever source is wrong. Once the country is confirmed, the matching figure above is the embedded-emissions total for the declared quantity. I'd recommend resolving this before filing, since the declaration header and the supporting correspondence should agree.",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 715
+  },
+  "latency_s": 3.8484,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_59d236729da1384f06099603",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: No embedded-emissions estimate can be issued.**\n\nThe ruleset requires a valid CN code from the factor table, and this PO does not provide one. The CN code is listed as \"(to be confirmed),\" and the description \"steel long product (exact heading TBD by mill)\" does not identify a heading. Selecting a code based on that description would be an inference, and the default SEE is selected jointly by CN code and country, so the code must come from the source.\n\n**Inputs status:**\n\n| Input | Status |\n|---|---|\n| (a) CN code in table | **Missing**: \"to be confirmed\" |\n| (b) Country of production listed for that good | T\u00fcrkiye is stated, but it can only be validated once the CN code is confirmed |\n| (c) Quantity | 1,000 t (provided) |\n\n**To proceed:**\n1. Obtain the confirmed CN code from the mill or the PO issuer.\n2. Verify that the confirmed code appears in the factor table with T\u00fcrkiye as the country of production.\n3. Once both are confirmed, the calculation is: Embedded emissions = SEE (tCO2e/t) \u00d7 1,000 t, rounded half-up to 2 decimal places.\n\nIf the confirmed code is not in the table, or T\u00fcrkiye is not listed for it, the good cannot be calculated under this ruleset.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 848
+  },
+  "latency_s": 4.4966,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

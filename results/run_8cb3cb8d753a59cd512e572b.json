@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8cb3cb8d753a59cd512e572b",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: the country of production is ambiguous\n\nI cannot produce a definitive embedded-emissions figure for this declaration.\n\n## Why\n\nUnder the ruleset, the default SEE is selected by both CN code and country of production. The scenario gives two conflicting origins for the same consignment:\n\n| Field | Country given | Default SEE for CN 7206 10 00 |\n|---|---|---|\n| Field 1 | India | 2.64 tCO2e/t |\n| Field 2 | T\u00fcrkiye | 1.96 tCO2e/t |\n\nBoth countries are in the table for this good, so the issue is not a missing table entry. The declaration contradicts itself, and the ruleset gives no way to choose between the two.\n\n## Input status\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | \u2705 7206 10 00 (Ingots, of iron and non-alloy steel) |\n| (b) Country of production listed for that good | \u274c Conflicting (India vs. T\u00fcrkiye) |\n| (c) Quantity in tonnes | \u2705 750 t |\n\n## Missing input\n\n1. **A single, confirmed country of production** for the 750 t of ingots, resolving the India/T\u00fcrkiye conflict. If the consignment actually combines production from both countries, provide the tonnage produced in each.\n\nOnce the country is confirmed, the calculation is SEE \u00d7 750 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 951,
+    "output_tokens": 801
+  },
+  "latency_s": 10.0456,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

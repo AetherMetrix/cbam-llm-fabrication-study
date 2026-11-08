@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f72be1e76f41c40867c53589",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can\u2019t calculate embedded emissions yet. The quantity is **1,000 tonnes**, but \u201csteel\u201d does not identify a table entry.\n\nPlease provide:\n- **Good CN code:** 7201, 7206 10 00, 7207 11 90, or 7214 20 00.\n- **Country of production:** T\u00fcrkiye, China, or India.\n\nThe ruleset does not permit estimating without these inputs.",
+  "usage": {
+    "input_tokens": 604,
+    "output_tokens": 94
+  },
+  "latency_s": 3.0781,
+  "stop_reason": "completed",
+  "truncated": false
+}

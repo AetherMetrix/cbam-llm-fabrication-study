@@ -1,0 +1,15 @@
+{
+  "run_id": "run_55b8699025ad35a4ba5ccb1a",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Cannot compute the embedded emissions. \n\nAccording to the provided ruleset, default values are country-specific and selected jointly by the good's CN code and the country of production. While the CN code (`7206 10 00`) and quantity (`900 t`) are provided, the country of production (**Brazil**) is not listed in the factor table (which only includes T\u00fcrkiye, China, and India for this good). Per the ruleset, if a required input is not in the table, an estimate cannot be made.",
+  "usage": {
+    "input_tokens": 750,
+    "output_tokens": 117
+  },
+  "latency_s": 5.3787,
+  "stop_reason": "STOP",
+  "truncated": false
+}

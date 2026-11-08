@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f2ea1b338f9541cae1506598",
+  "task_id": "A11",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Embedded emissions: CN 7214 20 00, China\n\n**Total embedded emissions: 4,753.50 tCO2e**\n\n## Inputs\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods, of iron or non-alloy steel, with indentations, ribs, etc.) | Yes |\n| (b) Country of production | China | Yes, listed for 7214 20 00 |\n| (c) Quantity | 1,500 tonnes | Yes |\n\nAll required inputs are present, so a definitive figure can be computed. The description \"ribbed steel bars\" matches the CN 7214 20 00 description.\n\n## Factor selected\nThe table row for CN 7214 20 00 and China gives a default SEE of **3.169 tCO2e/t**.\n\n## Calculation\nEmbedded emissions = SEE \u00d7 quantity\n= 3.169 tCO2e/t \u00d7 1,500 t\n= **4,753.50 tCO2e**",
+  "usage": {
+    "input_tokens": 932,
+    "output_tokens": 407
+  },
+  "latency_s": 4.1158,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

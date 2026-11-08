@@ -1,0 +1,15 @@
+{
+  "run_id": "run_378bbb4bf5808d14abcdd761",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute a definitive embedded-emissions figure\n\nThe declared quantity is internally inconsistent, so I can't determine which value to use.\n\n## Inputs check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7207 11 90 | \u2705 Found |\n| (b) Country listed for that good | India | \u2705 Found, SEE = **4.32 tCO2e/t** |\n| (c) Quantity in tonnes | Line items: 2,000 t + 1,500 t = **3,500 t**; Summary total: **4,000 t** | \u274c **Conflicting** |\n\nThe line items sum to 3,500 t, but the summary states 4,000 t, a 500 t discrepancy. The ruleset requires a single quantity, and choosing one would be an estimate.\n\n## Missing input\n\n**A confirmed declared quantity (tonnes) of CN 7207 11 90 produced in India.** Specifically, one of the following:\n- Confirmation that the summary total of 4,000 t is correct, plus identification of the missing 500 t line item(s), **or**\n- Confirmation that the line items (3,500 t) are complete and the summary total is an error.\n\n## Reference only (not a determination)\n\nOnce the quantity is confirmed, the calculation is quantity \u00d7 4.32 tCO2e/t:\n- If 3,500 t: 3,500 \u00d7 4.32 = 15,120.00 tCO2e\n- If 4,000 t: 4,000 \u00d7 4.32 = 17,280.00 tCO2e\n\nPlease confirm the correct quantity and I'll report the final figure.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 825
+  },
+  "latency_s": 8.5282,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

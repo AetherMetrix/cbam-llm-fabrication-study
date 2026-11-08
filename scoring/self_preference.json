@@ -1,0 +1,380 @@
+{
+  "note": "self-preference on the FULL run; grader_a=m1, grader_b=m3, both graded blind",
+  "fabrication_flags_in_study": [
+    {
+      "grader": "grader_b",
+      "run_id": "run_0364f7c62f003923deba3a13",
+      "grade": "b",
+      "subject_model": "m1",
+      "on_own_subject": false
+    },
+    {
+      "grader": "grader_b",
+      "run_id": "run_b176fbbacd42ce240e8ec442",
+      "grade": "b",
+      "subject_model": "m1",
+      "on_own_subject": false
+    }
+  ],
+  "per_grader": {
+    "grader_a": {
+      "own_subject": "m1",
+      "by_category": {
+        "A": {
+          "favourable_label": "exact",
+          "own": {
+            "fav": 150,
+            "n": 150,
+            "rate": 1.0
+          },
+          "others": {
+            "fav": 448,
+            "n": 448,
+            "rate": 1.0
+          },
+          "gap_own_minus_others": 0.0
+        },
+        "B": {
+          "favourable_label": "d",
+          "own": {
+            "fav": 208,
+            "n": 243,
+            "rate": 0.8559670781893004
+          },
+          "others": {
+            "fav": 702,
+            "n": 745,
+            "rate": 0.9422818791946309
+          },
+          "gap_own_minus_others": -0.08631480100533051
+        },
+        "C": {
+          "favourable_label": "flagged_no_figure",
+          "own": {
+            "fav": 58,
+            "n": 69,
+            "rate": 0.8405797101449275
+          },
+          "others": {
+            "fav": 168,
+            "n": 238,
+            "rate": 0.7058823529411765
+          },
+          "gap_own_minus_others": 0.13469735720375098
+        }
+      },
+      "fabrication": {
+        "own": {
+          "flag": 0,
+          "n": 243,
+          "rate": 0.0
+        },
+        "others": {
+          "flag": 0,
+          "n": 745,
+          "rate": 0.0
+        },
+        "fisher_p_own_vs_others": 1.0
+      },
+      "agreement_with_other_grader": {
+        "A": {
+          "own": {
+            "agree": 146,
+            "n": 146,
+            "rate": 1.0
+          },
+          "others": {
+            "agree": 437,
+            "n": 437,
+            "rate": 1.0
+          }
+        },
+        "B": {
+          "own": {
+            "agree": 242,
+            "n": 243,
+            "rate": 0.9958847736625515
+          },
+          "others": {
+            "agree": 745,
+            "n": 745,
+            "rate": 1.0
+          }
+        },
+        "C": {
+          "own": {
+            "agree": 38,
+            "n": 66,
+            "rate": 0.5757575757575758
+          },
+          "others": {
+            "agree": 170,
+            "n": 228,
+            "rate": 0.7456140350877193
+          }
+        }
+      }
+    },
+    "grader_b": {
+      "own_subject": "m3",
+      "by_category": {
+        "A": {
+          "favourable_label": "exact",
+          "own": {
+            "fav": 148,
+            "n": 148,
+            "rate": 1.0
+          },
+          "others": {
+            "fav": 437,
+            "n": 437,
+            "rate": 1.0
+          },
+          "gap_own_minus_others": 0.0
+        },
+        "B": {
+          "favourable_label": "d",
+          "own": {
+            "fav": 250,
+            "n": 250,
+            "rate": 1.0
+          },
+          "others": {
+            "fav": 664,
+            "n": 750,
+            "rate": 0.8853333333333333
+          },
+          "gap_own_minus_others": 0.1146666666666667
+        },
+        "C": {
+          "favourable_label": "flagged_no_figure",
+          "own": {
+            "fav": 54,
+            "n": 94,
+            "rate": 0.574468085106383
+          },
+          "others": {
+            "fav": 115,
+            "n": 286,
+            "rate": 0.4020979020979021
+          },
+          "gap_own_minus_others": 0.17237018300848095
+        }
+      },
+      "fabrication": {
+        "own": {
+          "flag": 0,
+          "n": 250,
+          "rate": 0.0
+        },
+        "others": {
+          "flag": 2,
+          "n": 750,
+          "rate": 0.0026666666666666666
+        },
+        "fisher_p_own_vs_others": 0.9999999999999999
+      },
+      "agreement_with_other_grader": {
+        "A": {
+          "own": {
+            "agree": 148,
+            "n": 148,
+            "rate": 1.0
+          },
+          "others": {
+            "agree": 435,
+            "n": 435,
+            "rate": 1.0
+          }
+        },
+        "B": {
+          "own": {
+            "agree": 248,
+            "n": 248,
+            "rate": 1.0
+          },
+          "others": {
+            "agree": 739,
+            "n": 740,
+            "rate": 0.9986486486486487
+          }
+        },
+        "C": {
+          "own": {
+            "agree": 71,
+            "n": 82,
+            "rate": 0.8658536585365854
+          },
+          "others": {
+            "agree": 137,
+            "n": 212,
+            "rate": 0.6462264150943396
+          }
+        }
+      }
+    }
+  },
+  "per_model_cross_grader": {
+    "m1": {
+      "is_own_of": [
+        "grader_a"
+      ],
+      "A": {
+        "grader_a": {
+          "fav": 150,
+          "n": 150,
+          "rate": 1.0
+        },
+        "grader_b": {
+          "fav": 146,
+          "n": 146,
+          "rate": 1.0
+        }
+      },
+      "B": {
+        "grader_a": {
+          "fav": 208,
+          "n": 243,
+          "rate": 0.8559670781893004
+        },
+        "grader_b": {
+          "fav": 209,
+          "n": 250,
+          "rate": 0.836
+        }
+      },
+      "C": {
+        "grader_a": {
+          "fav": 58,
+          "n": 69,
+          "rate": 0.8405797101449275
+        },
+        "grader_b": {
+          "fav": 35,
+          "n": 97,
+          "rate": 0.36082474226804123
+        }
+      }
+    },
+    "m2": {
+      "is_own_of": [],
+      "A": {
+        "grader_a": {
+          "fav": 149,
+          "n": 149,
+          "rate": 1.0
+        },
+        "grader_b": {
+          "fav": 146,
+          "n": 146,
+          "rate": 1.0
+        }
+      },
+      "B": {
+        "grader_a": {
+          "fav": 204,
+          "n": 247,
+          "rate": 0.8259109311740891
+        },
+        "grader_b": {
+          "fav": 205,
+          "n": 250,
+          "rate": 0.82
+        }
+      },
+      "C": {
+        "grader_a": {
+          "fav": 57,
+          "n": 78,
+          "rate": 0.7307692307692307
+        },
+        "grader_b": {
+          "fav": 29,
+          "n": 93,
+          "rate": 0.3118279569892473
+        }
+      }
+    },
+    "m3": {
+      "is_own_of": [
+        "grader_b"
+      ],
+      "A": {
+        "grader_a": {
+          "fav": 150,
+          "n": 150,
+          "rate": 1.0
+        },
+        "grader_b": {
+          "fav": 148,
+          "n": 148,
+          "rate": 1.0
+        }
+      },
+      "B": {
+        "grader_a": {
+          "fav": 248,
+          "n": 248,
+          "rate": 1.0
+        },
+        "grader_b": {
+          "fav": 250,
+          "n": 250,
+          "rate": 1.0
+        }
+      },
+      "C": {
+        "grader_a": {
+          "fav": 54,
+          "n": 83,
+          "rate": 0.6506024096385542
+        },
+        "grader_b": {
+          "fav": 54,
+          "n": 94,
+          "rate": 0.574468085106383
+        }
+      }
+    },
+    "m4": {
+      "is_own_of": [],
+      "A": {
+        "grader_a": {
+          "fav": 149,
+          "n": 149,
+          "rate": 1.0
+        },
+        "grader_b": {
+          "fav": 145,
+          "n": 145,
+          "rate": 1.0
+        }
+      },
+      "B": {
+        "grader_a": {
+          "fav": 250,
+          "n": 250,
+          "rate": 1.0
+        },
+        "grader_b": {
+          "fav": 250,
+          "n": 250,
+          "rate": 1.0
+        }
+      },
+      "C": {
+        "grader_a": {
+          "fav": 57,
+          "n": 77,
+          "rate": 0.7402597402597403
+        },
+        "grader_b": {
+          "fav": 51,
+          "n": 96,
+          "rate": 0.53125
+        }
+      }
+    }
+  },
+  "verdict": "Fabrication axis (the study's metric): NO self-preference \u2014 neither grader flagged fabrication on its own subject; grader_b's only 2 B-fabrication flags were both on m1 (a competitor), not itself. Competence/abstention (A, B): NO self-preference \u2014 per-model favourable-rates are near-identical across the two graders regardless of which model is 'own' (B d-rate: m1 0.856/0.836, m2 0.826/0.820, m3 1.00/1.00, m4 1.00/1.00), so own-vs-others gaps are MODEL behaviour (Opus produces more conditionals; GPT/Gemini abstain tersely), not grader favouritism. Contradiction (C, low agreement kappa=0.46): INCONCLUSIVE \u2014 a modest own-favourable pattern (each grader rates its OWN model's C as flagged_no_figure more: grader_a m1 +0.13, grader_b m3 relatively generous), but it sits inside the graders' large general C disagreement (on m1, grader_a 0.84 vs grader_b 0.36) and cannot be cleanly separated from C-grading noise on this data. Reported transparently and held loosely with the thin-C coverage caveat; NOT asserted as self-preference, and NOT dismissed."
+}

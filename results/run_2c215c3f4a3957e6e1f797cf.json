@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2c215c3f4a3957e6e1f797cf",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can't calculate the embedded emissions yet because two required inputs are missing:\n\n1. **Country of production:** The ruleset requires the country, since default values are country-specific. The table lists CN 7207 11 90 for T\u00fcrkiye, China, and India.\n2. **Quantity in tonnes:** The scenario doesn't state how many tonnes are declared.\n\nOnce you provide both, I'll multiply the matching default SEE by the quantity. For reference, the default SEE values for CN 7207 11 90 are:\n\n- T\u00fcrkiye: 3.087 tCO2e/t\n- China: 3.314 tCO2e/t\n- India: 4.32 tCO2e/t\n\nFor example, 100 t from T\u00fcrkiye would give 308.70 tCO2e.",
+  "usage": {
+    "input_tokens": 879,
+    "output_tokens": 356
+  },
+  "latency_s": 2.2091,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

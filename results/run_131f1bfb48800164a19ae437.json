@@ -1,0 +1,15 @@
+{
+  "run_id": "run_131f1bfb48800164a19ae437",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron (CN 7201), China\n\n**Result: I can't report a single total yet because the declared quantity is inconsistent.**\n\n## Quantity Conflict\n\n| Source | Quantity |\n|---|---|\n| Stated total | 1,200 t |\n| Sum of shipment lines (500 t + 500 t) | 1,000 t |\n| **Discrepancy** | **200 t** |\n\nThe ruleset requires a definite quantity in tonnes and prohibits estimation. I can't tell which figure is correct. There may be a missing 200 t shipment line, or the stated total may be wrong.\n\n## Factor Lookup\n\n- CN 7201 (Pig iron and spiegeleisen), country China: **SEE = 1.66 tCO2e/t**\n\n## Results for Each Possible Quantity\n\n| Scenario | Calculation | Embedded emissions |\n|---|---|---|\n| A: Shipment lines are correct (1,000 t) | 1,000 \u00d7 1.66 | **1,660.00 tCO2e** |\n| B: Stated total is correct (1,200 t) | 1,200 \u00d7 1.66 | **1,992.00 tCO2e** |\n\nIf Scenario B is correct, the missing 200 t would account for 332.00 tCO2e (200 \u00d7 1.66).\n\n## Action Needed\n\nPlease confirm the actual quantity imported, for example from customs declarations or bills of lading. If a third shipment line of 200 t exists, please provide it. Once the quantity is confirmed, the reportable total is the matching figure above.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 673
+  },
+  "latency_s": 7.0675,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

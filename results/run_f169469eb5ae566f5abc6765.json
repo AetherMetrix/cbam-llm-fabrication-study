@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f169469eb5ae566f5abc6765",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Inputs:**\n- **CN code:** 7207 11 90\n- **Country of production:** T\u00fcrkiye\n- **Quantity:** 1000 tonnes\n- **Default SEE (from factor table):** 3.087 tCO2e/t\n\n**Calculation:**\n$$\\text{Embedded emissions} = 3.087 \\text{ tCO2e/t} \\times 1000 \\text{ t} = 3087 \\text{ tCO2e}$$\n\n**Total Embedded Emissions:** **3087.00 tCO2e**",
+  "usage": {
+    "input_tokens": 705,
+    "output_tokens": 138
+  },
+  "latency_s": 6.3294,
+  "stop_reason": "STOP",
+  "truncated": false
+}

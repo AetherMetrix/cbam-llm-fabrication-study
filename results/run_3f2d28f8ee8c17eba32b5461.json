@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3f2d28f8ee8c17eba32b5461",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions: Not Computable Yet\n\n**I can't calculate this.** The CN code is required, and it is missing.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in the table | \"To be confirmed\" | \u274c **Missing** |\n| (b) Country of production listed for that good | T\u00fcrkiye | \u26a0\ufe0f Can't be checked without the CN code |\n| (c) Quantity (tonnes) | 1,000 t | \u2705 OK |\n\n## Why I won't estimate\n\n- The default SEE depends on both the CN code and the country.\n- The description \"steel long product\" doesn't identify a single row. For T\u00fcrkiye, the table values range from 1.85 to 3.087 tCO2e/t depending on the code.\n- Choosing a code myself would be an estimate, which the ruleset doesn't allow.\n\n## What's needed\n\nThe mill must confirm the exact CN code. Once it is confirmed and appears in the table with T\u00fcrkiye listed:\n\n**Embedded emissions = 1,000 t \u00d7 SEE (CN code, T\u00fcrkiye)**\n\nThe result is rounded half-up to 2 decimals.\n\nIf the confirmed code isn't in the table, the value can't be determined under this ruleset.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 664
+  },
+  "latency_s": 7.7964,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

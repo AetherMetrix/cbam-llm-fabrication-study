@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2be2f9c4737311de3c866782",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Embedded emissions **cannot be calculated** because the CN code is unconfirmed. The ruleset requires a CN code listed in the table; \u201csteel long product\u201d does not identify one uniquely.\n\nConfirmed inputs:\n- Quantity: **1,000 t**\n- Country of production: **T\u00fcrkiye**\n\nPlease confirm the CN code so the corresponding country-specific SEE can be selected.",
+  "usage": {
+    "input_tokens": 638,
+    "output_tokens": 77
+  },
+  "latency_s": 3.243,
+  "stop_reason": "completed",
+  "truncated": false
+}

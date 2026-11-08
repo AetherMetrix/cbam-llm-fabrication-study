@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3698f387aa9a823d668cb8f4",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result for the declared quantity: 6,860.00 tCO2e**\n\n- CN code: 7206 10 00 (in table)\n- Country: T\u00fcrkiye (listed for this good)\n- Default SEE: 1.96 tCO2e/t\n- Declared quantity: 3,500 t\n- Calculation: 1.96 \u00d7 3,500 = 6,860.00 tCO2e\n\n**Discrepancy to resolve:** The three lots of 1,000 t each sum to 3,000 t, not 3,500 t. At the lot-level quantity, the calculation is 1.96 \u00d7 3,000 = **5,880.00 tCO2e**.\n\nThe two figures differ by 980 tCO2e (500 t \u00d7 1.96). Confirm the correct total tonnage against the shipping or invoice records before filing. The ruleset does not say which quantity prevails when they conflict, so I have not chosen one.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 812
+  },
+  "latency_s": 3.9816,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

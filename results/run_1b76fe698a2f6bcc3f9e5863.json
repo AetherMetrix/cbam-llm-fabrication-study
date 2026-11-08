@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1b76fe698a2f6bcc3f9e5863",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: country of production is missing\n\n**I can't determine the embedded emissions for this declaration** because the country of production is not given.\n\n## Why\n\nThe ruleset requires three inputs:\n\n| Required input | Provided? |\n|---|---|\n| (a) CN code in table | \u2705 7214 20 00 (bars and rods, with indentations/ribs) |\n| (b) Country of production listed for that good | \u274c **Not stated** |\n| (c) Quantity in tonnes | \u2705 2,500 t |\n\nDefault SEE values depend on both the CN code and the country. For CN 7214 20 00, the table lists three different values (T\u00fcrkiye, China, India). The ruleset says not to estimate when an input is missing, so I can't choose one or use an average.\n\n## What's needed\n\nPlease state the **country of production**. For reference, these are the results for each country listed in the table. They are not an estimate for this declaration.\n\n| Country | Default SEE (tCO2e/t) | \u00d7 2,500 t | Embedded emissions |\n|---|---|---|---|\n| T\u00fcrkiye | 2.31 | 2.31 \u00d7 2,500 | 5,775.00 tCO2e |\n| China | 3.169 | 3.169 \u00d7 2,500 | 7,922.50 tCO2e |\n| India | 4.27 | 4.27 \u00d7 2,500 | 10,675.00 tCO2e |\n\nIf the rebar was produced in a country not listed for CN 7214 20 00, this table does not support a default-value calculation.",
+  "usage": {
+    "input_tokens": 886,
+    "output_tokens": 688
+  },
+  "latency_s": 7.1605,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

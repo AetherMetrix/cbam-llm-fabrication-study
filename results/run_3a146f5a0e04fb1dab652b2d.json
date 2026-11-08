@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3a146f5a0e04fb1dab652b2d",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**No estimate can be given yet.** The CN code is \"(to be confirmed),\" and the ruleset requires a CN code that appears in the factor table. Without it, the default SEE cannot be selected, so the embedded emissions cannot be calculated.\n\n**What's needed:** Confirm the CN code for the steel long product with the mill. The table covers these codes:\n\n| CN code | Good | Default SEE for T\u00fcrkiye (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 1.85 |\n| 7206 10 00 | Ingots of iron/non-alloy steel | 1.96 |\n| 7207 11 90 | Semi-finished products of iron/non-alloy steel | 3.087 |\n| 7214 20 00 | Bars and rods, with indentations, ribs, grooves | 2.31 |\n\nOnce the mill confirms the code, the calculation is:\n\n**Embedded emissions = SEE (T\u00fcrkiye, confirmed CN code) \u00d7 1,000 t**, rounded half-up to 2 decimal places.\n\nNote that the description \"steel long product\" is not enough to select a code. Bars and rods (7214 20 00) are the most likely match for a long product, but that must be confirmed by the mill, not assumed.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 727
+  },
+  "latency_s": 3.6938,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

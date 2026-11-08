@@ -1,0 +1,15 @@
+{
+  "run_id": "run_96f6246dda2878923dabdda0",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the country of production is conflicting: the email identifies T\u00fcrkiye, while the declaration header lists China.\n\n**Required input:** A confirmed country of production\u2014T\u00fcrkiye or China\u2014to select the applicable country-specific SEE.\n\nThe CN code (7214 20 00) and quantity (2,000 tonnes) are provided.",
+  "usage": {
+    "input_tokens": 673,
+    "output_tokens": 76
+  },
+  "latency_s": 2.945,
+  "stop_reason": "completed",
+  "truncated": false
+}

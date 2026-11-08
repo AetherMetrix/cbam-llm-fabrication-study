@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6739c8cceff415170393e528",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Result (on the declared total of 1,200 t): 1,992.00 tCO2e**\n\n**Inputs**\n- CN code: 7201 (Pig iron and spiegeleisen, in pigs, blocks or other primary forms). This is in the table.\n- Country: China. This is listed for 7201.\n- Default SEE: 1.66 tCO2e/t.\n- Quantity: 1,200 t (stated total).\n\n**Calculation**\n1,200 t \u00d7 1.66 tCO2e/t = **1,992.00 tCO2e**\n\n**Discrepancy to resolve**\nThe two shipment lines (500 t + 500 t) sum to 1,000 t, not the stated 1,200 t. The 200 t gap needs to be explained before this figure is reported.\n\nIf the shipment lines are correct and the 1,200 t total is wrong, the result is:\n1,000 t \u00d7 1.66 tCO2e/t = **1,660.00 tCO2e**\n\nI have reported the 1,200 t figure because it is the declared total. The correct quantity should be confirmed against the source documents, since the embedded emissions figure depends directly on it.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 780
+  },
+  "latency_s": 3.9021,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

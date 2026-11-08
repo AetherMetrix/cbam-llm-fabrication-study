@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7bd7c9b097ec45298b82c9c2",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Based on the provided ruleset and scenario, there is a conflict in the required input for **quantity in tonnes**:\n\n- **Sum of line items:** 2,000 t + 1,500 t = 3,500 t\n- **Summary total:** 4,000 t\n\nBecause the ruleset states not to estimate if required inputs are missing or ambiguous, a single authoritative total cannot be confirmed without clarifying whether the line items or the summary total represent the true declared quantity. \n\nBelow are the exact calculations for both possibilities using the factor for **CN 7207 11 90 (India)**, which has a Default SEE of **4.32 tCO2e/t**:\n\n1. **If based on the sum of line items (3,500 t):**\n   $$\\text{Embedded emissions} = 4.32\\text{ tCO2e/t} \\times 3,500\\text{ t} = \\mathbf{15,120.00\\text{ tCO2e}}$$\n\n2. **If based on the summary total (4,000 t):**\n   $$\\text{Embedded emissions} = 4.32\\text{ tCO2e/t} \\times 4,000\\text{ t} = \\mathbf{17,280.00\\text{ tCO2e}}$$\n\nPlease reconcile the quantity discrepancy (confirming whether a 500 t line item is missing or if the summary total is a typographical error) to finalize the compliance report.",
+  "usage": {
+    "input_tokens": 732,
+    "output_tokens": 352
+  },
+  "latency_s": 7.3695,
+  "stop_reason": "STOP",
+  "truncated": false
+}

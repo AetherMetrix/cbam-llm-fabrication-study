@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6858d8275fe6c7f8a26de156",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute the embedded emissions for this line.**\n\nThe good and quantity are valid, but the country of production is not in the factor table.\n\n**Inputs check:**\n\n| Required input | Declared | Status |\n|---|---|---|\n| (a) Good CN code in table | 7201 (Pig iron) | Present |\n| (b) Country listed for that good | USA | **Not listed.** The table covers only T\u00fcrkiye, China, and India for CN 7201. |\n| (c) Quantity in tonnes | 1,200 t | Present |\n\n**Missing input:**\n- A default SEE for CN 7201 with country of production = USA. The ruleset requires the SEE to be selected jointly by good CN code and country, so no SEE can be applied from the other listed countries.\n\nThe producer name (Great Lakes Iron Co.) does not affect the calculation under these rules.\n\nTo complete the calculation, the declaration would need a country of production that appears in the table for CN 7201, or the factor table would need an entry for USA. For reference only, the 1,200 t quantity would give a result if one of the listed countries applied: T\u00fcrkiye 2,220.00 tCO2e, China 1,992.00 tCO2e, or India 3,036.00 tCO2e. These are not the answer for this declaration, since the country is USA.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 637
+  },
+  "latency_s": 3.5888,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

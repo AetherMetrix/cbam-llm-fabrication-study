@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0f75f86d8862c86cb85afbb1",
+  "task_id": "A03",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 1,266.27 tCO2e** (exact product 1,266.265 tCO2e, rounded to 2 decimal places)\n\n**Inputs:**\n- **CN code:** 7201 (pig iron and spiegeleisen), which is in the factor table.\n- **Country of production:** India, which is listed for CN 7201.\n- **Quantity:** 500.5 tonnes.\n- **Default SEE:** 2.53 tCO2e/t for CN 7201 and India.\n\n**Calculation:**\n500.5 t \u00d7 2.53 tCO2e/t = 1,266.265 tCO2e \u2192 **1,266.27 tCO2e**\n\nThe exact product ends in a 5 at the third decimal place, so the rounded value depends on the rounding convention. This uses round-half-up. Round-half-to-even would give 1,266.26.",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 492
+  },
+  "latency_s": 2.6405,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

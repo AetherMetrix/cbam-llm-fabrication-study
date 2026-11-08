@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c8fcaf18e2b17e13ad1889e2",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Based on the provided ruleset and factor table, the calculation is as follows:\n\n* **Good CN code:** 7201 (Pig iron)\n* **Country of production:** T\u00fcrkiye\n* **Default SEE:** 1.85 tCO2e/t\n* **Quantity:** 1000 tonnes\n\n**Calculation:**\n1.85 tCO2e/t \u00d7 1000 tonnes = 1850.00 tCO2e\n\n**Total Embedded Emissions:** 1850.00 tCO2e",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 125
+  },
+  "latency_s": 11.7471,
+  "stop_reason": "STOP",
+  "truncated": false
+}

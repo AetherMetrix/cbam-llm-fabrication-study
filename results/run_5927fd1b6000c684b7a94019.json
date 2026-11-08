@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5927fd1b6000c684b7a94019",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "The CN code is inconsistent: **7201** and **7206 10 00** have different default SEE values for China. A single total cannot be determined until the correct code is confirmed.\n\n- **If CN 7201:** 1.66 \u00d7 900 = **1,494.00 tCO\u2082e**\n- **If CN 7206 10 00:** 1.74 \u00d7 900 = **1,566.00 tCO\u2082e**\n\nPlease confirm the correct CN code.",
+  "usage": {
+    "input_tokens": 631,
+    "output_tokens": 109
+  },
+  "latency_s": 3.4682,
+  "stop_reason": "completed",
+  "truncated": false
+}

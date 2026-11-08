@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5989682c0231b42e1f7f66e9",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded emissions figure because the provided data contains a contradiction regarding one of the required inputs. \n\nSpecifically, the following required input is missing or unresolved:\n* **Quantity in tonnes (c):** There is a discrepancy between the declared summary total (1,000 t) and the sum of the individual line item lots (300 t + 400 t + 250 t = 950 t). A single, verified quantity in tonnes is required to perform the calculation without estimating.",
+  "usage": {
+    "input_tokens": 782,
+    "output_tokens": 114
+  },
+  "latency_s": 6.7066,
+  "stop_reason": "STOP",
+  "truncated": false
+}

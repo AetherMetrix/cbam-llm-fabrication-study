@@ -1,0 +1,15 @@
+{
+  "run_id": "run_74a73517a3903921998c965e",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Please confirm the correct CN code: the product text specifies **7207 11 90**, but the line item declares **7214 20 00**.\n\nFor T\u00fcrkiye, these have different SEE factors\u2014**3.087** and **2.31 tCO2e/t**, respectively. I can\u2019t select a single factor and calculate a definitive total for **1,100 t** until the code is confirmed.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 196
+  },
+  "latency_s": 7.3185,
+  "stop_reason": "completed",
+  "truncated": false
+}

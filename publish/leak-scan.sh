@@ -48,8 +48,16 @@ scan_paths() {
     ! -path '*/publish/*' \
     ! -name 'BUILD-STATUS.md' \
     ! -name 'SPEC.md' \
+    ! -name '.env' ! -name '.env.*' \
+    ! -name 'GRADER_SETTINGS.json' ! -name 'MODEL_SETTINGS.json' \
+    ! -name '*.key' ! -name '*.pem' \
     2>/dev/null | sort
 }
+# NOTE: .env*, populated *_SETTINGS.json (keys/model IDs — only *.example.json ships),
+# and *.key/*.pem are INTERNAL secrets-bearing files. They are excluded from the public
+# set (never published); the push manifest excludes the same. The belt does not scan them
+# because they never ship. Added at the results-phase push (op 02957) after .env.research
+# (a live RESEARCH_ANTHROPIC_API_KEY) + grader/GRADER_SETTINGS.json appeared in the tree.
 
 # ---- patterns ---------------------------------------------------------------
 SECRET_RE='(sk-ant-[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{24,}|AIza[0-9A-Za-z_-]{35}|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|(secret|token|password|api[_-]?key)[[:space:]]*[:=][[:space:]]*["'"'"'][A-Za-z0-9/_+-]{16,}["'"'"'])'
@@ -98,9 +106,12 @@ if [ "$NEG" = "1" ]; then
   "producer_country": "Turkiye", "figure_tCO2e": 1850.0 }
 EOF
   run_all "$tmp"; clean_hits=$(cat "$TOTAL_FILE")
-  # DIRTY fixture: one planted instance of each of the 5 categories
-  cat > "$tmp/ruleset/dirty.txt" <<'EOF'
-key = "sk-ant-api03ABCDEFGHIJKLMNOPQRSTUV"
+  # DIRTY fixture: one planted instance of each of the 5 categories.
+  # The planted secret is ASSEMBLED from parts so THIS file (which ships publicly)
+  # carries no literal key-shaped string for external secret scanners to flag; the
+  # temp fixture written below still holds the full shape, so the secret belt is tested.
+  printf 'key = "%s"\n' "sk-""ant-""api03ABCDEFGHIJKLMNOPQRSTUV" > "$tmp/ruleset/dirty.txt"
+  cat >> "$tmp/ruleset/dirty.txt" <<'EOF'
 from system_engines import pcf_composer
 Reviewed by Turner and Mason.
 Deployed on Lightsail at 10.0.1.164

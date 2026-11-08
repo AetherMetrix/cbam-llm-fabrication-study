@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5612c518ec58353a902d7090",
+  "task_id": "A06",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions: Steel Ingots from India\n\n## Inputs (all required inputs present)\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7206 10 00 (Ingots, of iron and non-alloy steel) | \u2705 Yes |\n| (b) Country of production | India | \u2705 Yes, listed for 7206 10 00 |\n| (c) Quantity | 3,330 t | \u2705 Yes |\n\n## Factor Selection\n\nThe SEE is selected jointly by CN code and country:\n\n- **CN 7206 10 00 + India \u2192 Default SEE = 2.64 tCO2e/t**\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 2.64 tCO2e/t \u00d7 3,330 t\n= **8,791.20 tCO2e**\n\n## Result\n\n**Total embedded emissions: 8,791.20 tCO2e**",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 351
+  },
+  "latency_s": 3.4883,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_46a30e6900a87ee5fda9bf5a",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions figure. The scenario gives the CN code but omits two of the three required inputs.\n\n**Inputs present:**\n- (a) Good CN code: 7201 (Pig iron and spiegeleisen, in pigs, blocks or other primary forms). This is in the factor table.\n\n**Missing inputs:**\n- (b) **Country of production.** The default SEE is selected by the pair (CN code, country). For CN 7201 the table lists three countries, each with a different value: T\u00fcrkiye (1.85 tCO2e/t), China (1.66 tCO2e/t), and India (2.53 tCO2e/t). Without the country, the applicable value is undetermined.\n- (c) **Quantity in tonnes.** The embedded emissions are the SEE multiplied by the quantity, so no total can be produced without it.\n\nTo complete the calculation, please provide the country of production and the quantity in tonnes of pig iron declared. The result will then be the selected SEE multiplied by the quantity, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 544
+  },
+  "latency_s": 3.2246,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

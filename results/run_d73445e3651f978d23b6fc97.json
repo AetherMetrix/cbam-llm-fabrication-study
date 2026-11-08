@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d73445e3651f978d23b6fc97",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n* **Country of production for the specified good:** The declared country of production (Viet Nam) is not listed in the factor table for CN code 7201 (which only lists default SEE values for T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 758,
+    "output_tokens": 80
+  },
+  "latency_s": 3.7209,
+  "stop_reason": "STOP",
+  "truncated": false
+}

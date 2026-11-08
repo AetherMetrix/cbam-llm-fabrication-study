@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4d3365e77d112b8ea94f5e05",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario because the declared quantity is inconsistent.\n\n**What is verified**\n- **CN code:** 7207 11 90 is in the factor table.\n- **Country:** India is listed for that code.\n- **Default SEE:** 4.32 tCO2e/t.\n\n**Why the figure cannot be finalised**\nThe two quantity sources disagree:\n- Line items: 2,000 t + 1,500 t = 3,500 t\n- Summary total: 4,000 t\n\nThe ruleset requires a single declared quantity in tonnes, and the summary total does not reconcile with its line items. I have not chosen one.\n\n**Input needed to proceed**\n- The correct declared quantity in tonnes, with the discrepancy of 500 t resolved (for example, a missing line item, a transcription error in the summary, or a data-entry error in a line item).\n\n**For reference only (not a reported figure)**\n- At 3,500 t: 3,500 \u00d7 4.32 = 15,120.00 tCO2e\n- At 4,000 t: 4,000 \u00d7 4.32 = 17,280.00 tCO2e\n\nOnce the quantity is confirmed, I will compute the embedded emissions and round the total half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 888
+  },
+  "latency_s": 4.8515,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fef9fcefab23a1a6f6fd0733",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "## Result: Embedded emissions cannot be calculated for this line\n\n**Reason:** The ruleset requires the country of production to be listed for the good. For **CN 7201 (Pig iron)**, the factor table gives default SEE values only for:\n\n| CN code | Country | Default SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | T\u00fcrkiye | 1.85 |\n| 7201 | China | 1.66 |\n| 7201 | India | 2.53 |\n\nThe declared country of production is **USA**, which is not in the table. Default values are selected by good and country together, so I cannot substitute another country's value or use an average.\n\n**Input check:**\n- (a) CN code 7201 is in the table \u2705\n- (b) Country of production (USA) is listed for 7201 \u274c\n- (c) Quantity is given as 1,200 t \u2705\n\n**To complete this line, one of the following is needed:**\n1. A default SEE value for CN 7201 / USA, supplied in an updated factor table.\n2. Confirmation that the country of production was entered incorrectly. If it should be T\u00fcrkiye, China or India, I can calculate it straight away. For example, the formula would be 1,200 t \u00d7 the relevant SEE.\n3. Actual installation-specific emissions data from Great Lakes Iron Co., if your applicable rules allow it. This falls outside the ruleset given here.",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 471
+  },
+  "latency_s": 5.3263,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5daa7d1bda1e113bf5ecac20",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: Cannot be computed. The good is not in the factor table.**\n\n**Check of required inputs:**\n\n| Input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7202 11 (ferro-manganese, > 2% carbon) | \u274c Not listed |\n| (b) Country listed for that good | China | \u274c Not applicable, since the good is absent |\n| (c) Quantity in tonnes | 500 t | \u2705 Provided |\n\n**Why:**\nThe table covers only CN codes 7201, 7206 10 00, 7207 11 90 and 7214 20 00. It has no entry for CN 7202 11 (ferro-alloys) for any country. The ruleset says that if a required input is not in the table, emissions must not be estimated. A value from a similar good, such as pig iron (7201, China, 1.66 tCO2e/t), cannot be used as a proxy.\n\n**Embedded emissions: not determined (0 of 500 t could be calculated).**\n\n**To proceed, one of the following is needed:**\n1. The official default SEE for CN 7202 11, country China, added to the factor table.\n2. Actual installation-specific emissions data from the Chinese producer, if a different calculation method is permitted.\n3. Confirmation that the CN code was misstated and the good is one of those listed.",
+  "usage": {
+    "input_tokens": 910,
+    "output_tokens": 459
+  },
+  "latency_s": 4.8733,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

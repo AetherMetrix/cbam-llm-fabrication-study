@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ed7ac6ebab2d9ce700c6065c",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute a definitive embedded emissions figure from the data provided.**\n\nThe ruleset selects the default SEE jointly by CN code and country of production, and the two sources disagree on that country:\n\n- **Email:** T\u00fcrkiye\n- **Declaration header:** China\n\nThe CN code (7214 20 00) and quantity (2,000 t) are unambiguous, but the country of production is not established.\n\n**Input needed to proceed:**\n1. **Confirmed country of production** for this consignment, with the conflict between the email and the declaration header resolved. Only one country can be used for the SEE lookup.\n\n**Once the country is confirmed**, the calculation is:\n\nEmbedded emissions = SEE (CN 7214 20 00, confirmed country) \u00d7 2,000 t\n\n- If T\u00fcrkiye is confirmed: 2.31 \u00d7 2,000 = **4,620.00 tCO2e**\n- If China is confirmed: 3.169 \u00d7 2,000 = **6,338.00 tCO2e**\n\nNeither figure is reportable until the country of production is confirmed. The header and the email should be corrected or reconciled, and the supporting documentation for the mill's location should be checked.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 839
+  },
+  "latency_s": 4.7822,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

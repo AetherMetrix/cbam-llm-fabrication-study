@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4dd19062a7cf77988fc05c5d",
+  "task_id": "A12",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions: 42,695.73 tCO2e**\n\n**Inputs:**\n- CN code: 7214 20 00 (bars and rods of iron or non-alloy steel with indentations, ribs, grooves, or other deformations produced during rolling, i.e., steel rebar). This code is in the factor table.\n- Country of production: India. This is listed for CN 7214 20 00.\n- Quantity: 9,999 t.\n\n**Calculation:**\n- Default SEE for CN 7214 20 00 and India: 4.27 tCO2e/t\n- Embedded emissions = 4.27 \u00d7 9,999 = 42,695.73 tCO2e",
+  "usage": {
+    "input_tokens": 869,
+    "output_tokens": 307
+  },
+  "latency_s": 1.6331,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

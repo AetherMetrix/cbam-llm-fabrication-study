@@ -1,0 +1,15 @@
+{
+  "run_id": "run_928da14698588494be6f75ef",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "I can't compute embedded emissions for this scenario because the country of production is not in the factor table.\n\n**Inputs checked:**\n\n| Input | Value | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 | In table |\n| (b) Country of production | Ukraine | **Not listed for 7214 20 00** |\n| (c) Quantity | 2,600 t | Provided |\n\nThe table lists default SEE values for CN 7214 20 00 only for T\u00fcrkiye (2.31), China (3.169), and India (4.27). Under the ruleset, default values are selected jointly by CN code and country, and an estimate is not permitted when a required input is not in the table. I have not estimated a value for Ukraine.\n\n**To proceed, one of the following is needed:**\n- Confirm that the country of production is one of T\u00fcrkiye, China, or India, in which case I can calculate the result. For example, at T\u00fcrkiye's value of 2.31 tCO2e/t, the result would be 2,600 \u00d7 2.31 = 6,006.00 tCO2e.\n- Provide a factor table entry for Ukraine and CN 7214 20 00, which would allow the calculation to be completed under the ruleset.",
+  "usage": {
+    "input_tokens": 922,
+    "output_tokens": 444
+  },
+  "latency_s": 2.4109,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

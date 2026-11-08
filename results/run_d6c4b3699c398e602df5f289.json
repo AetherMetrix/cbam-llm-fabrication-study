@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d6c4b3699c398e602df5f289",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The country of production is conflicting: the cover note states **China**, while the customs form states **India**. The ruleset provides no precedence rule, so a single total cannot be determined without clarification.\n\nFor **1,000 t of CN 7201**, the conditional calculations are:\n- **China:** 1,000 \u00d7 1.66 = **1,660.00 tCO2e**\n- **India:** 1,000 \u00d7 2.53 = **2,530.00 tCO2e**\n\nPlease confirm the country of production to finalize the total.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 123
+  },
+  "latency_s": 3.6897,
+  "stop_reason": "completed",
+  "truncated": false
+}

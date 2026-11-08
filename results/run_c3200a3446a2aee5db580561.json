@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c3200a3446a2aee5db580561",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Reason:** The declared country of production, Russian Federation, is not listed for CN code 7214 20 00 in the factor table. The table only provides default SEE values for T\u00fcrkiye (2.31), China (3.169), and India (4.27). Under the ruleset, the SEE is selected jointly by CN code and country, and a country not listed for that good means no default value exists. I have not estimated a value from other countries or codes.\n\n**Inputs status:**\n- **(a) Good CN code in table:** Provided and present. CN 7214 20 00 matches \"Bars and rods, of iron or non-alloy steel, with indentations...\" The form's description \"ribbed bar\" is consistent with this entry.\n- **(b) Country of production listed for that good:** Missing. Russian Federation has no SEE value for 7214 20 00 in the table.\n- **(c) Quantity in tonnes:** Provided as 2200, but the form says \"Tonnage\" without stating the unit. If this is in tonnes, it is usable. Please confirm the unit.\n\n**What would allow a calculation:** A default SEE value for CN 7214 20 00 and Russian Federation from the authoritative table, or a table update that includes this country. Once supplied, the calculation would be 2200 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 973,
+    "output_tokens": 645
+  },
+  "latency_s": 3.4256,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

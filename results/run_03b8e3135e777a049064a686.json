@@ -1,0 +1,15 @@
+{
+  "run_id": "run_03b8e3135e777a049064a686",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.**\n\nThe ruleset selects the default SEE jointly by CN code and country of production, and the two sources give different countries:\n\n- **Email:** the mill is in T\u00fcrkiye.\n- **Declaration header:** the country of production is China.\n\nBecause the country of production is unresolved, the SEE value cannot be selected, so no total can be reported.\n\n**Missing or conflicting inputs:**\n\n1. **Country of production (conflict):** The email (T\u00fcrkiye) and the declaration header (China) disagree. A single, verified country of production for this consignment is required. The ruleset does not say which source takes precedence, so that determination must come from outside the ruleset.\n\n**Inputs that are present and valid:**\n\n- CN code 7214 20 00 is in the factor table.\n- Quantity is 2,000 t.\n\n**Reference only (not a determination):** The table contains SEE values for CN 7214 20 00 in both candidate countries. Once the country is confirmed, the calculation is SEE \u00d7 2,000 t:\n\n- T\u00fcrkiye: 2.31 tCO2e/t \u2192 4,620.00 tCO2e\n- China: 3.169 tCO2e/t \u2192 6,338.00 tCO2e\n\nOnly the value matching the confirmed country of production should be reported. Do not report either figure until the conflict is resolved.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 817
+  },
+  "latency_s": 4.7414,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

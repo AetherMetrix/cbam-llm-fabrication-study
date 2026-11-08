@@ -1,0 +1,15 @@
+{
+  "run_id": "run_26dd06b5e3a6ccd8970fd978",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Embedded emissions cannot be computed based on the provided information. \n\n**Reason:** \nAccording to the ruleset, the required inputs are (a) the good's CN code in the table, (b) the country of production, and (c) the quantity in tonnes. If any input is missing or not in the table, no estimation may be made. In this scenario, the **CN code is missing** (\"to be confirmed\"), so a specific embedded emissions (SEE) factor cannot be selected from the table.",
+  "usage": {
+    "input_tokens": 731,
+    "output_tokens": 111
+  },
+  "latency_s": 4.7422,
+  "stop_reason": "STOP",
+  "truncated": false
+}

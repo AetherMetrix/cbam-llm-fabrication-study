@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ba23689b133c725e4547ac5b",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the **good\u2019s CN code is missing**. The description does not uniquely identify a heading in the supplied table, so no SEE factor can be selected.\n\nInputs provided:\n- Country of production: India\n- Quantity: 600 tonnes\n\n**Missing input:** the applicable CN code from the supplied table.",
+  "usage": {
+    "input_tokens": 681,
+    "output_tokens": 75
+  },
+  "latency_s": 3.2724,
+  "stop_reason": "completed",
+  "truncated": false
+}

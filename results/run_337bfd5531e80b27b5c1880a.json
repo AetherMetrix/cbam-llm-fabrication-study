@@ -1,0 +1,15 @@
+{
+  "run_id": "run_337bfd5531e80b27b5c1880a",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.**\n\nThe ruleset requires one country of production for the good, and the two sources conflict:\n- The cover note says China.\n- The attached customs form says India.\n\nThe Default SEE is selected jointly by CN code and country, so the country determines which factor applies. The inputs that are needed to proceed are:\n\n1. **Confirmed country of production for CN 7201 (pig iron), 1,000 t.** Either China or India must be verified as the country of production. Confirmation could come from the customs form's entry being corrected or from the cover note being corrected, along with the documentation that supports the correction.\n\nOnce the country is confirmed, the calculation is determined from the table. The quantity (1,000 t) and CN code (7201) are already valid inputs:\n\n- If China is confirmed: 1.66 tCO2e/t \u00d7 1,000 t = **1,660.00 tCO2e**\n- If India is confirmed: 2.53 tCO2e/t \u00d7 1,000 t = **2,530.00 tCO2e**\n\nThese are not reportable results until the country is resolved, because the ruleset does not allow choosing between conflicting inputs.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 786
+  },
+  "latency_s": 4.7538,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

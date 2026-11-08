@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f02efad9f82009c6bf1810f6",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I can't compute a definitive emissions figure. The supplied factor table has no default SEE for this good and country.**\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations\u2026; matches \"ribbed bar\") | \u2705 Present |\n| (b) Country of production listed for that good | Russian Federation | \u274c **Not listed** for CN 7214 20 00 |\n| (c) Quantity in tonnes | 2,200 t | \u2705 Present |\n\n**Why I can't proceed**\n\nUnder the ruleset, the SEE is selected jointly by CN code and country. For CN 7214 20 00, the table only gives values for:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for the Russian Federation. The ruleset says not to estimate when the country isn't in the table, so I haven't substituted another country's value, averaged the listed values, or applied any proxy.\n\n**Missing input**\n\n- The default total SEE (tCO2e per tonne) for CN 7214 20 00, country of production Russian Federation.\n\n**To resolve**\n\nProvide that default SEE value, or a factor table that includes the Russian Federation for this CN code. The calculation is then: embedded emissions = SEE \u00d7 2,200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 973,
+    "output_tokens": 564
+  },
+  "latency_s": 5.5379,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

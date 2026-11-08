@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a322aab97b5b72d7a52d611d",
+  "task_id": "A03",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: Pig Iron (CN 7201), India\n\n**Embedded emissions: 1,266.27 tCO2e**\n\n## Inputs\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7201 (Pig iron and spiegeleisen) | In table |\n| Country of production | India | Listed for CN 7201 |\n| Quantity | 500.5 t | Provided |\n\n## Factor\n\nThe table gives a default SEE of **2.53 tCO2e/t** for CN 7201 produced in India.\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 2.53 tCO2e/t \u00d7 500.5 t\n= 1,266.265 tCO2e\n\u2248 **1,266.27 tCO2e** (2 decimal places)\n\nThe exact product, 1,266.265, ends in a half. I rounded it half-up to 1,266.27. If your system uses round-half-to-even (banker's rounding), it would report 1,266.26.",
+  "usage": {
+    "input_tokens": 867,
+    "output_tokens": 432
+  },
+  "latency_s": 4.7104,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

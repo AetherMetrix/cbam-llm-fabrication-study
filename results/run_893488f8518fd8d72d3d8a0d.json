@@ -1,0 +1,15 @@
+{
+  "run_id": "run_893488f8518fd8d72d3d8a0d",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded emissions: cannot be computed yet\n\n**Result: not calculated.** The CN code is missing, so no figure can be reported.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in factor table | \"(to be confirmed)\" | \u274c **Missing** |\n| (b) Country of production listed for that good | T\u00fcrkiye | \u26a0\ufe0f Cannot be checked without a CN code |\n| (c) Quantity in tonnes | 1,000 t | \u2705 OK |\n\n## Why no estimate is given\n\nThe ruleset selects the default SEE by **CN code and country together**, and says not to estimate when an input is missing. The description \"steel long product\" does not identify a single row. Several T\u00fcrkiye entries could fit, and their SEE values differ (2.31 for 7214 20 00 vs. 3.087 for 7207 11 90). It is also possible the final heading is not in the table at all. Choosing or averaging a factor would be an estimate, which the ruleset does not allow.\n\n## What is needed\n\nThe mill should confirm the **exact CN code** of the product. Then:\n\n- **If the code is in the table** (e.g., 7214 20 00 or 7207 11 90), with T\u00fcrkiye as the country:\n  Embedded emissions = SEE (T\u00fcrkiye, confirmed CN code) \u00d7 1,000 t, rounded half-up to 2 decimal places.\n- **If the code is not in the table**, it cannot be calculated under this ruleset. Another source of default values or actual emissions data would be needed.\n\nOnce the CN code is provided, I can complete the calculation.",
+  "usage": {
+    "input_tokens": 926,
+    "output_tokens": 748
+  },
+  "latency_s": 7.812,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

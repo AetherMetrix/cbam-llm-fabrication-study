@@ -1,0 +1,15 @@
+{
+  "run_id": "run_38bc1cf9cf437edc75e45caf",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute a definitive figure: the declared quantity is inconsistent\n\n## Inputs Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 is listed |\n| (b) Country listed for that good | \u2705 India, default SEE = **4.32 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The Quantity Discrepancy\n\n- Line items: 2,000 t + 1,500 t = **3,500 t**\n- Stated summary total: **4,000 t**\n- Unexplained difference: **500 t**\n\nThe ruleset requires a single quantity in tonnes. The scenario gives two incompatible values, and the ruleset provides no basis for choosing one. Selecting either would be an estimate, so no definitive embedded-emissions figure can be reported.\n\n## Missing Input\n\n1. **A single, confirmed quantity (tonnes) of CN 7207 11 90 produced in India.** One of the following is needed:\n   - Confirmation that the line items (3,500 t) are complete and the summary total is wrong, **or**\n   - The missing line item(s) totalling 500 t, confirmed as the same CN code and country of production, **or**\n   - A corrected summary total.\n\nIf any missing line item has a different CN code or country of production, its own CN code, country, and quantity would also be required.\n\n## What the Result Would Be (for reference only, not a determination)\n\n| If confirmed quantity is | Calculation | Embedded emissions |\n|---|---|---|\n| 3,500 t | 3,500 \u00d7 4.32 | 15,120.00 tCO2e |\n| 4,000 t | 4,000 \u00d7 4.32 | 17,280.00 tCO2e |\n\nOnce the quantity is reconciled, the figure can be finalized.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 968
+  },
+  "latency_s": 9.4575,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

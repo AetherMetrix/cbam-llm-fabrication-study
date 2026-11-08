@@ -1,0 +1,15 @@
+{
+  "run_id": "run_796a4048f86a62c78e56f918",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "Cannot compute the embedded-emissions total under the supplied rules.\n\nCN 7201 and the quantity of 1,800 tonnes are provided, but **Viet Nam is not listed for CN 7201** in the factor table.\n\nMissing required input: a default SEE for **CN 7201 produced in Viet Nam**. The blast-furnace route does not supply or replace this country-specific factor.",
+  "usage": {
+    "input_tokens": 666,
+    "output_tokens": 86
+  },
+  "latency_s": 3.6901,
+  "stop_reason": "completed",
+  "truncated": false
+}

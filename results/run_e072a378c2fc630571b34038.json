@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e072a378c2fc630571b34038",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: insufficient data\n\nI can't calculate a definitive embedded-emissions figure for this scenario. The ruleset selects the default SEE by **CN code and country of production together**, and both are missing.\n\n## Input status\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) Good CN code in the table | \u274c No | \"Steel\" is not a CN code. It could match several table entries (see below). |\n| (b) Country of production for that good | \u274c No | No country given. The table covers T\u00fcrkiye, China and India, and the SEE differs significantly by country. |\n| (c) Quantity in tonnes | \u2705 Yes | 1,000 t |\n\n## Missing inputs\n\n1. **CN code of the good.** \"Steel\" could refer to any of these table entries, each with different default values:\n   - **7206 10 00**: Ingots, of iron and non-alloy steel\n   - **7207 11 90**: Semi-finished products of iron or non-alloy steel\n   - **7214 20 00**: Bars and rods, of iron or non-alloy steel, with indentations\n\n   (7201, pig iron, is not steel, but please confirm the good's classification.)\n2. **Country of production.** It must be one listed for that CN code: T\u00fcrkiye, China or India.\n\n## Next step\n\nOnce you provide the CN code and country of production, I will calculate:\n\n**Embedded emissions = Default SEE (for that CN code and country) \u00d7 1,000 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 703
+  },
+  "latency_s": 7.2245,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_19709804aa3680f5e2a610de",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Missing input:**\n- **CN code.** The ruleset requires a good CN code that appears in the factor table, and the datasheet does not provide one. The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") fits more than one table entry. It could correspond to 7207 11 90 (semi-finished products of non-alloy steel) or 7206 10 00 (ingots of non-alloy steel), and the two have different default SEE values for India (4.32 vs. 2.64 tCO2e/t). The rules do not allow me to choose between them from a description.\n\n**Inputs that are present:**\n- **Country of production:** India, which is listed in the table for every candidate heading.\n- **Quantity:** 600 t.\n\n**To proceed,** provide the specific CN code (for example, from the importer's customs declaration or the product's tariff classification). With the code confirmed as one in the table and India as the country, I can apply the ruleset: embedded emissions = SEE \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 698
+  },
+  "latency_s": 3.6861,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

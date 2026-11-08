@@ -1,0 +1,15 @@
+{
+  "run_id": "run_85b6620f9c3e1231acd9a4aa",
+  "task_id": "A11",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 4,753.50 tCO2e**\n\n| Input | Value | Status |\n|---|---|---|\n| Good CN code | 7214 20 00 (bars and rods with indentations, ribs, grooves) | In table |\n| Country of production | China | Listed for this CN code |\n| Quantity | 1,500 tonnes | Provided |\n| Default SEE | 3.169 tCO2e/t | Looked up for (7214 20 00, China) |\n\n**Calculation:** 1,500 t \u00d7 3.169 tCO2e/t = 4,753.50 tCO2e",
+  "usage": {
+    "input_tokens": 932,
+    "output_tokens": 353
+  },
+  "latency_s": 1.9565,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

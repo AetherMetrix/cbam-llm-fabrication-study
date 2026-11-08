@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e859f5d292783e1469a7f036",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Cannot compute embedded emissions using the provided table. The shipment is **900 tonnes of CN 7206 10 00 produced in Brazil**, but Brazil is not listed for this good.\n\nThe rules prohibit estimation when the production country is not in the table. A default SEE for **CN 7206 10 00, Brazil** is required to calculate the total.",
+  "usage": {
+    "input_tokens": 657,
+    "output_tokens": 78
+  },
+  "latency_s": 3.7886,
+  "stop_reason": "completed",
+  "truncated": false
+}

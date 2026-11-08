@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7517b233a8487113df8de2ad",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Cannot compute the embedded-emissions total under the supplied rules.\n\nMissing required input: a default SEE for **CN 7201 produced in Viet Nam**. The table lists only T\u00fcrkiye, China, and India for this good.\n\nThe declared quantity of **1,800 tonnes** is provided, but the blast-furnace route does not supply the missing country-specific factor. No estimate can be made.",
+  "usage": {
+    "input_tokens": 666,
+    "output_tokens": 84
+  },
+  "latency_s": 3.6137,
+  "stop_reason": "completed",
+  "truncated": false
+}

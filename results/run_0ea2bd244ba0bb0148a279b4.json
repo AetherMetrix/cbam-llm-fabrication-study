@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0ea2bd244ba0bb0148a279b4",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: Ingots (CN 7206 10 00), T\u00fcrkiye\n\n## Quantity conflict\n\nThe scenario gives two quantities that don't match:\n\n| Source | Quantity |\n|---|---|\n| Sum of lots (3 \u00d7 1,000 t) | **3,000 t** |\n| Declared total | **3,500 t** |\n\nThe 500 t difference can't be resolved from the information given. The ruleset requires a valid quantity in tonnes and says not to estimate when an input is missing. So I can't confirm a single figure.\n\n## Inputs\n\n- **CN code:** 7206 10 00 (in table)\n- **Country:** T\u00fcrkiye (listed for this good)\n- **Default SEE:** 1.96 tCO2e/t\n- **Quantity:** unresolved (3,000 t or 3,500 t)\n\n## Results for each possible quantity\n\n| Basis | Calculation | Embedded emissions |\n|---|---|---|\n| Declared total (3,500 t) | 3,500 \u00d7 1.96 | **6,860.00 tCO2e** |\n| Sum of lots (3,000 t) | 3,000 \u00d7 1.96 | **5,880.00 tCO2e** |\n\nThe declared figure (3,500 t) gives **6,860.00 tCO2e**. It should not be treated as final until the discrepancy is resolved, since the lot-level data supports only 3,000 t.\n\n## Next step\n\nCheck the shipping or customs documents to find out whether:\n- the declared total is wrong (then use 5,880.00 tCO2e), or\n- a fourth lot or extra 500 t is missing from the lot list (then use 6,860.00 tCO2e).",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 830
+  },
+  "latency_s": 11.8096,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

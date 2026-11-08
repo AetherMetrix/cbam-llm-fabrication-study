@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5c47f9515c7c0f6676230136",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the embedded-emissions figure for this datasheet.\n\n**Missing or unmatched inputs:**\n\n1. **Good CN code:** CN 7202 41 (ferro-chromium, >4% carbon) is not in the factor table. The table covers only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00. Because the SEE is selected jointly by CN code and country, no default SEE can be selected.\n2. **Country of production for this good:** India is listed in the table only for the four covered CN codes. There is no India entry for CN 7202 41, so the country requirement is not met for this good.\n\n**Available input:**\n- Quantity: 700 t (provided and valid).\n\nTo compute the figure, the factor table would need a row for CN 7202 41 with a default SEE for India (tCO2e/t). The result would then be 700 \u00d7 that SEE, rounded half-up to 2 decimal places. I have not substituted the SEE for a different CN code or another country.",
+  "usage": {
+    "input_tokens": 975,
+    "output_tokens": 600
+  },
+  "latency_s": 3.6595,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

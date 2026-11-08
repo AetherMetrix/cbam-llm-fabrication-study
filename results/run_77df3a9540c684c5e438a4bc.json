@@ -1,0 +1,15 @@
+{
+  "run_id": "run_77df3a9540c684c5e438a4bc",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: Ribbed Bar (CN 7214 20 00), India\n\n**I can't give a single definitive total because the declared quantity is inconsistent.**\n\n## Factor lookup\n| CN code | Country | Default SEE |\n|---|---|---|\n| 7214 20 00 | India | **4.27 tCO2e/t** |\n\nThe CN code and country match the table.\n\n## Quantity conflict\n| Source | Quantity |\n|---|---|\n| Summary total | 1,000 t |\n| Line items (300 + 400 + 250) | **950 t** |\n| **Discrepancy** | **50 t** |\n\nThe ruleset requires a valid quantity in tonnes and says not to estimate when a required input is missing. Here the quantity is contradictory, so I won't pick one figure as authoritative.\n\n## Results for each quantity\n| Basis | Calculation | Embedded emissions |\n|---|---|---|\n| Line items (950 t) | 950 \u00d7 4.27 | **4,056.50 tCO2e** |\n| Summary (1,000 t) | 1,000 \u00d7 4.27 | **4,270.00 tCO2e** |\n\nThe 50 t gap equals **213.50 tCO2e**.\n\n## Recommended action\nReconcile the declaration before submitting. Check the shipping documents, customs entry and weighbridge records to find out whether:\n- the summary total is wrong (it should read 950 t), or\n- a fourth lot of 50 t is missing from the line items.\n\nOnce the quantity is confirmed, the embedded emissions are that quantity \u00d7 4.27 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 722
+  },
+  "latency_s": 9.681,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

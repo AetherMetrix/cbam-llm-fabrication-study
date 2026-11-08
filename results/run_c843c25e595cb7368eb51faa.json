@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c843c25e595cb7368eb51faa",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I can't compute this figure** because the good's CN code is not in the supplied factor table.\n\n**Why**\n\n- **CN code 7202 41 (ferro-chromium, > 4% carbon):** Not in the table. The table only covers 7201, 7206 10 00, 7207 11 90 and 7214 20 00.\n- **Country of production (India):** Provided, but the ruleset selects the SEE jointly by CN code and country. India is listed only for the four codes above, so no 7202 41 / India pairing exists.\n- **Quantity (700 t):** Provided and valid.\n\nThe ruleset says that if the CN code is not in the table, I must not estimate. I have not substituted a value from another code, such as 7201 pig iron. Ferro-chromium is a different good, and using a proxy would produce an unsupported figure.\n\n**Missing input needed**\n\n1. The default SEE (tCO2e per tonne) for **CN 7202 41, country of production India**, added to the factor table.\n\nWith that value, the result would be: **Embedded emissions = SEE(7202 41, India) \u00d7 700 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 975,
+    "output_tokens": 436
+  },
+  "latency_s": 4.8172,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

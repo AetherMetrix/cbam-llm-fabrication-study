@@ -1,0 +1,15 @@
+{
+  "run_id": "run_99f725d3ccaf5227fdeed7bd",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: CN code is ambiguous\n\nI cannot give a definitive embedded-emissions figure for this line item. The ruleset selects the default SEE by CN code and country together, and the scenario gives two conflicting CN codes for the same good.\n\n## The conflict\n\n| Source | CN code | Good | Default SEE (T\u00fcrkiye) |\n|---|---|---|---|\n| Product text | 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 tCO2e/t |\n| Line-item CN | 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations | 2.31 tCO2e/t |\n\nThe two codes carry different default SEEs for T\u00fcrkiye. Choosing one would be an assumption, and the ruleset says not to estimate.\n\n## Inputs status\n\n- **(a) Good CN code: missing.** No single CN code is confirmed. You need to state which code is correct for the declared good. If the description and declaration genuinely disagree, the customs declaration may need to be corrected.\n- **(b) Country of production: provided.** T\u00fcrkiye is listed for both candidate codes.\n- **(c) Quantity: provided.** 1,100 t.\n\nOnce you confirm the CN code, I can calculate SEE \u00d7 1,100 t and round half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 654
+  },
+  "latency_s": 8.0262,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

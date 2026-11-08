@@ -1,0 +1,15 @@
+{
+  "run_id": "run_880261c2b2875cf6fbc3a433",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Embedded emissions **cannot be calculated using the provided table**. CN 7214 20 00 is listed, but no default SEE is provided for the **United States**.\n\nUnder the ruleset, no estimate may be made when the country of production is not listed for the good, even though the quantity (1,200 t) is provided.",
+  "usage": {
+    "input_tokens": 615,
+    "output_tokens": 75
+  },
+  "latency_s": 2.9804,
+  "stop_reason": "completed",
+  "truncated": false
+}

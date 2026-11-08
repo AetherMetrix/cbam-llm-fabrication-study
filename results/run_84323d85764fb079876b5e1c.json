@@ -1,0 +1,15 @@
+{
+  "run_id": "run_84323d85764fb079876b5e1c",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure from the data provided.**\n\nThe scenario gives two different CN codes for the same line item:\n\n- **Text description:** CN 7207 11 90 (semi-finished products of iron or non-alloy steel)\n- **Line-item CN code:** 7214 20 00 (bars and rods, of iron or non-alloy steel)\n\nThe ruleset selects the default SEE by the good's CN code and country. Both codes exist in the factor table for T\u00fcrkiye, with different SEE values, so the choice of code determines the result. The ruleset does not say which code takes precedence when the text and line item conflict, and I can't resolve that from the materials provided.\n\n**Missing or unresolved inputs:**\n\n1. **Confirmed CN code for the good:** Either 7207 11 90 or 7214 20 00 must be confirmed as the correct classification. The conflict must be resolved from the source documentation (for example, the commercial invoice, customs declaration, or product specification). The ruleset does not provide a tie-breaking rule.\n\nCountry (T\u00fcrkiye) and quantity (1,100 t) are present and match table entries, so they are not the blocking issue.\n\nOnce the CN code is confirmed, the calculation is: SEE for the confirmed code and T\u00fcrkiye \u00d7 1,100 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 815
+  },
+  "latency_s": 4.3969,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

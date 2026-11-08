@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a763f96c1f42f90ba1301f19",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The embedded emissions cannot be calculated yet because the **country of production is missing**.\n\nProvided:\n- **CN code:** 7214 20 00\n- **Quantity:** 2,000 tonnes\n\nPlease confirm the country of production\u2014**T\u00fcrkiye, China, or India**, the countries listed for this CN code. The applicable country-specific SEE can then be multiplied by 2,000 tonnes, with the total rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 685,
+    "output_tokens": 97
+  },
+  "latency_s": 4.3919,
+  "stop_reason": "completed",
+  "truncated": false
+}

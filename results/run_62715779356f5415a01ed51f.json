@@ -1,0 +1,15 @@
+{
+  "run_id": "run_62715779356f5415a01ed51f",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions figure because a required input is missing.\n\n**Missing input:**\n- **Country of production:** blank on the data form. The default SEE is selected jointly by CN code and country, so the country is needed to choose the factor.\n\n**Inputs present and valid:**\n- **Good / CN code:** 7201 (pig iron and spiegeleisen) is in the factor table.\n- **Quantity:** 1,500 t.\n\nFor CN 7201, the table lists three countries: T\u00fcrkiye (1.85 tCO2e/t), China (1.66 tCO2e/t), and India (2.53 tCO2e/t). Once the country of production is provided and confirmed as one of these, the calculation is 1,500 t \u00d7 the matching SEE, rounded half-up to 2 decimal places. Production route (blast furnace) and installation (Works 2) are not inputs to the ruleset, so they do not affect the calculation.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 570
+  },
+  "latency_s": 3.5315,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e5f060e8daf05f8e961c6196",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions: not finalized. The CN code conflicts between the description and the line item.**\n\nThe ruleset requires a single good CN code, and the scenario gives two:\n\n- **Text description:** CN 7207 11 90 (semi-finished products), T\u00fcrkiye, SEE 3.087 tCO2e/t\n- **Line item:** CN 7214 20 00 (bars and rods), T\u00fcrkiye, SEE 2.31 tCO2e/t\n\nBoth codes are in the factor table for T\u00fcrkiye, so the ruleset's input checks pass for either one. The conflict is in the good itself, so I can't select the SEE value.\n\nFor reference only, the two candidate results at 1,100 t are:\n\n| Basis | CN code | SEE (tCO2e/t) | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|---|---|\n| Text | 7207 11 90 | 3.087 | 3.087 \u00d7 1,100 | 3,395.70 |\n| Line item | 7214 20 00 | 2.31 | 2.31 \u00d7 1,100 | 2,541.00 |\n\nThese figures should not be reported until the code is resolved. To resolve it, check the physical product against the CN definitions (semi-finished products of iron or non-alloy steel under 7207 versus bars and rods under 7214) and the customs declaration or commercial invoice. Once the correct code is confirmed, the result is the SEE for that code multiplied by 1,100 t.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 971
+  },
+  "latency_s": 5.1151,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

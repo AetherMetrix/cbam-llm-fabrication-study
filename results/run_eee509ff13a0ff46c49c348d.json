@@ -1,0 +1,15 @@
+{
+  "run_id": "run_eee509ff13a0ff46c49c348d",
+  "task_id": "A11",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions: 4,753.50 tCO2e**\n\n**Inputs:**\n- **CN code:** 7214 20 00 (bars and rods of iron or non-alloy steel, with indentations, ribs, or other deformations). This is in the factor table, and the description matches \"ribbed steel bars.\"\n- **Country of production:** China. The table lists China for this CN code.\n- **Quantity:** 1,500 tonnes.\n\n**Calculation:**\n- Default SEE (7214 20 00, China) = 3.169 tCO2e/t\n- Embedded emissions = 3.169 tCO2e/t \u00d7 1,500 t = 4,753.5 tCO2e\n- Reported to 2 decimal places: **4,753.50 tCO2e**",
+  "usage": {
+    "input_tokens": 932,
+    "output_tokens": 360
+  },
+  "latency_s": 2.6961,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

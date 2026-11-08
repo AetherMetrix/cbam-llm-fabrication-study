@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fe4eb0c7447e7a5ceb2c170f",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**No estimate can be given for this line.**\n\nThe declaration has a valid CN code (7201) and a quantity (1,800 t), but the country of production, Viet Nam, is not listed for CN 7201 in the factor table. For CN 7201 the table covers only T\u00fcrkiye, China, and India. The ruleset requires the country to be listed for that good, so I cannot select a default SEE value.\n\nThe basic blast-furnace route does not change this, because the ruleset selects the SEE only by CN code and country.\n\nTo proceed, one of the following is needed:\n- A default SEE value for CN 7201 from Viet Nam, added to the factor table, or\n- A declaration that uses a country listed for this CN code (T\u00fcrkiye, China, or India), which would allow the calculation: SEE \u00d7 1,800 t.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 309
+  },
+  "latency_s": 2.1517,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

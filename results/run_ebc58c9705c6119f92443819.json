@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ebc58c9705c6119f92443819",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the definitive embedded emissions figure because the provided data is insufficient under the supplied ruleset. \n\nThe following required input is missing:\n- **Good CN code**: The specific CN code of the steel goods is not provided (the table lists multiple steel-related CN codes for India: 7201, 7206 10 00, 7207 11 90, and 7214 20 00, each with a different default SEE value).",
+  "usage": {
+    "input_tokens": 739,
+    "output_tokens": 115
+  },
+  "latency_s": 6.9659,
+  "stop_reason": "STOP",
+  "truncated": false
+}

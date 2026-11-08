@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d7a432d36a68d11c0dbab507",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: CN code is ambiguous\n\nI can't give a definitive embedded-emissions figure for this declaration. The ruleset requires a single CN code to select the default SEE, and the form gives two conflicting codes.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | \u274c **Unresolved.** The form lists both **7201** and **7206 10 00**. Both are in the table, but they are different goods with different SEE values. |\n| (b) Country of production listed for that good | \u2705 China (listed under both codes) |\n| (c) Quantity in tonnes | \u2705 900 t |\n\n## Why the conflict matters\n\n- The SEE is selected jointly by CN code and country, so the code directly determines the result.\n- The description \"pig iron\" points toward 7201. However, 7206 10 00 (ingots of iron and non-alloy steel) also appears on the form. The supplied ruleset doesn't let me override a declared code based on the description, so choosing one would be an assumption.\n\n## Missing input\n\n1. **A single confirmed CN code** for the good, either 7201 or 7206 10 00, from the declarant or customs documentation.\n\n## For reference only (not a reported figure)\n\nOnce the code is confirmed, the calculation will be one of the following:\n\n- If **7201** (China, SEE 1.66): 900 \u00d7 1.66 = **1,494.00 tCO2e**\n- If **7206 10 00** (China, SEE 1.74): 900 \u00d7 1.74 = **1,566.00 tCO2e**\n\nPlease confirm the correct CN code and I will report the final figure.",
+  "usage": {
+    "input_tokens": 959,
+    "output_tokens": 881
+  },
+  "latency_s": 12.5853,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

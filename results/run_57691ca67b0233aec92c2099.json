@@ -1,0 +1,15 @@
+{
+  "run_id": "run_57691ca67b0233aec92c2099",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Based on the provided ruleset, I cannot compute the embedded emissions because the following required inputs are missing from the scenario:\n\n1. **Country of production** (must be T\u00fcrkiye, China, or India as listed for CN 7201 in the factor table).\n2. **Quantity in tonnes**.\n\nPer the ruleset, if any required input is missing, no estimate can be made. Please provide the country of production and the quantity in tonnes to calculate the CBAM figure.",
+  "usage": {
+    "input_tokens": 696,
+    "output_tokens": 104
+  },
+  "latency_s": 5.3026,
+  "stop_reason": "STOP",
+  "truncated": false
+}

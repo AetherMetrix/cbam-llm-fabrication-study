@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0a1c8dab1af2796ac93e31eb",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot Compute: Declared Quantity Is Inconsistent\n\nI cannot compute a definitive embedded-emissions figure because the scenario gives conflicting quantities.\n\n## Input Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 (Semi-finished products of iron or non-alloy steel) |\n| (b) Country listed for that good | \u2705 India, with a default SEE of **4.32 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting values** |\n\n## The Quantity Conflict\n\n- **Line items:** 2,000 t + 1,500 t = **3,500 t**\n- **Summary total:** **4,000 t**\n\nThe two figures differ by 500 t. Nothing in the scenario shows which is correct. The difference could come from:\n- a missing line item of 500 t, or\n- an error in the summary total, or\n- an error in one of the line items.\n\nThe ruleset requires a definite quantity. Choosing one figure would be an estimate, so I have not done so.\n\n## Missing Input\n\n1. **A single, confirmed declared quantity (tonnes) for CN 7207 11 90 produced in India.** This means either:\n   - confirmation that the line items (3,500 t) are complete and the summary total is wrong, or\n   - the missing line item(s) that make up the 4,000 t summary, or\n   - a corrected summary total and/or corrected line items.\n\n## For Reference Only (Not a Determination)\n\nOnce you confirm the quantity, the calculation is SEE \u00d7 quantity = 4.32 \u00d7 quantity:\n- If 3,500 t is confirmed: 4.32 \u00d7 3,500 = **15,120.00 tCO2e**\n- If 4,000 t is confirmed: 4.32 \u00d7 4,000 = **17,280.00 tCO2e**\n\nPlease confirm the correct quantity, and I will report the final figure.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 867
+  },
+  "latency_s": 8.7576,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

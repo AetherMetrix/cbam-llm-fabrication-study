@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5568a032563215e8f97c1573",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded emissions figure because the provided data is conflicting and therefore insufficient under the supplied ruleset. \n\nSpecifically, the following required input is missing or unresolved:\n* **Country of production:** The scenario provides two conflicting countries of origin (India and T\u00fcrkiye). Because default specific embedded emissions (SEE) values are country-specific (2.64 tCO2e/t for India vs. 1.96 tCO2e/t for T\u00fcrkiye for CN code 7206 10 00), a single, unambiguous country of production is required to select the correct factor.",
+  "usage": {
+    "input_tokens": 754,
+    "output_tokens": 131
+  },
+  "latency_s": 6.5028,
+  "stop_reason": "STOP",
+  "truncated": false
+}

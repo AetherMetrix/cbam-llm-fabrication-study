@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6e7ccf551ac73f94b1f4325b",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset and scenario, the embedded emissions cannot be calculated because a required input is missing. \n\n**Check of Required Inputs:**\n* **(a) Good CN code:** 7214 20 00 (Provided and present in the table)\n* **(b) Country of production:** **Missing** (Not stated in the scenario)\n* **(c) Quantity in tonnes:** 2,000 tonnes (Provided)\n\n**Conclusion:**\nPer the ruleset, default values are country-specific and selected jointly by the good's CN code and the country of production. Because the country of production is missing, the calculation cannot be performed and no estimate may be made. Please provide the country of production (e.g., T\u00fcrkiye, China, or India) to complete the CBAM embedded emissions calculation.",
+  "usage": {
+    "input_tokens": 783,
+    "output_tokens": 179
+  },
+  "latency_s": 4.8827,
+  "stop_reason": "STOP",
+  "truncated": false
+}

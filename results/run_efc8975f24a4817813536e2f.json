@@ -1,0 +1,15 @@
+{
+  "run_id": "run_efc8975f24a4817813536e2f",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: 275.25 t Steel Billets from India\n\n**Total embedded emissions: 1,189.08 tCO2e**\n\n## Input Check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7207 11 90 (Semi-finished products of iron or non-alloy steel) | \u2705 Listed |\n| (b) Country of production listed for that good | India | \u2705 Listed for 7207 11 90 |\n| (c) Quantity in tonnes | 275.25 t | \u2705 Provided |\n\nAll required inputs are present, so a definitive figure can be computed.\n\n## Calculation\n\n- **Default SEE** for CN 7207 11 90 from India: **4.32 tCO2e/t**\n- **Embedded emissions** = 4.32 tCO2e/t \u00d7 275.25 t\n  - 4.32 \u00d7 275 = 1,188.00\n  - 4.32 \u00d7 0.25 = 1.08\n  - Total = **1,189.08 tCO2e**",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 446
+  },
+  "latency_s": 4.2449,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

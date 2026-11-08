@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e193e7fa60e349f46a707166",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can't calculate embedded emissions for this shipment. CN code **7208** (hot-rolled coil) is not in the factor table, and the ruleset says that if the good CN code is missing or not in the table, no estimate should be made.\n\nThe table covers these CN codes:\n- 7201 (pig iron and spiegeleisen), for T\u00fcrkiye, China, and India\n- 7206 10 00 (ingots of iron and non-alloy steel), for T\u00fcrkiye, China, and India\n- 7207 11 90 (semi-finished products of iron or non-alloy steel), for T\u00fcrkiye, China, and India\n- 7214 20 00 (bars and rods with indentations), for T\u00fcrkiye, China, and India\n\nChina is listed as a production country for these codes, so the country is not the problem. The missing input is the CN code.\n\nTo proceed, you would need to either:\n1. Confirm whether the product is covered under one of the CN codes above, if the CN 7208 declaration is incorrect, or\n2. Provide a default SEE value for CN 7208 from China from an authoritative source, which would have to be added to the factor table before a calculation could be made.\n\nOnce a valid code and factor are available, the calculation is SEE \u00d7 5,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 445
+  },
+  "latency_s": 2.5434,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

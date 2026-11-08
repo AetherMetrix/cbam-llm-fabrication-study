@@ -1,0 +1,15 @@
+{
+  "run_id": "run_173da378fd6b862dd83e1376",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: Cannot Compute\n\n**I cannot compute a definitive embedded-emissions figure for this lot under the supplied ruleset.**\n\n## Required Inputs Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | **Missing.** No CN code is declared. |\n| (b) Country of production listed for that good | India is provided, and India appears in the table for every CN code. However, the SEE depends jointly on CN code and country, so the factor can't be selected without (a). |\n| (c) Quantity in tonnes | 600 t is provided. |\n\n## Why the CN Code Can't Be Inferred\n\nThe ruleset selects the default SEE by the pair (CN code, country). The description \"semi-finished steel product, continuously cast, carbon ~0.2%\" doesn't map uniquely to one table row. It could plausibly fall under:\n\n- **7207 11 90**: semi-finished products of iron or non-alloy steel (India SEE: 4.32 tCO2e/t)\n- **7206 10 00**: ingots of iron or non-alloy steel (India SEE: 2.64 tCO2e/t)\n\nThese factors differ substantially. Choosing one would be an estimate, which the ruleset prohibits.\n\n## Missing Input to Resolve\n\n1. **The declared CN code of the good** (e.g., from the customs declaration or the supplier's commercial invoice), confirming which table entry applies.\n\nOnce the CN code is confirmed, embedded emissions = SEE (CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 1003
+  },
+  "latency_s": 9.9155,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

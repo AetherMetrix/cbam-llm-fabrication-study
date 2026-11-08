@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6ff397505bfe7ae7736756ba",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: country of production not in the factor table\n\nI can't calculate a definitive embedded-emissions figure for this line under the supplied ruleset.\n\n## Input check\n\n| Required input | Declared value | Status |\n|---|---|---|\n| (a) Good CN code in table | 7201 (Pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | USA | \u274c **Not listed** |\n| (c) Quantity in tonnes | 1,200 t | \u2705 Present |\n\n## Why it fails\n\nDefault SEE values are selected jointly by CN code and country. The table lists CN 7201 only for:\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\nThere is no entry for **CN 7201 + USA**. The ruleset says that if any required input is not in the table, no estimate is made. Substituting another country's value or an average would be an estimate, so I haven't done that.\n\n## Missing input\n\n1. **Default SEE (tCO2e per tonne) for CN 7201, country of production USA.** This is not in the supplied factor table.\n\n## To resolve\n\nProvide a factor table that includes a default SEE for CN 7201 / USA. The figure would then be **1,200 t \u00d7 [USA SEE for 7201]**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 507
+  },
+  "latency_s": 5.41,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

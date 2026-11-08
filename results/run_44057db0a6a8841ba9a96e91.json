@@ -1,0 +1,15 @@
+{
+  "run_id": "run_44057db0a6a8841ba9a96e91",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the required inputs are insufficient due to conflicting documentation. \n\n**Missing/Unverified Specific Input:**\n* **A single, definitive country of production:** The scenario provides conflicting values\u2014China (on the cover note) and India (on the customs form). Because the default specific embedded emissions (SEE) factor is selected jointly by the good CN code and the country of production (1.66 tCO2e/t for China vs. 2.53 tCO2e/t for India), a definitive country of production must be confirmed before the calculation can be performed.",
+  "usage": {
+    "input_tokens": 762,
+    "output_tokens": 135
+  },
+  "latency_s": 4.4427,
+  "stop_reason": "STOP",
+  "truncated": false
+}

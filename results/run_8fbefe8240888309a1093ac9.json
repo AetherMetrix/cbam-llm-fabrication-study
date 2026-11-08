@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8fbefe8240888309a1093ac9",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: CN code not in the factor table\n\nI cannot calculate the embedded emissions for this consignment under the supplied ruleset.\n\n## Inputs Check\n\n| Required input | Provided in scenario | Status |\n|---|---|---|\n| (a) Good CN code in the table | CN 7202 11 (ferro-manganese, > 2% carbon) | \u274c **Not in the table** |\n| (b) Country of production listed for that good | China | \u274c **Cannot be validated**, because the good is not in the table |\n| (c) Quantity in tonnes | 500 t | \u2705 Provided |\n\n## Missing Input\n\n- **A default SEE value (tCO2e/t) for CN 7202 11, ferro-manganese with > 2% carbon, produced in China.** The table covers only CN 7201, 7206 10 00, 7207 11 90 and 7214 20 00. No row exists for any CN 7202 code, for any country.\n\n## Why No Proxy Was Used\n\nI did not substitute a factor from another row, such as CN 7201 pig iron for China at 1.66 tCO2e/t. The ruleset selects the SEE jointly by CN code and country. It also says not to estimate when a required input is missing from the table. Ferro-alloys are a different product from pig iron, and any proxy figure would not be compliant with these rules.\n\n## To Proceed\n\nProvide an updated factor table that includes a default SEE for **CN 7202 11 \u00d7 China**. The calculation is then: SEE \u00d7 500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 968,
+    "output_tokens": 579
+  },
+  "latency_s": 6.1133,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

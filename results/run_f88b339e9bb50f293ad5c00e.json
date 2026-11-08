@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f88b339e9bb50f293ad5c00e",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**I can't give a single reportable figure yet, because the scenario gives two different countries of production for the same goods.** The ruleset selects the default SEE by the pair (CN code, country), so the country must be settled first.\n\nFor CN 7214 20 00, 2,000 t, the two candidate results are:\n\n| Country of production (source) | Default SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye (email) | 2.31 | 2.31 \u00d7 2,000 = **4,620.00** |\n| China (declaration header) | 3.169 | 3.169 \u00d7 2,000 = **6,338.00** |\n\nThe gap is 1,718.00 tCO2e, so the choice matters.\n\nTo resolve it, confirm with the importer or the mill which country the good was produced in, and correct whichever source is wrong. Once confirmed, the figure for the selected country is the embedded emissions for this consignment. The declaration header is usually the formal record, but that is a judgment for the compliance team, and I have not assumed it.",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 704
+  },
+  "latency_s": 4.0554,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

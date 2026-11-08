@@ -1,0 +1,15 @@
+{
+  "run_id": "run_aee9d9d77926b9dd391afc72",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: conflicting quantity data\n\nI cannot compute a definitive embedded-emissions figure because the declared quantity is inconsistent.\n\n## Inputs checked\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country listed for that good | \u2705 India, default SEE **4.32 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The conflict\n\n- Line items: 2,000 t + 1,500 t = **3,500 t**\n- Stated summary total: **4,000 t**\n- Unexplained difference: **500 t**\n\nThe ruleset requires one definitive quantity. Choosing either figure, or assuming a missing line item or a typo, would be an estimate.\n\n## Missing input\n\nA single confirmed quantity in tonnes for CN 7207 11 90 produced in India. This means either:\n1. confirmation that the line items (3,500 t) are complete and the 4,000 t summary is wrong, or\n2. the missing 500 t line item or other documentation showing that 4,000 t is correct.\n\n## Once resolved\n\nEmbedded emissions (tCO2e) = confirmed quantity (t) \u00d7 4.32, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 783
+  },
+  "latency_s": 7.8025,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

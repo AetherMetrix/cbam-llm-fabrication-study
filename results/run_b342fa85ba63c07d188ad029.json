@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b342fa85ba63c07d188ad029",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "For **CN 7207 11 90 produced in T\u00fcrkiye**, the default SEE is **3.087 tCO2e/t**.\n\nEmbedded emissions = 1,000 t \u00d7 3.087 tCO2e/t = **3,087.00 tCO2e**.",
+  "usage": {
+    "input_tokens": 612,
+    "output_tokens": 64
+  },
+  "latency_s": 2.4445,
+  "stop_reason": "completed",
+  "truncated": false
+}

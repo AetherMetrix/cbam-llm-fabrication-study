@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1ab408097d786c7105ede763",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute embedded emissions for this line: **USA is not listed for CN 7201** in the provided factor table.\n\nThe CN code and quantity (**1,200 t**) are supplied, but no default SEE is available for the declared country of production. Under the ruleset, **no estimate may be made**.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 69
+  },
+  "latency_s": 3.21,
+  "stop_reason": "completed",
+  "truncated": false
+}

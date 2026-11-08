@@ -1,0 +1,15 @@
+{
+  "run_id": "run_185f233aa24c8e51e2ce5342",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided quantity data is contradictory.\n\n**Missing / Unresolved Input:**\n- **Definitive quantity in tonnes (c):** There is a discrepancy between the stated total (1,200 t) and the sum of the two individual shipment lines (500 t + 500 t = 1,000 t). A single, reconciled quantity in tonnes is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 759,
+    "output_tokens": 97
+  },
+  "latency_s": 3.6402,
+  "stop_reason": "STOP",
+  "truncated": false
+}

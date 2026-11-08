@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5cca04ac0590d0561423ebf1",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: required inputs are missing\n\nThe ruleset says that if any required input is missing, no estimate should be made. Two of the three required inputs are absent:\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) CN code in the table | 7201 (Pig iron) | \u2705 Present and listed |\n| (b) Country of production | Not stated | \u274c **Missing** |\n| (c) Quantity in tonnes | Not stated | \u274c **Missing** |\n\n## Why I can't proceed\n\n- **Country:** Default SEE values are selected by CN code and country together. CN 7201 has three different factors (T\u00fcrkiye 1.85, China 1.66, India 2.53 tCO2e/t), so the factor depends on the country.\n- **Quantity:** Embedded emissions = SEE \u00d7 tonnes. Without the declared quantity, there is nothing to multiply.\n\n## What I need from you\n\n1. **Country of production**: must be T\u00fcrkiye, China, or India to use this table.\n2. **Declared quantity** in tonnes.\n\n## How the result will be calculated\n\nOnce you provide these, the calculation is:\n\n- **T\u00fcrkiye:** 1.85 \u00d7 Q tCO2e\n- **China:** 1.66 \u00d7 Q tCO2e\n- **India:** 2.53 \u00d7 Q tCO2e\n\nThe total will be rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 483
+  },
+  "latency_s": 5.132,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

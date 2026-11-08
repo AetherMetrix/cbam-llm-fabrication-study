@@ -1,0 +1,15 @@
+{
+  "run_id": "run_168f166da7d4c7026755d06b",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot Compute: Country of Production Is Missing\n\nI can't calculate the embedded emissions for this shipment. Under the ruleset, the default SEE depends on both the CN code and the country of production. The email says the country is on the mill certificate, but that certificate wasn't included.\n\n## Input Check\n\n| Required input | Status | Value |\n|---|---|---|\n| (a) CN code in table | \u2705 Provided | 7207 11 90 (Semi-finished products of iron or non-alloy steel) |\n| (b) Country of production listed for that good | \u274c **Missing** | Not stated; it is on the mill certificate, which was not provided |\n| (c) Quantity in tonnes | \u2705 Provided | 3,300 t |\n\n## Why I Can't Proceed\n\nCN 7207 11 90 has three different default SEE values in the table, depending on country:\n- T\u00fcrkiye\n- China\n- India\n\nWithout the country, I can't select a factor. Picking one or giving a range would be an estimate, which the ruleset doesn't allow.\n\n## What's Needed\n\n1. **The country of production** for this 3,300 t lot, taken from the mill certificate.\n   - If it is T\u00fcrkiye, China, or India, I can complete the calculation as soon as you send it.\n   - If it is any other country, the table has no default value for this CN code from that origin. The figure still couldn't be calculated under these rules, and you would need an additional factor or rule.\n\nPlease send the country from the mill certificate, or the certificate itself, and I'll finish the CBAM calculation.",
+  "usage": {
+    "input_tokens": 996,
+    "output_tokens": 663
+  },
+  "latency_s": 7.5022,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8abbee9da2b443b5a4f76175",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute: CN code missing\n\nThe ruleset requires three inputs, and one is missing.\n\n| Required input | Provided? |\n|---|---|\n| (a) CN code of the good | \u274c \"Steel goods\" is not a CN code |\n| (b) Country of production | \u2705 India |\n| (c) Quantity in tonnes | \u2705 3,000 t |\n\nDefault SEE values are selected by both CN code and country. \"Steel goods\" could match several entries in the table, and their factors for India differ substantially. Under the rules, I can't pick one or estimate.\n\n## India default values in the table\n\n| CN code | Good | SEE (tCO2e/t) | Result if 3,000 t |\n|---|---|---|---|\n| 7206 10 00 | Ingots, iron/non-alloy steel | 2.64 | 7,920.00 tCO2e |\n| 7207 11 90 | Semi-finished products, iron/non-alloy steel | 4.32 | 12,960.00 tCO2e |\n| 7214 20 00 | Bars and rods, iron/non-alloy steel, with indentations\u2026 | 4.27 | 12,810.00 tCO2e |\n| 7201 | Pig iron and spiegeleisen (iron, not steel) | 2.53 | 7,590.00 tCO2e |\n\nThese are reference values only, not a declared result. Depending on the code, the outcome ranges from 7,590.00 to 12,960.00 tCO2e.\n\n## What's needed\nPlease give the 8-digit CN code of the goods produced. If the 3,000 t covers more than one product type, give the tonnage for each CN code. I'll then calculate the embedded emissions as SEE \u00d7 quantity, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 1041
+  },
+  "latency_s": 11.1737,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

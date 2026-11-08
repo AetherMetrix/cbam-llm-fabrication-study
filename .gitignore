@@ -1,0 +1,22 @@
+# Public study repo — ignore only secrets, local activation files, and compiled artifacts.
+# The 2,000-run outputs (results/) and the scoring/analysis (scoring/) ARE published content
+# and are tracked. The 4.1 smoke calibration runs are not part of the published study.
+
+# --- secrets: keys live in RESEARCH_* env vars, never on disk; defense in depth ---
+.env
+.env.*
+*.env
+*secret*
+*.key
+*.pem
+
+# --- grader runtime activation (keyless: provider + model_id only; keys from env) ---
+grader/GRADER_SETTINGS.json
+
+# --- 4.1 smoke calibration runs (not the published 2,000-run study) ---
+results_smoke/
+scoring_smoke/
+
+# --- python ---
+__pycache__/
+*.pyc

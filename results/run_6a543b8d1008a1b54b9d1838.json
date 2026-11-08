@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6a543b8d1008a1b54b9d1838",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "I can't give a single definitive figure because the two source documents name different countries of production, and the ruleset doesn't say which to prefer. Both countries are listed for CN 7201 in the factor table, so the calculation is valid under either one:\n\n| Country of production | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| China (cover note) | 1.66 | 1,000 | **1,660.00** |\n| India (customs form) | 2.53 | 1,000 | **2,530.00** |\n\nThe difference is 870.00 tCO2e, so the choice matters.\n\nBefore this figure is reported, the country of production should be confirmed with the supplier or importer, and the correct source documented. The attached customs form is the more formal record, which suggests India (2,530.00 tCO2e) unless the supplier shows the cover note is correct. I have not assumed that, because the ruleset does not set a precedence between documents.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 643
+  },
+  "latency_s": 3.7931,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

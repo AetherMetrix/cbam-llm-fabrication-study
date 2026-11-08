@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2c6c6679ff5175564090f29e",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: the declaration is inconsistent, so I can't give a single final figure.**\n\n**Inputs**\n- CN code: 7214 20 00 (bars and rods with indentations, ribbed), which is in the table.\n- Country: India, which is listed for this CN code.\n- Default SEE: 4.27 tCO2e/t.\n\n**Quantity conflict**\n- Summary total: 1,000 t\n- Line items: 300 t + 400 t + 250 t = 950 t\n- The difference is 50 t.\n\n**Calculations**\n\n| Quantity basis | Quantity (t) | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Summary total | 1,000 | 1,000 \u00d7 4.27 | **4,270.00** |\n| Line items | 950 | 950 \u00d7 4.27 | **4,056.50** |\n\nThe line-item figure is also the sum of the per-lot values: 1,281.00 + 1,708.00 + 1,067.50 = 4,056.50 tCO2e.\n\n**Recommendation**\nDo not file either figure until the declarant reconciles the 1,000 t summary with the 950 t of line items. If the summary is correct, a 50 t lot is missing from the line items. If the line items are correct, the summary total is overstated. Once the correct quantity is confirmed, the embedded emissions are that quantity \u00d7 4.27 tCO2e/t, rounded to 2 decimal places.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 968
+  },
+  "latency_s": 4.3891,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

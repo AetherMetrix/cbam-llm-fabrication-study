@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1f2d7915e86c70925c257472",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and scenario, there is a discrepancy in the required quantity input: the sum of the line items is 3,500 tonnes (2,000 t + 1,500 t), whereas the summary total states 4,000 tonnes. \n\nBecause the ruleset states not to estimate if a required input is ambiguous or missing, here are the exact calculations for both stated quantities using the factor from the table for **CN 7207 11 90** from **India** (**4.32 tCO2e/t**):\n\n* **Based on the sum of the line items (3,500 t):**\n  $$\\text{Embedded emissions} = 4.32\\text{ tCO2e/t} \\times (2,000\\text{ t} + 1,500\\text{ t}) = 4.32 \\times 3,500 = \\mathbf{15,120.00\\text{ tCO2e}}$$\n\n* **Based on the summary total (4,000 t):**\n  $$\\text{Embedded emissions} = 4.32\\text{ tCO2e/t} \\times 4,000\\text{ t} = \\mathbf{17,280.00\\text{ tCO2e}}$$\n\nPlease reconcile the quantity discrepancy in your customs/CBAM declaration to determine which of the two totals applies.",
+  "usage": {
+    "input_tokens": 732,
+    "output_tokens": 333
+  },
+  "latency_s": 9.0667,
+  "stop_reason": "STOP",
+  "truncated": false
+}

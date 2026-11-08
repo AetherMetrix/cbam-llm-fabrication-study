@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3ac491fb8dc1f1bbcaeffb6f",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the required inputs are insufficient due to conflicting documentation. \n\n**Missing/Unresolved Input:**\n* **Country of production:** A single, definitive country of production is required to select the country-specific default SEE for CN code 7201. The provided scenario presents conflicting countries of production\u2014China (stated on the cover note) and India (recorded on the customs form)\u2014and the ruleset provides no hierarchy or rule to resolve discrepancies between documents.",
+  "usage": {
+    "input_tokens": 762,
+    "output_tokens": 109
+  },
+  "latency_s": 7.9907,
+  "stop_reason": "STOP",
+  "truncated": false
+}

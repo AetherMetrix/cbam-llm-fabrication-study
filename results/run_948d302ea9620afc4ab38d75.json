@@ -1,0 +1,15 @@
+{
+  "run_id": "run_948d302ea9620afc4ab38d75",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions for this shipment because one required input is missing.\n\n**Inputs status**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the factor table | Provided: 7207 11 90, which is in the table |\n| (b) Country of production listed for that good | **Missing** |\n| (c) Quantity in tonnes | Provided: 3,300 t |\n\n**Missing input**\n\n- **Country of production.** The default SEE is selected jointly by CN code and country, and the email says the country is on the mill certificate, which was not included. The table has SEE values for 7207 11 90 for three countries: T\u00fcrkiye, China, and India. The calculation can't proceed until the certificate confirms which one applies.\n\n**Next step**\n\nSend the mill certificate or confirm the country of production in writing. Once the country is confirmed and matches one of the three listed, I will calculate embedded emissions as default SEE \u00d7 3,300 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 996,
+    "output_tokens": 636
+  },
+  "latency_s": 3.6304,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_52b9d304b080856a3a3fda0f",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: country of production not in the factor table\n\n**Status:** No embedded-emissions figure can be issued under the supplied ruleset.\n\n## Input check\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7206 10 00 (iron/non-alloy steel ingots) | \u2705 Yes |\n| (b) Country of production | Brazil (Belo Horizonte facility) | \u274c **No** |\n| (c) Quantity | 900 t | \u2705 Yes |\n\n## Why it cannot be computed\n\nThe ruleset requires the default SEE to be selected jointly by CN code and country. For CN 7206 10 00, the table lists values only for **T\u00fcrkiye (1.96), China (1.74), and India (2.64)**. There is **no default SEE for Brazil**.\n\nThe ruleset says not to estimate when an input is missing from the table. So I have not:\n- substituted another country's value,\n- averaged the listed values, or\n- given a range (900 t \u00d7 1.74\u20132.64 would wrongly imply one of these factors applies).\n\n## Missing input\n\n1. **The default SEE (tCO2e/t) for CN 7206 10 00, country of production Brazil.** This factor is absent from the supplied table.\n\n## To resolve\n\nProvide an updated factor table that includes a Brazil default SEE for CN 7206 10 00. Then:\n\n**Embedded emissions = 900 t \u00d7 [Brazil SEE]**, rounded half-up to 2 decimal places.\n\nAlternatively, if the production country was recorded in error, confirm the correct country. The attached invoice or packing list may help verify the origin.",
+  "usage": {
+    "input_tokens": 1018,
+    "output_tokens": 599
+  },
+  "latency_s": 5.8632,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

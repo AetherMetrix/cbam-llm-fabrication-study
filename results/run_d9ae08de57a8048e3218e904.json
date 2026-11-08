@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d9ae08de57a8048e3218e904",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the definitive embedded emissions figure under the supplied rules. \n\n**Missing Input:**\n- **Default SEE for the specified country of production:** The country of production provided in the scenario (\"Russian Federation\") is not listed in the factor table for CN code `7214 20 00` (which only lists T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 767,
+    "output_tokens": 80
+  },
+  "latency_s": 4.0068,
+  "stop_reason": "STOP",
+  "truncated": false
+}

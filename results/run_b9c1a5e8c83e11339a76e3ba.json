@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b9c1a5e8c83e11339a76e3ba",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: cannot be calculated. Embedded emissions are not determined.**\n\n**Why:**\n- **Good:** ferro-manganese, CN 7202 11 (> 2% carbon)\n- **Country of production:** China\n- **Quantity:** 500 t\n\nThe ruleset requires the good's CN code to appear in the factor table, and CN 7202 11 does not. The table only covers:\n- 7201 (pig iron and spiegeleisen)\n- 7206 10 00 (ingots, iron and non-alloy steel)\n- 7207 11 90 (semi-finished products, iron or non-alloy steel)\n- 7214 20 00 (bars and rods, iron or non-alloy steel)\n\nFerro-manganese is a ferro-alloy under heading 7202. It is a different good from any of the codes above. Using another product's value, such as pig iron for China (1.66 tCO2e/t), would be an estimate, and the ruleset prohibits that.\n\n**To complete the calculation:** provide the official default SEE value for CN 7202 11, country China, and I will multiply it by 500 t and round half-up to 2 decimal places. Alternatively, the supplier can provide actual installation-specific embedded emissions data, if your ruleset allows it.",
+  "usage": {
+    "input_tokens": 910,
+    "output_tokens": 434
+  },
+  "latency_s": 4.3403,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

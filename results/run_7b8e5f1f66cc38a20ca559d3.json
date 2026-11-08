@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7b8e5f1f66cc38a20ca559d3",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Inputs status:**\n\n- **Good CN code (7206 10 00):** Present in the factor table. Satisfied.\n- **Quantity (750 t):** Provided. Satisfied.\n- **Country of production:** Conflicting. One source gives India and another gives T\u00fcrkiye. The ruleset selects the default SEE jointly by (CN code, country), so the country must be a single confirmed value. Both countries are listed for this CN code, so the table cannot resolve the conflict.\n\n**Missing input required:**\n\n- A single, verified country of production for the 750 t of CN 7206 10 00 ingots, supported by a source document (for example, the production or origin record). The declared origin must be one value, either India or T\u00fcrkiye.\n\nOnce the country is confirmed, the calculation is the table SEE for (7206 10 00, confirmed country) multiplied by 750 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 951,
+    "output_tokens": 760
+  },
+  "latency_s": 5.091,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

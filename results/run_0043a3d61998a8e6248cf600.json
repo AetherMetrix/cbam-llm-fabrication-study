@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0043a3d61998a8e6248cf600",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions for this scenario.\n\n**Inputs checked:**\n- **(a) Good CN code:** 7214 20 00 is in the factor table. \u2705\n- **(b) Country of production:** Ukraine is not listed for 7214 20 00. The table has only T\u00fcrkiye (2.31), China (3.169), and India (4.27). \u274c\n- **(c) Quantity:** 2,600 t net mass is provided. \u2705\n\n**Missing input:**\n- A default SEE value (tCO2e/t) for CN 7214 20 00 with country of production = Ukraine. The ruleset selects the SEE jointly by CN code and country, so no value can be taken from another country's row.\n\nOnce a Ukraine-specific default SEE for 7214 20 00 is supplied, the calculation is: embedded emissions (tCO2e) = SEE \u00d7 2,600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 980,
+    "output_tokens": 470
+  },
+  "latency_s": 2.6236,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

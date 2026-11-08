@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ec56b1961278573c59fb500e",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions total for this line.\n\n**Missing or unmatched input:**\n\n- **Country-specific default SEE for CN 7201 and Viet Nam.** The factor table lists CN 7201 only for T\u00fcrkiye (1.85), China (1.66), and India (2.53). Under the ruleset, the SEE is selected jointly by good CN code and country, and the country of production must be listed for that good. Viet Nam is not listed, so no SEE can be selected.\n\n**Inputs that are present and valid:**\n\n- Good CN code: 7201 (in the table)\n- Quantity: 1,800 t\n- Route description (\"basic blast-furnace\"): noted, but the ruleset does not use production route to select a factor, so it does not affect the calculation.\n\nUsing a factor from another country, such as China or India, would not be consistent with the ruleset, so I have not done so.\n\n**To complete the calculation**, a default SEE value for CN 7201 from Viet Nam would need to be added to the factor table. The result would then be 1,800 \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 528
+  },
+  "latency_s": 2.9025,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

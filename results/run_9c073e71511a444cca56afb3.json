@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9c073e71511a444cca56afb3",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: the 4,000 t declared total cannot be confirmed because it does not match the line items.**\n\n**Inputs**\n- CN code: 7207 11 90 (in table)\n- Country: India (listed for this good)\n- Default SEE: 4.32 tCO2e/t\n\n**Quantity check**\n- Line items: 2,000 t + 1,500 t = **3,500 t**\n- Summary total: **4,000 t**\n- Difference: **500 t** unexplained\n\n**Calculations**\n\n| Basis | Quantity (t) | \u00d7 SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Line 1 | 2,000 | 4.32 | 8,640.00 |\n| Line 2 | 1,500 | 4.32 | 6,480.00 |\n| Sum of line items | 3,500 | 4.32 | **15,120.00** |\n| Summary total | 4,000 | 4.32 | **17,280.00** |\n\n**Recommendation:** Reconcile the 500 t difference against the source documents (for example, a missing shipment or a summary error) before reporting. If the 4,000 t figure is confirmed, the embedded emissions are **17,280.00 tCO2e**. If the line items are correct, the figure is **15,120.00 tCO2e**. I have not selected either as the final reported value.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 811
+  },
+  "latency_s": 4.0483,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

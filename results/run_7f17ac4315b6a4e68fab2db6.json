@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7f17ac4315b6a4e68fab2db6",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: Cannot Be Finalised (Country of Production Conflicts)\n\n## Why no single figure can be given\n\nThe ruleset selects the SEE using **both** the CN code and the country of production. This scenario gives two different origins:\n\n- One field says **India**\n- Another says **T\u00fcrkiye**\n\nThese two countries have different default values for CN 7206 10 00. The ruleset says not to estimate when a required input is unclear. So I cannot report one total until the country is confirmed.\n\n## The two possible results\n\n| Country | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| India | 2.64 | 750 | **1,980.00** |\n| T\u00fcrkiye | 1.96 | 750 | **1,470.00** |\n\nThe two results differ by 510.00 tCO2e, so the country choice matters a lot.\n\n## Action needed\n\nPlease confirm the actual **country of production** for the ingots. Use the country where the goods were produced, not the country of dispatch or the trading partner's location. Supporting documents could include a certificate of origin or the supplier or installation data. Once the country is confirmed, the matching value above is the reportable total.",
+  "usage": {
+    "input_tokens": 893,
+    "output_tokens": 524
+  },
+  "latency_s": 6.0248,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

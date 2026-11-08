@@ -1,0 +1,15 @@
+{
+  "run_id": "run_05bcd793c3e1968f9831d72d",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the provided data contains conflicting information regarding a required input.\n\n**Missing / Unresolved Input:**\n* **Good CN code:** A single, unambiguous CN code is required to select the default specific embedded emissions (SEE). The scenario presents a contradiction between the CN-code field (`7201` - Pig iron) and the description (`7214 20 00` - Bars and rods / ribbed reinforcing bar), which have different SEE factors for India (2.53 tCO2e/t vs. 4.27 tCO2e/t). \n\nPlease clarify and confirm the single correct CN code for the shipment so the calculation can be completed.",
+  "usage": {
+    "input_tokens": 772,
+    "output_tokens": 158
+  },
+  "latency_s": 8.5306,
+  "stop_reason": "STOP",
+  "truncated": false
+}

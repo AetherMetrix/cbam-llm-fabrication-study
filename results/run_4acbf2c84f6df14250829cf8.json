@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4acbf2c84f6df14250829cf8",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Cannot compute embedded emissions from the supplied table.\n\nThe CN code **7214 20 00** and quantity **2,200 tonnes** are provided, but **Russian Federation is not listed for this CN code**.\n\nMissing required input: a country of production listed in the table for this good. No SEE is supplied for Russian Federation, so no emissions figure can be calculated without estimating.",
+  "usage": {
+    "input_tokens": 674,
+    "output_tokens": 82
+  },
+  "latency_s": 3.3815,
+  "stop_reason": "completed",
+  "truncated": false
+}

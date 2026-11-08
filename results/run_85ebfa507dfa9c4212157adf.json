@@ -1,0 +1,15 @@
+{
+  "run_id": "run_85ebfa507dfa9c4212157adf",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions for this lot because the CN code is missing and the description does not identify a single entry in the factor table.\n\n**Inputs that are present:**\n- Country of production: India\n- Quantity: 600 t\n\n**Missing or unresolved input:**\n- **(a) Good CN code.** The datasheet gives no CN code. The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") could correspond to more than one table heading:\n  - 7207 11 90 (semi-finished products of iron or non-alloy steel), which is the closest match on the wording \"semi-finished.\"\n  - 7206 10 00 (ingots of iron and non-alloy steel), which covers a different product form.\n  - The table's good descriptions are truncated, so I cannot verify from the supplied table alone that the carbon content criterion (~0.2%) falls within the 7207 11 90 description.\n\nUnder the ruleset, the SEE is selected jointly by CN code and country, so without a confirmed CN code there is no unique default value to apply.\n\n**To complete the calculation, the following is needed:**\n1. A confirmed 8-digit CN code for the declared good, supported by the product specification (for example, the mill's CN classification or the customs declaration).\n\nOnce that is provided, the calculation is a direct lookup and multiplication for India with 600 t. Note that this would be a lookup of the table value for the confirmed code, not an estimate: the ruleset requires the code to be confirmed before any figure can be reported.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 1145
+  },
+  "latency_s": 6.1224,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

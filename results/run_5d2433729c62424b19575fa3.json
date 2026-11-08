@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5d2433729c62424b19575fa3",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The declaration contains conflicting CN codes: **7214 20 00** in the description and **7201** in the CN-code field. These have different default SEE values for India.\n\nPlease confirm which CN code applies to the **1,500 tonnes**. A single embedded-emissions total cannot be calculated without resolving this conflict.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 137
+  },
+  "latency_s": 5.4963,
+  "stop_reason": "completed",
+  "truncated": false
+}

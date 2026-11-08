@@ -1,0 +1,15 @@
+{
+  "run_id": "run_286c34672918dbfbaaa3422e",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot Compute: Conflicting Quantity\n\nI can't produce a definitive embedded-emissions figure because the scenario gives two different quantities.\n\n## Inputs Checked\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7206 10 00 (Ingots, of iron and non-alloy steel) |\n| (b) Country listed for that good | \u2705 T\u00fcrkiye, Default SEE = **1.96 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The Conflict\n\n- **Lot breakdown:** 3 equal lots \u00d7 1,000 t = **3,000 t**\n- **Declared total:** **3,500 t**\n\nThese differ by 500 t. The ruleset requires a single quantity in tonnes, and I can't tell which figure is correct. The lot sizes, the number of lots, or the declared total could be wrong. Picking one would be an estimate, which the rules don't allow.\n\n## Missing Input\n\n1. **A confirmed quantity in tonnes** for the CN 7206 10 00 ingots produced in T\u00fcrkiye. This could be a corrected declared total, or a corrected lot breakdown (number of lots and tonnes per lot) that matches the declared total.\n\nOnce the quantity is confirmed, embedded emissions = **1.96 tCO2e/t \u00d7 confirmed tonnes**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 965,
+    "output_tokens": 753
+  },
+  "latency_s": 7.8654,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

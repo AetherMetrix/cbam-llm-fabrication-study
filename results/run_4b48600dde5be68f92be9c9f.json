@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4b48600dde5be68f92be9c9f",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# I cannot compute the CBAM embedded emissions for this shipment\n\nThe supplied factor table has no default SEE value for CN 7208 (hot-rolled coil). Under the ruleset, the good's CN code must appear in the table. It does not, so I cannot produce a figure. I have not substituted a factor from another CN code, such as 7207 11 90 or 7214 20 00, because the ruleset prohibits estimation.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in the table | CN 7208 | **Not in table.** The table covers only 7201, 7206 10 00, 7207 11 90 and 7214 20 00. |\n| (b) Country of production listed for that good | China | Cannot be matched, because there are no rows for CN 7208. |\n| (c) Quantity in tonnes | 5,000 t | Provided. |\n\n## Missing input needed to compute the figure\n\n1. **A default SEE value (tCO2e/t) for CN 7208 produced in China.** The factor table would need a row for this exact CN code and country.\n\nIt would also help to confirm the full 8-digit CN subheading for the coil (for example, 7208 xx xx). Default values are assigned by CN code, and a 4-digit heading alone may not match a specific table entry.\n\nOnce a factor for CN 7208 and China is added, the calculation is: **SEE \u00d7 5,000 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 542
+  },
+  "latency_s": 6.0391,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_17efc03fde28179b0d144ab7",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**I cannot compute a definitive embedded-emissions total for this line.**\n\nThe ruleset requires the country of production to be listed in the factor table for the good's CN code. For CN 7201, the table lists only:\n\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t\n\nViet Nam is not listed for CN 7201, so no default SEE can be selected. I have not substituted a value from another country.\n\n**Missing input:**\n- A default SEE (tCO2e/t) for CN 7201 with country of production Viet Nam. The table does not contain one.\n\n**Inputs that are present and valid:**\n- Good CN code: 7201 (in table)\n- Quantity: 1,800 t\n\n**Note on the basic blast-furnace route:** The ruleset selects the SEE only by good CN code and country, so the route does not change the lookup. It is not a missing input for this calculation, and it does not offset the missing country value.\n\n**To complete the calculation, one of the following is needed:**\n1. A default SEE for CN 7201 from Viet Nam, added to the factor table under the applicable rules, after which the result would be 1,800 \u00d7 that SEE, rounded half-up to 2 decimal places.\n2. Confirmation that the country of production is one of the listed countries (T\u00fcrkiye, China, or India), with the corresponding SEE applied.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 723
+  },
+  "latency_s": 3.7434,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

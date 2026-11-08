@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ad8dc2b1be5c9fa6ccf18930",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Embedded emissions cannot be computed for this purchase order\n\nThe ruleset requires three inputs. Two are present, but the CN code is missing, so I have not estimated a figure.\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the factor table | **Missing.** The PO says \"(to be confirmed).\" |\n| (b) Country of production listed for that good | Provided: T\u00fcrkiye |\n| (c) Quantity in tonnes | Provided: 1,000 t |\n\n## Why the description isn't enough\n\nThe default SEE is selected by CN code and country together. \"Steel long product (exact heading TBD by mill)\" does not identify one CN code. T\u00fcrkiye has a different default SEE for each of the four codes in the table, and the description could also match a heading that isn't in the table at all.\n\n## What's needed\n\nThe **confirmed CN code** for the good, from the mill or on a revised PO. It must be one of the codes listed in the factor table.\n\nOnce it's confirmed:\n\n**Embedded emissions = Default SEE (confirmed code, T\u00fcrkiye) \u00d7 1,000 t**, rounded half-up to 2 decimal places.\n\nIf the confirmed code is not in the table, the figure still cannot be computed under this ruleset.",
+  "usage": {
+    "input_tokens": 984,
+    "output_tokens": 559
+  },
+  "latency_s": 6.225,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

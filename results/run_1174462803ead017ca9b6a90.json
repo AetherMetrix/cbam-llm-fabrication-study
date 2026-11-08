@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1174462803ead017ca9b6a90",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: Ribbed Bar (CN 7214 20 00), 2,000 t\n\n**I can't give a single confirmed figure because the country of production is in conflict.** Under the ruleset, the default value depends on both the CN code and the country, so the country must be settled before I report a total.\n\n## The Conflict\n\n| Source | Country of production | Default SEE (tCO2e/t) |\n|---|---|---|\n| Email | T\u00fcrkiye | 2.31 |\n| Declaration header | China | 3.169 |\n\nBoth countries are in the factor table for CN 7214 20 00, so either one could be valid. The two results differ by about 37%.\n\n## Results for Each Country\n\n**If T\u00fcrkiye:**\n2,000 t \u00d7 2.31 tCO2e/t = **4,620.00 tCO2e**\n\n**If China:**\n2,000 t \u00d7 3.169 tCO2e/t = **6,338.00 tCO2e**\n\n## Recommended Action\n\nConfirm the actual country of production before filing. You can check this against:\n- The mill certificate or the operator's installation details\n- The certificate of origin or other customs documents\n- The supplier's contract or commercial invoice\n\nThe declaration header is the formal filing record, so if it is wrong it should be corrected. If the header turns out to be correct (China), the reported figure would be **6,338.00 tCO2e**. Choosing the lower T\u00fcrkiye figure without checking could understate the emissions by 1,718.00 tCO2e.",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 799
+  },
+  "latency_s": 8.8872,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

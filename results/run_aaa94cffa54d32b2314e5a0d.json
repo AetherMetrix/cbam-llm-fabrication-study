@@ -1,0 +1,15 @@
+{
+  "run_id": "run_aaa94cffa54d32b2314e5a0d",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: Pig Iron (CN 7201), China\n\n**I can't give a single figure because the declared quantity is inconsistent.**\n\n## The issue\n\n- Stated total: **1,200 t**\n- Sum of shipment lines: 500 t + 500 t = **1,000 t**\n- Difference: **200 t unaccounted for**\n\nThe ruleset requires a quantity in tonnes and prohibits estimation. Choosing either figure would mean guessing which is correct.\n\n## Inputs confirmed\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7201 | In table |\n| Country of production | China | Listed for 7201 |\n| Default SEE | 1.66 tCO2e/t | Selected by CN 7201 and China |\n| Quantity | 1,200 t or 1,000 t | **Conflicting** |\n\n## Results for each possible quantity\n\n| If the correct quantity is\u2026 | Calculation | Embedded emissions |\n|---|---|---|\n| 1,000 t (sum of lines) | 1,000 \u00d7 1.66 | **1,660.00 tCO2e** |\n| 1,200 t (stated total) | 1,200 \u00d7 1.66 | **1,992.00 tCO2e** |\n\n## Action needed\n\nPlease confirm which applies:\n1. **The total of 1,200 t is correct.** There is a missing shipment line of 200 t, which should be documented.\n2. **The lines are correct.** The stated total should be amended to 1,000 t.\n3. **Something else.** For example, part of the quantity has a different country of production or CN code. If so, that portion needs its own line and factor.\n\nOnce the quantity is confirmed, I'll finalize the declared embedded emissions.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 731
+  },
+  "latency_s": 7.7954,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9bf2ab9f07259e1fdf8370c3",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute: CN code is missing\n\nI cannot calculate the embedded emissions figure because one required input is missing.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in the table | \"Steel goods\" (no CN code) | **Missing** |\n| (b) Country of production | India | \u2705 Listed in the table |\n| (c) Quantity in tonnes | 3,000 t | \u2705 Provided |\n\n## Missing input\n\n**The CN code of the good.** The ruleset selects the default SEE by both CN code and country. \"Steel goods\" could match several India entries with different factors:\n\n| CN code | Good | India default SEE (tCO2e/t) |\n|---|---|---|\n| 7206 10 00 | Ingots, of iron and non-alloy steel | 2.64 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 4.32 |\n| 7214 20 00 | Bars and rods, of iron or non-alloy steel | 4.27 |\n\n7201 (pig iron and spiegeleisen) is also in the table, but pig iron is not usually called a steel good. Because the factors differ, I cannot pick one or estimate.\n\n## Next step\n\nPlease provide the CN code for the 3,000 t produced in India. I will then calculate:\n\n**Embedded emissions = India default SEE for that CN code \u00d7 3,000 t**, rounded half-up to 2 decimal places.\n\nIf the 3,000 t covers more than one good, please give the CN code and tonnage for each.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 728
+  },
+  "latency_s": 7.6775,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

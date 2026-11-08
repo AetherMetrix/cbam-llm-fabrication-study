@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2e1f2d71d8fb2521080ee803",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "The embedded-emissions total **cannot be calculated under the provided ruleset**. Viet Nam is not listed for CN 7201, so no applicable country-specific SEE is available for the declared 1,800 t. The ruleset prohibits estimation when the country is not in the table.",
+  "usage": {
+    "input_tokens": 629,
+    "output_tokens": 62
+  },
+  "latency_s": 4.102,
+  "stop_reason": "completed",
+  "truncated": false
+}

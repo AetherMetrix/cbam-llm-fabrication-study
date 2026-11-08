@@ -1,0 +1,15 @@
+{
+  "run_id": "run_33826e7e976e9197a306a443",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute a definitive embedded-emissions figure\n\nThe **quantity in tonnes** (required input (c)) is not definitively established because the scenario contains conflicting values:\n\n| Source | Quantity |\n|---|---|\n| Stated total | 1,200 t |\n| Sum of shipment lines (500 t + 500 t) | 1,000 t |\n| **Discrepancy** | **200 t** |\n\nThe ruleset requires a definitive quantity and prohibits estimation, so I cannot choose between these values.\n\n## Inputs that are valid\n\n- **(a) CN code:** 7201 (Pig iron and spiegeleisen) is in the table.\n- **(b) Country of production:** China is listed for CN 7201, with a default SEE of **1.66 tCO2e/t**.\n\n## Missing input\n\n- **(c) Confirmed quantity in tonnes.** One of the following is needed:\n  - Confirmation that the declared total is 1,200 t, plus the missing 200 t shipment line or an explanation for it, **or**\n  - Confirmation that the correct total is 1,000 t, with the 1,200 t figure corrected.\n\n## For reference only (not a determination)\n\nOnce the quantity is confirmed, the calculation is the confirmed tonnes \u00d7 1.66:\n- If 1,200 t is confirmed: 1,200 \u00d7 1.66 = **1,992.00 tCO2e**\n- If 1,000 t is confirmed: 1,000 \u00d7 1.66 = **1,660.00 tCO2e**\n\nPlease resolve the quantity discrepancy so the declared figure can be finalized.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 845
+  },
+  "latency_s": 8.6243,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

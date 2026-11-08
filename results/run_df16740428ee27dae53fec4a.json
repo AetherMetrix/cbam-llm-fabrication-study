@@ -1,0 +1,15 @@
+{
+  "run_id": "run_df16740428ee27dae53fec4a",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute the CBAM embedded emissions using the supplied table.\n\n- **Missing required table entry:** CN **7202 11** (ferro-manganese) produced in **China**, including its default SEE.\n- **Provided inputs:** Country of production: China; quantity: **500 tonnes**.\n\nThe declared CN code is not in the table, so no factor can be selected and no estimate can be made.",
+  "usage": {
+    "input_tokens": 671,
+    "output_tokens": 88
+  },
+  "latency_s": 3.9225,
+  "stop_reason": "completed",
+  "truncated": false
+}

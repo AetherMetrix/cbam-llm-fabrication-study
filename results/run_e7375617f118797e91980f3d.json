@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e7375617f118797e91980f3d",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# CBAM Embedded Emissions: Semi-finished Steel, India\n\n**Result: No single total can be reported until the declared quantity is reconciled.**\n\n## Factor Selection\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7207 11 90 | \u2705 In table |\n| Country of production | India | \u2705 Listed for this good |\n| Default SEE | **4.32 tCO2e/t** | \u2705 Selected by (7207 11 90, India) |\n| Quantity | **Conflicting** | \u26a0\ufe0f See below |\n\n## Quantity Discrepancy\n\n- **Line items:** 2,000 t + 1,500 t = **3,500 t**\n- **Summary total:** **4,000 t**\n- **Gap:** 500 t\n\nThe ruleset requires a quantity in tonnes. The scenario gives two different figures and nothing indicating which is correct. The gap could come from a missing line item, a typo in the summary, or a transcription error. Picking one would be an estimate, which the ruleset does not allow.\n\n## Results for Each Figure\n\nThese are shown for reference only and are not a declared value.\n\n| Basis | Calculation | Embedded emissions |\n|---|---|---|\n| Line-item sum (3,500 t) | 3,500 \u00d7 4.32 | **15,120.00 tCO2e** |\n| Summary total (4,000 t) | 4,000 \u00d7 4.32 | **17,280.00 tCO2e** |\n| Difference (500 t) | 500 \u00d7 4.32 | 2,160.00 tCO2e |\n\n## Required Action\n\nReconcile the quantity against the source documents, such as the customs declaration, commercial invoices or bills of lading.\n- If the line items are complete, the total is **15,120.00 tCO2e**.\n- If 4,000 t is correct, a 500 t line item is missing from the breakdown, and the total is **17,280.00 tCO2e**.\n\nOnce the correct quantity is confirmed, the final figure is that quantity \u00d7 4.32, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 870
+  },
+  "latency_s": 8.8974,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

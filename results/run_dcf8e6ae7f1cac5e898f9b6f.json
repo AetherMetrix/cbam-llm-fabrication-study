@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dcf8e6ae7f1cac5e898f9b6f",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute a definitive embedded-emissions figure\n\nThe ruleset selects the default SEE by both CN code and **country of production**, and the scenario gives two conflicting countries.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7214 20 00 (bars and rods, ribbed) is listed |\n| (b) Country of production | \u274c **Conflicting:** the email says T\u00fcrkiye, but the declaration header says China. Both are in the table with different SEEs. |\n| (c) Quantity in tonnes | \u2705 2,000 t |\n\n## Why this blocks the calculation\n\nThe two countries have different default values:\n\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n\nThe difference is material: 2,000 t \u00d7 (3.169 \u2212 2.31) = **1,718.00 tCO2e**. Choosing either country would be an assumption the ruleset does not permit.\n\n## Missing input\n\n1. **The confirmed country of production for the 2,000 t of ribbed bar (CN 7214 20 00).** This should be resolved with the declarant, for example through the mill certificate or certificate of origin, and the email or declaration header should be corrected so they agree.\n\nOnce the country is confirmed, the figure is calculated as 2,000 t \u00d7 the SEE for that country, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 748
+  },
+  "latency_s": 7.7217,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b176fbbacd42ce240e8ec442",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: required inputs are missing\n\nThe ruleset says that if any required input is missing, no estimate should be made. Your request has only one of the three inputs.\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) CN code of the good | \u274c \"steel\" only | Missing |\n| (b) Country of production | \u274c Not stated | Missing |\n| (c) Quantity in tonnes | \u2705 1,000 t | OK |\n\n## Why \"steel\" isn't enough\n\nDefault values depend on both the CN code and the country. \"Steel\" could be any of these goods in the table, and their factors differ widely:\n\n| CN code | Good | T\u00fcrkiye | China | India |\n|---|---|---|---|---|\n| 7206 10 00 | Ingots, iron/non-alloy steel | 1.96 | 1.74 | 2.64 |\n| 7207 11 90 | Semi-finished products, iron/non-alloy steel | 3.087 | 3.314 | 4.32 |\n| 7214 20 00 | Bars and rods, iron/non-alloy steel | 2.31 | 3.169 | 4.27 |\n\n*(7201, pig iron, is not steel and is unlikely to apply.)*\n\nFor 1,000 t, these factors give results from 1,740 to 4,320 tCO2e. That range is too wide to estimate from.\n\n## To complete the calculation, please provide:\n1. **The CN code** of the good (e.g., 7206 10 00, 7207 11 90, or 7214 20 00).\n2. **The country of production** (T\u00fcrkiye, China, or India for this table).\n\nOnce I have these, I'll calculate: **Embedded emissions = SEE \u00d7 1,000 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 867,
+    "output_tokens": 796
+  },
+  "latency_s": 7.8889,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6cede5bbcd89e2f273fa1c19",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I can't compute this figure.** The required default SEE is not in the supplied table.\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (ribbed bar = bars and rods with indentations) | \u2705 Present |\n| (b) Country of production listed for that good | Russian Federation | \u274c Not in table |\n| (c) Quantity in tonnes | 2,200 t | \u2705 Present |\n\n**Why it can't be computed**\n\nThe ruleset selects the default SEE jointly by CN code and country. For CN 7214 20 00, the table lists only:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for the **Russian Federation**. The ruleset says not to estimate when an input is not in the table. So I have not substituted another country's value, an average, or a maximum.\n\n**Missing input**\n\n1. The default SEE (tCO2e per tonne) for **CN 7214 20 00, country of production: Russian Federation**.\n\nIf you provide that value, the calculation is: 2,200 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 973,
+    "output_tokens": 480
+  },
+  "latency_s": 4.8477,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

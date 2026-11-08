@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0136082160f0d92ce85f7b4f",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron (CN 7201), China\n\n## Result: No single figure can be reported yet\n\nThe declared quantity conflicts with itself:\n\n| Source | Quantity |\n|---|---|\n| Stated total | 1,200 t |\n| Sum of shipment lines (500 t + 500 t) | 1,000 t |\n| **Discrepancy** | **200 t** |\n\nThe ruleset requires a quantity in tonnes. Here two quantities are declared and they disagree, so there is no reliable figure to use. Choosing one would be an estimate, which the ruleset does not allow.\n\n## Inputs that are valid\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7201 | In table |\n| Country of production | China | Listed for 7201 |\n| Default SEE | 1.66 tCO2e/t | From table |\n| Quantity | 1,200 t or 1,000 t | **Conflicting** |\n\n## Results for each possible quantity\n\nThese are for reference only and should not be filed until the quantity is confirmed.\n\n| If the correct quantity is\u2026 | Calculation | Embedded emissions |\n|---|---|---|\n| 1,200 t (stated total) | 1.66 \u00d7 1,200 | **1,992.00 tCO2e** |\n| 1,000 t (sum of lines) | 1.66 \u00d7 1,000 | **1,660.00 tCO2e** |\n\nThe difference between the two results is 332.00 tCO2e.\n\n## Action required\n\nReconcile the quantity with the declarant or the shipping and customs records. Possible causes include:\n- a missing third shipment line of 200 t, or\n- an error in the stated total.\n\nOnce the correct quantity is confirmed, report the matching figure above.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 745
+  },
+  "latency_s": 7.2832,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

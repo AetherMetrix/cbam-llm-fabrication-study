@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7264c35a9955ad1a9850a061",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the declared CN code is inconsistent:\n\n- Description: **7214 20 00** (ribbed reinforcing bar).\n- CN-code field: **7201** (pig iron).\n\n**Required clarification:** Confirm the correct CN code for the good. The country (**India**) and quantity (**1,500 tonnes**) are provided, but the conflicting codes select different SEE factors.",
+  "usage": {
+    "input_tokens": 676,
+    "output_tokens": 119
+  },
+  "latency_s": 3.8003,
+  "stop_reason": "completed",
+  "truncated": false
+}

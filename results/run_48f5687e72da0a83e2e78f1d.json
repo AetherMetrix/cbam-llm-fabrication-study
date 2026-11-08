@@ -1,0 +1,15 @@
+{
+  "run_id": "run_48f5687e72da0a83e2e78f1d",
+  "task_id": "A04",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and factor table, here is the calculation for the embedded emissions:\n\n* **Good CN code:** 7206 10 00 (Ingots, of iron and non-alloy steel...)\n* **Country of production:** T\u00fcrkiye\n* **Default SEE:** 1.96 tCO2e/t\n* **Quantity:** 12,000 tonnes\n\n**Calculation:**\n$$\\text{Embedded emissions} = 1.96\\text{ tCO2e/t} \\times 12,000\\text{ t} = 23,520\\text{ tCO2e}$$\n\n**Total Embedded Emissions:** 23520.00 tCO2e (or 23,520.00 tCO2e)",
+  "usage": {
+    "input_tokens": 709,
+    "output_tokens": 184
+  },
+  "latency_s": 9.2918,
+  "stop_reason": "STOP",
+  "truncated": false
+}

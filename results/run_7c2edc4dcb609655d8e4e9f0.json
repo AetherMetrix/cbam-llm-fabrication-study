@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7c2edc4dcb609655d8e4e9f0",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions figure. The ruleset requires the country of production to select the default SEE value, and the email does not state it.\n\n**Inputs status:**\n\n| Required input | Status | Source |\n|---|---|---|\n| (a) Good CN code in table | Present and valid: 7214 20 00 | Email |\n| (b) Country of production listed for that good | **Missing** | Not stated in email |\n| (c) Quantity in tonnes | Present: 2,000 t net | Email |\n\n**Missing input to obtain:**\n- **Country of production** for the 7214 20 00 consignment (heats H-4471 and H-4472). The mill certificate and mill-test report are described as attached, but their contents were not provided to me. If the country appears there, please share it. Otherwise, the seller must confirm it.\n\n**Not sufficient on their own:**\n- \"EXW\" describes the Incoterm (delivery terms), not the country of production.\n- Heat numbers, dispatch date, and the mill's name do not identify the country under the ruleset.\n\n**Once the country is confirmed,** the calculation is:\n\nEmbedded emissions (tCO2e) = SEE(7214 20 00, country) \u00d7 2,000 t, rounded half-up to 2 decimal places.\n\nThe table provides a country-specific SEE for this CN code only for T\u00fcrkiye (2.31), China (3.169), and India (4.27). If the country is none of these, the figure cannot be computed under the supplied table.",
+  "usage": {
+    "input_tokens": 1050,
+    "output_tokens": 969
+  },
+  "latency_s": 5.4897,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_78f58f4f4f2301e7693b2839",
+  "task_id": "A07",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions: 3,087.00 tCO2e**\n\n**Inputs checked against the ruleset**\n- CN code: 7207 11 90 (semi-finished products of iron or non-alloy steel) is in the table.\n- Country of production: T\u00fcrkiye is listed for this CN code.\n- Quantity: 1,000 t.\n\n**Factor selected (CN 7207 11 90 + T\u00fcrkiye)**\n- Default SEE = 3.087 tCO2e/t\n\n**Calculation**\n- Embedded emissions = 3.087 tCO2e/t \u00d7 1,000 t = 3,087.00 tCO2e",
+  "usage": {
+    "input_tokens": 876,
+    "output_tokens": 231
+  },
+  "latency_s": 6.6143,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

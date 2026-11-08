@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f7b65b811da457dfbed0c774",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No estimate can be given.** The scenario doesn't specify a CN code, and the ruleset requires one. Default SEE values are set jointly by CN code and country, so \"steel goods\" alone can't be matched to a factor.\n\n**Inputs status:**\n- (a) Good CN code: **missing**\n- (b) Country of production: **India** (provided)\n- (c) Quantity: **3,000 t** (provided)\n\n**What's needed:** Confirm the CN code of the goods. India is listed for these CN codes:\n\n| CN code | Good | Default SEE for India (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | 2.53 |\n| 7206 10 00 | Ingots of iron and non-alloy steel (excl. remelted scrap ingots) | 2.64 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 4.32 |\n| 7214 20 00 | Bars and rods of iron or non-alloy steel, with indentations, ribs, grooves or other deformations | 4.27 |\n\nOnce you confirm the CN code, the calculation is:\n\n**Embedded emissions (tCO2e) = SEE for that CN code and India \u00d7 3,000 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 755
+  },
+  "latency_s": 4.196,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

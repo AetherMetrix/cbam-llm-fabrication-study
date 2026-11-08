@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3997f18613aa705e052e42c6",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The declared quantity is internally inconsistent, and the ruleset requires a confirmed quantity in tonnes.\n\n**Inputs checked:**\n\n- **CN code:** 7207 11 90 is in the factor table. \u2714\n- **Country:** India is listed for this CN code. \u2714\n- **Default SEE:** 4.32 tCO2e/t (CN 7207 11 90, India). \u2714\n- **Quantity:** Not confirmed. The line items sum to 2,000 t + 1,500 t = **3,500 t**, but the summary total states **4,000 t**. The 500 t difference is unexplained.\n\n**Missing input required to proceed:**\n\n1. A reconciled quantity in tonnes. Either the line items are incomplete (for example, a missing 500 t line), or the summary total is wrong. The correct source document must be confirmed before the calculation can be run.\n\nOnce the quantity is confirmed, the calculation is:\n\nEmbedded emissions (tCO2e) = 4.32 tCO2e/t \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 860
+  },
+  "latency_s": 4.4318,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

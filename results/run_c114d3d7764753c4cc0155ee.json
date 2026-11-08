@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c114d3d7764753c4cc0155ee",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is conflicting and insufficient to determine a single, unambiguous CN code under the supplied rules. \n\nSpecifically, the following required input is missing or unresolved:\n* **Unambiguous Good CN Code:** The scenario states the good is a \"Semi-finished product per the text (CN 7207 11 90)\" while simultaneously stating that \"the line-item CN is 7214 20 00\" (which corresponds to bars and rods in the factor table). Because these two CN codes have different default specific embedded emissions (SEE) for T\u00fcrkiye (3.087 tCO2e/t vs. 2.31 tCO2e/t) and the ruleset provides no rule for resolving conflicts between text descriptions and line-item CN codes, a single valid CN code must be confirmed before a calculation can be made.",
+  "usage": {
+    "input_tokens": 772,
+    "output_tokens": 196
+  },
+  "latency_s": 4.5428,
+  "stop_reason": "STOP",
+  "truncated": false
+}

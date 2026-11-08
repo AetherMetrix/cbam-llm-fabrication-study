@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1444210373772ad4bc765c29",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: required inputs are missing\n\nThe embedded emissions for this shipment can't be calculated under the ruleset. The SEE factor is selected jointly by **CN code and country of production**, and neither is provided.\n\n## Input check\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) Good CN code in the table | \u274c No | **Missing.** \"Steel\" is not a CN code. Several table entries are steel goods (7206 10 00, 7207 11 90, 7214 20 00), and their factors differ. |\n| (b) Country of production listed for that good | \u274c No | **Missing.** The table has separate factors for T\u00fcrkiye, China and India. |\n| (c) Quantity in tonnes | \u2705 Yes | 1,000 t |\n\n## Why this matters\n\nDepending on which CN code and country apply, the steel factors in the table range from **1.74 to 4.32 tCO2e/t**. Choosing one would be an estimate, which the ruleset does not allow.\n\n## What's needed\n\n1. **The CN code** of the good, which must be one listed in the table (e.g., 7206 10 00 ingots, 7207 11 90 semi-finished products, or 7214 20 00 bars and rods).\n2. **The country of production**, which must be listed for that CN code (T\u00fcrkiye, China, or India).\n\nOnce you provide both, I'll calculate the result as SEE \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 634
+  },
+  "latency_s": 6.5918,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

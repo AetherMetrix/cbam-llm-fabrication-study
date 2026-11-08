@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2bf3beb46f0d7c4e64263466",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Cannot calculate embedded emissions using the provided table.\n\n- **CN code:** 7206 10 00\n- **Quantity:** 900 tonnes\n- **Country of production:** Brazil\n\nThe table lists factors for this CN code only for T\u00fcrkiye, China, and India\u2014not Brazil. Under the ruleset, **no estimate may be made** without a factor for the declared good and country.",
+  "usage": {
+    "input_tokens": 657,
+    "output_tokens": 83
+  },
+  "latency_s": 3.3585,
+  "stop_reason": "completed",
+  "truncated": false
+}

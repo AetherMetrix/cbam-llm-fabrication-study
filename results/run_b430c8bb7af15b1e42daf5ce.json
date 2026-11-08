@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b430c8bb7af15b1e42daf5ce",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions for CN 7206 10 00 (Ingots), T\u00fcrkiye\n\n## Quantity discrepancy\n\nThe scenario contains two quantities that don't agree:\n\n| Source | Quantity |\n|---|---|\n| Lot breakdown: 3 lots \u00d7 1,000 t | **3,000 t** |\n| Declared total | **3,500 t** |\n\nThere is a 500 t gap. The ruleset requires a quantity in tonnes and does not allow estimation, so I can't choose one figure or reconcile them myself. The quantity needs to be confirmed. Possible causes include a missing fourth lot, lots that are not actually 1,000 t each, or an error in the declared total.\n\n## Factor lookup\n\n- CN code 7206 10 00 is in the table.\n- T\u00fcrkiye is listed for this good.\n- **Default SEE = 1.96 tCO2e/t**\n\n## Results for each quantity\n\n| Basis | Calculation | Embedded emissions |\n|---|---|---|\n| Declared total (3,500 t) | 3,500 \u00d7 1.96 | **6,860.00 tCO2e** |\n| Sum of lots (3,000 t) | 3,000 \u00d7 1.96 | **5,880.00 tCO2e** |\n\nThe difference is **980.00 tCO2e** (500 t \u00d7 1.96).\n\n## Conclusion\n\n- **If the declared total of 3,500 t is confirmed:** embedded emissions = **6,860.00 tCO2e**.\n- **If the lot data (3 \u00d7 1,000 t) is correct:** embedded emissions = **5,880.00 tCO2e**.\n\n**Recommendation:** Do not submit either figure until the quantity is confirmed against shipping documents, such as customs declarations, bills of lading, or weighbridge records. Then correct the declared total or the lot records so they match.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 896
+  },
+  "latency_s": 12.3107,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ada6a547a588d5c0c4e154f5",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**Cannot compute: required input missing**\n\nI cannot calculate the embedded emissions for this declaration under the supplied ruleset.\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in the factor table | CN 7202 41 (ferro-chromium) | \u274c **Not in table** |\n| (b) Country of production listed for that good | China | \u274c Cannot be matched (no 7202 41 rows exist) |\n| (c) Quantity in tonnes | 1,000 t | \u2705 Provided |\n\n**Why no figure can be given**\n\n- The factor table covers only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00. It has no row for CN 7202 41 (ferro-alloys, ferro-chromium).\n- Default SEE values are selected jointly by CN code and country. Without a 7202 41 / China entry, there is no applicable factor.\n- Values for other goods must not be substituted. For example, the China pig iron value (CN 7201, 1.66 tCO2e/t) does not apply, because ferro-chromium is a different good with a different production route and emissions profile. Using it would be an estimate, which the ruleset does not allow.\n\n**Missing input needed to complete the calculation**\n\n1. **The default specific embedded emissions (SEE, tCO2e/t) for CN 7202 41 (ferro-chromium) produced in China.** This should come from the applicable CBAM default values publication and be added to the factor table.\n\nOnce that value is supplied, the calculation would be:\nEmbedded emissions = SEE(7202 41, China) \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 633
+  },
+  "latency_s": 6.5119,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

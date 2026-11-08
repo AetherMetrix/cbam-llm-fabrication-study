@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0755291657795f264adb052e",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "The quantities conflict: the line items total **3,500 t**, but the summary states **4,000 t**.\n\nFor **CN 7207 11 90, India**, the default SEE is **4.32 tCO\u2082e/t**:\n- If **3,500 t** is correct: **15,120.00 tCO\u2082e**\n- If **4,000 t** is correct: **17,280.00 tCO\u2082e**\n\nPlease confirm the declared quantity before a single emissions total can be reported.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 211
+  },
+  "latency_s": 7.1322,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1b2984cf778b415ae0f4ba81",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 577.50 tCO2e**\n\n**Inputs:**\n- CN code: 7214 20 00 (bars and rods of iron or non-alloy steel, with indentations, ribs, grooves or other deformations produced during rolling). This code is in the factor table.\n- Country of production: T\u00fcrkiye. This country is listed for 7214 20 00.\n- Quantity: 250 t.\n\n**Calculation:**\n- Default SEE (7214 20 00, T\u00fcrkiye) = 2.31 tCO2e/t\n- Embedded emissions = 2.31 tCO2e/t \u00d7 250 t = 577.50 tCO2e",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 261
+  },
+  "latency_s": 1.5978,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

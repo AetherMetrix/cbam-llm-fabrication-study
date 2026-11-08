@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8829aff5f9b55917fd8b82c2",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can't compute an embedded-emissions figure for this shipment because the country of production is not in the factor table.\n\n- **Good and CN code:** 7214 20 00 (bars and rods of iron or non-alloy steel, with indentations, ribs, grooves or other deformations produced during rolling). This code is in the table.\n- **Quantity:** 2,600 t. This is provided.\n- **Country of production:** Ukraine. The table lists 7214 20 00 only for T\u00fcrkiye (2.31 tCO2e/t), China (3.169 tCO2e/t) and India (4.27 tCO2e/t).\n\nUnder the ruleset, the SEE value is selected jointly by CN code and country, and an estimate requires the country to be listed for that good. Because Ukraine has no default value for 7214 20 00, I have not estimated the embedded emissions.\n\nTo proceed, you could:\n- Provide a default SEE value for 7214 20 00 from Ukraine from a source outside this ruleset, which would need to be authorised for use in this calculation.\n- Confirm whether the country of production is correct. If the goods were produced in T\u00fcrkiye, China or India, the calculation would be 2,600 t \u00d7 that country's SEE.",
+  "usage": {
+    "input_tokens": 922,
+    "output_tokens": 444
+  },
+  "latency_s": 2.4549,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

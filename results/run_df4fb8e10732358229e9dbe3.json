@@ -1,0 +1,15 @@
+{
+  "run_id": "run_df4fb8e10732358229e9dbe3",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The country of production is in conflict, and the ruleset requires a single country to select the default SEE value.\n\n**Conflicting input:**\n- **Country of production:** The cover note says China. The attached customs form says India. The ruleset does not specify which source takes precedence, so I cannot select one.\n\n**Inputs that are otherwise sufficient:**\n- CN code 7201 is in the table.\n- Quantity is 1,000 t.\n- Both China and India are listed for CN 7201.\n\n**Conditional results (for reference only, not a final figure):**\n\n| Country confirmed | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| China | 1.66 | 1,000 | 1,660.00 |\n| India | 2.53 | 1,000 | 2,530.00 |\n\nTo finalize, the country of production must be confirmed, for example by resolving the discrepancy with the supplier or the importer's records. Once confirmed, the figure is the corresponding value above.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 835
+  },
+  "latency_s": 4.6926,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

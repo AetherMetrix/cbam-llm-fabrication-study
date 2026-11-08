@@ -1,0 +1,15 @@
+{
+  "run_id": "run_14b827517556cccd0dc37909",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the embedded emissions because the United States is not listed for CN **7214 20 00** in the supplied factor table.\n\n- **Provided:** CN 7214 20 00; quantity 1,200 tonnes.\n- **Unavailable required input:** A country-specific SEE for CN 7214 20 00 produced in the United States.\n\nThe rules do not permit estimating or substituting another country\u2019s factor.",
+  "usage": {
+    "input_tokens": 652,
+    "output_tokens": 92
+  },
+  "latency_s": 3.498,
+  "stop_reason": "completed",
+  "truncated": false
+}

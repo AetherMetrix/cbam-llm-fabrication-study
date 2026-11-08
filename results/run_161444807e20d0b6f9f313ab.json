@@ -1,0 +1,15 @@
+{
+  "run_id": "run_161444807e20d0b6f9f313ab",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this declaration. The quantity input is in conflict, and the ruleset requires a single quantity in tonnes.\n\n**What is established:**\n- CN code 7214 20 00 (bars and rods with indentations, ribbed) is in the factor table.\n- Country of production, India, is listed for that code.\n- The default SEE for (7214 20 00, India) is 4.27 tCO2e/t.\n\n**What is missing or unresolved:**\n- **Quantity in tonnes.** The summary states 1,000 t, but the line items sum to 950 t (300 t + 400 t + 250 t). The ruleset requires one quantity, and the two sources disagree by 50 t.\n\n**Inputs needed to proceed:**\n1. The correct total quantity in tonnes, confirmed by the declarant, with the summary and line items reconciled. Either the summary total is wrong, or one or more lots are missing from the line items.\n2. Confirmation that all three lots (300 t, 400 t, 250 t) are ribbed bar under CN 7214 20 00 and produced in India. The declaration describes a single good and country, but the line items are not separately tagged.\n\nOnce the quantity is confirmed as a single figure, I will apply the ruleset: quantity \u00d7 4.27 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 969
+  },
+  "latency_s": 5.0134,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

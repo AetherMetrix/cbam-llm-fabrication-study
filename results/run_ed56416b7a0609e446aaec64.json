@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ed56416b7a0609e446aaec64",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the definitive embedded emissions figure because the provided data is insufficient under the supplied ruleset. \n\nThe following required input is missing:\n- **Country of production** (must be specified as T\u00fcrkiye, China, or India to select the country-specific default SEE for CN code 7214 20 00).",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 74
+  },
+  "latency_s": 4.9688,
+  "stop_reason": "STOP",
+  "truncated": false
+}

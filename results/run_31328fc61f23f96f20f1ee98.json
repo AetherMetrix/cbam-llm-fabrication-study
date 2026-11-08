@@ -1,0 +1,15 @@
+{
+  "run_id": "run_31328fc61f23f96f20f1ee98",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "I can't calculate embedded emissions for this shipment because the good is not in the factor table.\n\n- **Required input (a), CN code:** The declared code is 7202 41 (ferro-chromium). The table covers only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00, so there is no default SEE for 7202 41.\n- **Required input (b), country:** China is listed for other goods in the table, but the pairing (7202 41, China) has no default value.\n- **Required input (c), quantity:** 1,000 t is provided.\n\nUnder the ruleset, a missing or unlisted input means I should not estimate. The result is **not calculated**.\n\nTo proceed, you would need one of the following:\n- A factor table that includes CN 7202 41 for China, with its default SEE value.\n- Confirmation that the good should be classified under one of the listed CN codes, if the declaration is in error.",
+  "usage": {
+    "input_tokens": 873,
+    "output_tokens": 326
+  },
+  "latency_s": 2.1847,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

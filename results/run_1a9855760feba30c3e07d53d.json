@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1a9855760feba30c3e07d53d",
+  "task_id": "A08",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 13,918.80 tCO2e**\n\n**Inputs**\n- **CN code:** 7207 11 90 (semi-finished products of iron or non-alloy steel), which is in the table.\n- **Country of production:** China, which is listed for this CN code.\n- **Quantity:** 4,200 tonnes.\n\n**Factor**\n- The default SEE for (7207 11 90, China) is 3.314 tCO2e/t.\n\n**Calculation**\n- Embedded emissions = 3.314 tCO2e/t \u00d7 4,200 t = 13,918.80 tCO2e",
+  "usage": {
+    "input_tokens": 933,
+    "output_tokens": 263
+  },
+  "latency_s": 2.648,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dad91f7b1f945948ba6bab96",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "I can't give a single embedded-emissions figure yet because the country of production is contradictory. The ruleset requires one confirmed country, and the default SEE is selected by the (CN code, country) pair.\n\n**Inputs:**\n- CN code: 7214 20 00 (in table)\n- Quantity: 2,000 t\n- Country of production: **conflict**. The email says T\u00fcrkiye; the declaration header says China.\n\n**Conditional results (for reference only, pending confirmation):**\n\n| Country of production (source) | Default SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye (email) | 2.31 | 4,620.00 |\n| China (declaration header) | 3.169 | 6,338.00 |\n\nCalculation: SEE \u00d7 2,000 t, rounded half-up to 2 decimals (both products are exact, so no rounding is needed).\n\n**Action required:** Confirm the country of production from a primary source, such as the mill's installation record, the supplier's production declaration, or the corrected declaration header. Once confirmed, I'll issue the final figure for the matching row. The declaration header should be corrected if China is wrong, or the email should be checked if T\u00fcrkiye is wrong.",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 705
+  },
+  "latency_s": 4.0779,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

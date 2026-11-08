@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ba59d541572442ce2b9dc9bf",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot Compute: Country of Production Is Missing\n\nI can't compute a definitive embedded-emissions figure, because the ruleset selects the default SEE jointly by CN code and country, and the country is not provided.\n\n## Input check\n\n| Required input | Provided value | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present and listed |\n| (b) Country of production listed for that good | *blank* | \u274c **Missing** |\n| (c) Quantity in tonnes | 1500 t | \u2705 Present |\n\n## Missing input\n\n- **Country of production** for the pig iron from Installation \"Works 2.\" For CN 7201, the table lists default SEEs for **T\u00fcrkiye, China, and India**. You need to confirm which one applies, or whether the country is outside the table, in which case no default value is available under these rules.\n\n## Notes\n\n- **Production route** (\"blast furnace\") and **installation** (\"Works 2\") are not used in the supplied ruleset. Neither can stand in for the country.\n- Once you supply the country, the calculation is: **1500 t \u00d7 the SEE for CN 7201 in that country**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 500
+  },
+  "latency_s": 5.7205,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

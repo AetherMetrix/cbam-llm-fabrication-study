@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d7dc21aad50eb6ed63b3a7f7",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure because the declared quantity is inconsistent:\n\n- Line items: 2,000 + 1,500 = **3,500 tonnes**\n- Summary total: **4,000 tonnes**\n\n**Required input:** Confirm the correct declared quantity in tonnes.\n\nThe applicable SEE for CN **7207 11 90**, produced in **India**, is **4.32 tCO\u2082e/t**.",
+  "usage": {
+    "input_tokens": 671,
+    "output_tokens": 123
+  },
+  "latency_s": 4.9623,
+  "stop_reason": "completed",
+  "truncated": false
+}

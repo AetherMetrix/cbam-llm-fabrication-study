@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4f4f0ef09e89f58ef5a3d6c6",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the definitive embedded emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n- **Good CN code in the table**: The declared CN code (7208) is not listed in the provided factor table, so there is no corresponding default specific embedded emissions (SEE) value for this good.",
+  "usage": {
+    "input_tokens": 776,
+    "output_tokens": 77
+  },
+  "latency_s": 4.0896,
+  "stop_reason": "STOP",
+  "truncated": false
+}

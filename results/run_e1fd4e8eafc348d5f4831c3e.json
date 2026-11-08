@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e1fd4e8eafc348d5f4831c3e",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is conflicting and insufficient to determine the required input under the supplied ruleset.\n\n**Missing/Unresolved Input:**\n* **Good CN code:** The declaration contains contradictory CN codes. The description specifies ribbed reinforcing bar with CN code **7214 20 00** (which has a default SEE of 4.27 tCO2e/t for India), while the CN-code field reads **7201** for pig iron (which has a default SEE of 2.53 tCO2e/t for India). A single, unambiguous CN code for the good is required to select the correct default specific embedded emissions (SEE) value from the factor table.",
+  "usage": {
+    "input_tokens": 772,
+    "output_tokens": 159
+  },
+  "latency_s": 5.0882,
+  "stop_reason": "STOP",
+  "truncated": false
+}

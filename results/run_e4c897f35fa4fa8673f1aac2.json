@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e4c897f35fa4fa8673f1aac2",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "The embedded emissions **cannot be calculated using the supplied table**. CN **7202 41** (ferro-chromium) is not listed, so no default SEE is available for this good produced in India.\n\nAlthough the quantity is **700 tonnes**, the ruleset prohibits estimating when the CN code is absent from the table.",
+  "usage": {
+    "input_tokens": 637,
+    "output_tokens": 71
+  },
+  "latency_s": 2.5016,
+  "stop_reason": "completed",
+  "truncated": false
+}

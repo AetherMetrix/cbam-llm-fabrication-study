@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3c7b7857888d1f111073bf28",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The CN code is conflicting: **7201** and **7206 10 00** have different default SEE values for China. A single embedded-emissions total cannot be determined until the correct code is confirmed.\n\n- **If CN 7201:** 900 t \u00d7 1.66 tCO2e/t = **1,494.00 tCO2e**\n- **If CN 7206 10 00:** 900 t \u00d7 1.74 tCO2e/t = **1,566.00 tCO2e**\n\nPlease confirm the correct CN code.",
+  "usage": {
+    "input_tokens": 631,
+    "output_tokens": 124
+  },
+  "latency_s": 3.0415,
+  "stop_reason": "completed",
+  "truncated": false
+}

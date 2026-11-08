@@ -1,0 +1,15 @@
+{
+  "run_id": "run_85fd4ed5cfbefc1fbebb70bb",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can't calculate embedded emissions for this shipment. CN code **7208** (hot-rolled coil) is not in the factor table, and the ruleset does not allow an estimate when the CN code is missing from the table.\n\nThe table covers only these CN codes:\n- **7201**: Pig iron and spiegeleisen\n- **7206 10 00**: Ingots of iron and non-alloy steel\n- **7207 11 90**: Semi-finished products of iron or non-alloy steel\n- **7214 20 00**: Bars and rods with indentations, ribs, or grooves\n\nThe quantity (5,000 t) and country (China) are clear, but the CN code is the required input that determines which default value applies. Without a matching entry, no SEE value can be selected.\n\nTo proceed, you could:\n1. **Confirm the CN code.** If the goods are actually one of the four codes above, provide that code and I will calculate the result. For example, 7207 11 90 from China would be 3.314 \u00d7 5,000 = 16,570.00 tCO2e.\n2. **Supply a factor for CN 7208 from China.** I can apply it using the same formula, once it is in the approved factor table.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 417
+  },
+  "latency_s": 2.5092,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

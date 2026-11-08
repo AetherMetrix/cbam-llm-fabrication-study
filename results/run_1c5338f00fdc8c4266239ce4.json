@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1c5338f00fdc8c4266239ce4",
+  "task_id": "B-O04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute: the CN code is missing\n\nI cannot calculate the embedded emissions because the scenario does not identify the specific good.\n\n## Input check\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) Good CN code in the table | No. Only \"a steel product\" | **Missing** |\n| (b) Country of production listed for that good | Yes: China | OK, but the factor can't be selected without (a) |\n| (c) Quantity in tonnes | Yes: 500 t | OK |\n\n## Why the CN code is needed\n\nThe ruleset selects the default SEE by CN code and country together. The table has four China entries, each with a different SEE, so \"a steel product\" does not determine which one applies.\n\n## Missing input\n\n1. **The CN code of the good.** It must be one of the codes in the table:\n   - 7201 (Pig iron and spiegeleisen)\n   - 7206 10 00 (Ingots of iron and non-alloy steel)\n   - 7207 11 90 (Semi-finished products of iron or non-alloy steel)\n   - 7214 20 00 (Bars and rods of iron or non-alloy steel)\n\nIf the product's CN code is not in this table, the ruleset does not allow a calculation.\n\nOnce you provide the CN code, I will compute the embedded emissions for the 500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 634
+  },
+  "latency_s": 7.3711,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

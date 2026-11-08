@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a113b280d0cd79607d0dac0a",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# CBAM Embedded Emissions: Semi-finished Steel (CN 7207 11 90), India\n\n**I can't give a single definitive total because the declared quantity is inconsistent.**\n\n## Factor Selection\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7207 11 90 | \u2705 In table |\n| Country of production | India | \u2705 Listed for this CN code |\n| Default SEE | **4.32 tCO2e/t** | \u2705 |\n| Quantity | \u26a0\ufe0f Conflicting | \u274c Needs resolution |\n\n## Quantity Discrepancy\n- Line items: 2,000 t + 1,500 t = **3,500 t**\n- Summary total: **4,000 t**\n- Difference: **500 t**\n\nThe ruleset requires a valid quantity in tonnes. Since the two figures disagree, I can't tell which one is correct, so I haven't chosen one.\n\n## Results for Each Possible Quantity\n\n**If the line items are correct (3,500 t):**\n- Line 1: 2,000 t \u00d7 4.32 = 8,640.00 tCO2e\n- Line 2: 1,500 t \u00d7 4.32 = 6,480.00 tCO2e\n- **Total: 15,120.00 tCO2e**\n\n**If the summary total is correct (4,000 t):**\n- 4,000 t \u00d7 4.32 = **17,280.00 tCO2e**\n\nThe difference between the two results is 2,160.00 tCO2e (500 t \u00d7 4.32).\n\n## Action Required\nPlease confirm which quantity is correct. Possible explanations include:\n1. A missing third line item of 500 t\n2. An error in the summary total\n3. An error in one of the line items\n\nOnce you confirm the quantity, the matching figure above will be the final reportable embedded emissions.",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 775
+  },
+  "latency_s": 7.3585,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

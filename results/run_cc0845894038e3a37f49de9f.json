@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cc0845894038e3a37f49de9f",
+  "task_id": "A08",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 13,918.80 tCO2e**\n\n**Inputs:**\n- **CN code:** 7207 11 90 (in the factor table)\n- **Country of production:** China (listed for this code)\n- **Quantity:** 4,200 tonnes\n- **Default SEE:** 3.314 tCO2e/t (7207 11 90, China)\n\n**Calculation:**\n4,200 t \u00d7 3.314 tCO2e/t = 13,918.80 tCO2e",
+  "usage": {
+    "input_tokens": 933,
+    "output_tokens": 289
+  },
+  "latency_s": 1.6817,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

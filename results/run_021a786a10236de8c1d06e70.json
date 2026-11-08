@@ -1,0 +1,15 @@
+{
+  "run_id": "run_021a786a10236de8c1d06e70",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset and scenario, the form contains conflicting information by listing two different CN codes (`7201` and `7206 10 00`). Because the required input of a single, unambiguous CN code is not clearly established, a single definitive calculation cannot be estimated without confirmation of the correct CN code. \n\nHowever, note that the description provided in the scenario (\"Pig iron\") matches CN code **7201** in the factor table, whereas **7206 10 00** corresponds to \"Ingots, of iron and non-alloy steel\".\n\nBelow are the calculations for both listed CN codes so you can apply the correct one once the CN code on the form is verified:\n\n**Option 1: If the correct CN code is 7201 (matches the \"Pig iron\" description)**\n* **CN code:** 7201\n* **Country:** China\n* **Default SEE:** 1.66 tCO2e/t\n* **Quantity:** 900 t\n* **Calculation:** 1.66 \u00d7 900 = **1494.00 tCO2e**\n\n**Option 2: If the correct CN code is 7206 10 00 (Ingots)**\n* **CN code:** 7206 10 00\n* **Country:** China\n* **Default SEE:** 1.74 tCO2e/t\n* **Quantity:** 900 t\n* **Calculation:** 1.74 \u00d7 900 = **1566.00 tCO2e**",
+  "usage": {
+    "input_tokens": 727,
+    "output_tokens": 363
+  },
+  "latency_s": 6.3247,
+  "stop_reason": "STOP",
+  "truncated": false
+}

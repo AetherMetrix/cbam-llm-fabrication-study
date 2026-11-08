@@ -1,0 +1,15 @@
+{
+  "run_id": "run_44f7f0ac7f4f58dd8f1c57bf",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario because the **country of production is missing**.\n\n**Missing input:**\n- **(b) Country of production.** The ruleset requires the country to select the default SEE, because defaults are set jointly by CN code and country. The scenario gives the CN code (7214 20 00) and quantity (2,500 t), but not the country.\n\n**Available inputs:**\n- (a) CN code: 7214 20 00, which is in the factor table. \u2714\n- (c) Quantity: 2,500 t. \u2714\n\n**Options for CN 7214 20 00 in the table (for reference only, not a result):**\n\n| Country of production | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 2.31 |\n| China | 3.169 |\n| India | 4.27 |\n\nOnce the country of production is confirmed, the figure is 2,500 t \u00d7 the matching SEE, rounded half-up to 2 decimal places. If the country is not one of these three, the good cannot be computed under the supplied table.",
+  "usage": {
+    "input_tokens": 944,
+    "output_tokens": 671
+  },
+  "latency_s": 3.8302,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

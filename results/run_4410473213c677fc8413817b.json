@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4410473213c677fc8413817b",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron (CN 7201), 1,000 t\n\n## Result: Not finalised because the country of production is disputed\n\nThe ruleset selects the default SEE by both CN code and country of production. The documents give two different countries:\n\n| Source | Country of production |\n|---|---|\n| Cover note | China |\n| Customs form | India |\n\nThe ruleset gives no rule for choosing between conflicting sources. A single definitive figure would therefore be an estimate, which the ruleset forbids. Below are the results under each country so the discrepancy can be resolved.\n\n## Candidate results\n\n**If produced in China** (SEE = 1.66 tCO2e/t)\n1.66 \u00d7 1,000 t = **1,660.00 tCO2e**\n\n**If produced in India** (SEE = 2.53 tCO2e/t)\n2.53 \u00d7 1,000 t = **2,530.00 tCO2e**\n\nThe two results differ by **870.00 tCO2e**. The India result is about 52% higher than the China result.\n\n## Recommended action\n\n1. **Confirm the actual country of production** with the supplier or operator. Use evidence such as a certificate of origin, the producer's installation details, or mill certificates.\n2. **Correct whichever document is wrong** so the cover note and customs form agree.\n3. **Apply the matching factor** from the table once the country is confirmed.\n\n**Note:** The customs form is a formal declaration, while the cover note is informal. Many compliance processes would treat the customs form as the stronger evidence. If that is your organisation's policy, the applicable figure would be **2,530.00 tCO2e** (India). The ruleset itself does not set this priority, so confirmation is still advised before reporting.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 741
+  },
+  "latency_s": 7.8821,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

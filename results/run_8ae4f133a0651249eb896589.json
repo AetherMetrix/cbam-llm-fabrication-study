@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8ae4f133a0651249eb896589",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: country of production is missing\n\n**I cannot compute the embedded emissions** for this declaration because a required input is missing.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present and listed |\n| (b) Country of production listed for that good | *blank* | \u274c **Missing** |\n| (c) Quantity in tonnes | 1,500 t | \u2705 Present |\n\n## Why it is required\n\nThe ruleset selects the default SEE jointly by CN code and country. For CN 7201 the table gives a different value for each listed country (T\u00fcrkiye, China, India), so the factor cannot be chosen without knowing the country. Under the ruleset I will not estimate or assume one.\n\nThe other fields on the form (production route \"blast furnace\" and installation \"Works 2\") are not inputs under this ruleset and cannot substitute for the country.\n\n## Missing input to supply\n\n1. **Country of production** for the 1,500 t of pig iron (CN 7201). It must be one of the countries listed for CN 7201 in the factor table: **T\u00fcrkiye, China, or India**. If the actual country is not among these, the figure cannot be computed under the supplied table.\n\nOnce the country is provided, the calculation is: 1,500 t \u00d7 SEE for (7201, country), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 586
+  },
+  "latency_s": 6.6821,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

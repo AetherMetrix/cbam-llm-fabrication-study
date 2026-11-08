@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8472dc48c2742e596e0bfacf",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this declaration.\n\n**What is confirmed:**\n- CN code 7214 20 00 (bars and rods, ribbed) is in the factor table.\n- Country of production, India, is listed for that code.\n- The default SEE for this pair is 4.27 tCO2e/t.\n\n**What is missing:**\n- **A single, reconciled quantity in tonnes.** The summary states 1,000 t, but the line items (300 t + 400 t + 250 t) sum to 950 t. The ruleset requires one quantity, and I cannot determine which is correct from the information provided. The 50 t difference is unexplained.\n\n**What is needed to proceed:**\n1. The declarant or importer should confirm the correct total quantity of CN 7214 20 00 ribbed bar from India. This could be the 1,000 t summary figure, the 950 t line-item sum, or a corrected figure supported by source documentation (e.g., commercial invoices, packing lists, or weighbridge records).\n2. Once the quantity is confirmed, embedded emissions = 4.27 tCO2e/t \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.\n\nI have not calculated a total from either figure, because doing so would select one quantity over the other without a basis in the supplied data.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 944
+  },
+  "latency_s": 5.2163,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

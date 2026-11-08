@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f00bbcdcedaed2059b61d6af",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Result: Cannot be computed. The CN code is missing.\n\nThe ruleset requires three inputs before a value can be calculated. One is missing:\n\n| Required input | Provided? |\n|---|---|\n| (a) CN code in the table | **No.** No CN code is given. |\n| (b) Country of production | Yes: India |\n| (c) Quantity in tonnes | Yes: 600 t |\n\nThe default SEE depends on both CN code and country, so the factor cannot be selected without a confirmed CN code. The ruleset says \"do not estimate,\" so I have not picked a code or reported a total.\n\n## Why the description doesn't settle the CN code\n\n\"Semi-finished steel product, continuously cast, carbon ~0.2%\" could fall under more than one heading in the table:\n- **7207 11 90** (semi-finished products of iron or non-alloy steel) seems closest. However, it is only one subheading of 7207. It depends on cross-section shape, width-to-thickness ratio and processing route, none of which the datasheet states.\n- **7206 10 00** (ingots / primary forms) could also apply, depending on the product's form.\n\nThe two India factors differ a lot (4.32 vs 2.64 tCO2e/t), so choosing one would materially change the result.\n\n## What is needed to complete the calculation\n\nPlease provide the **declared CN code**, for example from the customs declaration or the supplier's commercial invoice. The calculation will then be:\n\n> Embedded emissions = SEE(CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 867
+  },
+  "latency_s": 8.8846,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

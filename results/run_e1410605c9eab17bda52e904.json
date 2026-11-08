@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e1410605c9eab17bda52e904",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded emissions figure because the provided data contains conflicting information regarding a required input.\n\n**Missing/Unverified Input:**\n* **Quantity in tonnes (c):** There is a discrepancy between the declared summary total (1,000 t) and the sum of the individual line items (300 t + 400 t + 250 t = 950 t). A single, verified net quantity in tonnes is required to perform the calculation.",
+  "usage": {
+    "input_tokens": 782,
+    "output_tokens": 105
+  },
+  "latency_s": 4.7453,
+  "stop_reason": "STOP",
+  "truncated": false
+}

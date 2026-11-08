@@ -1,0 +1,15 @@
+{
+  "run_id": "run_be1e1587680d4cbd2846aa22",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: No Single Figure Until the CN Code Is Resolved\n\nI can't give one figure yet because the scenario identifies the good in two conflicting ways:\n\n- **Description:** semi-finished product, CN **7207 11 90**\n- **Line-item CN:** **7214 20 00** (bars and rods)\n\nThe ruleset selects the default SEE jointly by CN code and country. Both codes are in the table for T\u00fcrkiye, but their SEE values differ, so choosing one would be a guess.\n\n## Results Under Each Code (T\u00fcrkiye, 1,100 t)\n\n| CN code | Good | Default SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|---|\n| 7207 11 90 | Semi-finished products | 3.087 | 1,100 \u00d7 3.087 | **3,395.70 tCO2e** |\n| 7214 20 00 | Bars and rods | 2.31 | 1,100 \u00d7 2.31 | **2,541.00 tCO2e** |\n\nThe two results differ by **854.70 tCO2e**. Using 7214 20 00 would give a figure about 25% lower than using 7207 11 90.\n\n## Action Needed\n\nConfirm the correct CN classification against the commercial invoice, the customs declaration and the product's physical form. Semi-finished products such as billets and blooms are classified differently from finished bars and rods. Once the code is confirmed, the matching value above is the reportable figure. The line-item CN should also be corrected if it is wrong, because a misclassification affects the customs declaration as well as the CBAM report.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 735
+  },
+  "latency_s": 7.7782,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

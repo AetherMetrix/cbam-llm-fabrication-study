@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1dc5c0f541cc93da4eab0cf5",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: 250 t Ribbed Reinforcing Bar from T\u00fcrkiye\n\n**Total embedded emissions: 577.50 tCO2e**\n\n## Inputs Checked\n\n| Input | Value | In table? |\n|---|---|---|\n| CN code | 7214 20 00 (bars and rods with indentations, ribs, etc.) | \u2713 |\n| Country of production | T\u00fcrkiye | \u2713 (listed for 7214 20 00) |\n| Quantity | 250 t | \u2713 |\n\nRibbed reinforcing bar fits the description for CN 7214 20 00, and all required inputs are present.\n\n## Factor Selected\n\nFor CN 7214 20 00 and T\u00fcrkiye, the default SEE is **2.31 tCO2e/t**.\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 quantity\n= 2.31 tCO2e/t \u00d7 250 t\n= **577.50 tCO2e**\n\nThe ruleset has no lot-size threshold or adjustment, so the \"small lot\" description does not change the calculation.",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 413
+  },
+  "latency_s": 4.149,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

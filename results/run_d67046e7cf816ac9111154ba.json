@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d67046e7cf816ac9111154ba",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "I can\u2019t calculate embedded emissions yet because two required inputs are missing:\n\n- **Country of production:** T\u00fcrkiye, China, or India\n- **Quantity in tonnes**\n\nFor CN **7207 11 90**, please provide both inputs so I can select the country-specific factor and calculate the total.",
+  "usage": {
+    "input_tokens": 613,
+    "output_tokens": 64
+  },
+  "latency_s": 3.728,
+  "stop_reason": "completed",
+  "truncated": false
+}

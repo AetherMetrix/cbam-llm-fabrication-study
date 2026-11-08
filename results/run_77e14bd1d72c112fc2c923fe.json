@@ -1,0 +1,15 @@
+{
+  "run_id": "run_77e14bd1d72c112fc2c923fe",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**The declared quantity conflicts with the lot breakdown, so I can't give a single final figure yet.**\n\n**Inputs**\n- CN code: 7206 10 00 (Ingots of iron and non-alloy steel), which is in the table\n- Country: T\u00fcrkiye, which is listed for this code\n- Default SEE: 1.96 tCO2e/t\n- Quantity: three lots of 1,000 t = **3,000 t** from the line items, but the declared total is **3,500 t**. The 500 t difference is unexplained.\n\n**Calculations**\n\n| Quantity basis | Calculation | Embedded emissions |\n|---|---|---|\n| Sum of lots (3 \u00d7 1,000 t) | 3,000 \u00d7 1.96 | **5,880.00 tCO2e** |\n| Declared total | 3,500 \u00d7 1.96 | **6,860.00 tCO2e** |\n\nThe difference is 980.00 tCO2e.\n\n**Recommendation:** The lot-level quantity (3,000 t) is the one that can be traced to individual records, so 5,880.00 tCO2e is the supportable figure. Before reporting, reconcile the 3,500 t declaration against the lot records. Either the declared total is wrong, or there is a fourth lot of 500 t that is missing from the scenario. If a 500 t lot exists and is documented, the result is 6,860.00 tCO2e.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 966
+  },
+  "latency_s": 4.6813,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b400e54bce4c2af7dda63df0",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**No estimate can be produced.** The scenario is missing a required input.\n\nThe ruleset requires a good CN code that appears in the factor table. The datasheet gives no CN code, and the description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") does not identify a single heading. It could fall under:\n\n- **7206 10 00** (ingots of iron or non-alloy steel), India SEE 2.64 tCO2e/t\n- **7207 11 90** (semi-finished products of iron or non-alloy steel, containing less than 0.25% carbon), India SEE 4.32 tCO2e/t\n\nThese two candidates give different SEE values for India, so the result depends on which code applies. The country (India) and quantity (600 t) are available, but the CN code is not.\n\n**To proceed, the datasheet or supplier documentation must specify the CN code.** Once a code from the table is confirmed for India, embedded emissions = SEE \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 639
+  },
+  "latency_s": 3.5454,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2ae698d7e8e24c37bfee95f4",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions for this scenario.\n\n**Inputs checked against the ruleset:**\n\n| Required input | Supplied | Status |\n|---|---|---|\n| (a) Good CN code in table | 7214 20 00 (ribbed bar) | Present in table |\n| (b) Country of production listed for that good | Russian Federation | **Missing.** The table lists only T\u00fcrkiye, China, and India for 7214 20 00. |\n| (c) Quantity in tonnes | 2200 | Present |\n\nThe default SEE is selected jointly by CN code and country. No factor exists for 7214 20 00 with the Russian Federation, so the calculation cannot be completed. I have not used the T\u00fcrkiye, China, or India values as a substitute, because that would be an estimate outside the ruleset.\n\n**Missing input needed to proceed:**\n- A default SEE value (tCO2e/t) for CN 7214 20 00 with country of production = Russian Federation, from a factor table that includes it.\n\nOnce that value is supplied, the calculation is: embedded emissions = SEE \u00d7 2200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 973,
+    "output_tokens": 561
+  },
+  "latency_s": 2.9604,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

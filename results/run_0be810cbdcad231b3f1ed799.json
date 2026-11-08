@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0be810cbdcad231b3f1ed799",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is conflicting and insufficient to determine a single required input under the supplied ruleset.\n\nSpecifically, the following required input is missing/unresolved:\n* **Definitive good CN code:** The scenario provides two conflicting CN codes\u2014CN 7207 11 90 (per the text description as a semi-finished product) and CN 7214 20 00 (per the line-item entry). Because both CN codes exist in the factor table for T\u00fcrkiye with different default SEE values (3.087 tCO2e/t vs. 2.31 tCO2e/t), a single unambiguous CN code must be confirmed before the calculation can be performed.",
+  "usage": {
+    "input_tokens": 772,
+    "output_tokens": 162
+  },
+  "latency_s": 4.6106,
+  "stop_reason": "STOP",
+  "truncated": false
+}

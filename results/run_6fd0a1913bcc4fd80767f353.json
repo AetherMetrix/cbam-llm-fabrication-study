@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6fd0a1913bcc4fd80767f353",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**I can't give a final embedded-emissions figure for this declaration** because the CN code is contradictory. The ruleset requires a valid good CN code as an input, and the factor is selected by the (CN code, country) pair, so the two conflicting codes produce different results.\n\n**The conflict:**\n- The CN-code field reads **7201** (pig iron and spiegeleisen).\n- The good description (\"ribbed reinforcing bar\") and the CN code given in the description point to **7214 20 00** (bars and rods with indentations, ribs or grooves).\n\n**For reference only, the two candidate results for India, 1,500 t:**\n\n| CN code used | Good | SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| 7201 (CN field) | Pig iron | 2.53 | 3,795.00 |\n| 7214 20 00 (description) | Ribbed reinforcing bar | 4.27 | 6,405.00 |\n\nThese figures should not be used for reporting until the discrepancy is resolved.\n\n**Next step:** The declarant should confirm the correct CN code from the commercial documents (invoice, packing list, or product specification) and correct the declaration. Once the CN code is confirmed as 7201 or 7214 20 00, I will calculate the final figure using the India default SEE and the 1,500 t quantity.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 901
+  },
+  "latency_s": 4.9013,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

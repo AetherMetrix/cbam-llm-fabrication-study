@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d03acb26327629e35aaf7e0a",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The country of production is unresolved, and the ruleset requires it to select the default SEE value.\n\n**Conflicting input:**\n- **Country of production:** The email says T\u00fcrkiye. The declaration header says China. The ruleset requires one country, listed for the good, so the SEE cannot be selected.\n\n**Inputs that are otherwise sufficient:**\n- CN code 7214 20 00 is in the factor table.\n- Quantity is 2,000 t.\n\n**To proceed, confirm the country of production** (for example, from the operator's installation records or the origin documentation) and correct whichever source is wrong. Once confirmed, the calculation is:\n\n- If **T\u00fcrkiye** is confirmed: 2,000 t \u00d7 2.31 tCO2e/t = **4,620.00 tCO2e**\n- If **China** is confirmed: 2,000 t \u00d7 3.169 tCO2e/t = **6,338.00 tCO2e**\n\nThese are not estimates of the declared figure. Only the confirmed country yields the reportable total. Also correct the declaration header or the email so the record is consistent.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 719
+  },
+  "latency_s": 3.9213,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_325c7a4e7fdf0421ad4404b0",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "## Cannot compute: required inputs are missing\n\nThe ruleset requires three inputs and says not to estimate if any is missing. The scenario provides only one.\n\n| Required input | Provided? | Value |\n|---|---|---|\n| (a) CN code in table | \u2705 Yes | 7201 (Pig iron and spiegeleisen) |\n| (b) Country of production | \u274c **Missing** | \u2014 |\n| (c) Quantity in tonnes | \u274c **Missing** | \u2014 |\n\n### Why the country is needed\nDefault SEE values depend on both the CN code and the country. CN 7201 has three different values:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 1.85 |\n| China | 1.66 |\n| India | 2.53 |\n\nThe highest value is about 52% above the lowest, so I can't pick one or average them.\n\n### Why the quantity is needed\nEmbedded emissions = SEE \u00d7 quantity (tonnes). Without a quantity there is nothing to multiply.\n\n### What I need from you\n1. **Country of production**: T\u00fcrkiye, China, or India. Other countries are not in the table, so no default value would apply.\n2. **Quantity in tonnes** of pig iron declared.\n\nOnce you send these, I'll calculate the result rounded half-up to 2 decimal places. For example, 100 t from T\u00fcrkiye would give 100 \u00d7 1.85 = **185.00 tCO2e**. This is only an illustration, not your result.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 513
+  },
+  "latency_s": 5.0481,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

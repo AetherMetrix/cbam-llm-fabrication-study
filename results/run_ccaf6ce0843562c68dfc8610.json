@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ccaf6ce0843562c68dfc8610",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The declared quantity is inconsistent, and the ruleset requires a single, reconciled tonnage.\n\n**What is established:**\n- CN code 7201 is in the factor table (pig iron and spiegeleisen).\n- China is a listed country for CN 7201.\n- Default SEE for (7201, China) = **1.66 tCO2e/t**.\n\n**What is missing or conflicting:**\n- **Quantity (input c):** The stated total is 1,200 t, but the two shipment lines sum to 1,000 t (500 t + 500 t). The 200 t difference is unexplained. The quantity must be confirmed as either 1,200 t or 1,000 t, or the missing 200 t must be accounted for by a third shipment line or a correction.\n\n**For reference only (not a determination):** Applying the rule (SEE \u00d7 tonnes) to each candidate quantity gives:\n- If 1,200 t is correct: 1.66 \u00d7 1,200 = **1,992.00 tCO2e**\n- If 1,000 t is correct: 1.66 \u00d7 1,000 = **1,660.00 tCO2e**\n\nNeither figure should be reported until the quantity discrepancy is resolved.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 775
+  },
+  "latency_s": 4.0298,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

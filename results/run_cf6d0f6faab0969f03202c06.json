@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cf6d0f6faab0969f03202c06",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is insufficient and contradictory under the supplied ruleset. \n\nSpecifically, the following required input is missing/unresolved:\n* **Good CN code**: The declaration contains conflicting CN codes\u2014the description specifies **CN 7214 20 00** (ribbed reinforcing bar), while the CN-code field reads **CN 7201** (pig iron). Both codes exist in the factor table for India with different Default SEE values (4.27 tCO2e/t vs. 2.53 tCO2e/t). A single, unambiguous CN code is required to select the correct SEE.",
+  "usage": {
+    "input_tokens": 772,
+    "output_tokens": 147
+  },
+  "latency_s": 6.958,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8c4201117bf641c482c59d88",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "I can\u2019t calculate the embedded emissions without the **good\u2019s CN code**. India and the quantity of **3,000 tonnes** are provided, but the SEE varies by CN code.\n\nPlease specify which code applies: **7201**, **7206 10 00**, **7207 11 90**, or **7214 20 00**.",
+  "usage": {
+    "input_tokens": 612,
+    "output_tokens": 78
+  },
+  "latency_s": 2.6542,
+  "stop_reason": "completed",
+  "truncated": false
+}

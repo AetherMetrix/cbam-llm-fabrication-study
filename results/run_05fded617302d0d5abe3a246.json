@@ -1,0 +1,15 @@
+{
+  "run_id": "run_05fded617302d0d5abe3a246",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I can't compute the embedded emissions for this shipment yet. The country of production is missing.\n\n**Missing input:**\n- **Country of production.** The ruleset selects the default SEE jointly by CN code and country, and the email says this is on the mill certificate, which was not included. For CN 7207 11 90, the factor table lists three countries (T\u00fcrkiye, China, India), so the country determines which factor applies.\n\n**Inputs confirmed:**\n- **CN code:** 7207 11 90 is in the factor table.\n- **Quantity:** 3,300 t.\n\n**Once the country is confirmed,** the calculation is:\n\nEmbedded emissions (tCO2e) = SEE for (7207 11 90, confirmed country) \u00d7 3,300 t, rounded half-up to 2 decimal places.\n\nPlease send the mill certificate or the country of production, and I'll run the calculation.",
+  "usage": {
+    "input_tokens": 996,
+    "output_tokens": 582
+  },
+  "latency_s": 3.438,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

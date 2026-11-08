@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cd21e6ac5447627d5b7c7ad3",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Result: Cannot compute\n\nI cannot compute the CBAM embedded emissions for this shipment under the supplied ruleset.\n\n## Reason\n\nThe ruleset requires the good's CN code to appear in the factor table. **CN 7208 (hot-rolled coil / flat-rolled products of iron or non-alloy steel) is not in the table.** The table covers only:\n\n| CN code | Good |\n|---|---|\n| 7201 | Pig iron and spiegeleisen |\n| 7206 10 00 | Ingots of iron and non-alloy steel |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel |\n| 7214 20 00 | Bars and rods with indentations (rebar) |\n\nDefault values are selected jointly by CN code and country. A value for another product, such as China's figure for 7207 11 90 (3.314) or 7214 20 00 (3.169), cannot stand in for hot-rolled coil. Doing so would be an estimate, which the ruleset prohibits.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | **Missing.** CN 7208 has no entry. |\n| (b) Country of production listed for that good | **Missing.** China is listed for other goods but not for CN 7208. |\n| (c) Quantity in tonnes | Provided: 5,000 t |\n\n## What is needed to proceed\n\n1. **A default SEE value (tCO2e/t) for CN 7208 produced in China**, added to the factor table. This would ideally use the full 8-digit CN subheading (e.g., 7208 xx xx), since default values may differ by subheading.\n2. **Confirmation of the full CN subheading** for the hot-rolled coil, because \"7208\" is only a 4-digit heading.\n\nOnce the CN 7208 / China default value is supplied, the calculation would be: 5,000 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 691
+  },
+  "latency_s": 6.7535,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dd5113b4a3c7b4e6540bd1c6",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: CN code missing\n\nI cannot compute a definitive embedded-emissions figure for this lot.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the factor table | **Missing** |\n| (b) Country of production | India (listed in the table) |\n| (c) Quantity in tonnes | 600 t |\n\n## Why the CN code is needed\n\nThe ruleset selects the default SEE jointly by CN code and country, so the SEE cannot be determined without the CN code.\n\nThe description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") does not identify a single table entry:\n\n- **Several candidate headings:** The scenario states the description spans more than one heading in the table.\n- **No clear match to 7207 11 90:** The closest-looking row is truncated in the table (\"Semi-finished products of iron or non-alloy steel, contai...\"). Nothing in the supplied ruleset confirms that a continuously cast product with about 0.2% carbon falls under that 8-digit code. Heading 7207 contains several subheadings that the table does not list, so the code cannot be inferred from the description.\n- **Different factors for India:** The candidate India rows carry different SEE values. Picking one would be an estimate, which the ruleset does not allow.\n\n## Input needed to proceed\n\n- **The 8-digit CN code** of the product, as shown on the customs declaration or commercial invoice, and it must appear in the factor table.\n\nOnce the CN code is confirmed, the calculation is:\n\nEmbedded emissions = SEE (CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 977
+  },
+  "latency_s": 10.4837,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

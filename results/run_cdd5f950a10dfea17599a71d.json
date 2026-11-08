@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cdd5f950a10dfea17599a71d",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No estimate can be given.** The country of production is blank, and the ruleset requires all three inputs (CN code, country of production, and quantity) before calculating embedded emissions.\n\nThe CN code (7201) and quantity (1,500 t) are present and valid. The default SEE depends on both the CN code and the country, so the country must be specified.\n\n**To complete the calculation, please provide the country of production.** For CN 7201 (pig iron), the table lists:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 1.85 |\n| China | 1.66 |\n| India | 2.53 |\n\nOnce the country is confirmed, the calculation is:\n\nEmbedded emissions = SEE \u00d7 1,500 t\n\nThe production route (blast furnace) and installation (Works 2) do not change the calculation under this ruleset, but the country of production must be stated on the form.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 414
+  },
+  "latency_s": 2.7619,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

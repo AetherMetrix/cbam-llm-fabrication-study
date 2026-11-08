@@ -1,0 +1,15 @@
+{
+  "run_id": "run_25fce226e4905aa21950e174",
+  "task_id": "A15",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: CN 7207 11 90, China\n\n**Total embedded emissions: 49,710.00 tCO2e**\n\n## Inputs\n\n| Required input | Value | In table? |\n|---|---|---|\n| (a) CN code | 7207 11 90 (semi-finished products of iron or non-alloy steel) | Yes |\n| (b) Country of production | China | Yes, listed for 7207 11 90 |\n| (c) Quantity | 15,000 tonnes | Provided |\n\nAll three inputs are present.\n\n## Calculation\n\n- **Default SEE** for (7207 11 90, China) = **3.314 tCO2e/t**\n- **Embedded emissions** = 3.314 tCO2e/t \u00d7 15,000 t = **49,710.00 tCO2e**\n\n**Note:** I read \"Chinese semi-finished steel\" as meaning the country of production is China. If the steel was only shipped from China but produced elsewhere, the SEE would need to be re-selected for the actual country of production.",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 440
+  },
+  "latency_s": 4.2118,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9032c6b5f4653923075b364f",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "The country of production is conflicting: the email says **T\u00fcrkiye**, while the declaration header says **China**. The ruleset does not specify which source takes precedence.\n\nPlease confirm the country of production for the **2,000 t of CN 7214 20 00**. A definitive embedded-emissions total cannot be calculated until the country-specific SEE can be selected.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 164
+  },
+  "latency_s": 5.4876,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fa4dad7c48e5ade98891dcf6",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Result: cannot compute the embedded emissions with the supplied ruleset and factor table.**\n\n**Inputs checked against the ruleset**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in the table | CN 7202 11 (ferro-manganese, > 2% carbon) | **Not in table** |\n| (b) Country of production listed for that good | China | Cannot be matched because the CN code is absent |\n| (c) Quantity in tonnes | 500 t | OK |\n\n**Why it cannot be computed**\n\nThe factor table covers only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00. It has no entry for CN 7202 11 (ferro-alloys, ferro-manganese) for any country. The ruleset selects the default SEE jointly by CN code and country and prohibits estimation when the code is missing. Using a factor for another good, such as pig iron (7201) at China 1.66 tCO2e/t, would be an estimate and is not permitted.\n\n**Missing input**\n\n- Default SEE (tCO2e per tonne) for **CN 7202 11 (ferro-manganese, > 2% carbon), country of production: China**.\n\n**Next step**\n\nIf you provide a factor table that includes a China default SEE for CN 7202 11, the figure can be calculated as SEE \u00d7 500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 968,
+    "output_tokens": 533
+  },
+  "latency_s": 5.4648,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

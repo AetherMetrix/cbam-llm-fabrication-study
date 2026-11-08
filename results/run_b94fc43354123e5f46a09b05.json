@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b94fc43354123e5f46a09b05",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot calculate the embedded-emissions total: the table has no default SEE for **CN 7201 produced in Viet Nam**.\n\nUnder the ruleset, an unlisted country\u2013CN combination must not be estimated, even though the quantity is provided (**1,800 t**).",
+  "usage": {
+    "input_tokens": 629,
+    "output_tokens": 60
+  },
+  "latency_s": 3.4581,
+  "stop_reason": "completed",
+  "truncated": false
+}

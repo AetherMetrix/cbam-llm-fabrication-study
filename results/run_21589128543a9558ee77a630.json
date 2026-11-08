@@ -1,0 +1,15 @@
+{
+  "run_id": "run_21589128543a9558ee77a630",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Missing input:**\n- **Country of production.** The ruleset selects the default SEE jointly by CN code and country, and the scenario does not state the country. The CN code (7201) and quantity (1,000 t) are provided and valid.\n\n**Required to proceed:** Confirm the country of production for the 1,000 t of pig iron (CN 7201). The table lists three countries for this code: T\u00fcrkiye, China, and India. Once the country is confirmed, the calculation is 1,000 t \u00d7 the country-specific default SEE, rounded half-up to 2 decimal places.\n\nFor reference only, the table contains these SEE values for CN 7201, and the country must be specified to select one:\n- T\u00fcrkiye: 1.85 tCO2e/t\n- China: 1.66 tCO2e/t\n- India: 2.53 tCO2e/t",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 585
+  },
+  "latency_s": 3.3604,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

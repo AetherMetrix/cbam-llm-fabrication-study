@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9d1293160b572282e3df413e",
+  "task_id": "A10",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**Embedded emissions: 13,860.00 tCO2e**\n\n**Inputs**\n| Required input | Value | In table? |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods, of iron or non-alloy steel, with indentations\u2026). This matches deformed reinforcing bars. | Yes |\n| (b) Country of production | T\u00fcrkiye | Yes, listed for 7214 20 00 |\n| (c) Quantity | 6,000 t | Provided |\n\n**Factor selected (CN 7214 20 00 + T\u00fcrkiye):** Default SEE = 2.31 tCO2e/t\n\n**Calculation**\nEmbedded emissions = SEE \u00d7 quantity\n= 2.31 tCO2e/t \u00d7 6,000 t\n= **13,860.00 tCO2e**",
+  "usage": {
+    "input_tokens": 936,
+    "output_tokens": 339
+  },
+  "latency_s": 3.6036,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

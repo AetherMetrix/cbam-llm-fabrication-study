@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b0b2123ade38e7b45349f034",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Result: no single estimate can be issued until the CN code conflict is resolved.**\n\nThe scenario gives two different CN codes for the same line item:\n- Commodity text: CN 7207 11 90 (semi-finished products)\n- Line-item code: CN 7214 20 00 (bars and rods)\n\nThe ruleset selects the default SEE by the good's CN code and country, so the good must be identified unambiguously. Both codes are in the factor table for T\u00fcrkiye, so the table alone cannot tell us which applies.\n\nFor reference only, the two possible results are:\n\n| Basis | CN code | SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|---|\n| Commodity text | 7207 11 90 | 3.087 | 1,100 | **3,395.70** |\n| Line-item code | 7214 20 00 | 2.310 | 1,100 | **2,541.00** |\n\nThese figures are not a compliance result. To finalise, the declarant must confirm the correct CN code for the goods shipped, either by correcting the commodity description or the line-item code. The estimate can then be computed from the matching row.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 718
+  },
+  "latency_s": 3.8258,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

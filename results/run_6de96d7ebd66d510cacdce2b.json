@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6de96d7ebd66d510cacdce2b",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded emissions figure under the supplied rules. \n\nThe following specific required input is missing:\n- **Good CN code** (the scenario states \"to be confirmed\" and \"exact heading TBD by mill\", which prevents selecting a specific default SEE from the factor table).",
+  "usage": {
+    "input_tokens": 768,
+    "output_tokens": 63
+  },
+  "latency_s": 5.7213,
+  "stop_reason": "STOP",
+  "truncated": false
+}

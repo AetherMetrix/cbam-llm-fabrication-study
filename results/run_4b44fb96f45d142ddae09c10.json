@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4b44fb96f45d142ddae09c10",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Embedded emissions **cannot be calculated using the provided table**. CN 7201 is listed, but the declared country of production, **USA**, has no default SEE for this good.\n\nUnder the ruleset, no estimate may be made for the declared **1,200 tonnes**.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 61
+  },
+  "latency_s": 2.92,
+  "stop_reason": "completed",
+  "truncated": false
+}

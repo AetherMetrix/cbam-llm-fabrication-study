@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7100df86713149b8734be1ab",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset, embedded emissions cannot be calculated because a required input\u2014the **country of production**\u2014is missing from the data form. \n\nPer the ruleset:\n- Default specific embedded emissions (SEE) values are country-specific and must be selected jointly by the good's CN code and the country of production.\n- Required inputs are: (a) good CN code in the table, (b) country of production listed for that good, and (c) quantity in tonnes. If any of these is missing, an estimate cannot be made.\n\nPlease provide the country of production (e.g., T\u00fcrkiye, China, or India) to proceed with the calculation.",
+  "usage": {
+    "input_tokens": 744,
+    "output_tokens": 147
+  },
+  "latency_s": 4.7949,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_644a0c4e5deeb448a7d0d53e",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Why:** The ruleset selects the default SEE jointly by CN code and country of production, and requires a single country. The two sources conflict: one gives India and the other gives T\u00fcrkiye. Since the country is not established, the applicable SEE value is not established either, so I will not choose one or estimate between them.\n\n**Inputs that are valid:**\n- Good: CN 7206 10 00 (Ingots of iron and non-alloy steel), which is in the factor table.\n- Quantity: 750 t.\n\n**Missing input:**\n- A single, verified country of production for the ingots. It must be one of the countries listed for CN 7206 10 00 in the table (T\u00fcrkiye, China, or India), and the conflicting origin declarations must be resolved.\n\n**Once the country is confirmed:** Embedded emissions = 750 t \u00d7 the table SEE for CN 7206 10 00 and that country. The table lists 2.64 tCO2e/t for India and 1.96 tCO2e/t for T\u00fcrkiye, so the result will be one of those two products, rounded half-up to 2 decimal places. China is also in the table, at 1.74 tCO2e/t, if it turns out to be the verified origin.",
+  "usage": {
+    "input_tokens": 951,
+    "output_tokens": 886
+  },
+  "latency_s": 4.8109,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

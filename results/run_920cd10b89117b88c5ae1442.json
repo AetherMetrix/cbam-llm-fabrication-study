@@ -1,0 +1,15 @@
+{
+  "run_id": "run_920cd10b89117b88c5ae1442",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the embedded emissions using the supplied table.\n\n- **CN code:** 7214 20 00 \u2014 listed.\n- **Quantity:** 2,600 tonnes \u2014 provided.\n- **Missing required factor:** A country-specific default SEE for **CN 7214 20 00 produced in Ukraine**. Ukraine is not listed for this good.\n\nThe rules do not permit estimating or substituting another country\u2019s factor.",
+  "usage": {
+    "input_tokens": 677,
+    "output_tokens": 90
+  },
+  "latency_s": 3.0553,
+  "stop_reason": "completed",
+  "truncated": false
+}

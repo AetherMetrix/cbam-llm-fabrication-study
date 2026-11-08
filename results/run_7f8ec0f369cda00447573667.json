@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7f8ec0f369cda00447573667",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the declared quantity is ambiguous.\n\n**Inputs checked**\n- **CN code:** 7214 20 00 is in the factor table. \u2714\n- **Country:** India is listed for this CN code, with a default SEE of **4.27 tCO2e/t**. \u2714\n- **Quantity:** Not established. The summary states 1,000 t, but the line items sum to 300 + 400 + 250 = **950 t**. \u2718\n\nThe ruleset requires a single quantity in tonnes, and the two figures conflict, so I cannot select one without guessing.\n\n**Conditional arithmetic (not a determination)**\n- If the declared quantity is confirmed as 1,000 t: 4.27 \u00d7 1,000 = **4,270.00 tCO2e**\n- If the declared quantity is confirmed as 950 t (sum of line items): 4.27 \u00d7 950 = **4,056.50 tCO2e**\n\n**Missing input needed to finalise**\n- Confirmation of the correct declared quantity in tonnes: either the 1,000 t summary total or the 950 t line-item total, or a corrected figure from the declarant. Any discrepancy in the lots (for example, a missing 50 t lot) should be resolved before the figure is reported.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 957
+  },
+  "latency_s": 4.8271,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_aeef32105216a4e46460e191",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: CN code is missing\n\nI can't calculate the embedded emissions for this purchase order because the ruleset requires all three inputs, and one is missing.\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the factor table | **Missing.** The PO says \"to be confirmed.\" |\n| (b) Country of production listed for that good | Provided: T\u00fcrkiye (listed for every CN code in the table) |\n| (c) Quantity in tonnes | Provided: 1,000 t |\n\n## Why the description isn't enough\n\nThe SEE is selected by CN code and country together. \"Steel long product (exact heading TBD by mill)\" doesn't identify a single CN code, and the T\u00fcrkiye defaults differ by code:\n\n| CN code | Good | T\u00fcrkiye SEE (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 1.85 |\n| 7206 10 00 | Ingots, iron and non-alloy steel | 1.96 |\n| 7207 11 90 | Semi-finished products, iron or non-alloy steel | 3.087 |\n| 7214 20 00 | Bars and rods, with indentations (e.g., rebar) | 2.31 |\n\nBecause the factor depends on which code applies, choosing one would be an estimate, which the ruleset doesn't allow.\n\n## What's needed\n\nPlease get the **confirmed CN code** from the mill. It must be one of the four codes listed above. Once you have it, the calculation is:\n\n**Embedded emissions = T\u00fcrkiye SEE for that code \u00d7 1,000 t**, reported to 2 decimal places (rounded half-up).\n\nIf the mill confirms a code that isn't in the table, the figure still can't be computed under these rules.",
+  "usage": {
+    "input_tokens": 984,
+    "output_tokens": 886
+  },
+  "latency_s": 9.7288,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

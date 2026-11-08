@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a1e8158cee10ad8c55976ef1",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Embedded emissions **cannot be calculated using the provided table**. For CN 7201, the table lists factors only for T\u00fcrkiye, China, and India\u2014not the declared country of production, USA.\n\nAlthough the quantity is **1,200 tonnes**, the rules prohibit estimating when the good\u2013country factor is unavailable.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 66
+  },
+  "latency_s": 3.2188,
+  "stop_reason": "completed",
+  "truncated": false
+}

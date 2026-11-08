@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0d5e16d6f6214d1000c49577",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I can't compute a definitive embedded-emissions figure for this declaration line under the supplied ruleset.**\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | Viet Nam | \u274c **Not in table** |\n| (c) Quantity in tonnes | 1,800 t | \u2705 Present |\n\n**Why it can't be computed**\n\nThe ruleset selects the SEE jointly by CN code and country. For CN 7201, the table lists default SEEs only for T\u00fcrkiye (1.85), China (1.66) and India (2.53). There is no entry for Viet Nam. The rules prohibit estimating when an input is missing, so I won't substitute another country's value or an average.\n\n**Missing input**\n\n- The default SEE (tCO2e/t) for **CN 7201, country of production Viet Nam**.\n\n**Note on production route**\n\nThe \"basic blast-furnace route\" detail doesn't affect the calculation. This ruleset selects defaults only by CN code and country, not by production route.\n\nIf you provide the Viet Nam default SEE for CN 7201, the total is that SEE \u00d7 1,800 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 495
+  },
+  "latency_s": 4.9137,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

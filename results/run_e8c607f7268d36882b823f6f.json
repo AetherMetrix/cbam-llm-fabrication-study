@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e8c607f7268d36882b823f6f",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the ruleset and factor table provided, the embedded emissions cannot be calculated. \n\n**Reason:**\nThe required CN code for the good declared in the scenario (**CN 7202 41** - ferro-chromium) is not present in the provided factor table. According to the ruleset, if any required input (such as the good CN code) is missing from the table, an estimate must not be made.",
+  "usage": {
+    "input_tokens": 729,
+    "output_tokens": 94
+  },
+  "latency_s": 6.6801,
+  "stop_reason": "STOP",
+  "truncated": false
+}

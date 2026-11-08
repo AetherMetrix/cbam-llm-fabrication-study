@@ -1,0 +1,15 @@
+{
+  "run_id": "run_49adb1fc243af0c94b77d19f",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Please confirm the correct CN code: the description specifies **7207 11 90**, but the line item declares **7214 20 00**.\n\nThese codes have different T\u00fcrkiye SEE factors (**3.087** versus **2.31 tCO\u2082e/t**). I cannot select a single factor and calculate the total for **1,100 t** until this conflict is resolved.",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 152
+  },
+  "latency_s": 4.9902,
+  "stop_reason": "completed",
+  "truncated": false
+}

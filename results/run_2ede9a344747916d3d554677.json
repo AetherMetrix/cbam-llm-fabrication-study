@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2ede9a344747916d3d554677",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Result: the embedded emissions cannot be finalised until the country of production is confirmed.** The two sources conflict, and the ruleset does not say which one takes precedence.\n\n**Inputs**\n- CN code: 7201 (in the table)\n- Quantity: 1,000 t\n- Country of production: conflicting. The cover note says China; the customs form says India.\n\n**Calculation under each source**\n\n| Source | Country | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|---|\n| Customs form | India | 2.53 | 1,000 | **2,530.00** |\n| Cover note | China | 1.66 | 1,000 | **1,660.00** |\n\nThe difference is 870.00 tCO2e.\n\n**Recommendation**\nConfirm the country of production with the producer or importer, and correct whichever document is wrong before the figure is reported. The customs form is usually the official declaration, which would point to 2,530.00 tCO2e, but that is a judgement this ruleset does not make for you. Once the country is confirmed, the figure for that country is the result to report.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 717
+  },
+  "latency_s": 3.8608,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

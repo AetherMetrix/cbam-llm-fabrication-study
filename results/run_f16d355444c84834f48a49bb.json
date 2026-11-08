@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f16d355444c84834f48a49bb",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron (CN 7201), China\n\n**No final figure can be reported because the declared quantity is inconsistent.**\n\n## Inputs Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201, Pig iron and spiegeleisen |\n| (b) Country listed for that good | \u2705 China, Default SEE = **1.66 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The Quantity Conflict\n\n- **Stated total:** 1,200 t\n- **Sum of shipment lines:** 500 t + 500 t = **1,000 t**\n- **Gap:** 200 t unaccounted for\n\nThe ruleset says not to estimate when a required input is missing. Choosing one figure over the other would be an estimate, so the declared quantity cannot be determined from the information given.\n\n## Conditional Results (for reference only, not for declaration)\n\n| Scenario | Calculation | Embedded emissions |\n|---|---|---|\n| If the line items are correct (1,000 t) | 1,000 \u00d7 1.66 | **1,660.00 tCO2e** |\n| If the stated total is correct (1,200 t) | 1,200 \u00d7 1.66 | **1,992.00 tCO2e** |\n\nThe two scenarios differ by **332.00 tCO2e**.\n\n## Action Required\n\nPlease confirm the actual quantity imported. Possible explanations include:\n1. A missing third shipment line of 200 t\n2. An error in the stated total, which should be 1,000 t\n3. An error in one or both line quantities\n\nOnce the quantity is confirmed and reconciled, the embedded emissions are **confirmed quantity \u00d7 1.66 tCO2e/t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 792
+  },
+  "latency_s": 7.4848,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

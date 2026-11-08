@@ -22,7 +22,8 @@ Target repo: **`AetherMetrix/cbam-llm-fabrication-study`** (public). First push 
 - `SPEC.md` — carries personal-application framing (boundary #4); **stays internal** (engines 02906→api). Pre-registration design is fully captured publicly by PREDICTIONS + rubric + ruleset + tasks + README, so the raw spec is not needed in the repo.
 - `BUILD-STATUS.md`, `authoring/` — engines build log + task generators
 - `__pycache__/`, `*.pyc` — compiled artifacts
-- any real `MODEL_SETTINGS.json` / `GRADER_SETTINGS.json` holding live keys — only the `*.example.json` template is public; keys are read from `RESEARCH_<PROVIDER>_API_KEY` env vars and never committed
+- **`.env*` (e.g. `.env.research`) — live API keys; NEVER published** (the belt excludes `.env*` and fail-closed-caught `.env.research` carrying a real `RESEARCH_ANTHROPIC_API_KEY` at the results-phase push, op 02957).
+- **populated `GRADER_SETTINGS.json` / `MODEL_SETTINGS.json`, `*.key`, `*.pem`** — only the `*.example.json` template is public; keys are read from `RESEARCH_<PROVIDER>_API_KEY` env vars and never committed. The belt excludes these by name.
 
 ## Push procedure — runs ONLY on the operator's explicit go
 1. **Re-run the belt on the final assembled bundle** (`bash publish/leak-scan.sh`) — must be 0 findings. Gate 2 is "belt green on the *assembled* bundle," so this is the last scan, after `MODEL_SETTINGS` lands.

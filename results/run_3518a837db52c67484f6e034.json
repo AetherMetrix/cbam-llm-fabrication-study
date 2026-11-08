@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3518a837db52c67484f6e034",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: no embedded-emissions figure issued until the CN code is resolved.**\n\nThe declaration gives two different CN codes for the same good:\n- **CN-code field:** 7201 (pig iron and spiegeleisen)\n- **Description:** ribbed reinforcing bar, citing CN 7214 20 00\n\nThe ruleset requires the good's CN code to identify the factor, so the two codes produce different results and I cannot tell which one the declarant intended. The product description (ribbed reinforcing bar) matches 7214 20 00, which suggests the 7201 entry is a data-entry error, but I can't assume that.\n\nFor reference only, using the India quantity of 1,500 t:\n\n| CN code used | Good | India SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 2.53 | 1,500 \u00d7 2.53 = **3,795.00** |\n| 7214 20 00 | Bars and rods, with indentations (ribbed rebar) | 4.27 | 1,500 \u00d7 4.27 = **6,405.00** |\n\n**Next step:** The declarant or importer should confirm the correct CN code and correct the declaration. Once the code is confirmed, I will compute the final figure from the matching table entry. If the goods are rebar, the expected result is 6,405.00 tCO2e. If they are pig iron, it is 3,795.00 tCO2e.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 851
+  },
+  "latency_s": 4.542,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

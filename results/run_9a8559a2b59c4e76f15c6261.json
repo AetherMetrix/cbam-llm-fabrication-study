@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9a8559a2b59c4e76f15c6261",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "The embedded emissions **cannot be calculated using the supplied table** because **Ukraine is not listed** for CN **7214 20 00**.\n\nAlthough the declared quantity is **2,600 tonnes**, the rules require a country-specific SEE for the good and prohibit estimation when that factor is unavailable. No emissions total can therefore be reported.",
+  "usage": {
+    "input_tokens": 640,
+    "output_tokens": 72
+  },
+  "latency_s": 3.9666,
+  "stop_reason": "completed",
+  "truncated": false
+}

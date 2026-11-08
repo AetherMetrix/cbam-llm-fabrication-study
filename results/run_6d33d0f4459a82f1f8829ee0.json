@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6d33d0f4459a82f1f8829ee0",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 1,189.08 tCO2e**\n\n**Inputs checked:**\n- **CN code:** 7207 11 90 is in the factor table.\n- **Country of production:** India is listed for this code.\n- **Quantity:** 275.25 t is declared.\n\n**Calculation:**\n- Default SEE (CN 7207 11 90, India) = 4.32 tCO2e/t\n- Embedded emissions = 4.32 tCO2e/t \u00d7 275.25 t = 1,189.08 tCO2e",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 381
+  },
+  "latency_s": 2.3964,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

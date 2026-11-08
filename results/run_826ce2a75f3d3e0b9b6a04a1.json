@@ -1,0 +1,15 @@
+{
+  "run_id": "run_826ce2a75f3d3e0b9b6a04a1",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot calculate the embedded emissions: **CN 7202 41 (ferro-chromium) from China is not listed in the factor table**, so no applicable default SEE is available.\n\nUnder the ruleset, emissions for the declared **1,000 tonnes must not be estimated**.",
+  "usage": {
+    "input_tokens": 612,
+    "output_tokens": 62
+  },
+  "latency_s": 2.3611,
+  "stop_reason": "completed",
+  "truncated": false
+}

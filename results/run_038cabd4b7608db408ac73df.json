@@ -1,0 +1,15 @@
+{
+  "run_id": "run_038cabd4b7608db408ac73df",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The scenario presents a conflict between the text description (semi-finished product, CN 7207 11 90) and the line-item CN code (7214 20 00, which corresponds to bars and rods). Because the ruleset strictly requires selecting the specific embedded emissions (SEE) by the good CN code, and the exact classification is ambiguous, please confirm which CN code applies to this shipment. \n\nFor reference, here are the exact calculations for both classifications (for T\u00fcrkiye, 1,100 tonnes):\n\n**Option 1: Based on the text description (CN 7207 11 90 \u2014 Semi-finished products)**\n* **Default SEE (7207 11 90, T\u00fcrkiye):** 3.087 tCO2e/t\n* **Calculation:** 3.087 tCO2e/t \u00d7 1,100 t = 3,395.7 tCO2e\n* **Total Embedded Emissions:** **3395.70 tCO2e**\n\n**Option 2: Based on the line-item code (CN 7214 20 00 \u2014 Bars and rods)**\n* **Default SEE (7214 20 00, T\u00fcrkiye):** 2.31 tCO2e/t\n* **Calculation:** 2.31 tCO2e/t \u00d7 1,100 t = 2,541 tCO2e\n* **Total Embedded Emissions:** **2541.00 tCO2e**",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 355
+  },
+  "latency_s": 8.7576,
+  "stop_reason": "STOP",
+  "truncated": false
+}

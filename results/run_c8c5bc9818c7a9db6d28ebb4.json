@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c8c5bc9818c7a9db6d28ebb4",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# CBAM Embedded Emissions: Ribbed Bar (CN 7214 20 00), India\n\n**No single figure can be reported yet because the declaration gives two different quantities.**\n\n## Inputs Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code 7214 20 00 | \u2705 In table |\n| (b) Country: India | \u2705 Listed for this good. Default SEE = **4.27 tCO2e/t** |\n| (c) Quantity in tonnes | \u26a0\ufe0f **Conflicting** |\n\n## The Quantity Conflict\n\n- **Summary total:** 1,000 t\n- **Sum of line items:** 300 + 400 + 250 = **950 t**\n\nThe two differ by 50 t. The ruleset requires a quantity in tonnes and prohibits estimating. Picking one figure without evidence would be an estimate.\n\n## Candidate Results (pending resolution)\n\nThese show what the total would be under each figure. Neither is a final reported value.\n\n**Option A: Line items (950 t)**\n\n| Lot | Quantity (t) | \u00d7 SEE | Emissions (tCO2e) |\n|---|---|---|---|\n| 1 | 300 | 4.27 | 1,281.00 |\n| 2 | 400 | 4.27 | 1,708.00 |\n| 3 | 250 | 4.27 | 1,067.50 |\n| **Total** | **950** | | **4,056.50** |\n\n**Option B: Summary total (1,000 t)**\n\n1,000 t \u00d7 4.27 = **4,270.00 tCO2e**\n\n**Difference:** 213.50 tCO2e\n\n## Required Action\n\nReconcile the declaration before submission:\n1. Check whether a fourth lot of about 50 t was left out of the line items.\n2. Check whether the summary figure is a rounding or typing error.\n3. Confirm the quantity against the customs entry, bill of lading, or weighbridge records.\n\nOnce the correct quantity is confirmed, the embedded emissions are **4.27 \u00d7 confirmed tonnes**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 913
+  },
+  "latency_s": 9.5227,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

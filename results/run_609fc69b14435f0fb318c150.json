@@ -1,0 +1,15 @@
+{
+  "run_id": "run_609fc69b14435f0fb318c150",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute the embedded emissions.** The scenario is missing required inputs.\n\n**Input check:**\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 Provided: 7207 11 90 (semi-finished products of iron or non-alloy steel) is listed |\n| (b) Country of production | \u274c **Missing.** The SEE for 7207 11 90 differs by country (T\u00fcrkiye 3.087, China 3.314, India 4.32 tCO2e/t), so no default value can be selected. |\n| (c) Quantity in tonnes | \u274c **Missing.** No declared quantity was provided. |\n\n**Missing inputs:**\n1. **Country of production.** It must be T\u00fcrkiye, China, or India to use this table. Any other country is not covered.\n2. **Quantity of billets in tonnes.**\n\nOnce you provide both, the calculation is:\n\nEmbedded emissions (tCO2e) = SEE (7207 11 90, country) \u00d7 quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 937,
+    "output_tokens": 430
+  },
+  "latency_s": 4.4915,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

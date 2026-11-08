@@ -1,0 +1,15 @@
+{
+  "run_id": "run_60a6994d649f28de1757b381",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "For **CN 7201 pig iron produced in T\u00fcrkiye**, the default SEE is **1.85 tCO\u2082e per tonne**.\n\nEmbedded emissions = 1.85 \u00d7 1,000 = **1,850.00 tCO\u2082e**.",
+  "usage": {
+    "input_tokens": 607,
+    "output_tokens": 57
+  },
+  "latency_s": 6.0711,
+  "stop_reason": "completed",
+  "truncated": false
+}

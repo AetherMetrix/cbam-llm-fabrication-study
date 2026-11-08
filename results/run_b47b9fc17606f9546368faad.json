@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b47b9fc17606f9546368faad",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Using the **declared summary quantity of 4,000 t**:\n\n- Default SEE for **CN 7207 11 90, India**: **4.32 tCO\u2082e/t**\n- Embedded emissions: 4,000 \u00d7 4.32 = **17,280.00 tCO\u2082e** (rounded half-up to 2 decimals)\n\n**Quantity discrepancy:** The line items total 3,500 t, not 4,000 t. If the line-item total is correct, emissions would instead be **15,120.00 tCO\u2082e**. Confirm which quantity is authoritative before finalising.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 244
+  },
+  "latency_s": 7.1715,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_695024fab03089092d83745a",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from the information provided. Two required inputs are missing:\n\n1. **Good CN code.** \"Steel\" does not identify a single CN code. The factor table has four candidate codes that are steel-related (7201, 7206 10 00, 7207 11 90, 7214 20 00), and each has a different default SEE.\n2. **Country of production.** The default SEE depends on the good CN code and the country together. The table lists T\u00fcrkiye, China and India for each code, and no country is given.\n\nThe quantity is provided: 1,000 t.\n\nTo complete the calculation, please supply the CN code of the good and its country of production. The result will then be the default SEE for that pair multiplied by 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 348
+  },
+  "latency_s": 2.7423,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

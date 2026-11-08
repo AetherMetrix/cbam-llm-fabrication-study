@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d3015fa5752047b76c823569",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can't compute embedded emissions for this scenario because CN code **7202 41** (ferro-chromium) is not in the factor table. The ruleset requires the good's CN code to be in the table, so I have not estimated a value.\n\nThe table covers only these CN codes: 7201, 7206 10 00, 7207 11 90, and 7214 20 00. Ferro-chromium is not among them, and no default SEE is given for China for this good. I have not substituted a code from the table, such as the pig iron entry for 7201, because that would apply the wrong default value.\n\nTo proceed, the factor table needs a China default SEE entry for CN 7202 41. Once that value is supplied, the calculation is:\n\nEmbedded emissions = SEE (tCO2e/t) \u00d7 1,000 t",
+  "usage": {
+    "input_tokens": 873,
+    "output_tokens": 336
+  },
+  "latency_s": 2.1329,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

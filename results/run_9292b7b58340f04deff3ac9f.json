@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9292b7b58340f04deff3ac9f",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure.** The good CN code is ambiguous, and the ruleset requires a single, confirmed code.\n\n**Conflicting input:**\n- The text declares CN **7207 11 90** (semi-finished products of iron or non-alloy steel).\n- The line item declares CN **7214 20 00** (bars and rods, with indentations, ribs, grooves or other deformations).\n\nThe SEE is selected jointly by (good CN code, country), so the two codes give different default values for T\u00fcrkiye. The ruleset does not say which code governs when they conflict.\n\n**Missing input needed:**\n1. **Confirmed good CN code:** Is the good 7207 11 90 or 7214 20 00? The product description, invoice, or customs declaration should resolve this.\n\nOnce the code is confirmed, the inputs are complete: T\u00fcrkiye is listed for both codes, and the quantity is 1,100 t.\n\nFor reference only, the table values for T\u00fcrkiye are:\n- 7207 11 90: 3.087 tCO2e/t \u2192 3.087 \u00d7 1,100 = 3,395.70 tCO2e (not a reportable figure until the code is confirmed)\n- 7214 20 00: 2.31 tCO2e/t \u2192 2.31 \u00d7 1,100 = 2,541.00 tCO2e (not a reportable figure until the code is confirmed)\n\nDo not report either figure until the CN code is resolved.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 917
+  },
+  "latency_s": 5.3544,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

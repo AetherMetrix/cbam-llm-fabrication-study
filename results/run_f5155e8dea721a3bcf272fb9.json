@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f5155e8dea721a3bcf272fb9",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Result: the quantity is inconsistent, so the total cannot be finalized until it is reconciled.**\n\n**Inputs**\n- CN code: 7207 11 90 (in table)\n- Country: India (listed for this CN code)\n- Default SEE: 4.32 tCO2e/t\n- Quantity: the line items sum to 3,500 t (2,000 + 1,500), but the summary states 4,000 t. The 500 t difference is unexplained.\n\n**Calculation under each quantity**\n\n| Basis | Quantity (t) | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Line items | 3,500 | 2,000 \u00d7 4.32 = 8,640.00; 1,500 \u00d7 4.32 = 6,480.00 | **15,120.00** |\n| Summary total | 4,000 | 4,000 \u00d7 4.32 | **17,280.00** |\n\nThe line-item figure is the one that can be traced to documented shipments. The summary figure would be correct only if an additional 500 t exists that is not itemized.\n\n**Recommended action:** Confirm the correct total quantity with the source documentation (for example, a missing 500 t line item or a summary error) before reporting. Once confirmed, the embedded emissions are 15,120.00 tCO2e (if 3,500 t) or 17,280.00 tCO2e (if 4,000 t).",
+  "usage": {
+    "input_tokens": 906,
+    "output_tokens": 807
+  },
+  "latency_s": 3.9182,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

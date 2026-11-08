@@ -1,0 +1,15 @@
+{
+  "run_id": "run_05f9ab77f40a822aad46d1c7",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The country of production is inconsistent: the email identifies **T\u00fcrkiye**, while the declaration lists **China**. Since the factor is country-specific, a single definitive total requires confirmation.\n\nFor **CN 7214 20 00**, quantity **2,000 t**:\n\n| Country, if confirmed | SEE (tCO2e/t) | Embedded emissions |\n|---|---:|---:|\n| China | 3.169 | **6,338.00 tCO2e** |\n| T\u00fcrkiye | 2.31 | **4,620.00 tCO2e** |\n\nBoth totals are rounded half-up to 2 decimal places. **Please confirm the country of production before finalising the result.**",
+  "usage": {
+    "input_tokens": 636,
+    "output_tokens": 260
+  },
+  "latency_s": 8.0194,
+  "stop_reason": "completed",
+  "truncated": false
+}

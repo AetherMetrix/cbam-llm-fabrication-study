@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7435088ebbd48bcddd6d30f0",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Missing input:**\n\n- **Country of production.** The default SEE is selected jointly by CN code and country, so the country is required. The scenario does not state where the 1,000 t of pig iron was produced.\n\n**Inputs that are present and valid:**\n\n- **Good CN code:** 7201 is in the factor table (Pig iron and spiegeleisen, in pigs, blocks or other primary forms).\n- **Quantity:** 1,000 t.\n\n**Calculation once the country is provided:**\n\nEmbedded emissions (tCO2e) = Default SEE for (CN 7201, country) \u00d7 1,000 t, rounded half-up to 2 decimal places.\n\nThe country must be one of the countries listed for CN 7201 in the factor table: T\u00fcrkiye, China, or India. If the country is not one of these, the good-and-country pair is not in the table and no figure can be given.",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 715
+  },
+  "latency_s": 4.0159,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

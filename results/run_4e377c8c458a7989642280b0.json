@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4e377c8c458a7989642280b0",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions figure under the supplied ruleset because the provided data is insufficient. \n\nThe following specific required input is missing:\n- **Good CN code** (currently listed as \"to be confirmed\", which is required to select the corresponding default specific embedded emissions factor from the table).",
+  "usage": {
+    "input_tokens": 768,
+    "output_tokens": 65
+  },
+  "latency_s": 4.4566,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_aad87e1918a834d59f336d35",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# Embedded Emissions: Ribbed Bar (CN 7214 20 00), 2,000 t\n\n**I can't give a single figure because the country of production is ambiguous.** The ruleset selects the default value by both CN code and country, and the two sources disagree:\n\n- **Email:** the mill is in T\u00fcrkiye.\n- **Declaration header:** the country of production is China.\n\nThe ruleset says not to estimate when a required input is missing, and here it is uncertain. Choosing one source over the other would be a guess, and the two results differ by about 37%.\n\n## Possible Results\n\n| Country of production | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| T\u00fcrkiye | 2.31 | 2,000 | **4,620.00** |\n| China | 3.169 | 2,000 | **6,338.00** |\n\nThe difference is **1,718.00 tCO2e**.\n\n## Next Steps\n\n1. **Confirm where the bars were actually produced.** Country of production means where the goods were manufactured, not the shipping origin or the seller's location. Mill certificates, the certificate of origin, or the supplier's installation details should settle it.\n2. **Correct whichever document is wrong.** If the mill is in T\u00fcrkiye, the declaration header needs amending. If production was in China, the email is inaccurate.\n3. **Report the matching figure** from the table above once the country is confirmed.",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 707
+  },
+  "latency_s": 7.8857,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

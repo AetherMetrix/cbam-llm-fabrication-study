@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a4a2e50a7ae944160777b46e",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions **cannot be computed**. \n\n**Reason:**\nAccording to the ruleset, a required input is the country of production listed for that good in the table, and if any required input is not in the table, no estimate should be made. While the CN code `7214 20 00` is present in the factor table, the specified country of production (**United States**) is not listed (only T\u00fcrkiye, China, and India are available).",
+  "usage": {
+    "input_tokens": 708,
+    "output_tokens": 113
+  },
+  "latency_s": 5.66,
+  "stop_reason": "STOP",
+  "truncated": false
+}

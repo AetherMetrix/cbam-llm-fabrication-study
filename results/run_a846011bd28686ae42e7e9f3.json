@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a846011bd28686ae42e7e9f3",
+  "task_id": "A02",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "For **CN 7201 produced in China**, the default SEE is **1.66 tCO\u2082e per tonne**.\n\nEmbedded emissions = 2,500 t \u00d7 1.66 tCO\u2082e/t = **4,150.00 tCO\u2082e**.",
+  "usage": {
+    "input_tokens": 645,
+    "output_tokens": 61
+  },
+  "latency_s": 2.5246,
+  "stop_reason": "completed",
+  "truncated": false
+}

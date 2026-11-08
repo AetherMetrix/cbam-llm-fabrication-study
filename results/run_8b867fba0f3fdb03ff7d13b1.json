@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8b867fba0f3fdb03ff7d13b1",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure because the CN code is inconsistent: the product text specifies **7207 11 90**, while the line item declares **7214 20 00**.\n\n**Input requiring clarification:** the correct CN code for the good.\n\nThe country (**T\u00fcrkiye**) and quantity (**1,100 tonnes**) are provided, but the conflicting codes select different SEE factors. Please confirm which CN code applies.",
+  "usage": {
+    "input_tokens": 673,
+    "output_tokens": 114
+  },
+  "latency_s": 4.8782,
+  "stop_reason": "completed",
+  "truncated": false
+}

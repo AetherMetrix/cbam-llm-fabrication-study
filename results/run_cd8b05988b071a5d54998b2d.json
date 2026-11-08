@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cd8b05988b071a5d54998b2d",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario because the quantity is inconsistent.\n\n**What is established:**\n- CN 7206 10 00 (ingots of iron and non-alloy steel) with country of production T\u00fcrkiye is in the factor table.\n- The default SEE for this pair is **1.96 tCO2e/t**.\n\n**What is missing or unresolved:**\n- **Confirmed quantity in tonnes.** The three equal lots of 1,000 t sum to 3,000 t, but the declared total is 3,500 t. The ruleset requires a single quantity, and the two sources disagree by 500 t. The difference could be an unlisted fourth lot of 500 t, a transcription error in either the lot sizes or the total, or a different lot composition. The declaration needs to be corrected or the missing lot documented before a figure can be reported.\n\nFor reference only, the arithmetic under each reading is:\n- 3,000 t \u00d7 1.96 = 5,880.00 tCO2e (sum of the lots)\n- 3,500 t \u00d7 1.96 = 6,860.00 tCO2e (declared total)\n\nNeither figure should be reported as the embedded emissions until the quantity is reconciled. Once the correct quantity is confirmed, the result will be that quantity multiplied by 1.96, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 965,
+    "output_tokens": 981
+  },
+  "latency_s": 4.967,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

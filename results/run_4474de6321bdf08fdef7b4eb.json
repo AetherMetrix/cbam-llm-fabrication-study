@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4474de6321bdf08fdef7b4eb",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Result: the embedded emissions cannot be finalised until the quantity discrepancy is resolved.** The two candidate figures are below.\n\n**Inputs**\n- CN code: 7214 20 00 (bars and rods, ribbed) is in the table.\n- Country: India is listed for this CN code.\n- Default SEE: 4.27 tCO2e/t.\n\n**Quantity discrepancy**\n- Summary total: 1,000 t\n- Line items: 300 t + 400 t + 250 t = 950 t\n- Unaccounted difference: 50 t\n\n**Calculations**\n\n| Quantity basis | Quantity (t) | \u00d7 SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Declared summary total | 1,000.00 | 4.27 | **4,270.00** |\n| Sum of itemised lots | 950.00 | 4.27 | **4,056.50** |\n\nThe difference is 213.50 tCO2e.\n\n**Recommendation:** Ask the declarant to reconcile the summary total with the line items, either by confirming the 50 t difference or correcting the total. Use the reconciled quantity for the final declaration. If the 1,000 t summary is confirmed as correct, the figure is 4,270.00 tCO2e. If the three lots are confirmed as complete, the figure is 4,056.50 tCO2e.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 958
+  },
+  "latency_s": 4.9777,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a795953301a3538a32106faa",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the ruleset and factor table provided, there is a discrepancy in the required quantity input: the sum of the line items (2,000 t + 1,500 t = 3,500 t) does not match the stated summary total (4,000 t). Because the ruleset prohibits estimating when required inputs are ambiguous or conflicting, below are the exact calculations for both quantity representations so you can apply the one that reflects your verified customs declaration:\n\n**Inputs from Factor Table:**\n* **Good CN Code:** 7207 11 90\n* **Country of Production:** India\n* **Default SEE:** 4.32 tCO2e/t\n\n**Option 1: Based on the sum of the line items (3,500 tonnes)**\n* **Quantity:** 2,000 t + 1,500 t = 3,500 t\n* **Calculation:** 3,500 t \u00d7 4.32 tCO2e/t = 15,120 tCO2e\n* **Total Embedded Emissions:** **15120.00 tCO2e** (or 8,640.00 tCO2e and 6,480.00 tCO2e individually)\n\n**Option 2: Based on the summary total (4,000 tonnes)**\n* **Quantity:** 4,000 t\n* **Calculation:** 4,000 t \u00d7 4.32 tCO2e/t = 17,280 tCO2e\n* **Total Embedded Emissions:** **17280.00 tCO2e**\n\n*(Note: Please reconcile the 500 t difference between the line items and the summary total to ensure accurate CBAM reporting).*",
+  "usage": {
+    "input_tokens": 732,
+    "output_tokens": 409
+  },
+  "latency_s": 10.4972,
+  "stop_reason": "STOP",
+  "truncated": false
+}

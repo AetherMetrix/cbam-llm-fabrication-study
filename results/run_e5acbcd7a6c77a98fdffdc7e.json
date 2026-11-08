@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e5acbcd7a6c77a98fdffdc7e",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Embedded emissions **cannot be calculated yet** because the CN code is missing. The description \u201csteel long product\u201d does not identify a specific entry in the table.\n\nThe quantity (**1,000 t**) and country of production (**T\u00fcrkiye**) are provided. Please confirm the good\u2019s CN code so the corresponding country-specific SEE can be selected. Under the ruleset, no estimate can be made without it.",
+  "usage": {
+    "input_tokens": 638,
+    "output_tokens": 84
+  },
+  "latency_s": 3.2785,
+  "stop_reason": "completed",
+  "truncated": false
+}

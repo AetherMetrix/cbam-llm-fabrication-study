@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d090764a82576de31c9705ea",
+  "task_id": "A15",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions: CN 7207 11 90, China\n\n## Inputs\n\n| Required input | Value | Status |\n|---|---|---|\n| (a) CN code | 7207 11 90, semi-finished products of iron or non-alloy steel | \u2714 In table |\n| (b) Country of production | China | \u2714 Listed for this CN code |\n| (c) Quantity | 15,000 tonnes | \u2714 Provided |\n\nThe scenario describes the steel as \"Chinese,\" which I have taken to mean China is the country of production.\n\n## Factor Selected\n\nThe SEE is selected by CN code and country together:\n- CN 7207 11 90, China: **3.314 tCO2e/t**\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 quantity\n= 3.314 tCO2e/t \u00d7 15,000 t\n= **49,710.00 tCO2e**\n\n## Result\n\n**Total embedded emissions: 49,710.00 tCO2e**",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 397
+  },
+  "latency_s": 4.007,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

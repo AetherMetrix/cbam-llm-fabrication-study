@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c4a921a6c8d53255f46943b3",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot calculate embedded emissions using the provided table: **United States is not listed for CN 7214 20 00**.\n\nAlthough the quantity is given as **1,200 tonnes**, no applicable country-specific SEE is available. Under the ruleset, no estimate may be made.",
+  "usage": {
+    "input_tokens": 615,
+    "output_tokens": 61
+  },
+  "latency_s": 2.8885,
+  "stop_reason": "completed",
+  "truncated": false
+}

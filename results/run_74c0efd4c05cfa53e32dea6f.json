@@ -1,0 +1,15 @@
+{
+  "run_id": "run_74c0efd4c05cfa53e32dea6f",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: not estimated.** The inputs don't meet the ruleset's requirements.\n\n**Missing required input: CN code.** The datasheet gives a description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") but no CN code. The SEE value is selected jointly by CN code and country, so the country (India) and quantity (600 t) cannot be applied without one. The description also matches more than one heading in the factor table:\n\n- **7201** (pig iron and spiegeleisen, in pigs, blocks or other primary forms)\n- **7206 10 00** (ingots of iron and non-alloy steel)\n- **7207 11 90** (semi-finished products of iron or non-alloy steel, containing less than 0.25% carbon)\n\nEach has a different India default SEE, so the result depends on which code applies. The 0.2% carbon figure points toward 7207, but that is an inference from the description, not a declared CN code, so I have not used it.\n\n**To complete the calculation, please provide:**\n1. The declared 8-digit CN code for the good (confirm against the product's customs classification).\n2. Confirmation that the country of production is India (already stated) and that the quantity is 600 t (already stated).\n\nOnce the CN code is confirmed and matches a table entry for India, the calculation is: embedded emissions (tCO2e) = India default SEE for that code \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 810
+  },
+  "latency_s": 4.3417,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

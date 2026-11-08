@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9cd60d339648aa38fc3d51a8",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute a definitive embedded-emissions figure\n\nThe ruleset selects the default SEE by CN code and country together, so the good's CN code must be known. The scenario gives two conflicting codes:\n\n| Source | CN code | Good | SEE for T\u00fcrkiye (tCO2e/t) |\n|---|---|---|---|\n| Product description | 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| Declared line item | 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations | 2.31 |\n\nBoth codes are in the table for T\u00fcrkiye, but they carry different default values. Nothing in the ruleset says which source takes precedence, so choosing one would be an estimate.\n\n## Missing input\n\n- **(a) A single confirmed CN code for the good.** You need to settle whether the good is classified under 7207 11 90 or 7214 20 00, for example by correcting the declaration line item or confirming the product description.\n\nThe other required inputs are present and valid:\n- **(b) Country of production:** T\u00fcrkiye is listed for both candidate codes.\n- **(c) Quantity:** 1,100 t.\n\n## For reference only (not a determination)\n\nOnce the CN code is confirmed, the calculation is SEE \u00d7 1,100 t:\n\n- If CN 7207 11 90: 3.087 \u00d7 1,100 = **3,395.70 tCO2e**\n- If CN 7214 20 00: 2.31 \u00d7 1,100 = **2,541.00 tCO2e**\n\nThe two results differ by 854.70 tCO2e. The classification needs to be resolved before you report a figure.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 936
+  },
+  "latency_s": 10.982,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

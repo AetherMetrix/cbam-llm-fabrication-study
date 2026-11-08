@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4c4634b963a5323a5b90fc86",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot compute: no default value for this good and country\n\nThe embedded emissions for this declaration cannot be determined under the supplied ruleset.\n\n## Input check\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods / ribbed bar) | \u2705 Yes |\n| (b) Country of production | Russian Federation | \u274c **No** |\n| (c) Quantity | 2,200 t | \u2705 Yes |\n\n## Reason\n\nDefault SEE values are selected jointly by CN code and country. For CN 7214 20 00, the table lists values only for:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for the **Russian Federation**. The ruleset prohibits estimating when a required input is not in the table, so I have not substituted another country's value, an average, or a maximum.\n\n## Missing input\n\n- **Default SEE (tCO2e/t) for CN 7214 20 00 with country of production Russian Federation.** This entry must be added to the factor table.\n\nOnce that value is supplied, the result would be: Embedded emissions = SEE \u00d7 2,200 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 973,
+    "output_tokens": 496
+  },
+  "latency_s": 5.0276,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

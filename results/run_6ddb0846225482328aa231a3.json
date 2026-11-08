@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6ddb0846225482328aa231a3",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Cannot compute the embedded emissions. According to the ruleset, the calculation requires:\n(a) Good CN code (provided: 7201)\n(b) Country of production listed for that good (missing)\n(c) Quantity in tonnes (missing)\n\nBecause the country of production and the quantity in tonnes are missing from the scenario, an estimate cannot be made. Please provide the country of production (T\u00fcrkiye, China, or India) and the quantity in tonnes.",
+  "usage": {
+    "input_tokens": 696,
+    "output_tokens": 103
+  },
+  "latency_s": 13.0932,
+  "stop_reason": "STOP",
+  "truncated": false
+}

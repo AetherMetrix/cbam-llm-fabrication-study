@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0ec0b3225498a75b670858ca",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: Not Computed\n\n**Reason:** The CN code is missing, which is a required input.\n\nThe ruleset says the default SEE is selected jointly by (CN code, country). If any required input is missing, no estimate may be made.\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u274c **Missing.** The description doesn't settle the heading. |\n| (b) Country of production | \u2705 India (listed for all goods in the table) |\n| (c) Quantity in tonnes | \u2705 600 t |\n\n## Why the description isn't enough\n\n\"Semi-finished steel product, continuously cast, carbon ~0.2%\" plausibly matches more than one row for India, and the SEE values differ:\n\n| CN code | Table description (truncated) | SEE, India (tCO2e/t) |\n|---|---|---|\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel, contai... | 4.32 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap... | 2.64 |\n\nThe table descriptions are truncated, so I can't verify the full criteria, such as the carbon threshold or cross-section, against the datasheet. Choosing one would mean guessing at classification. That guess would change the result by about 64%, and the ruleset forbids it.\n\n## What's needed to finish\n\nPlease provide the **declared CN code** for this good, for example from the customs declaration or supplier documentation. Once it's confirmed:\n\n**Embedded emissions = SEE (CN code, India) \u00d7 600 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 899
+  },
+  "latency_s": 9.6152,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

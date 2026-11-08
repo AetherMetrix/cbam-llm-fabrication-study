@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f8eb89596cbe66dc312a86ea",
+  "task_id": "A02",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "For CN **7201** produced in **China**, the default SEE is **1.66 tCO2e/t**.\n\nEmbedded emissions = 2,500 t \u00d7 1.66 tCO2e/t = **4,150.00 tCO2e**.",
+  "usage": {
+    "input_tokens": 608,
+    "output_tokens": 61
+  },
+  "latency_s": 3.4561,
+  "stop_reason": "completed",
+  "truncated": false
+}

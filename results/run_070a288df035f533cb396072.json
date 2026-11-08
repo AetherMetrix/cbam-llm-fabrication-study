@@ -1,0 +1,15 @@
+{
+  "run_id": "run_070a288df035f533cb396072",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: CN code missing\n\nThe ruleset requires three inputs before a calculation can be made:\n\n| Required input | Provided? |\n|---|---|\n| (a) Good CN code in the table | \u274c **Missing.** \"Steel goods\" is not a CN code. |\n| (b) Country of production listed for that good | \u2705 India (listed for all goods in the table) |\n| (c) Quantity in tonnes | \u2705 3,000 t |\n\nDefault SEE values are selected jointly by CN code and country. For India they range from 2.53 to 4.32 tCO2e/t depending on the good, so \"steel goods\" does not identify a single factor. Under the ruleset, I cannot estimate or pick one.\n\n## Possible results, depending on the CN code\n\nThese figures are for reference only. None is a determination until you confirm the CN code.\n\n| CN code | Good | SEE (India) | Embedded emissions for 3,000 t |\n|---|---|---|---|\n| 7201 | Pig iron and spiegeleisen* | 2.53 | 7,590.00 tCO2e |\n| 7206 10 00 | Ingots, iron/non-alloy steel | 2.64 | 7,920.00 tCO2e |\n| 7207 11 90 | Semi-finished products, iron/non-alloy steel | 4.32 | 12,960.00 tCO2e |\n| 7214 20 00 | Bars and rods, iron/non-alloy steel, with indentations | 4.27 | 12,810.00 tCO2e |\n\n*Pig iron is generally not considered a \"steel\" good, but it is included for completeness.\n\n## Next step\n\nPlease provide the specific CN code of the goods produced. If the 3,000 t covers more than one good, give the tonnage for each CN code. I will then calculate the embedded emissions, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 814
+  },
+  "latency_s": 7.9868,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

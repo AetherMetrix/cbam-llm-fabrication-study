@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6759c29af113e990cc4eb8c0",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded emissions figure based on the information provided. \n\nUnder the supplied ruleset, the specific embedded emissions (SEE) must be selected jointly by the good's CN code and the country of production. The following required input is missing:\n\n* **Good CN code**: No CN code is provided for the semi-finished steel product, and as noted in the scenario, the product description alone is insufficient to definitively assign a single CN code from the factor table.",
+  "usage": {
+    "input_tokens": 771,
+    "output_tokens": 102
+  },
+  "latency_s": 6.0842,
+  "stop_reason": "STOP",
+  "truncated": false
+}

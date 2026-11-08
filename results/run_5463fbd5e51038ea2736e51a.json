@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5463fbd5e51038ea2736e51a",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**No embedded-emissions total can be issued for this scenario yet.** The two origin fields conflict, and the ruleset requires one listed country of production to select the default SEE value.\n\n**What's needed:** Confirm the country of production for the CN 7206 10 00 ingots (India or T\u00fcrkiye, per the conflicting fields). Once confirmed, the calculation is:\n\nEmbedded emissions = SEE (tCO2e/t) \u00d7 750 t\n\n**Table lookups for the two candidate origins:**\n\n| CN code | Good | Country | Default SEE (tCO2e/t) |\n|---|---|---|---|\n| 7206 10 00 | Ingots, of iron and non-alloy steel | India | 2.64 |\n| 7206 10 00 | Ingots, of iron and non-alloy steel | T\u00fcrkiye | 1.96 |\n\nBoth countries are listed for this CN code, so either would be valid once the origin is resolved. The supplier declaration, purchase contract, or certificate of origin should settle which applies. Using the wrong origin would misstate the emissions, so the conflict should be corrected in the source records before reporting.",
+  "usage": {
+    "input_tokens": 893,
+    "output_tokens": 893
+  },
+  "latency_s": 4.9662,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

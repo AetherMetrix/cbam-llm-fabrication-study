@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2940ef289a54d8b909df7fbf",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "I can't calculate the embedded emissions yet because two required inputs are missing.\n\n**Missing inputs:**\n- **Country of production.** CN 7207 11 90 has default values for T\u00fcrkiye, China, and India. The country determines which factor applies.\n- **Quantity in tonnes.** The total is the default SEE multiplied by the declared quantity.\n\n**Available default values for CN 7207 11 90 (tCO2e per tonne):**\n- T\u00fcrkiye: 3.087\n- China: 3.314\n- India: 4.32\n\nOnce you provide the country of production and the quantity in tonnes, I'll calculate the total, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 879,
+    "output_tokens": 330
+  },
+  "latency_s": 2.0467,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d49a20e26a2109c1dfcf8a32",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Embedded emissions cannot be calculated yet\n\nThe **country of production** is missing. The email says it is on a mill certificate that was not included. The ruleset selects the default SEE by both CN code and country, and says not to estimate when a required input is missing.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country of production | \u274c Not provided (on a mill certificate not received) |\n| (c) Quantity in tonnes | \u2705 3,300 t |\n\n## Why country matters\n\nThe default SEE for CN 7207 11 90 differs by country:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 3.087 |\n| China | 3.314 |\n| India | 4.32 |\n\nThe result could differ by about 40% depending on the country, so no figure is given until it is confirmed.\n\n## Next step\n\nPlease send the **mill certificate** or confirm the **country of production**. If the country is not T\u00fcrkiye, China or India, there is no default value for it in this table, and the calculation cannot be done under this ruleset.\n\nOnce confirmed, the calculation will be:\n\n> **Embedded emissions (tCO2e) = Default SEE (country, CN 7207 11 90) \u00d7 3,300 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 708
+  },
+  "latency_s": 9.048,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

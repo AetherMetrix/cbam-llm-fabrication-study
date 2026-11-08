@@ -1,0 +1,15 @@
+{
+  "run_id": "run_568a5e15aa4f046bc72f6a5b",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute the embedded emissions for this line. The good and quantity are valid, but the country is not.\n\n**Input check:**\n\n| Input | Status |\n|---|---|\n| (a) Good CN code | **Valid.** CN 7201 (pig iron) is in the factor table. |\n| (b) Country of production | **Missing for this good.** USA is not listed for CN 7201. The table lists only T\u00fcrkiye, China, and India. |\n| (c) Quantity | **Valid.** 1,200 t net mass. |\n\n**Missing input:**\n- A country of production that has a default SEE for CN 7201 in the supplied table. The declared USA does not, so no default SEE can be selected.\n\nThe ruleset does not provide a fallback for countries without a listed default value, so I have not estimated a figure.\n\n**To complete the calculation, one of the following is needed:**\n1. Confirmation that the country of production is one of the listed countries (T\u00fcrkiye, China, or India), if the USA entry is an error.\n2. A ruleset or factor table that includes a default SEE for CN 7201 from the USA.\n\nOnce a valid SEE is available, the calculation is 1,200 t \u00d7 SEE (tCO2e/t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 626
+  },
+  "latency_s": 3.6136,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

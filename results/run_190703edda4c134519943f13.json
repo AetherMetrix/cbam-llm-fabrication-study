@@ -1,0 +1,15 @@
+{
+  "run_id": "run_190703edda4c134519943f13",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute a definitive embedded-emissions figure\n\n## Inputs Confirmed\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron and spiegeleisen) | \u2705 Found |\n| (b) Country listed for that good | China | \u2705 Found, SEE = **1.66 tCO2e/t** |\n| (c) Quantity in tonnes | Conflicting values | \u274c **Not determinable** |\n\n## Why I Cannot Compute\n\nThe declared quantity is internally inconsistent:\n\n- **Stated total:** 1,200 t\n- **Sum of shipment lines:** 500 t + 500 t = **1,000 t**\n- **Discrepancy:** 200 t unaccounted for\n\nThe ruleset requires a single quantity in tonnes. I cannot choose between 1,200 t and 1,000 t, or assume a missing line, without estimating, which the rules prohibit.\n\n## Missing Input Required\n\n1. **A confirmed, reconciled quantity (in tonnes) of CN 7201 pig iron produced in China.** One of the following is needed:\n   - Confirmation that the correct total is **1,000 t**, meaning the 1,200 t stated total is an error.\n   - Confirmation that the correct total is **1,200 t**, with the missing **200 t** shipment line(s) identified and confirmed as CN 7201, country of production China.\n\nOnce the quantity is reconciled, the calculation is: confirmed tonnes \u00d7 1.66 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 849
+  },
+  "latency_s": 9.2483,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

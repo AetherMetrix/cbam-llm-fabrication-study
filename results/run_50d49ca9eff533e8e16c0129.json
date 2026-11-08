@@ -1,0 +1,15 @@
+{
+  "run_id": "run_50d49ca9eff533e8e16c0129",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset, default values are country-specific and must be selected jointly by the good's CN code and the country of production. \n\nBecause there is a conflict in the provided scenario regarding the country of production\u2014the email states the mill is in **T\u00fcrkiye**, while the declaration header lists **China**\u2014a single definitive calculation cannot be confirmed without resolving the discrepancy. Under the ruleset, we cannot estimate or guess which document takes precedence. \n\nFor compliance clarity, here are the exact calculations under both stated countries for **2,000 tonnes** of **CN 7214 20 00**:\n\n* **If the country of production is T\u00fcrkiye:**\n  * Default SEE = 2.31 tCO2e/t\n  * Embedded emissions = 2,000 t \u00d7 2.31 tCO2e/t = **4620.00 tCO2e**\n\n* **If the country of production is China:**\n  * Default SEE = 3.169 tCO2e/t\n  * Embedded emissions = 2,000 t \u00d7 3.169 tCO2e/t = **6338.00 tCO2e**\n\nPlease verify and confirm the actual country of production to finalize the CBAM declaration.",
+  "usage": {
+    "input_tokens": 729,
+    "output_tokens": 290
+  },
+  "latency_s": 7.4169,
+  "stop_reason": "STOP",
+  "truncated": false
+}

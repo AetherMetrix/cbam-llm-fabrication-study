@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f30c1c19f380359167bad1a3",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions **cannot be computed**. \n\n**Reason:**\nThe country of production specified in the scenario (**United States**) is not listed in the factor table for good CN code **7214 20 00** (which only lists T\u00fcrkiye, China, and India). According to the ruleset, if the country of production listed for that good is not in the table, no estimate should be made.",
+  "usage": {
+    "input_tokens": 708,
+    "output_tokens": 101
+  },
+  "latency_s": 4.212,
+  "stop_reason": "STOP",
+  "truncated": false
+}

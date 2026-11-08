@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ee71b4730ff9cc2b3ac37e12",
+  "task_id": "A11",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "To compute the embedded emissions, we use the provided ruleset and factor table:\n\n1. **Identify Required Inputs:**\n   - **Good CN Code:** 7214 20 00\n   - **Country of Production:** China\n   - **Quantity:** 1500 tonnes\n\n2. **Look Up Default Specific Embedded Emissions (SEE):**\n   - For CN code `7214 20 00` and country `China`, the default SEE is **3.169 tCO2e/t**.\n\n3. **Calculate Embedded Emissions:**\n   - $\\text{Embedded Emissions} = \\text{SEE} \\times \\text{Quantity}$\n   - $\\text{Embedded Emissions} = 3.169 \\text{ tCO2e/t} \\times 1500 \\text{ t} = 4753.5 \\text{ tCO2e}$\n\n**Total Embedded Emissions:** 4753.50 tCO2e",
+  "usage": {
+    "input_tokens": 703,
+    "output_tokens": 223
+  },
+  "latency_s": 4.3588,
+  "stop_reason": "STOP",
+  "truncated": false
+}

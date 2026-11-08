@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ad16aa4975335c171a18f326",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Cannot compute the embedded-emissions figure using the supplied table: **CN 7202 41 (ferro-chromium) is not listed**.\n\nMissing required input:\n- A table-listed default SEE for **CN 7202 41 produced in India**.\n\nThe country (**India**) and quantity (**700 tonnes**) are provided, but no emissions factor for another CN code may be substituted.",
+  "usage": {
+    "input_tokens": 674,
+    "output_tokens": 84
+  },
+  "latency_s": 3.8103,
+  "stop_reason": "completed",
+  "truncated": false
+}

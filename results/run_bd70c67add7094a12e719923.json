@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bd70c67add7094a12e719923",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Cannot compute a definitive figure\n\nThe embedded emissions can't be determined because the **country of production is unresolved**.\n\n## Why\n\nUnder the ruleset, the default SEE is selected jointly by CN code and country of production. The scenario gives two conflicting countries for CN 7201:\n\n| Source | Country of production | Default SEE (tCO2e/t) |\n|---|---|---|\n| Cover note | China | 1.66 |\n| Customs form | India | 2.53 |\n\nBoth countries are in the table, but they give materially different factors. The ruleset gives no basis for choosing between the cover note and the customs form, so choosing one would be an estimate, which the rules don't allow.\n\n## Input status\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201, present |\n| (b) Country of production | \u274c **Missing (conflicting).** A single, confirmed country is needed. The cover note says China and the customs form says India. |\n| (c) Quantity in tonnes | \u2705 1,000 t |\n\n## Next step\n\nConfirm the actual country of production, for example from the supplier's installation data or a corrected customs or origin document. With that confirmed, the calculation is SEE \u00d7 1,000 t, rounded half-up to 2 decimal places, using the matching factor from the table above.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 693
+  },
+  "latency_s": 7.3356,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

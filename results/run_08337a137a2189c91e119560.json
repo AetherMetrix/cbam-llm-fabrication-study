@@ -1,0 +1,15 @@
+{
+  "run_id": "run_08337a137a2189c91e119560",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the definitive embedded emissions figure because the provided data is insufficient under the supplied ruleset. \n\nThe following specific required input is missing:\n- **Good CN code**: The CN code is listed as \"(to be confirmed)\" and the description \"steel long product\" does not specify an exact CN code from the provided factor table (7201, 7206 10 00, 7207 11 90, or 7214 20 00).",
+  "usage": {
+    "input_tokens": 768,
+    "output_tokens": 115
+  },
+  "latency_s": 4.426,
+  "stop_reason": "STOP",
+  "truncated": false
+}

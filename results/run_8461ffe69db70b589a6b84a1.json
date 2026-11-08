@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8461ffe69db70b589a6b84a1",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Embedded emissions cannot be computed\n\nI cannot compute a definitive embedded-emissions figure for this declaration. The good's CN code is unresolved, and under the ruleset the default SEE depends jointly on the CN code and the country.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code | **Unresolved.** The form lists two conflicting codes: 7201 and 7206 10 00. |\n| (b) Country of production | China. It is in the table for both codes. |\n| (c) Quantity | 900 t. |\n\n## Why the conflict blocks the calculation\n\nThe two codes cover different goods and carry different SEE values for China:\n\n- **7201** (pig iron and spiegeleisen): 1.66 tCO2e/t\n- **7206 10 00** (ingots of iron and non-alloy steel): 1.74 tCO2e/t\n\nThe narrative description \"pig iron\" matches the wording of 7201. However, the form itself declares two codes, and the ruleset requires a single CN code. Choosing between them is a classification decision, and picking one would mean estimating, which the rules do not allow.\n\n## Missing input\n\n1. **A single, confirmed CN code for the good** (7201 or 7206 10 00), consistent across the declaration.\n\nOnce the CN code is confirmed, the calculation is SEE \u00d7 900 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 959,
+    "output_tokens": 793
+  },
+  "latency_s": 8.4347,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

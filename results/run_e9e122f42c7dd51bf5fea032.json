@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e9e122f42c7dd51bf5fea032",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# CBAM Embedded Emissions: Ribbed Bar (CN 7214 20 00), India\n\n## Quantity discrepancy\n\nThe declaration gives two different quantities:\n\n| Source | Quantity |\n|---|---|\n| Summary total | 1,000 t |\n| Line items (300 + 400 + 250) | **950 t** |\n| **Difference** | **50 t** |\n\nBecause these conflict, the declared quantity cannot be determined from the information provided. The ruleset requires a definitive quantity and does not allow estimating, so I cannot report a single total. Both possible results are shown below.\n\n## Factor\n\n- CN 7214 20 00 (bars and rods with indentations, i.e. ribbed bar), country India\n- **Default SEE = 4.27 tCO2e/t**\n\n## Calculations\n\n| Basis | Quantity (t) | \u00d7 SEE | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Line items | 950 | 4.27 | **4,056.50** |\n| Summary total | 1,000 | 4.27 | **4,270.00** |\n\nLine-item breakdown:\n- Lot 1: 300 t \u00d7 4.27 = 1,281.00 tCO2e\n- Lot 2: 400 t \u00d7 4.27 = 1,708.00 tCO2e\n- Lot 3: 250 t \u00d7 4.27 = 1,067.50 tCO2e\n- **Sum: 4,056.50 tCO2e**\n\nThe two results differ by **213.50 tCO2e** (50 t \u00d7 4.27).\n\n## Next steps\n\n1. Reconcile the declaration with the declarant or the shipping and customs records. Check whether a fourth lot of 50 t is missing from the line items or whether the summary is wrong.\n2. Once the quantity is confirmed, report:\n   - **4,056.50 tCO2e** if the quantity is 950 t, or\n   - **4,270.00 tCO2e** if the quantity is 1,000 t.\n\nThe line items are more granular and add up internally, so they may be the more reliable basis. However, this should be confirmed rather than assumed.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 900
+  },
+  "latency_s": 8.7254,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

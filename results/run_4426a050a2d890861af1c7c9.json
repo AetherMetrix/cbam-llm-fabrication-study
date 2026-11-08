@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4426a050a2d890861af1c7c9",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Based on the provided ruleset, default values are country-specific and must be selected jointly by the good's CN code and the country of production. \n\nIn the given scenario, there is a conflict regarding the required input **(b) country of production**: the email indicates the mill is in **T\u00fcrkiye**, while the declaration header lists **China**. Because the ruleset provides no rule on whether an email or a declaration header takes precedence, the exact country of production is ambiguous.\n\nHere are the calculations for both listed countries so you can apply the correct figure once the discrepancy in the compliance documentation is resolved:\n\n**Option 1: If the country of production is T\u00fcrkiye (per the email)**\n* **CN Code:** 7214 20 00\n* **Country:** T\u00fcrkiye\n* **Default SEE:** 2.31 tCO2e/t\n* **Quantity:** 2,000 t\n* **Calculation:** 2.31 \u00d7 2,000 = **4,620.00 tCO2e**\n\n**Option 2: If the country of production is China (per the declaration header)**\n* **CN Code:** 7214 20 00\n* **Country:** China\n* **Default SEE:** 3.169 tCO2e/t\n* **Quantity:** 2,000 t\n* **Calculation:** 3.169 \u00d7 2,000 = **6,338.00 tCO2e**\n\n**Next Steps:** Please verify and reconcile the country of production between the declaration header and the supporting email documentation to finalize the single reportable CBAM figure.",
+  "usage": {
+    "input_tokens": 729,
+    "output_tokens": 365
+  },
+  "latency_s": 7.1936,
+  "stop_reason": "STOP",
+  "truncated": false
+}

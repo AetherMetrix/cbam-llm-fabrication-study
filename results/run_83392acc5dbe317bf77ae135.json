@@ -1,0 +1,15 @@
+{
+  "run_id": "run_83392acc5dbe317bf77ae135",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: CN 7206 10 00 (Ingots), 750 t\n\n**I can't give a single figure because the country of production is ambiguous.**\n\n## Why\n\nThe ruleset sets the default SEE by **CN code and country together**. The scenario names two different origins (India in one field, T\u00fcrkiye in another), and their factors differ. Choosing one would be an estimate, which the ruleset prohibits when a required input is not clearly established.\n\n## Candidate results\n\nThe calculation for each origin, so the figure can be finalised once the country is confirmed:\n\n| Country | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| India | 2.64 | 750 | **1,980.00** |\n| T\u00fcrkiye | 1.96 | 750 | **1,470.00** |\n\nThe two results differ by 510.00 tCO2e.\n\n## Action required\n\nConfirm the actual country of production. This is where the ingots were produced, which may differ from the country of dispatch or the supplier's registered location. Then apply the matching value above.",
+  "usage": {
+    "input_tokens": 893,
+    "output_tokens": 466
+  },
+  "latency_s": 5.4527,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

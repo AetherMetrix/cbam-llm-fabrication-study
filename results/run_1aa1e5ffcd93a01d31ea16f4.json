@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1aa1e5ffcd93a01d31ea16f4",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "I can't estimate the embedded emissions for this consignment. CN code 7202 11 (ferro-manganese, >2% carbon) is not in the factor table, so no default SEE value applies. Under the ruleset, if the CN code is not in the table, no estimate is given.\n\nThe table covers only these CN codes: 7201, 7206 10 00, 7207 11 90, and 7214 20 00. Ferro-manganese falls under heading 7202, which is not listed.\n\nTo proceed, you would need one of the following:\n- A default SEE value for CN 7202 11 from the authoritative CBAM factor source, added to the table. Then the calculation is SEE \u00d7 500 t, rounded half-up to 2 decimal places.\n- Confirmation that the good should be classified under one of the CN codes in the table, with the supporting classification rationale.\n\nThe quantity (500 t) and country (China) are available, so only the CN code factor is missing.",
+  "usage": {
+    "input_tokens": 910,
+    "output_tokens": 333
+  },
+  "latency_s": 2.3286,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

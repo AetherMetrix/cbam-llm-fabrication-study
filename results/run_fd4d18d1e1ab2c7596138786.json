@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fd4d18d1e1ab2c7596138786",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: 1,992.00 tCO2e for the declared total of 1,200 t, but the input data conflict and should be reconciled before filing.**\n\n**Inputs**\n- CN code: 7201 (Pig iron and spiegeleisen), in the table\n- Country: China, listed for 7201\n- SEE: 1.66 tCO2e/t\n- Quantity: the scenario states a total of 1,200 t, but the two shipment lines (500 t + 500 t) sum to 1,000 t.\n\n**Calculation (stated total)**\n1,200 t \u00d7 1.66 tCO2e/t = **1,992.00 tCO2e**\n\n**Calculation (shipment lines only)**\n1,000 t \u00d7 1.66 tCO2e/t = 1,660.00 tCO2e\n\nThe two figures differ by 332.00 tCO2e (200 t \u00d7 1.66). The ruleset does not say which quantity governs when the total and the line items disagree, so I have not chosen between them. Before reporting, confirm whether a third shipment of 200 t exists (in which case 1,992.00 tCO2e stands) or whether the stated total is in error (in which case 1,660.00 tCO2e applies).",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 846
+  },
+  "latency_s": 4.1329,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

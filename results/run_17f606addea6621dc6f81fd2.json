@@ -1,0 +1,15 @@
+{
+  "run_id": "run_17f606addea6621dc6f81fd2",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions are calculated as follows:\n\n* **Good CN Code:** 7201\n* **Country of Production:** T\u00fcrkiye\n* **Default SEE:** 1.85 tCO2e per tonne\n* **Quantity:** 1000 tonnes\n\n**Calculation:**\n1.85 tCO2e/t \u00d7 1000 t = 1850.00 tCO2e\n\n**Total Embedded Emissions:** 1850.00 tCO2e",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 123
+  },
+  "latency_s": 5.7474,
+  "stop_reason": "STOP",
+  "truncated": false
+}

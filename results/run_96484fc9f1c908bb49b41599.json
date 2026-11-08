@@ -1,0 +1,15 @@
+{
+  "run_id": "run_96484fc9f1c908bb49b41599",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive embedded emissions figure under the supplied rules. \n\n**Missing Input:**\n* **Default specific embedded emissions (SEE) factor for the country of production:** The factor table does not contain an entry for the country of production \"**United States**\" for the good with CN code **7214 20 00** (only T\u00fcrkiye, China, and India are listed).",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 86
+  },
+  "latency_s": 4.306,
+  "stop_reason": "STOP",
+  "truncated": false
+}

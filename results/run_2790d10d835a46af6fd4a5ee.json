@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2790d10d835a46af6fd4a5ee",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded emissions figure based on the data provided. \n\nUnder the supplied ruleset, the default specific embedded emissions (SEE) value must be selected jointly by the good's CN code and the country of production. Because the provided documents contain conflicting information regarding the country of production, the following required input is missing/unresolved:\n\n* **Definitive country of production:** The cover note states **China** (which has a default SEE of 1.66 tCO2e/t for CN 7201) while the customs form records **India** (which has a default SEE of 2.53 tCO2e/t for CN 7201). The ruleset does not provide a hierarchy of documents to resolve this discrepancy, and estimation is not permitted. \n\nPlease confirm the single verified country of production to proceed with the calculation.",
+  "usage": {
+    "input_tokens": 762,
+    "output_tokens": 187
+  },
+  "latency_s": 8.4748,
+  "stop_reason": "STOP",
+  "truncated": false
+}

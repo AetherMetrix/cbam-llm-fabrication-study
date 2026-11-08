@@ -1,0 +1,15 @@
+{
+  "run_id": "run_44b3360f7ec7094096606519",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Result: I cannot compute the embedded emissions for this declaration line.**\n\n**Input check against the ruleset**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in table | 7201 (pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | Viet Nam | \u274c **Not listed** |\n| (c) Quantity in tonnes | 1,800 t | \u2705 Present |\n\n**Why it fails**\n\nUnder the ruleset, the default SEE is selected jointly by CN code and country. For CN 7201, the table lists only T\u00fcrkiye (1.85), China (1.66) and India (2.53). There is no CN 7201 / Viet Nam entry, so no applicable SEE exists.\n\nThe ruleset says that if a required input is not in the table, I must not estimate. I have therefore not substituted another country's value or used an average or proxy. For reference only, the listed values would give between 2,988.00 and 4,554.00 tCO2e for 1,800 t. That spread shows why substituting a value would not produce a definitive figure.\n\nThe \"basic blast-furnace route\" detail does not affect the result. The ruleset and table select SEE by CN code and country only, not by production route.\n\n**Missing input**\n\n1. The default SEE (tCO2e/t) for CN 7201 with Viet Nam as the country of production. This needs to come from a supplementary factor table or an updated version of the supplied table.\n\nOnce that value is provided, the total is: Default SEE (CN 7201, Viet Nam) \u00d7 1,800 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 962,
+    "output_tokens": 604
+  },
+  "latency_s": 5.6467,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

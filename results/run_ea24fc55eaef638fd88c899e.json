@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ea24fc55eaef638fd88c899e",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded emissions cannot be calculated: CN code is missing\n\nThe ruleset requires three inputs. One is missing:\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | **Missing.** The datasheet gives no CN code. |\n| (b) Country of production listed for that good | India. It is listed, but the factor depends on the CN code. |\n| (c) Quantity in tonnes | 600 t |\n\nThe rule says: *\"If any is missing or not in the table, do not estimate.\"* So I won't select a factor or report a total.\n\n## Why the code can't be inferred\n\n- The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") fits more than one heading in the table, as the scenario notes.\n- The table's descriptions are truncated, so I can't confirm which entry matches.\n- Some CN codes with similar descriptions may not appear in the table at all.\n- For India, the factors differ greatly (2.53 to 4.32 tCO2e/t). Choosing one would be an estimate, which the ruleset prohibits.\n\n## Possible results, for reference only\n\nThese are not a declared result. They show what each code would produce if confirmed (India, 600 t):\n\n| If confirmed CN code is\u2026 | SEE (India) | Embedded emissions |\n|---|---|---|\n| 7206 10 00 (ingots) | 2.64 | 600 \u00d7 2.64 = **1,584.00 tCO2e** |\n| 7207 11 90 (semi-finished) | 4.32 | 600 \u00d7 4.32 = **2,592.00 tCO2e** |\n\n## Action needed\n\nPlease provide the **8-digit CN code** from the customs declaration or the supplier. Once it is confirmed and matches an India row in the table, I'll report the final value, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 857
+  },
+  "latency_s": 8.51,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

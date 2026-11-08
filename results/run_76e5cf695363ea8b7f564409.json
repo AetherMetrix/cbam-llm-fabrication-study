@@ -1,0 +1,15 @@
+{
+  "run_id": "run_76e5cf695363ea8b7f564409",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions for CN 7214 20 00: Cannot Be Computed Yet\n\n**The country of production is missing**, so I can't calculate embedded emissions under the ruleset.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7214 20 00 (bars and rods, with indentations/ribs) |\n| (b) Country of production | \u274c **Not stated** |\n| (c) Quantity in tonnes | \u2705 2,000 t net |\n\n## Why the country matters\n\nDefault SEE values are set jointly by CN code and country. For this CN code, the table has three different values:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 2.31 |\n| China | 3.169 |\n| India | 4.27 |\n\nThe highest value is nearly double the lowest. The email doesn't let me infer the country:\n- **EXW terms** only identify the handover point, not where the steel was produced.\n- **The sender's domain, heat numbers and dispatch date** don't establish country of production.\n\nThe ruleset says not to estimate when an input is missing, so I haven't picked a country or averaged the values.\n\n## What to request from the supplier\n\n1. **Country of production** of the rebar, i.e. where the steel was actually made, not just shipped from. This should appear on the mill cert or mill-test report, or on the certificate of origin.\n2. **If production is in a country other than T\u00fcrkiye, China or India**, this table has no default value for it. The calculation would still be blocked and would need a different data source outside this ruleset.\n\n## Calculation once the country is confirmed\n\n> Embedded emissions = 2,000 t \u00d7 SEE (CN 7214 20 00, confirmed country), rounded half-up to 2 d.p.\n\nSend me the confirmed country and I'll give you the final figure.",
+  "usage": {
+    "input_tokens": 992,
+    "output_tokens": 942
+  },
+  "latency_s": 10.4316,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

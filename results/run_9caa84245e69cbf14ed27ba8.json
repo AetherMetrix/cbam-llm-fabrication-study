@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9caa84245e69cbf14ed27ba8",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: Cannot compute. Brazil has no default value for CN 7201 in the factor table.**\n\n**Input check:**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (pig iron) | \u2705 Listed |\n| (b) Country of production listed for that good | Brazil | \u274c **Not listed.** CN 7201 has defaults only for T\u00fcrkiye, China and India. |\n| (c) Quantity in tonnes | 800 t | \u2705 Provided |\n\n**Why I did not estimate:**\n- The ruleset selects the SEE by CN code and country together. There is no row for (7201, Brazil).\n- The ruleset says that if a required input is not in the table, I must not estimate. So I did not substitute another country's value (e.g., China 1.66, T\u00fcrkiye 1.85 or India 2.53), an average, or any outside data.\n\n**What is needed to complete the calculation:**\n1. A default SEE for CN 7201 produced in Brazil, added to the factor table. With that value, embedded emissions = SEE \u00d7 800 t, rounded half-up to 2 decimal places.\n2. Or a corrected country of production, if Brazil was entered in error and the country is one of those listed.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 430
+  },
+  "latency_s": 4.6839,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

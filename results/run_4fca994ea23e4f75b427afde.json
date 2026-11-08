@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4fca994ea23e4f75b427afde",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**I cannot compute the embedded emissions figure yet.** The country of production is not established.\n\n**Inputs status:**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in the table | Provided: 7207 11 90 is in the factor table |\n| (b) Country of production listed for that good | **Missing.** The email says the origin is \"to be confirmed by the mill's cert, not yet attached.\" |\n| (c) Quantity in tonnes | Provided: 4,200 t |\n\n**Missing input to resolve:**\n- **Country of production** for the 4,200 t of CN 7207 11 90 semi-finished steel. The default SEE is selected jointly by CN code and country, so the country determines which factor applies. The table lists three countries for this code (T\u00fcrkiye, China, India), with different factors. The mill's certificate of origin must be received to identify the country.\n\n**Once the country is confirmed:** Embedded emissions = SEE for (7207 11 90, confirmed country) \u00d7 4,200 t, rounded half-up to 2 decimal places.\n\n**Note:** The factor table's description for 7207 11 90 is truncated (\"contai...\"). Before applying a factor, confirm the declared \"square section\" semi-finished product falls within the full CN 7207 11 90 description. The delivery term (DAP) does not affect the calculation under this ruleset.",
+  "usage": {
+    "input_tokens": 1020,
+    "output_tokens": 995
+  },
+  "latency_s": 5.4294,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

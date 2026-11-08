@@ -1,0 +1,15 @@
+{
+  "run_id": "run_25ee6e5a3ff3a7980eb70806",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the **CN code is ambiguous**: the form lists both **7201** and **7206 10 00**, which have different SEE factors for China.\n\nRequired clarification:\n- **Confirmed CN code:** 7201 or 7206 10 00.\n\nThe country (**China**) and quantity (**900 tonnes**) are provided.",
+  "usage": {
+    "input_tokens": 668,
+    "output_tokens": 82
+  },
+  "latency_s": 2.8869,
+  "stop_reason": "completed",
+  "truncated": false
+}

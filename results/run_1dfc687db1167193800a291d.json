@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1dfc687db1167193800a291d",
+  "task_id": "B-S10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute the embedded emissions because a required input is missing: the **country of production** is not specified in the scenario (only the locations of the buyer in Germany and the seller in Geneva are mentioned). \n\nPer the ruleset, default specific embedded emissions (SEE) values are country-specific and must be selected jointly by the good's CN code and the country of production. If any required input is missing or not in the table, an estimate cannot be made. \n\nTo complete the calculation for the 850 tonnes of CN 7206 10 00, please provide the country of production (which must be listed in the table: T\u00fcrkiye, China, or India).",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 149
+  },
+  "latency_s": 7.5691,
+  "stop_reason": "STOP",
+  "truncated": false
+}

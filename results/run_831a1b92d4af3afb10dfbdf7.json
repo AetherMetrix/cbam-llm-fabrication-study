@@ -1,0 +1,15 @@
+{
+  "run_id": "run_831a1b92d4af3afb10dfbdf7",
+  "task_id": "A03",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset and factor table, here is the calculation for the embedded emissions:\n\n**1. Required Inputs:**\n* **CN Code:** 7201 (Pig iron and spiegeleisen, in pigs, blocks or other primary forms)\n* **Country of Production:** India\n* **Quantity:** 500.5 tonnes\n\n**2. Default Factor Selection:**\n* **Default SEE (CN 7201, India):** 2.53 tCO2e/t\n\n**3. Calculation:**\n* $\\text{Embedded emissions} = 2.53 \\text{ tCO2e/t} \\times 500.5 \\text{ tonnes} = 1266.265 \\text{ tCO2e}$\n\n**Total Embedded Emissions:** **1266.27 tCO2e** (rounded to 2 decimal places)",
+  "usage": {
+    "input_tokens": 698,
+    "output_tokens": 200
+  },
+  "latency_s": 6.6835,
+  "stop_reason": "STOP",
+  "truncated": false
+}

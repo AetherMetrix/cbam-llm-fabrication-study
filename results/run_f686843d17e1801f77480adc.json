@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f686843d17e1801f77480adc",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# I cannot compute a definitive embedded-emissions figure because the declared quantity is inconsistent.\n\n## Inputs checked against the ruleset\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present in table |\n| (b) Country of production listed for that good | China | \u2705 Listed; SEE = **1.66 tCO2e/t** |\n| (c) Quantity in tonnes | Stated total **1,200 t**, but shipment lines sum to **1,000 t** (500 t + 500 t) | \u274c **Conflicting; cannot be resolved from the data provided** |\n\n## Missing input\n\n**A single confirmed quantity in tonnes for CN 7201 from China.** The 200 t discrepancy needs to be reconciled. Either:\n- the stated total of 1,200 t is wrong, or\n- a shipment line of about 200 t is missing, or\n- one of the listed lines is misstated.\n\nThe ruleset does not let me choose between the two figures or assume which one is correct.\n\n## Next step\n\nOnce you confirm the correct total tonnage, the calculation is:\n\n**Embedded emissions = 1.66 tCO2e/t \u00d7 [confirmed quantity in t]**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 657
+  },
+  "latency_s": 7.1461,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

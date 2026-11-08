@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4736d675d2527c6f03980905",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules because the provided data is insufficient. \n\nThe following required inputs are missing:\n- **Good CN code**: \"Steel\" is too general; a specific CN code from the factor table (e.g., 7201, 7206 10 00, 7207 11 90, or 7214 20 00) is required.\n- **Country of production**: A listed country of production for the good (e.g., T\u00fcrkiye, China, or India) is required.",
+  "usage": {
+    "input_tokens": 731,
+    "output_tokens": 134
+  },
+  "latency_s": 8.3678,
+  "stop_reason": "STOP",
+  "truncated": false
+}

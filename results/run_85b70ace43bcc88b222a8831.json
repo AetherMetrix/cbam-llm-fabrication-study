@@ -1,0 +1,15 @@
+{
+  "run_id": "run_85b70ace43bcc88b222a8831",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions for this shipment under the supplied ruleset and factor table.\n\n**Missing or unmatched input:**\n\n- **Good CN code:** The declared good is CN 7208 (hot-rolled coil), but the factor table has no entry for 7208. Without a matching CN code, the default specific embedded emissions (SEE) value cannot be selected.\n\n**Inputs that are present:**\n\n- **Country of production:** China (matches the ruleset's requirement, but no table entry exists for 7208 + China).\n- **Quantity:** 5,000 t.\n\n**What is needed to compute the figure:**\n\n- A factor table entry for CN 7208 with production country China, giving a default SEE in tCO2e/t.\n\nOnce that SEE value is supplied, the calculation is 5,000 t \u00d7 SEE, rounded half-up to 2 decimal places. I have not used SEE values from related CN codes such as 7207 or 7214, because the ruleset selects the SEE jointly by CN code and country.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 453
+  },
+  "latency_s": 2.6717,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

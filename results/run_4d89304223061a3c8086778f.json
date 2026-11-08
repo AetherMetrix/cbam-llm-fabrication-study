@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4d89304223061a3c8086778f",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I can't compute a definitive embedded-emissions figure yet because the country of production is not confirmed.\n\n**Inputs status**\n\n| Required input | Status |\n|---|---|\n| (a) Good CN code in table | Provided and valid: 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country of production listed for that good | **Missing.** The email says origin is \"to be confirmed by the mill's cert, not yet attached.\" |\n| (c) Quantity in tonnes | Provided: 4,200 t |\n\n**Why this blocks the calculation**\n\nThe default SEE is selected jointly by CN code and country, so the country determines which factor applies. For CN 7207 11 90, the table lists three possible values:\n\n- T\u00fcrkiye: 3.087 tCO2e/t\n- China: 3.314 tCO2e/t\n- India: 4.32 tCO2e/t\n\nChoosing one without the mill's certificate would be an assumption, so I have not produced a total.\n\n**What is needed to finish**\n\n1. The mill's certificate, or other written confirmation, stating the country of production for this consignment.\n2. Confirmation that the mill is in one of the three countries listed above. If it is in a country not listed for 7207 11 90, the table has no default value and the calculation cannot be done under these rules.\n\nOnce the country is confirmed, the calculation is: 4,200 t \u00d7 SEE for that country, rounded half-up to 2 decimal places. The delivery term (DAP) and the square section do not change the calculation under this ruleset.",
+  "usage": {
+    "input_tokens": 1020,
+    "output_tokens": 957
+  },
+  "latency_s": 5.1084,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

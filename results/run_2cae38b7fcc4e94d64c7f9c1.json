@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2cae38b7fcc4e94d64c7f9c1",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure from the data provided.**\n\nThe declaration gives two conflicting CN codes:\n- The **CN-code field reads 7201** (pig iron and spiegeleisen).\n- The **description gives 7214 20 00** (bars and rods, with indentations, matching \"ribbed reinforcing bar\").\n\nThe ruleset selects the default SEE jointly by (good CN code, country), and requires the good CN code to be definitive. Because the record contradicts itself, I cannot determine which SEE value applies, so I have not calculated a figure.\n\n**Missing or unresolved input:**\n1. **Confirmed CN code for the good.** The declaration must be corrected or confirmed so that a single CN code is stated. The description alone is not a substitute for the CN-code field under this ruleset.\n\n**Inputs that are present and valid:**\n- Country of production: India (listed for both 7201 and 7214 20 00 in the factor table).\n- Quantity: 1,500 t.\n\n**Once the CN code is confirmed**, the calculation is:\n\nEmbedded emissions (tCO2e) = Default SEE for (confirmed CN code, India) \u00d7 1,500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 996
+  },
+  "latency_s": 5.6335,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

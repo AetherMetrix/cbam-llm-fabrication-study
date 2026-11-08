@@ -1,0 +1,15 @@
+{
+  "run_id": "run_35d148124fc6cfe7a479244d",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from the data provided.\n\n**What is confirmed:**\n- CN code 7201 is in the factor table.\n- China is listed as a country of production for CN 7201.\n- The default SEE for CN 7201 from China is 1.66 tCO2e/t.\n\n**What is missing or conflicting:**\n- **Quantity (required input c) is inconsistent.** The stated total is 1,200 t, but the two shipment lines sum to 1,000 t (500 t + 500 t). This leaves 200 t unexplained. The ruleset requires a single quantity in tonnes, and I cannot determine which figure is correct or whether the 200 t belongs to a third shipment line that was not provided.\n\n**To complete the calculation, please confirm:**\n1. The correct total quantity of CN 7201 pig iron from China in tonnes: 1,200 t, or 1,000 t (the sum of the shipment lines), or another value with the missing shipment details.\n2. If shipment-level reporting is needed, the quantity for any line not captured in the two 500 t entries.\n\nOnce the quantity is confirmed, the calculation is: embedded emissions (tCO2e) = 1.66 \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 860
+  },
+  "latency_s": 4.7196,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

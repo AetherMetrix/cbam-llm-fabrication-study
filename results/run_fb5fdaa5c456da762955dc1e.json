@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fb5fdaa5c456da762955dc1e",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No estimate can be given for this line.** The factor table has no default SEE for CN 7201 from Viet Nam.\n\n**Required inputs check:**\n\n| Input | Declared | Status |\n|---|---|---|\n| (a) Good CN code | 7201 (pig iron) | In table |\n| (b) Country of production | Viet Nam | **Not listed for CN 7201** |\n| (c) Quantity | 1,800 t | Provided |\n\nThe table lists CN 7201 only for T\u00fcrkiye (1.85), China (1.66) and India (2.53). Under the ruleset, if the country is not listed for the good, the calculation is not performed.\n\nThe basic blast-furnace route is noted in the declaration, but the ruleset selects defaults only by CN code and country, so the route does not affect the factor.\n\n**Result:** Embedded emissions = not calculated.\n\n**To proceed,** one of the following would be needed:\n- A default SEE for CN 7201 from Viet Nam, added to the factor table, or\n- Confirmation that the good came from a listed country (T\u00fcrkiye, China or India), with the correct origin declared.\n\nFor reference only, the 1,800 t quantity would give 2,988.00 tCO2e at China's factor (1.66) or 3,330.00 tCO2e at T\u00fcrkiye's (1.85) if that origin were confirmed, but these are not valid results for this declaration.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 498
+  },
+  "latency_s": 2.7613,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

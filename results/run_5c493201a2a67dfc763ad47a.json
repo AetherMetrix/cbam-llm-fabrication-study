@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5c493201a2a67dfc763ad47a",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# CBAM Embedded Emissions: Cannot Compute a Single Figure Because the CN Code Conflicts\n\n**No single result can be reported yet.** The declaration contains two different CN codes for the same good, and the ruleset selects the default value by CN code and country together. Picking one code would be an estimate, which the ruleset prohibits.\n\n## The Conflict\n\n| Source in declaration | CN code | Good | India SEE (tCO2e/t) |\n|---|---|---|---|\n| Goods description | 7214 20 00 | Bars and rods with indentations/ribs (rebar) | 4.27 |\n| CN-code field | 7201 | Pig iron and spiegeleisen | 2.53 |\n\nCountry (India) and quantity (1,500 t) are clear and valid for both codes. The only open input is which good was imported.\n\n## Conditional Results (for reference only, not to be reported until resolved)\n\n- **If CN 7214 20 00 (rebar):** 4.27 \u00d7 1,500 = **6,405.00 tCO2e**\n- **If CN 7201 (pig iron):** 2.53 \u00d7 1,500 = **3,795.00 tCO2e**\n\nThe two results differ by 2,610.00 tCO2e, so the choice matters.\n\n## Observation\n\nThe text \"ribbed reinforcing bar\" matches the 7214 20 00 heading (\"with indentations, ribs\u2026\"). It does not match pig iron. This suggests the CN-code field may be a data-entry error. However, I can't confirm which entry is correct from the declaration alone.\n\n## Recommended Action\n\n1. Ask the declarant or importer to confirm the correct CN code.\n2. Check it against the customs declaration and commercial documents (invoice, mill certificate).\n3. Correct the CN-code field so it matches the actual good.\n4. Recalculate using the confirmed code and report that figure, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 864
+  },
+  "latency_s": 8.988,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_45358a42afcf387e64f9b11b",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and factor table, the calculation is as follows:\n\n* **CN Code:** 7214 20 00\n* **Country of Production:** T\u00fcrkiye\n* **Default SEE:** 2.31 tCO2e per tonne\n* **Quantity:** 250 tonnes\n\n**Calculation:**\n2.31 tCO2e/t \u00d7 250 t = 577.50 tCO2e\n\n**Total Embedded Emissions:** 577.50 tCO2e",
+  "usage": {
+    "input_tokens": 742,
+    "output_tokens": 122
+  },
+  "latency_s": 5.953,
+  "stop_reason": "STOP",
+  "truncated": false
+}

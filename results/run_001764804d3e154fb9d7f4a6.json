@@ -1,0 +1,15 @@
+{
+  "run_id": "run_001764804d3e154fb9d7f4a6",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can\u2019t calculate embedded emissions yet: the quantity is **1,000 tonnes**, but the required **CN code** and **country of production** are missing.\n\nPlease provide:\n- **CN code:** 7201, 7206 10 00, 7207 11 90, or 7214 20 00\n- **Country of production:** T\u00fcrkiye, China, or India\n\nThe SEE must match both inputs; \u201csteel\u201d alone is insufficient to select a factor.",
+  "usage": {
+    "input_tokens": 604,
+    "output_tokens": 105
+  },
+  "latency_s": 2.9481,
+  "stop_reason": "completed",
+  "truncated": false
+}

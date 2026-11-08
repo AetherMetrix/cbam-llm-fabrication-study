@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d7cc73bc307dad4e2d7859d8",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the embedded emissions figure for this declaration line because the provided data is insufficient under the supplied ruleset. \n\nSpecifically, the following required input is missing from the factor table:\n* **Default SEE (tCO2e/t) for the Country of Production:** The country of production declared is **USA**, which is not listed in the factor table for CN code **7201** (only T\u00fcrkiye, China, and India are listed).",
+  "usage": {
+    "input_tokens": 771,
+    "output_tokens": 98
+  },
+  "latency_s": 2.9273,
+  "stop_reason": "STOP",
+  "truncated": false
+}

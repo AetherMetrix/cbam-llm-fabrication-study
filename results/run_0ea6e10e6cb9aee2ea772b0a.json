@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0ea6e10e6cb9aee2ea772b0a",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset, embedded emissions **cannot be computed** for this scenario. \n\n**Reason:**\nThe ruleset strictly requires three inputs: \n(a) the good's CN code in the table, \n(b) the country of production listed for that good, and \n(c) the quantity in tonnes. \n\nBecause the **CN code is missing** from the datasheet, the required criteria are not met. Per the ruleset (\"If any is missing or not in the table, do not estimate\"), no calculation or estimation can be performed.",
+  "usage": {
+    "input_tokens": 734,
+    "output_tokens": 124
+  },
+  "latency_s": 6.8663,
+  "stop_reason": "STOP",
+  "truncated": false
+}

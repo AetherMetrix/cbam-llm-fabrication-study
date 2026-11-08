@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ef15cf743945f29d6d8761d3",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the embedded emissions for this shipment under the supplied ruleset and factor table.\n\n**Missing input:**\n\n- **Default SEE for CN 7202 11 (ferro-manganese, >2% carbon) produced in China.** The factor table has no entry for this CN code. It contains only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00. The ruleset requires the good CN code to be in the table, so no default value can be selected.\n\n**Inputs that are provided:**\n\n- Good CN code: 7202 11 (not in the table)\n- Country of production: China (the table has no CN 7202 11 row for it)\n- Quantity: 500 t\n\nTo complete the calculation, the factor table needs a default SEE (tCO2e/t) for CN 7202 11 from China. Once that value is supplied, the result is 500 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 968,
+    "output_tokens": 544
+  },
+  "latency_s": 6.3059,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_aa4e9e9068ae8d41ac1971f4",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Result: No single estimate can be issued until the country of production is resolved.**\n\nThe ruleset requires one confirmed country of production for the CN code. The two sources conflict:\n- The email says the mill is in **T\u00fcrkiye**.\n- The declaration header says **China**.\n\nThe good (CN 7214 20 00) and quantity (2,000 t) are clear, and both countries appear in the factor table for this code. Only the country is in question.\n\nFor reference only, the two candidate results are:\n\n| Country of production (candidate) | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| T\u00fcrkiye (per email) | 2.31 | 2,000 | **4,620.00** |\n| China (per declaration header) | 3.169 | 2,000 | **6,338.00** |\n\n**Next step:** Confirm the country of production from a reliable source, such as the supplier's proof of origin, the installation details, or the corrected declaration. Once confirmed, I will report the single embedded-emissions figure for that country. The two values above should not be reported or used for compliance until then.",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 733
+  },
+  "latency_s": 4.0141,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_f1f05658a1e2160e4cc46b93",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute a definitive embedded emissions figure\n\nThe scenario gives two conflicting CN codes for the same good, and the ruleset selects the default SEE by CN code and country together. Each code maps to a different T\u00fcrkiye factor:\n\n| Source in scenario | CN code | Good | T\u00fcrkiye default SEE (tCO2e/t) |\n|---|---|---|---|\n| Goods description text | 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.087 |\n| Line-item CN | 7214 20 00 | Bars and rods, of iron or non-alloy steel | 2.31 |\n\nThe ruleset does not say which source takes precedence. Choosing one would be an estimate, so no total is reported.\n\n## Inputs provided and usable\n- **Country of production:** T\u00fcrkiye (listed for both candidate CN codes)\n- **Quantity:** 1,100 t\n\n## Missing input\n1. **A single confirmed CN code for the good.** You need to resolve whether the good is CN 7207 11 90 (semi-finished product) or CN 7214 20 00 (bars and rods). Then correct either the goods description or the line-item CN so they agree.\n\nOnce the CN code is confirmed, the calculation is: T\u00fcrkiye default SEE for that code \u00d7 1,100 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 967,
+    "output_tokens": 818
+  },
+  "latency_s": 9.2384,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

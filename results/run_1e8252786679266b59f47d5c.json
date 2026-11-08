@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1e8252786679266b59f47d5c",
+  "task_id": "A11",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset and factor table, here is the calculation for the embedded emissions:\n\n**Inputs:**\n* **Good CN code:** 7214 20 00\n* **Country of production:** China\n* **Quantity:** 1500 tonnes\n* **Default SEE (from factor table):** 3.169 tCO2e/t\n\n**Calculation:**\n$$\\text{Embedded emissions} = 3.169 \\text{ tCO2e/t} \\times 1500 \\text{ tonnes} = 4753.5 \\text{ tCO2e}$$\n\n**Total Embedded Emissions:** **4753.50 tCO2e**",
+  "usage": {
+    "input_tokens": 740,
+    "output_tokens": 161
+  },
+  "latency_s": 12.3018,
+  "stop_reason": "STOP",
+  "truncated": false
+}

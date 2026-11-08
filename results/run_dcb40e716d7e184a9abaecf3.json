@@ -1,0 +1,15 @@
+{
+  "run_id": "run_dcb40e716d7e184a9abaecf3",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded emissions for CN 7208 (hot-rolled coil) cannot be calculated\n\n**Result:** Not calculable from the provided table. No estimate is given.\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in the table | 7208 (hot-rolled coil) | \u274c **Not in table** |\n| (b) Country of production listed for that good | China | \u26a0\ufe0f Cannot be checked, because the CN code is absent |\n| (c) Quantity in tonnes | 5,000 t | \u2705 Provided |\n\n## Why it cannot be calculated\n\n- The ruleset selects the default SEE by the combination of CN code and country.\n- The table only covers CN **7201, 7206 10 00, 7207 11 90, and 7214 20 00**. It has no entry for CN 7208 (flat-rolled products, hot-rolled, not clad, plated or coated).\n- The ruleset says that if a required input is not in the table, no estimate may be made.\n\n**Using another code's factor would be a substitution.** That includes the China factors for 7207 11 90 (3.314) or 7214 20 00 (3.169). Different goods have different production routes and emission intensities, so the ruleset does not allow this.\n\n## What is needed to proceed\n\nEither of the following:\n1. **An updated factor table** that includes a default SEE for CN 7208 (ideally at the full 8-digit subheading, e.g., 7208 xx xx) with China as the country of production.\n2. **Actual installation-specific emissions data** from the producing mill in China, if the declarant uses actual values instead of default values. This is outside the scope of this ruleset.\n\nOnce a valid CN 7208 / China default SEE is provided, the calculation is:\n\n**Embedded emissions = SEE (tCO2e/t) \u00d7 5,000 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 651
+  },
+  "latency_s": 6.7314,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

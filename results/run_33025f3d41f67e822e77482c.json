@@ -1,0 +1,15 @@
+{
+  "run_id": "run_33025f3d41f67e822e77482c",
+  "task_id": "B-O07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "Cannot compute the embedded emissions under the supplied rules because **Brazil is not listed for CN 7201**.\n\nMissing required input: a **default SEE for CN 7201 produced in Brazil** in the supplied factor table. The CN code and quantity (800 tonnes) are provided, but another country\u2019s factor cannot be substituted.",
+  "usage": {
+    "input_tokens": 644,
+    "output_tokens": 70
+  },
+  "latency_s": 3.6174,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5f52177c8c3b36fb28890614",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute embedded emissions because the **country of production is missing**. The default SEE for CN code **7201** is country-specific.\n\nPlease provide the country of production: **T\u00fcrkiye, China, or India**. Then the calculation is:\n\nEmbedded emissions = applicable SEE \u00d7 **1,500 tonnes**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 651,
+    "output_tokens": 74
+  },
+  "latency_s": 2.7148,
+  "stop_reason": "completed",
+  "truncated": false
+}

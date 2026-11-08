@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4595d8163b90b42576e98abb",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**No total can be calculated. Viet Nam is not in the factor table for CN 7201, so the required input is missing.**\n\n**Check of required inputs:**\n\n| Input | Value | Status |\n|---|---|---|\n| (a) CN code | 7201 (pig iron) | \u2705 In table |\n| (b) Country of production | Viet Nam | \u274c **Not listed for CN 7201** |\n| (c) Quantity | 1,800 t | \u2705 Provided |\n\nFor CN 7201, the table only has default SEE values for **T\u00fcrkiye (1.85)**, **China (1.66)** and **India (2.53)** tCO2e/t.\n\nDefault values are chosen by both CN code and country of production. The ruleset says that if the country is missing or not in the table, no estimate should be made. So I have not used a value from another country or an average of them. Mentioning the blast-furnace route does not help, because the table does not set values by production route.\n\n**To complete this line, you would need one of the following:**\n- A default SEE for pig iron (CN 7201) produced in Viet Nam, added to the factor table. The total would then be 1,800 t \u00d7 that SEE, rounded half-up to 2 decimal places.\n- Correction of the country of production, if Viet Nam was entered by mistake.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 440
+  },
+  "latency_s": 4.997,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

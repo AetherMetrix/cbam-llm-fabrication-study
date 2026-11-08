@@ -1,0 +1,15 @@
+{
+  "run_id": "run_46ce5d9b91e2b992ea779868",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "The line items and the summary disagree, so the declared quantity isn't settled yet.\n\n**Inputs**\n- CN code: 7214 20 00 (ribbed bar), in the table\n- Country: India, listed for this CN code\n- Default SEE: 4.27 tCO2e/t\n- Quantity: conflicting (see below)\n\n**Quantity check**\n- Summary total: 1,000 t\n- Line items: 300 t + 400 t + 250 t = 950 t\n- Difference: 50 t unaccounted for\n\n**Results**\n\n| Quantity basis | Quantity (t) | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| Summary total | 1,000 | 1,000 \u00d7 4.27 | **4,270.00** |\n| Sum of line items | 950 | 950 \u00d7 4.27 | **4,056.50** |\n\nI can't confirm a single figure from the declaration as submitted. The 50 t gap must be reconciled with the declarant (a missing lot, or an error in the summary or a line item) before the figure is reported. Once the correct tonnage is confirmed, the result is that quantity \u00d7 4.27, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 777
+  },
+  "latency_s": 4.1141,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c61d95a0aa8b750eab2f350c",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "Cannot compute the CBAM embedded-emissions figure using the supplied ruleset and table.\n\n**Missing input:** A default SEE for **ferro-chromium (CN 7202 41) produced in India**. This CN code is not in the supplied table.\n\nThe country (**India**) and quantity (**700 tonnes**) are provided, but the rules prohibit estimating or substituting a factor for another CN code.",
+  "usage": {
+    "input_tokens": 674,
+    "output_tokens": 87
+  },
+  "latency_s": 3.7163,
+  "stop_reason": "completed",
+  "truncated": false
+}

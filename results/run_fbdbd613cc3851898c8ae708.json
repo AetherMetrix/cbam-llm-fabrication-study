@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fbdbd613cc3851898c8ae708",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: I can't calculate embedded emissions for this shipment. CN 7208 is not in the factor table.**\n\n**Check of required inputs**\n\n| Input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7208 (hot-rolled coil, flat-rolled products) | \u274c No |\n| (b) Country of production | China | \u2705 Listed, but only for other CN codes |\n| (c) Quantity | 5,000 t | \u2705 Provided |\n\n**Why the calculation stops**\n\n- The table only covers CN 7201, 7206 10 00, 7207 11 90 and 7214 20 00.\n- The ruleset selects the default SEE by CN code and country together. With no entry for 7208, there is no valid factor for (7208, China).\n- The ruleset says that when an input isn't in the table, I must not estimate. So I haven't used a proxy, such as the China value for 7207 11 90 (semi-finished products, 3.314) or 7214 20 00 (bars and rods, 3.169). Neither is the same product as hot-rolled coil, and either would give a figure that doesn't comply.\n\n**Embedded emissions: not determinable (no figure reported).**\n\n**To complete the calculation, please provide one of the following:**\n1. A factor table that includes a default SEE for CN 7208 (ideally the full 8-digit subheading, e.g. 7208 xx xx) for China.\n2. Actual (installation-specific) embedded emissions data from the producing mill, if they will be declared instead of default values.\n\nOnce a valid SEE is available, the result is simply SEE \u00d7 5,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 568
+  },
+  "latency_s": 6.1404,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

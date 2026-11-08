@@ -1,0 +1,15 @@
+{
+  "run_id": "run_396d28cf5d1ea1f3ad5baf2c",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Cannot compute: the country of production is not in the factor table for this good.**\n\n**Check of required inputs**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (Bars and rods, with indentations\u2026) | \u2705 Present in table |\n| (b) Country of production listed for that good | Ukraine | \u274c **Not listed** for CN 7214 20 00 |\n| (c) Quantity in tonnes | 2,600 t | \u2705 Provided |\n\n**Why it fails**\n\nUnder the supplied ruleset, the default SEE is selected jointly by CN code and country. The table lists CN 7214 20 00 only for:\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for **Ukraine**. The ruleset says that if the country is not in the table, the figure must not be estimated. Substituting another country's value, an average, or a proxy would break that rule.\n\n**Missing input**\n\n- The default SEE (tCO2e per tonne) for CN 7214 20 00 with Ukraine as the country of production.\n\n**To proceed, either:**\n1. Provide an updated factor table that includes a Ukraine entry for CN 7214 20 00. The result will then be 2,600 t \u00d7 SEE, rounded half-up to 2 decimal places. Or:\n2. Correct the declared country of production, if Ukraine was entered in error and the goods were actually produced in T\u00fcrkiye, China, or India.",
+  "usage": {
+    "input_tokens": 980,
+    "output_tokens": 579
+  },
+  "latency_s": 5.6069,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

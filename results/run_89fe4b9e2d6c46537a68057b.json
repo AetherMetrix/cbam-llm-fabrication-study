@@ -1,0 +1,15 @@
+{
+  "run_id": "run_89fe4b9e2d6c46537a68057b",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Missing input:**\n- **Country of production.** The ruleset requires the country to select the default SEE value, because SEE is set jointly by CN code and country. The scenario gives the CN code (7201) and quantity (1,000 t) but not the country. For CN 7201, the factor table lists three possible countries (T\u00fcrkiye, China, India), and each has a different SEE value, so the total cannot be determined without this input.\n\nThe CN code (7201) is in the table, and the quantity (1,000 t) is provided, so these two inputs are complete. Once the country of production is supplied, the calculation is: 1,000 t \u00d7 the SEE for that country, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 527
+  },
+  "latency_s": 3.177,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

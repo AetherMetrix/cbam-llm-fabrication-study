@@ -1,0 +1,15 @@
+{
+  "run_id": "run_268e39faf6e43e4ce1e5de9d",
+  "task_id": "A15",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Embedded emissions: 49,710.00 tCO2e**\n\n| Input | Value |\n|---|---|\n| CN code | 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| Country of production | China |\n| Quantity | 15,000 t |\n| Default SEE (from table) | 3.314 tCO2e/t |\n\n**Calculation**\n\n15,000 t \u00d7 3.314 tCO2e/t = 49,710 tCO2e\n\nThe CN code, the country and the quantity were all provided, and the code and country appear together in the factor table, so the default value applies directly.",
+  "usage": {
+    "input_tokens": 873,
+    "output_tokens": 223
+  },
+  "latency_s": 2.7537,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c1081055f5ce7eaf9abafbcf",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "**Result: I cannot compute the embedded-emissions figure under the supplied ruleset.**\n\n**Why**\n\nThe ruleset requires three inputs, and the SEE must be selected jointly by (CN code, country):\n\n| Required input | Scenario value | Status |\n|---|---|---|\n| (a) Good CN code in the table | 7202 41 (ferro-chromium, >4% carbon) | **Not in table.** The table lists only 7201, 7206 10 00, 7207 11 90, and 7214 20 00. |\n| (b) Country of production listed for that good | India | **Cannot be satisfied.** India appears in the table, but only for other CN codes, not for 7202 41. |\n| (c) Quantity in tonnes | 700 t | Provided |\n\n**Missing input**\n\n- The default SEE (tCO2e/t) for **CN 7202 41, country India**. The factor table has no row for this combination.\n\n**Not done (per ruleset)**\n\n- I did not substitute a factor from another CN code. For example, 7201 pig iron for India is 2.53, but it is a different good and cannot stand in for ferro-chromium.\n- I did not use a factor from another country, an average, or any proxy value.\n\n**To complete the calculation**, provide an updated factor table that includes a row for CN 7202 41 with India as the country of production and its default SEE. The result would then be SEE \u00d7 700 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 975,
+    "output_tokens": 548
+  },
+  "latency_s": 5.4334,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

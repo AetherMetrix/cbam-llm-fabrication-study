@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e6dca61446df201c14eab204",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the embedded emissions for this scenario. Two required inputs are missing:\n\n1. **Country of production.** The factor table gives default SEE values for CN 7207 11 90 under three countries: T\u00fcrkiye (3.087 tCO2e/t), China (3.314 tCO2e/t), and India (4.32 tCO2e/t). The default SEE is selected jointly by CN code and country, so the country must be specified before a value can be selected.\n\n2. **Quantity in tonnes.** The scenario says \"the declared quantity,\" but no quantity is stated. Embedded emissions = SEE \u00d7 quantity, so no total can be produced without it.\n\nPlease provide the country of production and the quantity in tonnes. The calculation will then be: SEE for (7207 11 90, country) \u00d7 quantity, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 937,
+    "output_tokens": 397
+  },
+  "latency_s": 4.6251,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

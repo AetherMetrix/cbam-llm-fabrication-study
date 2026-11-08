@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0c913a2ca41029a97c63fa1e",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions **cannot be computed**. \n\n**Reason:**\nAccording to the ruleset, the default specific embedded emissions (SEE) value must be selected jointly by the good's CN code and the country of production, and if any required input is not in the table, no estimate should be made. \n\nWhile CN code **7201** (Pig iron) is present in the table, the declared country of production (**USA**) is not listed (only T\u00fcrkiye, China, and India are available). Therefore, the calculation cannot be performed.",
+  "usage": {
+    "input_tokens": 734,
+    "output_tokens": 128
+  },
+  "latency_s": 5.8059,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4d313558305352eae469ba0f",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "A single total cannot be determined because the country of production is conflicting: the cover note states **China**, while the customs form states **India**. The ruleset provides no priority between these sources.\n\nPlease confirm the country of production so the correct country-specific SEE can be applied to **1,000 t of CN 7201**.",
+  "usage": {
+    "input_tokens": 634,
+    "output_tokens": 146
+  },
+  "latency_s": 5.4754,
+  "stop_reason": "completed",
+  "truncated": false
+}

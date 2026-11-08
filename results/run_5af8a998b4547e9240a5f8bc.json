@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5af8a998b4547e9240a5f8bc",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions cannot be calculated. \n\n**Reason:** The declared good's CN code (**7202 11**, ferro-manganese) is not listed in the provided factor table. According to the ruleset, if a required input (such as the good CN code) is not in the table, an estimate must not be made.",
+  "usage": {
+    "input_tokens": 727,
+    "output_tokens": 87
+  },
+  "latency_s": 5.6169,
+  "stop_reason": "STOP",
+  "truncated": false
+}

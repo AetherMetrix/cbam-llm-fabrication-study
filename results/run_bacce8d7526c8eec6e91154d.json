@@ -1,0 +1,15 @@
+{
+  "run_id": "run_bacce8d7526c8eec6e91154d",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "I can't compute embedded emissions for this shipment because the **country of production is blank**. The ruleset requires the country to select the default SEE value, so I won't estimate.\n\n**Missing input:**\n- Country of production (required for CN 7201)\n\n**Inputs present:**\n- CN code: 7201 (in the factor table)\n- Quantity: 1,500 t\n- Production route and installation are noted but aren't used in the calculation.\n\n**Options for CN 7201 in the table:**\n\n| Country of production | Default SEE (tCO2e/t) | Embedded emissions for 1,500 t (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye | 1.85 | 2,775.00 |\n| China | 1.66 | 2,490.00 |\n| India | 2.53 | 3,795.00 |\n\nOnce the country of production is confirmed, I can give the final total. The table above is for reference only and is not a result for this shipment.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 359
+  },
+  "latency_s": 2.0212,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

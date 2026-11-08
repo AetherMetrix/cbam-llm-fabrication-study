@@ -50,14 +50,48 @@ def completed_units(results_dir: Path) -> set[tuple]:
 
 def write_result(results_dir: Path, *, run_id: str, task_id: str, category: str, condition: int,
                  sample_idx: int, raw_output: str, input_tokens: int | None,
-                 output_tokens: int | None, latency_s: float) -> None:
-    """Blinded result — NO model identity. One file per run."""
+                 output_tokens: int | None, latency_s: float,
+                 stop_reason: str | None = None, truncated: bool = False) -> None:
+    """Blinded result — NO model identity. One file per run.
+
+    `stop_reason`/`truncated` are carried so a response that hit `max_output_tokens` is flagged in the record
+    and can be surfaced at analysis — never silently scored as abstention/incorrect (which would contaminate
+    the fabrication metric). `truncated` is blinding-safe: it is a generic finish state, not a model identity."""
     results_dir.mkdir(parents=True, exist_ok=True)
     rec = {"run_id": run_id, "task_id": task_id, "category": category, "condition": condition,
            "sample_idx": sample_idx, "raw_output": raw_output,
            "usage": {"input_tokens": input_tokens, "output_tokens": output_tokens},
-           "latency_s": latency_s}
+           "latency_s": latency_s, "stop_reason": stop_reason, "truncated": bool(truncated)}
     (results_dir / f"{run_id}.json").write_text(json.dumps(rec, indent=2), encoding="utf-8")
+
+
+def reconcile_orphans(results_dir: Path) -> int:
+    """Quarantine blinded result files with no identity row (a crash between write_result and
+    append_identity leaves one). Their unit is NOT in `completed_units`, so it WILL be re-run under a fresh
+    run_id; the orphan is a would-be duplicate that must not reach the grader. Moved (never deleted) to
+    `results/_orphans/` so nothing is lost and the move is auditable. Returns the count quarantined."""
+    if not results_dir.exists():
+        return 0
+    mapped = set()
+    manifest = results_dir / IDENTITY
+    if manifest.exists():
+        for line in manifest.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                mapped.add(json.loads(line)["run_id"])
+            except (json.JSONDecodeError, KeyError):
+                continue
+    quarantine = results_dir / "_orphans"
+    moved = 0
+    for p in sorted(results_dir.glob("run_*.json")):
+        rid = p.stem
+        if rid not in mapped:
+            quarantine.mkdir(parents=True, exist_ok=True)
+            p.rename(quarantine / p.name)
+            moved += 1
+    return moved
 
 
 def append_identity(results_dir: Path, *, run_id: str, model_key: str, model_id: str,

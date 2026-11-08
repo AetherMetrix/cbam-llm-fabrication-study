@@ -1,0 +1,15 @@
+{
+  "run_id": "run_03ff5122432bb761144d3281",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "**I cannot compute the embedded emissions for this scenario under the supplied ruleset.**\n\n**Inputs check:**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) Good CN code in the table | CN 7202 41 (ferro-chromium) | **Missing**: CN 7202 41 is not in the factor table. The table only covers 7201, 7206 10 00, 7207 11 90, and 7214 20 00. |\n| (b) Country of production listed for that good | China | **Missing**: China appears in the table, but there is no China row for CN 7202 41. |\n| (c) Quantity in tonnes | 1,000 t | Provided |\n\n**Missing input:**\n- A default SEE value (tCO2e/t) for CN 7202 41 (ferro-chromium) produced in China.\n\nNo other table value can be substituted. The ruleset selects the SEE jointly by CN code and country, and ferro-chromium is a different good from pig iron, ingots, semi-finished products, or bars and rods.\n\n**To complete the calculation:** provide the default SEE for CN 7202 41 / China. The result would then be that SEE \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 468
+  },
+  "latency_s": 4.8011,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

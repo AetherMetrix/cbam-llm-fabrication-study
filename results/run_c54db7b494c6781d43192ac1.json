@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c54db7b494c6781d43192ac1",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset and factor table, there is a discrepancy in the required quantity input: the stated total is **1,200 tonnes**, while the sum of the two shipment lines is **1,000 tonnes** (500 t + 500 t). Because the ruleset dictates not to estimate when required inputs are ambiguous, the calculations for both potential quantities are provided below so you can apply the one that reflects your verified customs declaration.\n\n**1. Factor Selection:**\n* **Good CN code:** 7201\n* **Country of production:** China\n* **Default SEE:** 1.66 tCO2e per tonne\n\n**2. Embedded Emissions Calculation:**\n\n* **Option A: Based on the stated total (1,200 tonnes)**\n  * Calculation: 1.66 tCO2e/t \u00d7 1,200 t = 1,992\n  * **Total Embedded Emissions:** **1992.00 tCO2e**\n\n* **Option B: Based on the sum of the shipment lines (1,000 tonnes)**\n  * Calculation: 1.66 tCO2e/t \u00d7 (500 t + 500 t) = 1.66 tCO2e/t \u00d7 1,000 t = 1,660\n  * **Total Embedded Emissions:** **1660.00 tCO2e**",
+  "usage": {
+    "input_tokens": 722,
+    "output_tokens": 323
+  },
+  "latency_s": 5.6095,
+  "stop_reason": "STOP",
+  "truncated": false
+}

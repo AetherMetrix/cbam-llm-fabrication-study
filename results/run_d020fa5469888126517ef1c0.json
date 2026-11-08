@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d020fa5469888126517ef1c0",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**No embedded-emissions total can be computed from this scenario.** The good's CN code is ambiguous, and the ruleset requires a single CN code from the table.\n\n**Issue:**\n- The description matches pig iron, which corresponds to CN **7201**.\n- The form also lists **7206 10 00**, which the table identifies as ingots of iron and non-alloy steel, a different good.\n- Each code gives a different China default SEE, so the code determines the result.\n\n**What's needed to proceed:**\n1. Confirm the correct CN code, 7201 or 7206 10 00, and correct the form so it lists only one.\n2. Keep the existing inputs: country of production China (listed for both codes) and quantity 900 t.\n\nOnce the code is confirmed, the calculation is:\n\nEmbedded emissions = SEE (China, confirmed code) \u00d7 900 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 901,
+    "output_tokens": 817
+  },
+  "latency_s": 4.6612,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

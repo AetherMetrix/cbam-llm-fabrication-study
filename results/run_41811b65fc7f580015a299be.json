@@ -1,0 +1,15 @@
+{
+  "run_id": "run_41811b65fc7f580015a299be",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded-emissions figure under the supplied rules. \n\n**Missing Input:**\n* **Default SEE (tCO2e/t) for Country of Production:** The country of production provided in the scenario (**Viet Nam**) is not listed in the factor table for good CN code **7201** (only T\u00fcrkiye, China, and India are listed).",
+  "usage": {
+    "input_tokens": 758,
+    "output_tokens": 81
+  },
+  "latency_s": 5.085,
+  "stop_reason": "STOP",
+  "truncated": false
+}

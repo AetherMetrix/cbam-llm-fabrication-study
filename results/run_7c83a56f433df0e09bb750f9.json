@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7c83a56f433df0e09bb750f9",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions: not calculated.** The country of production is blank, and the ruleset requires it. The default SEE is selected by the (CN code, country) pair, so the factor cannot be determined from the form.\n\n**To complete the calculation, please provide the country of production.** For CN 7201, the factor table lists these countries:\n\n- T\u00fcrkiye\n- China\n- India\n\nOnce the country is confirmed, I will apply the matching default SEE to the 1,500 t quantity and report the total rounded half-up to two decimal places.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 508
+  },
+  "latency_s": 3.2425,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

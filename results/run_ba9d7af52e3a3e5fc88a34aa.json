@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ba9d7af52e3a3e5fc88a34aa",
+  "task_id": "A13",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "For **CN 7201 produced in India**, the default SEE is **2.53 tCO\u2082e/t**.\n\nEmbedded emissions = 10,000 t \u00d7 2.53 tCO\u2082e/t = **25,300.00 tCO\u2082e**.",
+  "usage": {
+    "input_tokens": 609,
+    "output_tokens": 60
+  },
+  "latency_s": 2.8545,
+  "stop_reason": "completed",
+  "truncated": false
+}

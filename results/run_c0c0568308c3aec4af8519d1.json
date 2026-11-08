@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c0c0568308c3aec4af8519d1",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "I can't calculate the embedded emissions yet because two required inputs are missing:\n\n1. **Country of production.** CN 7207 11 90 has default values for three countries, so the country determines the factor:\n   - T\u00fcrkiye: 3.087 tCO2e/t\n   - China: 3.314 tCO2e/t\n   - India: 4.32 tCO2e/t\n2. **Quantity in tonnes.** The scenario does not state how many tonnes of billets were declared.\n\nOnce you provide the country of production and the quantity, I'll calculate the embedded emissions as SEE \u00d7 quantity, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 879,
+    "output_tokens": 367
+  },
+  "latency_s": 2.2477,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

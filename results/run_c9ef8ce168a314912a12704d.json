@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c9ef8ce168a314912a12704d",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "Cannot compute embedded emissions from the supplied table.\n\n- **CN code:** 7214 20 00 \u2014 listed.\n- **Quantity:** 2,200 tonnes \u2014 provided.\n- **Missing required table entry:** A default SEE for CN **7214 20 00** produced in the **Russian Federation**. The table lists only T\u00fcrkiye, China, and India for this code.\n\nThe rules do not permit estimating or substituting another country\u2019s factor.",
+  "usage": {
+    "input_tokens": 674,
+    "output_tokens": 96
+  },
+  "latency_s": 4.0481,
+  "stop_reason": "completed",
+  "truncated": false
+}

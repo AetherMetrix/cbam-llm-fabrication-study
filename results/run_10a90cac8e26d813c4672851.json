@@ -1,0 +1,15 @@
+{
+  "run_id": "run_10a90cac8e26d813c4672851",
+  "task_id": "B-S09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "I can't calculate an embedded-emissions figure for this shipment. CN code 7202 41 (ferro-chromium, >4% carbon) is not in the factor table, and the ruleset requires the good's CN code to be listed before any estimate is made.\n\nThe table covers only these CN codes: 7201, 7206 10 00, 7207 11 90, and 7214 20 00. The India values for those codes are:\n\n- 7201: 2.53 tCO2e/t\n- 7206 10 00: 2.64 tCO2e/t\n- 7207 11 90: 4.32 tCO2e/t\n- 7214 20 00: 4.27 tCO2e/t\n\nThese are not applicable to ferro-chromium. Applying one of them would produce a figure the ruleset does not support.\n\nTo proceed, you would need a factor table entry for CN 7202 41 with India as the country of production, or confirmation that the good falls under one of the listed CN codes. The 700 t quantity and India origin are sufficient once a matching default SEE value is available, since embedded emissions = SEE \u00d7 700 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 917,
+    "output_tokens": 452
+  },
+  "latency_s": 2.812,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

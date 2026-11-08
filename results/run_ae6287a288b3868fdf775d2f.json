@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ae6287a288b3868fdf775d2f",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "The declaration contains conflicting CN codes, so a single emissions total cannot be determined without clarification. The ruleset does not specify which field takes precedence.\n\nFor India and **1,500 t**, the conditional calculations are:\n\n| CN code | Default SEE | Embedded emissions |\n|---|---:|---:|\n| **7214 20 00** \u2014 reinforcing bar described | 4.27 tCO2e/t | **6,405.00 tCO2e** |\n| **7201** \u2014 pig iron in the CN-code field | 2.53 tCO2e/t | **3,795.00 tCO2e** |\n\nBoth totals are rounded half-up to two decimal places. **Please confirm the correct CN code before using either total.**",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 246
+  },
+  "latency_s": 6.8063,
+  "stop_reason": "completed",
+  "truncated": false
+}

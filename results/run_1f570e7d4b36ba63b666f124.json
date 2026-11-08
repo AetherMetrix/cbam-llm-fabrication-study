@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1f570e7d4b36ba63b666f124",
+  "task_id": "A03",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions are calculated as follows:\n\n* **Good CN code:** 7201\n* **Country of production:** India\n* **Default SEE:** 2.53 tCO2e/t\n* **Quantity:** 500.5 tonnes\n\n**Calculation:**\n2.53 tCO2e/t \u00d7 500.5 tonnes = 1266.265 tCO2e\n\n**Total Embedded Emissions:** **1266.27 tCO2e** (reported to 2 decimal places)",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 135
+  },
+  "latency_s": 8.2941,
+  "stop_reason": "STOP",
+  "truncated": false
+}

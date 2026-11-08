@@ -1,0 +1,15 @@
+{
+  "run_id": "run_96fdb5a794851089fc7d4bf2",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "**Embedded emissions: 1,189.08 tCO2e**\n\n**Inputs checked against the ruleset:**\n- **(a) CN code:** 7207 11 90 is in the factor table (\"Semi-finished products of iron or non-alloy steel\"). The declared good, semi-finished steel billets, falls under this code.\n- **(b) Country of production:** India is listed for CN 7207 11 90.\n- **(c) Quantity:** 275.25 t is provided.\n\n**Calculation:**\n- Default SEE (CN 7207 11 90, India) = 4.32 tCO2e/t\n- Embedded emissions = 4.32 tCO2e/t \u00d7 275.25 t = 1,189.08 tCO2e",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 402
+  },
+  "latency_s": 2.1913,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

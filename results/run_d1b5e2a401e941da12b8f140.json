@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d1b5e2a401e941da12b8f140",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute a definitive emissions figure\n\n## What is valid\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201, Pig iron and spiegeleisen |\n| (b) Country listed for that good | \u2705 China, with a default SEE of **1.66 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The problem: the quantity is inconsistent\n\n- The stated total is **1,200 t**.\n- The two shipment lines add up to **1,000 t** (500 t + 500 t).\n\nThat leaves **200 t** unexplained. The ruleset requires a single quantity in tonnes. The scenario gives two different values, and nothing in the ruleset says which one to use. Picking either would be an estimate, so I have not calculated a total.\n\n## Missing input\n\nA **single, confirmed quantity in tonnes** for CN 7201 produced in China. One of these needs to be resolved:\n\n1. Is there a **third shipment line of 200 t** missing from the data, so the total really is 1,200 t?\n2. Or is the **stated total of 1,200 t wrong**, so the real quantity is 1,000 t?\n\n## Next step\n\nOnce the quantity is confirmed, the calculation is:\n\n> Embedded emissions = 1.66 tCO2e/t \u00d7 confirmed quantity (t), rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 728
+  },
+  "latency_s": 7.5783,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

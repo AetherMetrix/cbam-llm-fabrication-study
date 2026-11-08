@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e5dc33baff9563f8db4b15fb",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# CBAM Embedded Emissions: CN Code Conflict, No Single Figure Can Be Confirmed\n\n**I can't report one definitive total.** The scenario gives two different CN codes for the same good:\n\n- **Product description:** semi-finished product, CN **7207 11 90**\n- **Line-item CN code:** **7214 20 00** (bars and rods, with indentations)\n\nThese are different goods with different default SEE values for T\u00fcrkiye. The ruleset selects the SEE using both the CN code and the country, so the good must be identified unambiguously. Choosing one code without resolving the conflict would be an estimate, which the ruleset doesn't allow.\n\n## Results under each code\n\nCountry (T\u00fcrkiye) and quantity (1,100 t) are valid, and both codes are in the table.\n\n| Basis | CN code | SEE, T\u00fcrkiye (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|---|\n| Product description | 7207 11 90 | 3.087 | 3.087 \u00d7 1,100 | **3,395.70 tCO2e** |\n| Line-item CN | 7214 20 00 | 2.31 | 2.31 \u00d7 1,100 | **2,541.00 tCO2e** |\n\nThe two results differ by **854.70 tCO2e**. Using the line-item code would report about 25% less than using the description.\n\n## Next step\n\nConfirm the correct CN classification of the good, for example from the customs declaration, a commercial invoice or technical specification, or the producer.\n- If it is a semi-finished product, use CN 7207 11 90: **3,395.70 tCO2e**.\n- If it is bars and rods with indentations, the line item is correct: **2,541.00 tCO2e**.\n\nThe declared CN code and the product description should also be made consistent in the CBAM declaration.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 862
+  },
+  "latency_s": 8.9064,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ced450ae6aead54dc5735ace",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can't calculate embedded emissions for this shipment because the good is not in the factor table.\n\nThe ruleset requires the CN code to be in the table before an estimate can be made. CN 7202 41 (ferro-chromium) does not appear in the table, so there is no default SEE value for China to apply to the 1,000 t quantity.\n\nThe table covers only these CN codes: 7201, 7206 10 00, 7207 11 90 and 7214 20 00. China is listed for each of them, but ferro-chromium is not one of them.\n\nTo proceed, you would need a factor table that includes CN 7202 41 with a China default SEE value. Once that is supplied, the calculation is 1,000 t \u00d7 the SEE for CN 7202 41 from China, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 873,
+    "output_tokens": 307
+  },
+  "latency_s": 2.0478,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

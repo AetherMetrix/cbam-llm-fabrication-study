@@ -1,0 +1,15 @@
+{
+  "run_id": "run_483a9a364940042ac4cd1e31",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure because the declaration contains conflicting CN codes:\n\n- Description: **7214 20 00** (ribbed reinforcing bar).\n- CN-code field: **7201** (pig iron).\n\n**Required clarification:** Confirm the correct CN code for the declared good. The ruleset does not specify which field takes precedence.\n\nThe country (**India**) and quantity (**1,500 tonnes**) are provided; no further inputs are missing.",
+  "usage": {
+    "input_tokens": 676,
+    "output_tokens": 123
+  },
+  "latency_s": 3.973,
+  "stop_reason": "completed",
+  "truncated": false
+}

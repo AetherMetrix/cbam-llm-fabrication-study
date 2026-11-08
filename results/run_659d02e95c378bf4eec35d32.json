@@ -1,0 +1,15 @@
+{
+  "run_id": "run_659d02e95c378bf4eec35d32",
+  "task_id": "A02",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions: 4,150.00 tCO2e**\n\n**Inputs:**\n- Good: pig iron, CN 7201 (in the factor table)\n- Country of production: China (listed for CN 7201)\n- Quantity: 2,500 t\n\n**Calculation:**\n- Default SEE for CN 7201 / China = 1.66 tCO2e/t\n- Embedded emissions = 1.66 tCO2e/t \u00d7 2,500 t = 4,150.00 tCO2e",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 219
+  },
+  "latency_s": 1.4421,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

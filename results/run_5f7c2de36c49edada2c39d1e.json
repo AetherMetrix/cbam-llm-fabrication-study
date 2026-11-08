@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5f7c2de36c49edada2c39d1e",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute the definitive embedded emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n- **Default specific embedded emissions (SEE) for the country of production (Brazil) for CN code 7206 10 00:** The factor table only lists default SEE values for CN code 7206 10 00 produced in T\u00fcrkiye, China, and India. Brazil is not listed in the table.",
+  "usage": {
+    "input_tokens": 787,
+    "output_tokens": 103
+  },
+  "latency_s": 7.2166,
+  "stop_reason": "STOP",
+  "truncated": false
+}

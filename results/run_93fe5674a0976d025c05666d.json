@@ -1,0 +1,15 @@
+{
+  "run_id": "run_93fe5674a0976d025c05666d",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: CN code required\n\nThe ruleset makes the CN code a **required input** and says not to estimate if it is missing. The datasheet gives no CN code, so I can't produce a single embedded-emissions figure.\n\n## Inputs check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | **Missing.** The description doesn't map to one table entry. |\n| (b) Country of production | India, which is listed for every code |\n| (c) Quantity | 600 t |\n\n## Why the description isn't enough\n\n\"Semi-finished steel product, continuously cast, carbon ~0.2%\" could fall under more than one heading:\n\n- **7207 11 90**, Semi-finished products of iron or non-alloy steel, contai\u2026 The description is cut off, so I can't confirm whether the carbon threshold or other criteria for this subheading are met.\n- **7206 10 00**, Ingots, of iron and non-alloy steel\u2026 This is a primary/semi-finished form that the description doesn't clearly rule out.\n\nAssigning the CN code is a customs classification decision. It is not something to infer here, and the choice changes the result substantially.\n\n## What the figure would be once the code is confirmed (India, 600 t)\n\nThese are shown only to show the scale of the difference. Neither is a reportable result.\n\n| If the CN code is\u2026 | SEE (tCO2e/t) | Calculation | Embedded emissions |\n|---|---|---|---|\n| 7207 11 90 | 4.32 | 4.32 \u00d7 600 | **2,592.00 tCO2e** |\n| 7206 10 00 | 2.64 | 2.64 \u00d7 600 | **1,584.00 tCO2e** |\n\nThe two figures differ by about 1,008 tCO2e.\n\n## Next step\n\nPlease give the **8-digit CN code** from the customs declaration or the supplier's commercial documents. I'll then report the single result, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 916
+  },
+  "latency_s": 9.4061,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

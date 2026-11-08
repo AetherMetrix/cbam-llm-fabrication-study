@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6d7491980b5285d54318c4e2",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded emissions cannot be computed: country of production is missing\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present and listed |\n| (b) Country of production | *blank* | \u274c **Missing** |\n| (c) Quantity (t) | 1,500 | \u2705 Present |\n\n## Why I stopped\n\nUnder the ruleset, the default SEE is selected jointly by **CN code and country**. CN 7201 has a different value for each listed country (T\u00fcrkiye, China, India). Without the country, I cannot select an SEE. The ruleset says not to estimate when a required input is missing, so I have not assumed a country or reported a figure.\n\nThe production route (\"blast furnace\") and installation (\"Works 2\") do not affect the default SEE in this table, so they cannot substitute for the country.\n\n## What's needed\n\nPlease provide the **country of production** for the pig iron from Works 2. If it is T\u00fcrkiye, China, or India, the calculation is:\n\n> Embedded emissions = SEE (CN 7201, country) \u00d7 1,500 t, rounded half-up to 2 decimal places.\n\nIf the country is not one of these three, CN 7201 has no default value in this table, and the emissions still cannot be computed under this ruleset.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 666
+  },
+  "latency_s": 7.2588,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

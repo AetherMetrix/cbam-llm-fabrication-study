@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ea2c767a612073af8d34c723",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario because the country of production is missing.\n\n**Inputs provided:**\n- CN code: 7201 (pig iron and spiegeleisen), which is in the factor table\n- Quantity: 1,000 t\n\n**Missing input:**\n- **Country of production.** Under the ruleset, the default SEE is selected jointly by CN code and country. The table lists three countries for CN 7201 (T\u00fcrkiye, China, India) with different SEE values, so the result depends on which one applies.\n\nOnce the country of production is confirmed, the calculation is 1,000 t \u00d7 the SEE for that country and CN code, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 935,
+    "output_tokens": 442
+  },
+  "latency_s": 2.8246,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

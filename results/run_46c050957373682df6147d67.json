@@ -1,0 +1,15 @@
+{
+  "run_id": "run_46c050957373682df6147d67",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "**Result: 4,056.50 tCO2e** (based on the line items, 950 t), but the declaration has a quantity discrepancy that must be resolved before it is submitted.\n\n**Inputs**\n- CN code: 7214 20 00 (ribbed bar, in the table)\n- Country: India (listed for this CN code)\n- Default SEE: 4.27 tCO2e/t\n\n**Quantity discrepancy**\n- Summary total: 1,000 t\n- Line items: 300 t + 400 t + 250 t = **950 t**\n- The two figures differ by 50 t.\n\n**Calculation (line-item basis, 950 t)**\n\n| Lot | Quantity (t) | \u00d7 SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| 1 | 300 | 4.27 | 1,281.00 |\n| 2 | 400 | 4.27 | 1,708.00 |\n| 3 | 250 | 4.27 | 1,067.50 |\n| **Total** | **950** | | **4,056.50** |\n\n**Alternative (summary basis, 1,000 t):** 1,000 \u00d7 4.27 = 4,270.00 tCO2e\n\nI've used the line-item total because the lot-level detail is the more verifiable source. If the 1,000 t summary is correct, the figure becomes 4,270.00 tCO2e, and the declaration's line items are missing 50 t. The declarant should confirm the true quantity and correct either the summary or the line items before this figure is used.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 863
+  },
+  "latency_s": 4.1756,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

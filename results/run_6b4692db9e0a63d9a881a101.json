@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6b4692db9e0a63d9a881a101",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The embedded emissions cannot be calculated yet because the **country of production is missing** from the provided information.\n\nKnown inputs:\n- CN code: **7207 11 90**\n- Quantity: **3,300 tonnes**\n\nPlease provide the country of production from the mill certificate. The table lists **T\u00fcrkiye, China, and India** for this CN code, each with a different SEE. Under the ruleset, no estimate can be made without the country.",
+  "usage": {
+    "input_tokens": 658,
+    "output_tokens": 96
+  },
+  "latency_s": 3.8821,
+  "stop_reason": "completed",
+  "truncated": false
+}

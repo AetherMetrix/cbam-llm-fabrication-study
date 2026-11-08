@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9ee5ea73fbf71b0ba42c1e07",
+  "task_id": "C-07",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The country of production is conflicting: **India** and **T\u00fcrkiye** are both given. Because the SEE is country-specific, a single embedded-emissions figure cannot be determined until the country is confirmed.\n\n- **If India:** 750 t \u00d7 2.64 tCO2e/t = **1,980.00 tCO2e**\n- **If T\u00fcrkiye:** 750 t \u00d7 1.96 tCO2e/t = **1,470.00 tCO2e**\n\nPlease confirm the country of production.",
+  "usage": {
+    "input_tokens": 623,
+    "output_tokens": 111
+  },
+  "latency_s": 3.0973,
+  "stop_reason": "completed",
+  "truncated": false
+}

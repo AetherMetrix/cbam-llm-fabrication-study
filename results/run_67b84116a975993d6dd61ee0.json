@@ -1,0 +1,15 @@
+{
+  "run_id": "run_67b84116a975993d6dd61ee0",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "# Embedded emissions for ingots (CN 7206 10 00, T\u00fcrkiye): 6,860.00 tCO2e at the declared quantity, pending a quantity check\n\n## Inputs\n\n| Input | Value | Status |\n|---|---|---|\n| CN code | 7206 10 00 (Ingots, of iron and non-alloy steel) | In table \u2714 |\n| Country of production | T\u00fcrkiye | Listed for this good \u2714 |\n| Default SEE | **1.96 tCO2e/t** | From table \u2714 |\n| Quantity | **3,500 t declared vs 3,000 t from lots** | \u26a0 Conflict |\n\n## Quantity discrepancy\n\nThe scenario describes three equal lots of 1,000 t each:\n\n3 \u00d7 1,000 t = **3,000 t**\n\nBut the declared total is **3,500 t**. That leaves 500 t unaccounted for. The difference could come from a missing fourth lot, a lot-size error, or a typo in the declared total.\n\n## Calculation\n\n**At the declared quantity (as requested):**\n\nEmbedded emissions = 1.96 tCO2e/t \u00d7 3,500 t = **6,860.00 tCO2e**\n\n**For reference, at the lot-based quantity:**\n\nEmbedded emissions = 1.96 tCO2e/t \u00d7 3,000 t = **5,880.00 tCO2e**\n\nThe gap between the two figures is **980.00 tCO2e**.\n\n## Result\n\n- **Declared quantity (3,500 t): 6,860.00 tCO2e**\n- The ruleset needs a valid quantity in tonnes, and the source data conflicts on this input. This result should not be treated as final until the quantity is reconciled.\n- **Recommended action:** confirm the correct quantity using shipping documents or the customs declaration.\n  - If the lot data is correct, the figure should be 5,880.00 tCO2e.\n  - If 3,500 t is correct, the lot breakdown needs correcting so the records are consistent.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 888
+  },
+  "latency_s": 8.7868,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

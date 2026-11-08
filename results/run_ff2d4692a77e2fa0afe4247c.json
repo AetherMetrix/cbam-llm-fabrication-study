@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ff2d4692a77e2fa0afe4247c",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: Not Determinable Until the CN Code Is Confirmed\n\nThe good is identified two different ways:\n\n| Source | CN code | Good |\n|---|---|---|\n| Descriptive text | 7207 11 90 | Semi-finished products of iron or non-alloy steel |\n| Line-item CN | 7214 20 00 | Bars and rods, of iron or non-alloy steel, with indentations |\n\nThe ruleset selects the default SEE by both the CN code and the country. These two codes have different T\u00fcrkiye factors, so the result depends on which code is correct. Choosing one would be an estimate, which the ruleset does not allow, so I have not reported a single figure.\n\n## Possible results\n\n**Option A: CN 7207 11 90 (matches the descriptive text)**\n- SEE (T\u00fcrkiye) = 3.087 tCO2e/t\n- 3.087 \u00d7 1,100 t = **3,395.70 tCO2e**\n\n**Option B: CN 7214 20 00 (matches the line-item CN)**\n- SEE (T\u00fcrkiye) = 2.31 tCO2e/t\n- 2.31 \u00d7 1,100 t = **2,541.00 tCO2e**\n\nThe two results differ by 854.70 tCO2e.\n\n## What is needed\nPlease confirm the correct CN classification of the good, for example from the customs declaration, commercial invoice or product specification. Once it is confirmed, the matching result above applies.\n\nThe country (T\u00fcrkiye) and quantity (1,100 t) are valid. Both codes and their T\u00fcrkiye factors appear in the table.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 684
+  },
+  "latency_s": 6.9581,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

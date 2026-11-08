@@ -1,0 +1,15 @@
+{
+  "run_id": "run_675e6d0542a2e2cf1daa2194",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure using the supplied table.\n\n- **CN code:** 7206 10 00 \u2014 listed.\n- **Quantity:** 900 tonnes \u2014 provided.\n- **Country of production:** Brazil \u2014 not listed for this good.\n\n**Missing input:** A default SEE factor for **CN 7206 10 00 produced in Brazil**. The rules do not permit estimating or substituting another country\u2019s factor.",
+  "usage": {
+    "input_tokens": 694,
+    "output_tokens": 94
+  },
+  "latency_s": 3.1663,
+  "stop_reason": "completed",
+  "truncated": false
+}

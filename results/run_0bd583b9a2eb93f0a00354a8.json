@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0bd583b9a2eb93f0a00354a8",
+  "task_id": "A03",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: Pig Iron (CN 7201), India\n\nAll three required inputs are present and listed in the factor table, so the figure can be computed.\n\n| Input | Value | Status |\n|---|---|---|\n| (a) CN code | 7201 (Pig iron and spiegeleisen) | \u2705 In table |\n| (b) Country of production | India | \u2705 Listed for CN 7201 |\n| (c) Quantity | 500.5 tonnes | \u2705 Provided |\n\n**Default SEE** for CN 7201 and India: **2.53 tCO2e/t**\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 2.53 tCO2e/t \u00d7 500.5 t\n= 1,266.265 tCO2e\n\n## Result\n\n**Embedded emissions = 1,266.27 tCO2e**\n\nThe unrounded result ends exactly on a 5 in the third decimal place. Standard rounding (half up) gives 1,266.27. If your reporting system uses banker's rounding (half to even), it would give 1,266.26. The ruleset does not specify a rounding convention.",
+  "usage": {
+    "input_tokens": 925,
+    "output_tokens": 472
+  },
+  "latency_s": 4.4752,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

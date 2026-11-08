@@ -1,0 +1,15 @@
+{
+  "run_id": "run_67e200b0e4e3a49d6b849161",
+  "task_id": "A12",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions: Steel Rebar (CN 7214 20 00), India\n\nAll three required inputs are present and match the factor table.\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 (bars and rods, of iron or non-alloy steel, with indentations, i.e. rebar) | \u2705 In table |\n| (b) Country of production | India | \u2705 Listed for this CN code |\n| (c) Quantity | 9,999 t | \u2705 Provided |\n\n**Default SEE for (7214 20 00, India): 4.27 tCO2e/t**\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 4.27 tCO2e/t \u00d7 9,999 t\n= **42,695.73 tCO2e**\n\n**Total embedded emissions: 42,695.73 tCO2e**",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 389
+  },
+  "latency_s": 4.019,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

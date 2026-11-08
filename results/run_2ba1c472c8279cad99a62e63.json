@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2ba1c472c8279cad99a62e63",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "The declaration contains conflicting CN codes: **7214 20 00** in the description (ribbed reinforcing bar) and **7201** in the CN-code field (pig iron).\n\nPlease confirm the correct CN code. The India SEE differs between these goods, so a single embedded-emissions total for **1,500 t** cannot be determined without resolving the conflict.",
+  "usage": {
+    "input_tokens": 639,
+    "output_tokens": 141
+  },
+  "latency_s": 4.946,
+  "stop_reason": "completed",
+  "truncated": false
+}

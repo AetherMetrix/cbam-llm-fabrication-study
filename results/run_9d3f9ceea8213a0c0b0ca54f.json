@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9d3f9ceea8213a0c0b0ca54f",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# CBAM Embedded Emissions: CN Code Conflict\n\n**I can't give one definitive figure.** The declaration contains two conflicting CN codes, and the ruleset selects the SEE by CN code and country together. Both codes are in the table, so the result depends on which code is correct.\n\n## The conflict\n\n| Source in declaration | CN code | Good |\n|---|---|---|\n| Goods description | 7214 20 00 | Bars and rods with indentations (ribbed reinforcing bar) |\n| CN-code field | 7201 | Pig iron |\n\n## Results for each code (India, 1,500 t)\n\n**If CN 7214 20 00 (rebar):**\n4.27 tCO2e/t \u00d7 1,500 t = **6,405.00 tCO2e**\n\n**If CN 7201 (pig iron):**\n2.53 tCO2e/t \u00d7 1,500 t = **3,795.00 tCO2e**\n\nThe two results differ by **2,610.00 tCO2e** (about 69%).\n\n## Assessment\n\n- The description is specific and internally consistent. \"Ribbed reinforcing bar\" matches the 7214 20 00 heading (\"with indentations, ribs\u2026\"). The 7201 entry in the CN-code field is therefore most likely a data-entry error.\n- If the field is corrected to 7214 20 00, the embedded emissions are **6,405.00 tCO2e**.\n- Using the field as entered (7201) would understate emissions by 2,610 tCO2e.\n\n## Recommended action\n\nBefore filing, confirm the correct CN code with the declarant or customs broker and amend the CN-code field. The CN-code field is the formal classification, so the mismatch should be fixed in the declaration itself rather than resolved only in the calculation.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 848
+  },
+  "latency_s": 8.3504,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7fb50f2954a92404d4ee6d40",
+  "task_id": "B-O10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**I can't compute the embedded emissions yet.** Two required inputs are missing, and the ruleset says not to estimate when an input is missing.\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201, pig iron and spiegeleisen |\n| (b) Country of production | \u274c **Missing**. The default SEE depends on the country. |\n| (c) Quantity in tonnes | \u274c **Missing** |\n\n**Available default SEE values for CN 7201:**\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 1.85 |\n| China | 1.66 |\n| India | 2.53 |\n\nPlease provide:\n1. **Country of production.** It must be T\u00fcrkiye, China or India to use this table.\n2. **Quantity in tonnes.**\n\nThen I'll calculate: Embedded emissions = SEE \u00d7 quantity, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 871,
+    "output_tokens": 353
+  },
+  "latency_s": 3.7999,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

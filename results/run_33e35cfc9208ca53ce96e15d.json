@@ -1,0 +1,15 @@
+{
+  "run_id": "run_33e35cfc9208ca53ce96e15d",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure because the quantity is inconsistent: the stated total is **1,200 t**, but the shipment lines total **1,000 t** (500 + 500).\n\n**Missing input:** a confirmed declared quantity in tonnes\u2014please confirm which total is correct.\n\nThe applicable SEE for CN 7201 produced in China is **1.66 tCO2e/t**.",
+  "usage": {
+    "input_tokens": 664,
+    "output_tokens": 129
+  },
+  "latency_s": 4.2175,
+  "stop_reason": "completed",
+  "truncated": false
+}

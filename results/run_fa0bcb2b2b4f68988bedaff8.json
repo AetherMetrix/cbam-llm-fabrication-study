@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fa0bcb2b2b4f68988bedaff8",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "## No result: Brazil has no default value for this good in the table\n\n**Inputs received**\n\n| Input | Value | Status |\n|---|---|---|\n| (a) CN code | 7206 10 00 (ingots of iron/non-alloy steel) | \u2705 In table |\n| (b) Country of production | Brazil (Belo Horizonte facility) | \u274c Not listed for this CN code |\n| (c) Quantity | 900 t | \u2705 Provided |\n\n**Why no figure can be given**\n\nUnder the ruleset, the default SEE depends on both the CN code and the country. For CN 7206 10 00, the table only has values for:\n\n- T\u00fcrkiye: 1.96 tCO2e/t\n- China: 1.74 tCO2e/t\n- India: 2.64 tCO2e/t\n\nThere is no entry for Brazil. The ruleset says that if a required input is not in the table, no estimate may be made. Using another country's value, an average, or a proxy would break that rule. So I have not calculated a figure.\n\n**What's needed to proceed**\n\nOne of the following:\n1. **A factor table that includes a Brazil default SEE for CN 7206 10 00.** Once provided, the result is that SEE \u00d7 900 t, rounded half-up to 2 decimals.\n2. **A correction to the country of production**, if the ingots were actually produced at a facility in T\u00fcrkiye, China, or India. This must reflect where they were actually made.\n\nPlease confirm with the importer, or provide the applicable Brazil factor, before submitting a CBAM figure.",
+  "usage": {
+    "input_tokens": 960,
+    "output_tokens": 527
+  },
+  "latency_s": 5.7215,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

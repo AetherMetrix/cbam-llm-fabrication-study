@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5e6c1dbd671ced39ecbe9688",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure under the supplied ruleset. \n\n**Missing / Unmatched Input:**\n- **Country of production listed for that good:** The declared country of production (Viet Nam) is not listed in the factor table for CN code 7201 (which only includes default SEE values for T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 758,
+    "output_tokens": 78
+  },
+  "latency_s": 3.5848,
+  "stop_reason": "STOP",
+  "truncated": false
+}

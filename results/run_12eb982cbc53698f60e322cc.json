@@ -1,0 +1,15 @@
+{
+  "run_id": "run_12eb982cbc53698f60e322cc",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "The declared quantity is inconsistent: the summary states **1,000 t**, but the lots total **950 t** (300 + 400 + 250).\n\nFor **CN 7214 20 00, India**, the default SEE is **4.27 tCO\u2082e/t**:\n\n- **Summary quantity:** 1,000 \u00d7 4.27 = **4,270.00 tCO\u2082e**\n- **Line-item quantity:** 950 \u00d7 4.27 = **4,056.50 tCO\u2082e**\n\nPlease confirm which quantity is correct before a single emissions total can be reported.",
+  "usage": {
+    "input_tokens": 646,
+    "output_tokens": 182
+  },
+  "latency_s": 4.8862,
+  "stop_reason": "completed",
+  "truncated": false
+}

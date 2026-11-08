@@ -1,0 +1,15 @@
+{
+  "run_id": "run_88cefdb5defda91bc270816d",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: Pig Iron (CN 7201), 1,000 t\n\n**I can't give a single result yet because the country of production is in conflict.** The ruleset selects the default SEE by both CN code and country, so the country determines the answer.\n\n## The conflict\n\n| Source | Country of production |\n|---|---|\n| Cover note | China |\n| Customs form | India |\n\nThe ruleset requires a single, confirmed country and says not to estimate when an input isn't established. It also doesn't say which document takes precedence. Choosing one would be a guess.\n\n## Results for each possible country\n\n| Country | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions |\n|---|---|---|---|\n| China | 1.66 | 1,000 | **1,660.00 tCO2e** |\n| India | 2.53 | 1,000 | **2,530.00 tCO2e** |\n\nThe two results differ by **870.00 tCO2e**, about 52% more if India is correct.\n\n## Recommended next step\n\nConfirm the actual country of production with the declarant or supplier, for example through the certificate of origin, mill or production certificates, or supplier installation data. Then apply the matching value above.\n\nThe customs form is the formal declaration document. If it proves correct, India applies and the result is **2,530.00 tCO2e**. If the cover note is correct, the customs record should be amended, and the result is **1,660.00 tCO2e**.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 655
+  },
+  "latency_s": 7.296,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

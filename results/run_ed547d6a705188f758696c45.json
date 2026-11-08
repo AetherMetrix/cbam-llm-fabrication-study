@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ed547d6a705188f758696c45",
+  "task_id": "B-S10",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the ruleset provided, the embedded emissions cannot be computed because a required input\u2014the **country of production**\u2014is missing from the scenario (only the buyer's location in Germany and the seller's desk in Geneva are mentioned). \n\nPer the ruleset:\n- Default specific embedded emissions (SEE) are country-specific and must be selected jointly by the good's CN code and the country of production.\n- Required inputs are: (a) good CN code in the table, (b) country of production listed for that good, and (c) quantity in tonnes. If any is missing or not in the table, do not estimate.\n\nTo complete this calculation for the 850 tonnes of ingots (CN 7206 10 00), please provide the country of production (note that the factor table only lists default values for T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 193
+  },
+  "latency_s": 5.9354,
+  "stop_reason": "STOP",
+  "truncated": false
+}

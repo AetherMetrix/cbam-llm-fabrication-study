@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d36181580195266c784e2996",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Cannot calculate embedded emissions. \n\nAccording to the ruleset, the calculation requires three specific inputs:\n(a) the good's CN code in the table,\n(b) the country of production listed for that good, and\n(c) the quantity in tonnes.\n\nYour scenario provides the quantity (1,000 t), but is missing the **specific CN code** (e.g., 7201, 7206 10 00, 7207 11 90, or 7214 20 00) and the **country of production** (T\u00fcrkiye, China, or India). As per the ruleset, I cannot estimate the emissions without these inputs. Please provide the CN code and country of production to proceed.",
+  "usage": {
+    "input_tokens": 694,
+    "output_tokens": 174
+  },
+  "latency_s": 9.7461,
+  "stop_reason": "STOP",
+  "truncated": false
+}

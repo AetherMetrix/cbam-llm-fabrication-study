@@ -1,0 +1,15 @@
+{
+  "run_id": "run_638039e9f1084e51048b1b13",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Cannot compute the embedded emissions. \n\nAccording to the ruleset, the good's CN code is a required input and must be present in the factor table. In the provided scenario, the CN code is missing (\"to be confirmed\"), and the ruleset states not to estimate if any required input is missing.",
+  "usage": {
+    "input_tokens": 731,
+    "output_tokens": 67
+  },
+  "latency_s": 4.132,
+  "stop_reason": "STOP",
+  "truncated": false
+}

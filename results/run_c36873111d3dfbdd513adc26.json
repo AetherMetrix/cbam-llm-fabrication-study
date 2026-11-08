@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c36873111d3dfbdd513adc26",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: Cannot Be Calculated Yet\n\n**Status: Calculation not performed. The country of production is missing.**\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7207 11 90 (Semi-finished products of iron or non-alloy steel) | \u2705 Found in table |\n| (b) Country of production | Not stated. The email says it is on the mill certificate, which was not included. | \u274c Missing |\n| (c) Quantity (tonnes) | 3,300 t | \u2705 Provided |\n\n## Why I stopped\n\nUnder the ruleset, default SEE values depend on both the CN code and the country. CN 7207 11 90 has a different value for each listed country:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 3.087 |\n| China | 3.314 |\n| India | 4.32 |\n\nWithout the country, I cannot select the correct factor. The ruleset says not to estimate when a required input is missing, so I have not picked a country or reported a total.\n\n## What's needed to proceed\n\nPlease send the **country of production** from the mill certificate.\n- If it is **T\u00fcrkiye, China, or India**, I will calculate: SEE \u00d7 3,300 t, rounded half-up to 2 decimal places.\n- If it is **any other country**, the table has no default value for this good and country, and the calculation cannot be done under this ruleset.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 834
+  },
+  "latency_s": 10.3046,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b87cd662661b1373214298f8",
+  "task_id": "A01",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions are calculated as follows:\n\n* **Good CN code:** 7201 (Pig iron and spiegeleisen, in pigs, blocks or other primary forms)\n* **Country of production:** T\u00fcrkiye\n* **Default SEE:** 1.85 tCO2e/t\n* **Quantity:** 1000 tonnes\n\n**Calculation:**\n1.85 tCO2e/t \u00d7 1000 tonnes = 1850.00 tCO2e\n\n**Total Embedded Emissions:** 1850.00 tCO2e",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 140
+  },
+  "latency_s": 5.316,
+  "stop_reason": "STOP",
+  "truncated": false
+}

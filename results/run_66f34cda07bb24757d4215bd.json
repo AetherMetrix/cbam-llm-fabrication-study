@@ -1,0 +1,15 @@
+{
+  "run_id": "run_66f34cda07bb24757d4215bd",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# Embedded emissions cannot be calculated: country of production is missing\n\nThe ruleset requires three inputs before any calculation:\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 In table |\n| (b) Country of production listed for that good | *blank* | \u274c Missing |\n| (c) Quantity in tonnes | 1,500 t | \u2705 Provided |\n\nThe default SEE depends on both the CN code and the country. CN 7201 has three country-specific values in the table:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 1.85 |\n| China | 1.66 |\n| India | 2.53 |\n\nThese differ substantially, so no factor can be chosen without the country. The ruleset says not to estimate when a required input is missing, so I have not used a default, an average, or a range.\n\nThe other fields on the form (\"blast furnace\" and \"Works 2\") don't identify the country and aren't used in the default-value method.\n\n**To finish the calculation, please provide the country of production for the Works 2 installation.** The result will then be:\n\n> Embedded emissions (tCO2e) = SEE (CN 7201, country) \u00d7 1,500 t, rounded half-up to 2 decimal places\n\nIf the country is not T\u00fcrkiye, China, or India, this table has no default value for it, and the calculation still can't be done under this ruleset.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 744
+  },
+  "latency_s": 8.1225,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

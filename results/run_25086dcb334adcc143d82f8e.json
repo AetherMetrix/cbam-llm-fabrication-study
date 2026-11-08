@@ -1,0 +1,15 @@
+{
+  "run_id": "run_25086dcb334adcc143d82f8e",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**No estimate can be given for this line.**\n\nThe ruleset requires the good's CN code and country of production to match a row in the factor table. CN 7201 is in the table, but only for T\u00fcrkiye, China, and India. Viet Nam is not listed for this good, so no default SEE applies and the embedded-emissions total is not calculated.\n\n**To proceed, one of the following is needed:**\n- Confirm whether the country of production is actually T\u00fcrkiye, China, or India, and correct the declaration if so. At those rates, 1,800 t would give:\n  - T\u00fcrkiye: 1.85 \u00d7 1,800 = 3,330.00 tCO2e\n  - China: 1.66 \u00d7 1,800 = 2,988.00 tCO2e\n  - India: 2.53 \u00d7 1,800 = 4,554.00 tCO2e\n- Supply a factor for CN 7201 / Viet Nam from an authorised source outside this ruleset. The \"basic blast-furnace route\" detail in the declaration does not change the lookup, because the table is keyed only on CN code and country.",
+  "usage": {
+    "input_tokens": 904,
+    "output_tokens": 379
+  },
+  "latency_s": 2.3257,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

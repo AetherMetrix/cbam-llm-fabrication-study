@@ -1,0 +1,15 @@
+{
+  "run_id": "run_18149e3d34836b94ab1c9436",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded emissions figure based on the data provided. \n\nUnder the supplied ruleset, default specific embedded emissions (SEE) values are country-specific and must be selected jointly by the good's CN code and the country of production. \n\nThe following required input is missing:\n- **Country of production** (must be one of the countries listed for CN code 7201 in the factor table: T\u00fcrkiye, China, or India).",
+  "usage": {
+    "input_tokens": 781,
+    "output_tokens": 100
+  },
+  "latency_s": 8.3796,
+  "stop_reason": "STOP",
+  "truncated": false
+}

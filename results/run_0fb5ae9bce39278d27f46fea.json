@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0fb5ae9bce39278d27f46fea",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Result: Cannot be computed under the ruleset. No figure is provided.**\n\n**Inputs check:**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7206 10 00 (ingots, iron/non-alloy steel) | \u2705 Listed |\n| (b) Country of production listed for that good | Brazil | \u274c Not listed |\n| (c) Quantity in tonnes | 900 t | \u2705 Provided |\n\n**Why no estimate is given:**\n- Default SEE values are selected jointly by CN code and country.\n- For CN 7206 10 00, the factor table has values only for T\u00fcrkiye (1.96), China (1.74), and India (2.64).\n- There is no Brazil entry. The ruleset says that if a required input is not in the table, the value must not be estimated.\n- Using another country's value, an average, or any proxy would break that rule. For example, 900 t \u00d7 1.74 = 1,566.00 tCO2e (China) or 900 t \u00d7 2.64 = 2,376.00 tCO2e (India) would both be invalid.\n\n**What is needed to proceed:**\n1. **A Brazil-specific default SEE for CN 7206 10 00** from an updated official factor table. With that value, the result is 900 \u00d7 SEE, rounded half-up to 2 decimals.\n2. **Or actual installation-specific emissions data** from the Belo Horizonte facility. This falls outside the default-value method in this ruleset, so it would need separate rules.\n3. **Or confirmation that the declared country of production is wrong.** If the ingots were in fact produced in T\u00fcrkiye, China, or India, I can calculate the figure right away. Please confirm this against the certificate of origin rather than the shipping location.\n\nPlease don't give the importer any CBAM figure for this shipment until one of the above is resolved.",
+  "usage": {
+    "input_tokens": 960,
+    "output_tokens": 630
+  },
+  "latency_s": 7.2759,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

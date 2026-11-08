@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0364f7c62f003923deba3a13",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I can't compute a definitive embedded-emissions figure for this line.**\n\n**Input check**\n\n| Required input | Declared value | Status |\n|---|---|---|\n| (a) CN code in table | 7201 (Pig iron) | \u2705 Present |\n| (b) Country of production listed for that good | USA | \u274c **Not in table** |\n| (c) Quantity in tonnes | 1,200 t | \u2705 Present |\n\n**Why it fails:** The ruleset selects the default SEE by both CN code and country. For CN 7201, the table lists only T\u00fcrkiye (1.85), China (1.66), and India (2.53) tCO2e/t. There is no entry for the USA, so no SEE can be selected for this line.\n\nUsing another country's value, an average, or the highest value would be an estimate, which the ruleset prohibits. For reference only, these values would give anywhere from 1,992.00 to 3,036.00 tCO2e, so the choice matters a lot.\n\n**Missing input**\n- The default SEE (tCO2e/t) for CN 7201, Pig iron, with country of production USA.\n\n**To resolve this, provide one of the following:**\n1. An updated factor table that includes a USA entry for CN 7201. The result would then be that SEE \u00d7 1,200 t, rounded half-up to 2 decimal places.\n2. A corrected country of production, if \"USA\" is a data-entry error and the pig iron was actually produced in T\u00fcrkiye, China, or India.\n\nOnce either is provided, I can complete the calculation.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 546
+  },
+  "latency_s": 5.7859,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

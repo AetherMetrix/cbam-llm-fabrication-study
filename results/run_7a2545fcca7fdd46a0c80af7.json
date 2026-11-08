@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7a2545fcca7fdd46a0c80af7",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "# Cannot compute: country of production is missing\n\nI can't calculate a definitive embedded-emissions figure for this declaration.\n\n## What the scenario provides\n\n| Required input | Provided? | Value |\n|---|---|---|\n| (a) CN code in the table | \u2705 Yes | 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations\u2026) |\n| (b) Country of production listed for that good | \u274c **No** | Not stated |\n| (c) Quantity in tonnes | \u2705 Yes | 2,500 t |\n\n## Missing input\n\n**Country of production** for the 2,500 t of CN 7214 20 00 rebar.\n\nUnder the ruleset, the default SEE is chosen jointly by CN code and country. CN 7214 20 00 has three country-specific values in the table:\n\n| Country | Default SEE (tCO2e/t) |\n|---|---|\n| T\u00fcrkiye | 2.31 |\n| China | 3.169 |\n| India | 4.27 |\n\nThese values differ substantially, so the factor can't be determined without the country, and the ruleset says not to estimate.\n\n## To complete the calculation\n\nPlease confirm the country of production. It must be T\u00fcrkiye, China, or India to use this table. If it is any other country, the table has no applicable default value and the figure still can't be computed under these rules.\n\nOnce the country is confirmed, the calculation is:\n**Embedded emissions = SEE (CN 7214 20 00, country) \u00d7 2,500 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 944,
+    "output_tokens": 709
+  },
+  "latency_s": 7.066,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

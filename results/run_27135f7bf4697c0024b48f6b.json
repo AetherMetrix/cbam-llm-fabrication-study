@@ -1,0 +1,15 @@
+{
+  "run_id": "run_27135f7bf4697c0024b48f6b",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Because there is a contradiction in the declaration between the CN-code field (`7201` - Pig iron) and the item description (`7214 20 00` - Bars and rods / ribbed reinforcing bar), the exact good CN code cannot be unambiguously determined. \n\nPer the ruleset, a valid and unambiguous good CN code is a required input, and estimations/assumptions should not be made when inputs are uncertain. Please clarify and resolve the discrepancy in the declaration before a definitive CBAM compliance value can be reported.\n\nFor your reference, here are the calculations for both potential classifications so you can apply the correct one once the declaration is corrected:\n\n**Option 1: If the good is CN 7214 20 00 (Bars and rods / ribbed reinforcing bar)**\n* **Country of Production:** India\n* **Default SEE:** 4.27 tCO2e/t\n* **Quantity:** 1,500 t\n* **Calculation:** 4.27 tCO2e/t \u00d7 1,500 t = **6,405.00 tCO2e**\n\n**Option 2: If the good is CN 7201 (Pig iron)**\n* **Country of Production:** India\n* **Default SEE:** 2.53 tCO2e/t\n* **Quantity:** 1,500 t\n* **Calculation:** 2.53 tCO2e/t \u00d7 1,500 t = **3,795.00 tCO2e**",
+  "usage": {
+    "input_tokens": 735,
+    "output_tokens": 345
+  },
+  "latency_s": 7.6979,
+  "stop_reason": "STOP",
+  "truncated": false
+}

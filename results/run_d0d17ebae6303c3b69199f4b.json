@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d0d17ebae6303c3b69199f4b",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "**I cannot compute the embedded emissions for this shipment.**\n\nThe ruleset requires a default SEE value selected jointly by good CN code and country of production. Your request fails the first input check:\n\n| Required input | Status | Detail |\n|---|---|---|\n| (a) Good CN code in the table | **Missing** | CN 7208 (hot-rolled flat steel) is not in the factor table. |\n| (b) Country of production listed for that good | **Missing** | China is listed for other CN codes, but not for 7208, so no China SEE applies to this good. |\n| (c) Quantity in tonnes | Provided | 5,000 t |\n\nThe table contains China values for CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00. None of these is the declared good, so I have not used any of them as a substitute.\n\nTo compute the figure, the factor table needs a default SEE entry for **CN 7208 with China as the country of production**. Once that value is supplied, the calculation is: embedded emissions (tCO2e) = SEE (tCO2e/t) \u00d7 5,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 562
+  },
+  "latency_s": 3.1806,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_11e29bf3d1789e76d2c7a15d",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Result: the embedded emissions cannot be finalized until the country of production is confirmed.** The two source documents conflict, and the ruleset requires a single country to select the default SEE value.\n\n**Conditional calculations** (CN 7201, 1,000 t):\n\n| Country of production (source) | Default SEE (tCO2e/t) | Embedded emissions (tCO2e) |\n|---|---|---|\n| India (customs form) | 2.53 | **2,530.00** |\n| China (cover note) | 1.66 | 1,660.00 |\n\n**Action needed:** Confirm the country of production and then report the matching figure. The customs form is the more authoritative document for origin, so 2,530.00 tCO2e is the likely figure, but this should be verified with the supplier or importer before submission. The discrepancy should also be documented in the CBAM records.",
+  "usage": {
+    "input_tokens": 905,
+    "output_tokens": 617
+  },
+  "latency_s": 5.4236,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

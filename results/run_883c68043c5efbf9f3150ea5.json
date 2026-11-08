@@ -1,0 +1,15 @@
+{
+  "run_id": "run_883c68043c5efbf9f3150ea5",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "## Embedded emissions cannot be computed for this shipment\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7214 20 00 (bars and rods with indentations, e.g. rebar) | \u2705 Present |\n| (b) Country of production listed for that good | **Ukraine** | \u274c **Not listed** |\n| (c) Quantity in tonnes | 2,600 t | \u2705 Present |\n\n**Why it fails**\n\nThe ruleset selects the default SEE jointly by CN code and country. For CN 7214 20 00, the table only gives values for:\n\n- T\u00fcrkiye: 2.31 tCO2e/t\n- China: 3.169 tCO2e/t\n- India: 4.27 tCO2e/t\n\nThere is no entry for **Ukraine**. The ruleset says that if a required input is not in the table, no estimate may be made. Substituting another country's value or an average would break that rule.\n\n**Result:** No embedded-emissions figure can be reported for 2,600 t of CN 7214 20 00 produced in Ukraine.\n\n**To resolve this, one of the following is needed:**\n1. A factor table that includes a default SEE for CN 7214 20 00 with Ukraine as the country of production, or\n2. Confirmation that the country of production was entered incorrectly and is actually T\u00fcrkiye, China, or India.\n\nFor reference only, if the country were one of the listed ones, the result would be 2,600 t \u00d7 SEE. For example, T\u00fcrkiye would give 2,600 \u00d7 2.31 = 6,006.00 tCO2e. This is **not** a valid result for the declared Ukrainian origin.",
+  "usage": {
+    "input_tokens": 922,
+    "output_tokens": 575
+  },
+  "latency_s": 5.8324,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

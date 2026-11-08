@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8151ac6f90926a5c920c70f2",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "# CBAM Embedded Emissions: Cannot Finalize Until the CN Code Is Confirmed\n\n**I can't report a single total.** The declaration gives two different CN codes, and the ruleset selects the default SEE by CN code and country. Choosing one code without confirmation would be an estimate, which the ruleset doesn't allow.\n\n## The conflict\n\n| Source in declaration | CN code | Good | India SEE (tCO2e/t) |\n|---|---|---|---|\n| Goods description | 7214 20 00 | Bars and rods, with indentations/ribs (rebar) | 4.27 |\n| CN-code field | 7201 | Pig iron | 2.53 |\n\nCountry (India) and quantity (1,500 t) are clear. Only the CN code is in conflict.\n\n## Results under each code\n\n**If CN 7214 20 00 (rebar) is correct:**\n1,500 t \u00d7 4.27 tCO2e/t = **6,405.00 tCO2e**\n\n**If CN 7201 (pig iron) is correct:**\n1,500 t \u00d7 2.53 tCO2e/t = **3,795.00 tCO2e**\n\nThe difference is **2,610.00 tCO2e**. Using 7201 would understate emissions by about 41% compared with 7214 20 00.\n\n## Assessment and next step\n\nThe physical description, \"ribbed reinforcing bar,\" matches CN 7214 20 00 (\"with indentations, ribs\u2026\"). Pig iron is a primary form, not a finished bar. This suggests the CN-code field (7201) is a data-entry error, and **6,405.00 tCO2e** is the likely correct figure.\n\nHowever, this needs confirmation before filing:\n1. Confirm the correct CN code with the importer or declarant, using the commercial invoice, customs declaration, or mill certificate.\n2. Correct the CN-code field so it matches the goods.\n3. Report the total that corresponds to the confirmed code.",
+  "usage": {
+    "input_tokens": 921,
+    "output_tokens": 890
+  },
+  "latency_s": 9.0894,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

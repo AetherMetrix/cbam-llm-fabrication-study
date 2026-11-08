@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2555c41787d439a6e165cabe",
+  "task_id": "B-S14",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "I can't calculate the embedded emissions for this shipment yet. The ruleset requires the country of production, and the email doesn't include it. The default emission factor is set jointly by CN code and country, and CN 7207 11 90 has factors for three countries in the table (T\u00fcrkiye, China, India). Without the country, I can't select a factor, so I haven't produced an estimate.\n\nOnce you confirm the country from the mill certificate, I'll:\n1. Look up the default SEE for 7207 11 90 and that country.\n2. Multiply it by 3,300 t (Embedded emissions = SEE \u00d7 quantity).\n3. Report the total rounded half-up to 2 decimal places.\n\nPlease send the country of production from the mill certificate. If the certificate names a country not listed for this CN code, I'll flag it rather than estimate.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 651
+  },
+  "latency_s": 4.044,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

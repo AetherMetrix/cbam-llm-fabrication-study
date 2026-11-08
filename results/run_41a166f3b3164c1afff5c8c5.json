@@ -1,0 +1,15 @@
+{
+  "run_id": "run_41a166f3b3164c1afff5c8c5",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute a definitive embedded-emissions figure\n\nThe CN code and country are valid, but the **quantity is inconsistent**, so I can't produce a definitive figure.\n\n## Inputs Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7201, Pig iron, is listed |\n| (b) Country listed for that good | \u2705 China is listed. Default SEE = **1.66 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The Quantity Conflict\n\n- **Stated total:** 1,200 t\n- **Shipment lines:** 500 t + 500 t = **1,000 t**\n- **Unexplained difference:** 200 t\n\nThe ruleset requires a single quantity in tonnes. Choosing either figure, or assuming a missing line exists, would be an estimate.\n\n## Missing Input\n\n1. **A confirmed declared quantity of pig iron (CN 7201) from China, in tonnes.** One of the following is needed:\n   - Confirmation that the correct total is 1,000 t and the 1,200 t figure is an error, **or**\n   - The missing shipment line(s) totalling 200 t, confirmed as CN 7201 produced in China, **or**\n   - Corrected shipment-line quantities that sum to 1,200 t.\n\nOnce the quantity is confirmed, embedded emissions = confirmed quantity (t) \u00d7 1.66 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 956,
+    "output_tokens": 801
+  },
+  "latency_s": 8.2409,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

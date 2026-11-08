@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8dc1a78ae5b8e8d99b08d599",
+  "task_id": "A05",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 1,392.00 tCO2e**\n\n**Inputs check:**\n- **CN code:** 7206 10 00 (Ingots of iron and non-alloy steel) is in the factor table.\n- **Country:** China is listed for this CN code.\n- **Quantity:** 800 tonnes is provided.\n\n**Calculation:**\n- Default SEE for CN 7206 10 00, China = 1.74 tCO2e/t\n- Embedded emissions = 1.74 tCO2e/t \u00d7 800 t = **1,392.00 tCO2e**",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 279
+  },
+  "latency_s": 1.7094,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

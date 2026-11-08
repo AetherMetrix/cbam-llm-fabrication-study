@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9bac6c771a6d5cc7d2bf84a2",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "**I cannot compute the embedded emissions for this PO.** The required CN code is missing.\n\n**Missing input:**\n- **CN code (required).** The PO lists \"(to be confirmed)\" and describes the good only as \"steel long product (exact heading TBD by mill).\" The ruleset requires a CN code in the factor table to select the default SEE, which is chosen jointly by CN code and country.\n\n**Inputs that are present:**\n- Quantity: 1,000 t\n- Country of production: T\u00fcrkiye (listed in the table for every CN code)\n\n**Why the code matters:** For T\u00fcrkiye, the table has four candidate entries with different SEE values:\n\n| CN code | Good | Default SEE, T\u00fcrkiye (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 1.85 |\n| 7206 10 00 | Ingots of iron/non-alloy steel | 1.96 |\n| 7207 11 90 | Semi-finished products | 3.087 |\n| 7214 20 00 | Bars and rods, with indentations | 2.31 |\n\nBecause these values differ, no single figure can be selected without the confirmed heading. The embedded emissions will be 1,000 t \u00d7 the SEE for the confirmed code, rounded half-up to 2 decimal places. Please provide the confirmed CN code to proceed.",
+  "usage": {
+    "input_tokens": 984,
+    "output_tokens": 836
+  },
+  "latency_s": 4.1022,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

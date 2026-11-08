@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1210dfba37ddf43aed439eda",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Using the **declared total of 1,200 tonnes**:\n\n- CN 7201, China: default SEE = **1.66 tCO2e/t**\n- Embedded emissions = 1,200 \u00d7 1.66 = **1,992.00 tCO2e**\n\n**Quantity discrepancy:** The two shipment lines sum to 1,000 tonnes, not 1,200 tonnes. The calculation above uses the stated declared total; the discrepancy should be reconciled.",
+  "usage": {
+    "input_tokens": 627,
+    "output_tokens": 137
+  },
+  "latency_s": 3.3799,
+  "stop_reason": "completed",
+  "truncated": false
+}

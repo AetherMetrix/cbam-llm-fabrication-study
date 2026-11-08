@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c3b45f7ab62570709815dd5f",
+  "task_id": "B-S06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the CBAM embedded emissions for this consignment under the supplied ruleset and factor table.\n\n**Missing or non-matching inputs:**\n\n1. **Good CN code:** The declared code, 7202 11 (ferro-manganese), does not appear in the factor table. The table covers only CN 7201, 7206 10 00, 7207 11 90, and 7214 20 00.\n2. **Country of production for that good:** China is listed only for the table's codes, not for CN 7202 11, so no default SEE exists for this good-country pair.\n3. **Default SEE value:** Without a table entry for CN 7202 11 and China, there is no tCO2e/t factor to multiply by the quantity.\n\nThe quantity (500 t) and country (China) are provided, but the rule requires a factor selected jointly by good CN code and country. I have not substituted a factor from a different CN code, since that would be an estimate.\n\n**To proceed, one of the following is needed:**\n\n- A default SEE for CN 7202 11 produced in China, from a ruleset or factor table that includes this entry; or\n- Confirmation that the good should be classified under a CN code in the table (for example, if the supplier's CN code is wrong), in which case the calculation can be run for that code and China.",
+  "usage": {
+    "input_tokens": 968,
+    "output_tokens": 741
+  },
+  "latency_s": 4.7049,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

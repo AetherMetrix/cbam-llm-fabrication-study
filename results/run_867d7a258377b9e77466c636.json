@@ -1,0 +1,15 @@
+{
+  "run_id": "run_867d7a258377b9e77466c636",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "The quantities conflict: the summary declares **1,000 t**, but the lots total **950 t** (300 + 400 + 250).\n\nFor **CN 7214 20 00, India**, the default SEE is **4.27 tCO2e/t**.\n\n- **Using the declared summary quantity:** 1,000 \u00d7 4.27 = **4,270.00 tCO2e**\n- **Using the line-item total:** 950 \u00d7 4.27 = **4,056.50 tCO2e**\n\nBoth totals are rounded half-up to two decimal places. Please confirm which quantity is authoritative before finalizing the declaration.",
+  "usage": {
+    "input_tokens": 646,
+    "output_tokens": 217
+  },
+  "latency_s": 5.9716,
+  "stop_reason": "completed",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_51ba3c7c5036f434d6e4fd0e",
+  "task_id": "B-S02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "I can't compute the embedded emissions yet because the **country of production is missing** from the data form. The default SEE value is selected by both CN code and country, so the country is a required input.\n\n**Status:** Not estimated\n\n**What's on file:**\n- CN code: 7201 (Pig iron and spiegeleisen), which is in the factor table\n- Quantity: 1,500 t\n- Production route and installation are noted but are not used in the calculation\n\n**What's needed:** Confirm the country of production. For CN 7201, the table covers:\n\n| Country | Default SEE (tCO2e/t) | Embedded emissions for 1,500 t (tCO2e) |\n|---|---|---|\n| T\u00fcrkiye | 1.85 | 2,775.00 |\n| China | 1.66 | 2,490.00 |\n| India | 2.53 | 3,795.00 |\n\nThese figures are shown for reference only. Once the country is confirmed, the result is the matching row's SEE multiplied by 1,500 t, and I'll report the total rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 934,
+    "output_tokens": 375
+  },
+  "latency_s": 2.4627,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

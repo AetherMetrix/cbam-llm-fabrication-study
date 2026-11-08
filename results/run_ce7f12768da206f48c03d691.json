@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ce7f12768da206f48c03d691",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: no default value for this good and country\n\nThe embedded-emissions figure can't be computed under the supplied ruleset.\n\n**Input check**\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7206 10 00 (ingots, iron/non-alloy steel) | \u2705 Present in table |\n| (b) Country of production listed for that good | Brazil | \u274c **Not listed.** The table has CN 7206 10 00 only for T\u00fcrkiye, China and India. |\n| (c) Quantity in tonnes | 900 t | \u2705 Provided |\n\n**Missing input**\n\n- **Default SEE (tCO2e/t) for CN 7206 10 00 produced in Brazil.** The ruleset selects the SEE by both CN code and country, so no value applies to Brazil. Using another country's value (1.74, 1.96 or 2.64) or an average would be an estimate, which the ruleset does not allow.\n\n**To proceed, one of the following is needed:**\n1. An updated factor table that includes a default SEE for CN 7206 10 00 / Brazil.\n2. Confirmation that the goods were actually produced in a country listed in the table for this CN code (T\u00fcrkiye, China or India). This only applies if the stated origin is wrong. The email says the goods were produced at the Brazilian facility.\n\nOnce a Brazil-specific SEE is provided, the calculation is: Embedded emissions = SEE (Brazil, 7206 10 00) \u00d7 900 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 1018,
+    "output_tokens": 576
+  },
+  "latency_s": 5.4726,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

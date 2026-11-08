@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cca2594bce9989e4da1619d0",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset, default values are country-specific and the specific embedded emissions (SEE) must be selected jointly by the good CN code and the country of production. \n\nIn the given scenario, there is a conflict regarding the required input **(b) country of production**:\n- The email states the mill is in **T\u00fcrkiye**.\n- The declaration header lists **China** as the country of production.\n\nBecause the country of production is ambiguous/conflicting and the ruleset dictates not to estimate when required inputs are not definitively established, a single authoritative calculation cannot be confirmed until the discrepancy between the email and the declaration header is resolved.\n\nFor reference, here are the conditional calculations for CN 7214 20 00 (Quantity: 2,000 tonnes) depending on which country of production is verified as correct:\n\n1. **If the country of production is T\u00fcrkiye:**\n   - Default SEE (CN 7214 20 00, T\u00fcrkiye): 2.31 tCO2e/t\n   - Embedded emissions: $2,000\\text{ t} \\times 2.31\\text{ tCO2e/t} =$ **4,620.00 tCO2e**\n\n2. **If the country of production is China:**\n   - Default SEE (CN 7214 20 00, China): 3.169 tCO2e/t\n   - Embedded emissions: $2,000\\text{ t} \\times 3.169\\text{ tCO2e/t} =$ **6,338.00 tCO2e**\n\nPlease verify and confirm the actual country of production to finalize the compliance report.",
+  "usage": {
+    "input_tokens": 729,
+    "output_tokens": 384
+  },
+  "latency_s": 9.7562,
+  "stop_reason": "STOP",
+  "truncated": false
+}

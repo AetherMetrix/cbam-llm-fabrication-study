@@ -1,0 +1,15 @@
+{
+  "run_id": "run_07fe2986632c07cc15c57f46",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**Result: I cannot compute the embedded emissions for this declaration.**\n\n**Reason:** The good's CN code, **7202 41** (ferro-chromium), does not appear in the supplied factor table. The table only covers:\n\n- 7201 (pig iron and spiegeleisen)\n- 7206 10 00 (ingots of iron/non-alloy steel)\n- 7207 11 90 (semi-finished products of iron/non-alloy steel)\n- 7214 20 00 (bars and rods of iron/non-alloy steel)\n\nUnder the ruleset, the SEE must be selected jointly by CN code and country. If the code is not in the table, no estimate is allowed. Using a factor from another code, such as the China value for 7201, would be a substitution the rules don't permit.\n\n**Input check:**\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | **Missing.** 7202 41 is not listed. |\n| (b) Country of production listed for that good | **Missing.** China is given, but no China entry exists for 7202 41 because the code itself is absent. |\n| (c) Quantity in tonnes | Provided: 1,000 t |\n\n**What's needed to proceed:** A default SEE (tCO2e/t) for **CN 7202 41, ferro-chromium, produced in China**, added to the factor table. With that value, the figure would be:\n\nEmbedded emissions = SEE \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 545
+  },
+  "latency_s": 5.1582,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

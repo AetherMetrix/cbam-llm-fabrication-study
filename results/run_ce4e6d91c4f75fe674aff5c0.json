@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ce4e6d91c4f75fe674aff5c0",
+  "task_id": "A12",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: CBAM Declaration\n\n**Total embedded emissions: 42,695.73 tCO2e**\n\n## Inputs Check\n| Required input | Value | Status |\n|---|---|---|\n| (a) CN code | 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations\u2026, i.e. rebar) | \u2714 In table |\n| (b) Country of production | India | \u2714 Listed for this CN code |\n| (c) Quantity | 9,999 t | \u2714 Provided |\n\nAll required inputs are present, so the calculation can proceed.\n\n## Factor Selection\nThe factor is selected by CN code 7214 20 00 and country India:\n- **Default SEE = 4.27 tCO2e/t**\n\n## Calculation\nEmbedded emissions = SEE \u00d7 Quantity\n= 4.27 tCO2e/t \u00d7 9,999 t\n= **42,695.73 tCO2e**",
+  "usage": {
+    "input_tokens": 869,
+    "output_tokens": 358
+  },
+  "latency_s": 3.5278,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_745af16974b595dd8958f91a",
+  "task_id": "B-O09",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the embedded emissions for this shipment under the supplied ruleset and factor table.\n\n**Why:** The required input (a) is not satisfied. The good CN code **7202 41** (ferro-chromium) does not appear in the factor table. The table's only CN codes are 7201, 7206 10 00, 7207 11 90, and 7214 20 00. The Default SEE is selected jointly by CN code and country, so without a matching CN code there is no SEE value to apply.\n\n**Inputs status:**\n- **(a) Good CN code in table:** Missing. CN 7202 41 is not listed.\n- **(b) Country of production listed for that good:** Missing. China is listed for other CN codes, but there is no China entry for CN 7202 41.\n- **(c) Quantity in tonnes:** Provided: 1,000 t.\n\n**What would be needed to compute:** A default SEE (tCO2e/t) for CN 7202 41 from China in the factor table. With that value, the result would be 1,000 t \u00d7 SEE, rounded half-up to 2 decimal places.\n\nI have not substituted a value from a related CN code (such as the China figure for 7201, 1.66 tCO2e/t), because that would be an estimate outside the supplied rules.",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 524
+  },
+  "latency_s": 2.6995,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

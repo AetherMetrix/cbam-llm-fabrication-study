@@ -1,0 +1,15 @@
+{
+  "run_id": "run_39a17890551080ea48c78d88",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded emissions figure based on the data provided. \n\nTo perform the calculation under the supplied ruleset, the following specific input is missing/unresolved:\n* **A single, unambiguous good CN code**: The form lists two conflicting CN codes (7201 and 7206 10 00), which have different default SEE values for China (1.66 tCO2e/t and 1.74 tCO2e/t, respectively). Clarification is required on which CN code applies to the 900 tonnes of goods.",
+  "usage": {
+    "input_tokens": 764,
+    "output_tokens": 127
+  },
+  "latency_s": 4.8431,
+  "stop_reason": "STOP",
+  "truncated": false
+}

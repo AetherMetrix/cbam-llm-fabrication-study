@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ed85bf87cba4f18f673ad58c",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**Embedded emissions: 577.50 tCO2e**\n\n**Inputs**\n- Good: CN 7214 20 00, bars and rods of iron or non-alloy steel with indentations (ribbed reinforcing bar). This code is in the table.\n- Country of production: T\u00fcrkiye, which is listed for this CN code.\n- Quantity: 250 t.\n\n**Factor**\n- Default SEE for (7214 20 00, T\u00fcrkiye) = 2.31 tCO2e/t\n\n**Calculation**\nEmbedded emissions = 2.31 tCO2e/t \u00d7 250 t = **577.50 tCO2e**",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 233
+  },
+  "latency_s": 2.5992,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

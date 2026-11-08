@@ -1,0 +1,15 @@
+{
+  "run_id": "run_a5f570c3f99817c20cb7ad94",
+  "task_id": "B-O04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Embedded Emissions: Cannot Compute\n\nI can't determine a definitive embedded emissions figure from the data provided, so I won't estimate one.\n\n## Missing Input\n\n**(a) CN code of the good.** The scenario describes the good only as \"a steel product.\" The ruleset selects the default SEE jointly by CN code and country, so without a specific CN code there is no single SEE to apply.\n\nThe factor table lists several iron and steel CN codes with different default SEE values for China:\n\n| CN code | Good | Default SEE, China (tCO2e/t) |\n|---|---|---|\n| 7201 | Pig iron and spiegeleisen | 1.66 |\n| 7206 10 00 | Ingots of iron and non-alloy steel | 1.74 |\n| 7207 11 90 | Semi-finished products of iron or non-alloy steel | 3.314 |\n| 7214 20 00 | Bars and rods of iron or non-alloy steel, with indentations | 3.169 |\n\n\"Steel product\" could correspond to several of these, and each would give a materially different result.\n\n## Inputs Already Provided\n\n- **(b) Country of production:** China, which is listed for all CN codes in the table.\n- **(c) Quantity:** 500 tonnes.\n\n## To Proceed\n\nPlease provide the CN code of the good. If it matches one of the codes in the table, I will calculate the total as SEE (China) \u00d7 500 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 640
+  },
+  "latency_s": 6.3661,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

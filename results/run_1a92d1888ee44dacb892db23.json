@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1a92d1888ee44dacb892db23",
+  "task_id": "B-S01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Cannot compute the embedded emissions because a required input is missing.\n\n**Provided inputs:**\n- **Good CN code:** 7214 20 00 (Bars and rods, of iron or non-alloy steel, with indentations...)\n- **Quantity:** 2,000 tonnes\n\n**Missing input:**\n- **Country of production:** Not specified in the scenario. \n\nPer the ruleset, default SEE values are country-specific and selected jointly by the good's CN code and the country of production (e.g., T\u00fcrkiye, China, or India). Since the country of production is missing, the calculation cannot be performed. Please provide the country of production to proceed.",
+  "usage": {
+    "input_tokens": 783,
+    "output_tokens": 149
+  },
+  "latency_s": 5.2989,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_87da7d19ee0ae6ebe2a78350",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded emissions figure under the supplied rules. \n\n**Missing Input:**\n* **Default specific embedded emissions (SEE) factor for the United States under CN code 7214 20 00:** While the CN code (7214 20 00) and quantity (1,200 tonnes) are provided, the country of production (United States) is not listed for that good in the provided factor table (which only includes T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 112
+  },
+  "latency_s": 6.5276,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c00cdf909d3ca2f9bf0a31cb",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided quantity data is contradictory and insufficient to determine the true quantity in tonnes. \n\nSpecifically, the following required input is missing or unresolved:\n* **Unambiguous quantity in tonnes:** The sum of the declared line items (2,000 t + 1,500 t = 3,500 t) conflicts with the declared summary total (4,000 t). Clarification is needed on whether the actual quantity is 3,500 t, 4,000 t (with a missing 500 t line item), or another figure.",
+  "usage": {
+    "input_tokens": 769,
+    "output_tokens": 136
+  },
+  "latency_s": 6.0227,
+  "stop_reason": "STOP",
+  "truncated": false
+}

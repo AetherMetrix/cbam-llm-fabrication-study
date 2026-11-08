@@ -1,0 +1,15 @@
+{
+  "run_id": "run_cc6f5a4c0fdf59e05a1a07b0",
+  "task_id": "A14",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**Embedded emissions: 577.50 tCO2e**\n\n**Inputs check:**\n- CN code: 7214 20 00 (bars and rods with indentations, ribbed reinforcing bar) is in the table.\n- Country: T\u00fcrkiye is listed for this CN code.\n- Quantity: 250 t is provided.\n\n**Calculation:**\n- Default SEE (7214 20 00, T\u00fcrkiye) = 2.31 tCO2e/t\n- Embedded emissions = 2.31 tCO2e/t \u00d7 250 t = 577.50 tCO2e",
+  "usage": {
+    "input_tokens": 880,
+    "output_tokens": 252
+  },
+  "latency_s": 1.4246,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

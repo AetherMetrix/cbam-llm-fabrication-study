@@ -1,0 +1,15 @@
+{
+  "run_id": "run_48b113c65d8d63c6f454cb8d",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Embedded emissions **cannot be calculated from the supplied table**.\n\nFor CN **7214 20 00** and **2,200 tonnes**, the declared country of production is **Russian Federation**, which is not listed for this CN code. The ruleset prohibits estimating when a required input is not in the table; a factor for another country cannot be substituted.",
+  "usage": {
+    "input_tokens": 637,
+    "output_tokens": 76
+  },
+  "latency_s": 4.1523,
+  "stop_reason": "completed",
+  "truncated": false
+}

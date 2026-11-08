@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4fb2558194b64cdc6faeb1d4",
+  "task_id": "B-S08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario.\n\n**Input check:**\n\n| Input | Status |\n|---|---|\n| (a) Good CN code | Present and in the table: 7214 20 00 (bars and rods, with indentations, ribbed) |\n| (b) Country of production listed for that good | **Not met.** The table lists 7214 20 00 only for T\u00fcrkiye, China, and India. Russian Federation is not listed. |\n| (c) Quantity in tonnes | Present: 2,200 t |\n\n**Missing input:**\n- A default SEE value (tCO2e/t) for CN 7214 20 00 with country of production = Russian Federation. The ruleset selects the SEE jointly by CN code and country, so no other row can substitute for it.\n\nI have not used the T\u00fcrkiye, China, or India values, since the ruleset requires the SEE to match the country of production.\n\n**To complete the calculation, provide one of the following:**\n1. A factor table row for CN 7214 20 00 with Russian Federation as the country, with its default SEE in tCO2e/t. The result would then be 2,200 \u00d7 SEE, rounded half-up to 2 decimal places.\n2. Confirmation that the good was produced in one of the listed countries (T\u00fcrkiye, China, or India). Its SEE would then be applied with the same 2,200 t quantity.",
+  "usage": {
+    "input_tokens": 973,
+    "output_tokens": 684
+  },
+  "latency_s": 3.66,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

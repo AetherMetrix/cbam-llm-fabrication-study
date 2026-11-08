@@ -1,0 +1,15 @@
+{
+  "run_id": "run_17146d694c3770d3bc309a9e",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Cannot compute the embedded emissions because a required input is missing. \n\nAccording to the ruleset, the specific **good CN code** from the factor table is required to select the default specific embedded emissions (SEE) value. The scenario only states \"steel goods,\" which does not specify which of the CN codes in the table (7201, 7206 10 00, 7207 11 90, or 7214 20 00) applies. Per the ruleset, no estimation can be made when a required input is missing.",
+  "usage": {
+    "input_tokens": 702,
+    "output_tokens": 131
+  },
+  "latency_s": 10.2181,
+  "stop_reason": "STOP",
+  "truncated": false
+}

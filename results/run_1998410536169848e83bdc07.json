@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1998410536169848e83bdc07",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "# Cannot Compute: Embedded Emissions for CN 7206 10 00, 900 t, Brazil\n\nThe supplied rules don't allow a definitive figure for this shipment.\n\n## Inputs Check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7206 10 00 | \u2705 Present in table |\n| (b) Country of production listed for that good | Brazil | \u274c **Not listed** |\n| (c) Quantity in tonnes | 900 t | \u2705 Provided |\n\n## Missing Input\n\n- **Default SEE for CN 7206 10 00 produced in Brazil.** The table lists 7206 10 00 only for T\u00fcrkiye (1.96), China (1.74) and India (2.64). Under the ruleset, the SEE must be selected jointly by CN code and country. Brazil has no entry, so no applicable factor exists.\n\n## Not Done\n\nI did not substitute another country's value, average the listed values, or use a proxy. Each would be an estimate, which the ruleset prohibits. For reference only, the listed factors would give between 1,566.00 and 2,376.00 tCO2e for 900 t, a spread of 810 tCO2e. None of these figures can be reported for a Brazilian-origin good.\n\n## To Proceed\n\nProvide a factor table that includes a default SEE for **CN 7206 10 00 / Brazil**. The calculation will then be: 900 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 1018,
+    "output_tokens": 556
+  },
+  "latency_s": 5.8118,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

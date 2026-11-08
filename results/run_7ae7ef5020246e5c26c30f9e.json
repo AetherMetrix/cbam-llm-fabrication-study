@@ -1,0 +1,15 @@
+{
+  "run_id": "run_7ae7ef5020246e5c26c30f9e",
+  "task_id": "B-O01",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "**No estimate can be made.** The scenario gives the good (CN 7201) and the quantity (1,000 t), but not the country of production. Under the ruleset, the default SEE is selected jointly by CN code and country, so the country is required.\n\n**Countries available for CN 7201 in the factor table:**\n- T\u00fcrkiye\n- China\n- India\n\nOnce you confirm the country of production, I will calculate:\n\nEmbedded emissions = SEE (tCO2e/t) \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 877,
+    "output_tokens": 404
+  },
+  "latency_s": 2.7702,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

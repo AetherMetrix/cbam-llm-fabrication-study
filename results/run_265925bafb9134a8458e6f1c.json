@@ -1,0 +1,15 @@
+{
+  "run_id": "run_265925bafb9134a8458e6f1c",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "## Embedded emissions for CN 7207 11 90: cannot be calculated\n\n**Status: Not computed. Required inputs are missing.**\n\n### Input check\n\n| Required input | Provided? | Value |\n|---|---|---|\n| (a) CN code in table | \u2705 Yes | 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country of production | \u274c **Missing** | \u2014 |\n| (c) Quantity in tonnes | \u274c **Missing** | \u2014 |\n\n### Why no estimate is given\n\n- **Country is missing.** Default values are country-specific, and the table lists three different SEE values for this CN code. Without the country, the correct factor cannot be selected.\n- **Quantity is missing.** Embedded emissions = SEE \u00d7 quantity, so a quantity in tonnes is required.\n\nThe ruleset says not to estimate when any required input is missing, so I have not assumed a country or quantity.\n\n### Applicable factors once the inputs are provided\n\n| Country | Default SEE (tCO2e/t) | Formula |\n|---|---|---|\n| T\u00fcrkiye | 3.087 | 3.087 \u00d7 Q |\n| China | 3.314 | 3.314 \u00d7 Q |\n| India | 4.32 | 4.32 \u00d7 Q |\n\n*(Q = quantity in tonnes. Round the result half-up to 2 decimal places.)*\n\n### What I need from you\n1. **Country of production** (T\u00fcrkiye, China, or India; other countries are not in the table)\n2. **Quantity in tonnes**\n\nOnce you provide these, I'll return the total embedded emissions.",
+  "usage": {
+    "input_tokens": 879,
+    "output_tokens": 554
+  },
+  "latency_s": 6.3899,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

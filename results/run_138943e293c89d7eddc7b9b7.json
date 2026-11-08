@@ -1,0 +1,15 @@
+{
+  "run_id": "run_138943e293c89d7eddc7b9b7",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "# Embedded Emissions: Ribbed Bar (CN 7214 20 00), 2,000 t\n\n**I can't report a single definitive figure.** The country of production, a required input that determines the SEE, is contradicted between your sources:\n\n- **Email:** mill is in **T\u00fcrkiye**\n- **Declaration header:** country of production is **China**\n\nThe ruleset requires the SEE to be selected jointly by CN code and country, and says not to estimate when an input is missing. A conflicting input is effectively unresolved, so I won't choose one for you. Here are both results.\n\n## Conditional results\n\n| Country of production | Default SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|\n| T\u00fcrkiye | 2.31 | 2,000 | **4,620.00** |\n| China | 3.169 | 2,000 | **6,338.00** |\n\n- T\u00fcrkiye: 2.31 \u00d7 2,000 = 4,620.00 tCO2e\n- China: 3.169 \u00d7 2,000 = 6,338.00 tCO2e\n\nThe difference is **1,718.00 tCO2e**, so this choice materially affects the declaration.\n\n## Inputs confirmed\n- CN code 7214 20 00 is in the table \u2714\n- Quantity of 2,000 t is given \u2714\n- Both candidate countries are listed for this good \u2714\n- Country of production is in conflict \u2716\n\n## Recommended action\nConfirm where the bars were actually produced (the installation that made them) using primary documents. Examples include the certificate of origin, the mill certificate or test report, and the supplier's installation details. Then correct whichever source is wrong. If China is a transit or trading country rather than where the bars were made, the declaration header may need amending.\n\nOnce the country is confirmed, the applicable figure is **4,620.00 tCO2e** (T\u00fcrkiye) or **6,338.00 tCO2e** (China).",
+  "usage": {
+    "input_tokens": 911,
+    "output_tokens": 799
+  },
+  "latency_s": 8.3074,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

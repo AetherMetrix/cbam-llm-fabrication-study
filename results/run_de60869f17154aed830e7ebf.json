@@ -1,0 +1,15 @@
+{
+  "run_id": "run_de60869f17154aed830e7ebf",
+  "task_id": "A15",
+  "category": "A",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# CBAM Embedded Emissions: CN 7207 11 90, China\n\n**Inputs (all present and in the table)**\n- **Good:** CN 7207 11 90, semi-finished products of iron or non-alloy steel\n- **Country of production:** China\n- **Quantity:** 15,000 tonnes\n\n**Factor selected (by CN code and country):** default SEE = 3.314 tCO2e/t\n\n**Calculation**\n\nEmbedded emissions = 3.314 tCO2e/t \u00d7 15,000 t = **49,710.00 tCO2e**",
+  "usage": {
+    "input_tokens": 873,
+    "output_tokens": 211
+  },
+  "latency_s": 2.5183,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6a9824932317cdefbc7b8693",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "Based on the provided ruleset and factor table, there is a discrepancy in the required quantity input: the stated total is **1,200 tonnes**, while the sum of the two shipment lines (500 t + 500 t) is **1,000 tonnes**. \n\nUsing the factor from the table for **CN 7201 (Pig iron)** from **China**, the Default SEE is **1.66 tCO2e/t**.\n\nBecause the ruleset states not to estimate if inputs are ambiguous, here is the exact calculation for both the stated total and the sum of the shipment lines so you can apply the one that reflects your verified customs declaration:\n\n**Option 1: Based on the stated total quantity (1,200 tonnes)**\n* Calculation: 1.66 tCO2e/t \u00d7 1,200 t = 1,992\n* **Embedded emissions: 1992.00 tCO2e**\n\n**Option 2: Based on the sum of the shipment lines (1,000 tonnes)**\n* Calculation: 1.66 tCO2e/t \u00d7 (500 t + 500 t) = 1,660\n* **Embedded emissions: 1660.00 tCO2e**",
+  "usage": {
+    "input_tokens": 722,
+    "output_tokens": 294
+  },
+  "latency_s": 7.4322,
+  "stop_reason": "STOP",
+  "truncated": false
+}

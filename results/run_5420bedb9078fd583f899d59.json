@@ -1,0 +1,15 @@
+{
+  "run_id": "run_5420bedb9078fd583f899d59",
+  "task_id": "B-S07",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute the definitive embedded emissions figure under the supplied rules because required data is missing.\n\n**Missing Input:**\n* **Country of production:** The scenario states that the origin is \"to be confirmed by the mill's cert, not yet attached.\" Under the provided ruleset, default specific embedded emissions (SEE) are country-specific and must be selected jointly by the good's CN code (7207 11 90) and the country of production (e.g., T\u00fcrkiye, China, or India).",
+  "usage": {
+    "input_tokens": 808,
+    "output_tokens": 114
+  },
+  "latency_s": 4.2863,
+  "stop_reason": "STOP",
+  "truncated": false
+}

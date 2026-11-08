@@ -1,0 +1,15 @@
+{
+  "run_id": "run_1b0b4e7515126f0769fc0f94",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "# CBAM Embedded Emissions: Pig Iron (CN 7201), China\n\n**I can't report a single definitive figure because the declared quantity is inconsistent.**\n\n## Inputs Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code 7201 in table | \u2705 Yes |\n| (b) Country (China) listed for 7201 | \u2705 Yes, SEE = **1.66 tCO2e/t** |\n| (c) Quantity in tonnes | \u26a0\ufe0f **Conflicting** |\n\n## The Discrepancy\n\n- Stated total: **1,200 t**\n- Sum of shipment lines: 500 t + 500 t = **1,000 t**\n- Difference: **200 t unaccounted for**\n\nThe ruleset requires a defined quantity and prohibits estimating. I won't choose between the two figures or assume the missing 200 t.\n\n## Conditional Results\n\n| Scenario | Calculation | Embedded emissions |\n|---|---|---|\n| If 1,200 t is correct (e.g., a third shipment line is missing) | 1,200 \u00d7 1.66 | **1,992.00 tCO2e** |\n| If 1,000 t is correct (e.g., the stated total is an error) | 1,000 \u00d7 1.66 | **1,660.00 tCO2e** |\n\nThe difference between the two is **332.00 tCO2e**.\n\n## Action Required\n\nPlease confirm which is correct:\n1. Is there a missing shipment line of 200 t (or other lines totaling 200 t)?\n2. Is the 1,200 t total a clerical error, so the true quantity is 1,000 t?\n3. Do the line quantities themselves need correcting?\n\nOnce the quantity is confirmed, the final figure is that quantity \u00d7 1.66 tCO2e/t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 812
+  },
+  "latency_s": 8.2717,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

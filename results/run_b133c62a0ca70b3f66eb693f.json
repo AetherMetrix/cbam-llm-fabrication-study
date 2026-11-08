@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b133c62a0ca70b3f66eb693f",
+  "task_id": "C-08",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the declaration contains conflicting CN codes:\n\n- Description: **7214 20 00** \u2014 bars and rods.\n- CN-code field: **7201** \u2014 pig iron.\n\n**Required clarification:** Confirm the correct CN code for the declared good. The supplied rules do not specify which field takes precedence.\n\nThe country (**India**) and quantity (**1,500 tonnes**) are provided.",
+  "usage": {
+    "input_tokens": 676,
+    "output_tokens": 118
+  },
+  "latency_s": 3.5911,
+  "stop_reason": "completed",
+  "truncated": false
+}

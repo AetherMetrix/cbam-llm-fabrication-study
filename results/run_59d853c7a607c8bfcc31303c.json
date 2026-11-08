@@ -1,0 +1,15 @@
+{
+  "run_id": "run_59d853c7a607c8bfcc31303c",
+  "task_id": "B-S15",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 3,
+  "raw_output": "I cannot compute the embedded emissions figure under the supplied ruleset because the required data is not available in the provided factor table. \n\nSpecifically, the following required input is missing from the table:\n- **Default SEE (tCO2e/t) for the country of production (Ukraine) and CN code (7214 20 00):** While CN code `7214 20 00` is present in the factor table, there is no entry listed for **Ukraine** (only T\u00fcrkiye, China, and India are listed for this good).",
+  "usage": {
+    "input_tokens": 771,
+    "output_tokens": 124
+  },
+  "latency_s": 4.6911,
+  "stop_reason": "STOP",
+  "truncated": false
+}

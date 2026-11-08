@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4e9060aca54cbb09b7f914f9",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is insufficient to determine a single default specific embedded emissions (SEE) value under the supplied ruleset.\n\n**Missing / Unresolved Input:**\n* **Country of production:** There is a contradiction in the provided data (the email states the mill is in T\u00fcrkiye, while the declaration header lists China). Because the default SEE is country-specific (2.31 tCO2e/t for T\u00fcrkiye vs. 3.169 tCO2e/t for China for CN 7214 20 00), a single confirmed country of production is required to compute the emissions.",
+  "usage": {
+    "input_tokens": 766,
+    "output_tokens": 139
+  },
+  "latency_s": 10.0664,
+  "stop_reason": "STOP",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_27b28046d5bf301309d1a200",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**No embedded-emissions estimate can be given.** The ruleset requires a CN code that appears in the factor table, and this datasheet does not provide one.\n\n**Missing input:** The good's CN code. The description (\"semi-finished steel product, continuously cast, carbon ~0.2%\") matches more than one table entry:\n\n- **7206 10 00**, ingots of iron or non-alloy steel. Not a match, since the product is not described as an ingot.\n- **7207 11 90**, semi-finished products of iron or non-alloy steel containing less than 0.25% carbon. This is the most likely heading, because the product is semi-finished and carbon is about 0.2%, but the datasheet does not state the CN code.\n\nThe other inputs are present: country of production (India) is listed for both codes, and quantity is 600 t.\n\n**To proceed:** Obtain the declared CN code from the supplier, customs documentation, or the importer's classification. Once a code is confirmed, I will look up the default SEE for that code and India and calculate 600 t \u00d7 SEE, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 632
+  },
+  "latency_s": 3.5858,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

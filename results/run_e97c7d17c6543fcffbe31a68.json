@@ -1,0 +1,15 @@
+{
+  "run_id": "run_e97c7d17c6543fcffbe31a68",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Cannot calculate embedded emissions from the provided table because **CN 7208 (hot-rolled coil) is not listed**.\n\nThe country (China) and quantity (5,000 tonnes) are provided, but the rules prohibit estimating when the CN code is absent. A default SEE for **CN 7208 produced in China** is required.",
+  "usage": {
+    "input_tokens": 645,
+    "output_tokens": 73
+  },
+  "latency_s": 2.7459,
+  "stop_reason": "completed",
+  "truncated": false
+}

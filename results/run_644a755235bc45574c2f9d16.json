@@ -1,0 +1,15 @@
+{
+  "run_id": "run_644a755235bc45574c2f9d16",
+  "task_id": "B-S03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute: CN code missing\n\nI cannot compute a definitive embedded-emissions figure for this lot. The ruleset selects the SEE jointly by (CN code, country) and does not permit estimation when a required input is missing.\n\n## Input check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in the table | **Missing.** The datasheet gives no CN code. |\n| (b) Country of production listed for that good | India is provided, but it cannot be paired with an SEE until the CN code is known. |\n| (c) Quantity in tonnes | 600 t is provided. |\n\n## Why the description cannot substitute for the CN code\n\n- \"Semi-finished steel product, continuously cast, carbon ~0.2%\" could fall under more than one heading in the table, such as 7206 10 00 (ingots) or 7207 11 90 (semi-finished products). As the scenario notes, it is ambiguous.\n- The table's good descriptions are truncated (\"...contai...\", \"...excl. remelted scrap...\"). The full criteria, such as carbon threshold, cross-section shape or dimensions, and whether the product was cast, rolled, or forged, cannot be checked against the datasheet.\n- For India, the candidate SEEs differ materially (2.64 vs 4.32 tCO\u2082e/t), so picking one would be an estimate. The ruleset prohibits that.\n\n## Missing input needed\n\n1. **The declared CN code** for the good, as stated on the customs declaration or a confirmed tariff classification. It must match a code listed in the factor table for India.\n\nOnce the CN code is provided, the calculation is: embedded emissions = SEE (CN code, India) \u00d7 600 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 985,
+    "output_tokens": 992
+  },
+  "latency_s": 10.2283,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

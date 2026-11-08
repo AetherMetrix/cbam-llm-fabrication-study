@@ -1,0 +1,15 @@
+{
+  "run_id": "run_da2305a23f7aa80983ff3818",
+  "task_id": "A09",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Embedded Emissions: 1,189.08 tCO2e\n\nAll three required inputs are present and appear in the table.\n\n| Input | Value |\n|---|---|\n| (a) CN code | 7207 11 90 (semi-finished products of iron or non-alloy steel) |\n| (b) Country of production | India |\n| (c) Quantity | 275.25 t |\n\n**Default SEE** for CN 7207 11 90 and India: **4.32 tCO2e/t**\n\n**Calculation**\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 4.32 tCO2e/t \u00d7 275.25 t\n= **1,189.08 tCO2e**",
+  "usage": {
+    "input_tokens": 929,
+    "output_tokens": 313
+  },
+  "latency_s": 3.2561,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

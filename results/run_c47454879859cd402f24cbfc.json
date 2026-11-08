@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c47454879859cd402f24cbfc",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "Based on the provided ruleset and factor table, there is a discrepancy in the required quantity input: the declaration summary states **1,000 t**, while the sum of the individual line items is **950 t** (300 t + 400 t + 250 t). \n\nBecause the ruleset states not to estimate if a required input is ambiguous or missing, you must first reconcile the declared quantity before finalizing the compliance declaration. \n\nFor your reference, here are the exact calculations for both quantity figures using the applicable factor from the table:\n\n* **Good CN Code:** 7214 20 00\n* **Country of Production:** India\n* **Default SEE:** 4.27 tCO2e/t\n\n**Option 1: Based on the sum of the line items (950 tonnes)**\n* **Calculation:** 950 t \u00d7 4.27 tCO2e/t = 4,056.5 tCO2e\n* **Total Embedded Emissions:** **4056.50 tCO2e**\n\n**Option 2: Based on the summary total (1,000 tonnes)**\n* **Calculation:** 1,000 t \u00d7 4.27 tCO2e/t = 4,270 tCO2e\n* **Total Embedded Emissions:** **4270.00 tCO2e**",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 316
+  },
+  "latency_s": 8.1021,
+  "stop_reason": "STOP",
+  "truncated": false
+}

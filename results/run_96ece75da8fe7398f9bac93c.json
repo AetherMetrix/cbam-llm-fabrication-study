@@ -1,0 +1,15 @@
+{
+  "run_id": "run_96ece75da8fe7398f9bac93c",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Embedded emissions for the declared quantity: 1,992.00 tCO2e** (provisional, pending reconciliation of the quantity)\n\n**Inputs**\n- CN code: 7201 (pig iron and spiegeleisen), which is in the factor table.\n- Country: China, which is listed for CN 7201.\n- Default SEE: 1.66 tCO2e/t.\n- Quantity: 1,200 t (stated total).\n\n**Calculation**\n1,200 t \u00d7 1.66 tCO2e/t = 1,992.00 tCO2e\n\n**Discrepancy to resolve**\nThe two shipment lines (500 t + 500 t) sum to 1,000 t, not the stated 1,200 t. The 200 t gap is unexplained.\n- On the stated total (1,200 t): **1,992.00 tCO2e**\n- On the line-item sum (1,000 t): 1,000 t \u00d7 1.66 = **1,660.00 tCO2e**\n\nI've reported the stated total because it is the declared quantity. Before this figure is used in a CBAM declaration, the missing 200 t should be traced to a shipment line or the stated total should be corrected. The 1,992.00 figure should not be finalised until that is done.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 805
+  },
+  "latency_s": 3.7738,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

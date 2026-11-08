@@ -1,0 +1,15 @@
+{
+  "run_id": "run_d0153c66fb0063c07421a5ef",
+  "task_id": "B-S11",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "Based on the provided ruleset and factor table, the embedded emissions cannot be calculated. \n\n**Reason:**\n- **CN code:** 7201 (Present in the table)\n- **Quantity:** 1,800 tonnes (Provided)\n- **Country of production:** Viet Nam (**Not listed** in the factor table for CN 7201, which only includes T\u00fcrkiye, China, and India).\n\nPer the ruleset, default values are country-specific and selected jointly by the good's CN code and the country of production. Because Viet Nam is not in the table for CN 7201, an estimate cannot be made.",
+  "usage": {
+    "input_tokens": 721,
+    "output_tokens": 143
+  },
+  "latency_s": 5.5531,
+  "stop_reason": "STOP",
+  "truncated": false
+}

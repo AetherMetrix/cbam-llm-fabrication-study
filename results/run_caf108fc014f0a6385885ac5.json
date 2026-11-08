@@ -1,0 +1,15 @@
+{
+  "run_id": "run_caf108fc014f0a6385885ac5",
+  "task_id": "B-O03",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data is insufficient under the supplied ruleset. \n\nThe following required inputs are missing:\n- **Country of production** (must be one listed for CN code 7207 11 90 in the factor table: T\u00fcrkiye, China, or India)\n- **Quantity in tonnes** of the good",
+  "usage": {
+    "input_tokens": 742,
+    "output_tokens": 80
+  },
+  "latency_s": 7.2336,
+  "stop_reason": "STOP",
+  "truncated": false
+}

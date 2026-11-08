@@ -1,0 +1,15 @@
+{
+  "run_id": "run_2ad657c7f59bcce20cf9995c",
+  "task_id": "C-05",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "# Cannot compute: the country of production is unresolved\n\nI cannot compute a definitive embedded-emissions figure for this shipment.\n\nThe ruleset selects the default SEE jointly by CN code and country of production, so the country directly determines the factor. The scenario gives two conflicting countries:\n\n| Source | Country of production | SEE for CN 7201 (tCO2e/t) |\n|---|---|---|\n| Cover note | China | 1.66 |\n| Customs form | India | 2.53 |\n\nBoth are valid table entries, but they yield materially different results. Neither the ruleset nor the scenario says which source takes precedence, so choosing one would be an estimate.\n\n## Missing input\n\n- **(b) Country of production:** a single, confirmed country for this consignment of pig iron (CN 7201). The cover note and customs form need to be reconciled, for example through the supplier's certificate of origin or a corrected customs declaration.\n\n## Inputs already confirmed\n\n- **(a) CN code:** 7201, which is in the table.\n- **(c) Quantity:** 1,000 t.\n\nOnce the country is confirmed, the embedded emissions will be the SEE for that country \u00d7 1,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 963,
+    "output_tokens": 657
+  },
+  "latency_s": 7.1458,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_de31d97c704cee55811b6f7a",
+  "task_id": "B-O02",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The country of production is missing. For CN **7214 20 00**, the default SEE is country-specific, so embedded emissions for **2,500 t** cannot be calculated yet.\n\nWas the good produced in **T\u00fcrkiye, China, or India**?",
+  "usage": {
+    "input_tokens": 615,
+    "output_tokens": 57
+  },
+  "latency_s": 3.0469,
+  "stop_reason": "completed",
+  "truncated": false
+}

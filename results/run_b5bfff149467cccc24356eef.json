@@ -1,0 +1,15 @@
+{
+  "run_id": "run_b5bfff149467cccc24356eef",
+  "task_id": "C-03",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: the declared 3,500 t gives 6,860.00 tCO2e, but the lot data supports only 3,000 t, which gives 5,880.00 tCO2e. The quantity needs reconciling before this figure is used.**\n\n**Inputs**\n- CN code: 7206 10 00 (in table)\n- Country: T\u00fcrkiye (listed for this CN code)\n- Default SEE: 1.96 tCO2e/t\n- Quantity: conflicting (see below)\n\n**Quantity discrepancy**\n- Three lots \u00d7 1,000 t = 3,000 t\n- Declared total = 3,500 t\n- The difference is 500 t. The ruleset does not say which figure governs, so I have not chosen one silently.\n\n**Calculations (SEE \u00d7 quantity, rounded half-up to 2 dp)**\n- Declared total: 1.96 \u00d7 3,500 = **6,860.00 tCO2e**\n- Sum of lots: 1.96 \u00d7 3,000 = **5,880.00 tCO2e** (each lot = 1,960.00 tCO2e)\n\n**Action needed:** Confirm the actual tonnage with the declarant. Either correct the declared total to 3,000 t, or identify the 500 t of additional quantity and its supporting documentation. Use the confirmed figure for reporting.",
+  "usage": {
+    "input_tokens": 907,
+    "output_tokens": 873
+  },
+  "latency_s": 4.6455,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

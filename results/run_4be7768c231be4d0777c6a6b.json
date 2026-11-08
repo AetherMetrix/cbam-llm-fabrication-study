@@ -1,0 +1,15 @@
+{
+  "run_id": "run_4be7768c231be4d0777c6a6b",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute a definitive emissions figure under the supplied rules. \n\nThe following required input is missing from the provided factor table:\n* **Default specific embedded emissions (SEE) for the country of production:** The declared country of production (USA) is not listed in the factor table for CN code 7201 (which only lists T\u00fcrkiye, China, and India).",
+  "usage": {
+    "input_tokens": 771,
+    "output_tokens": 80
+  },
+  "latency_s": 4.1206,
+  "stop_reason": "STOP",
+  "truncated": false
+}

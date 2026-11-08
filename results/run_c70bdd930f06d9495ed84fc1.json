@@ -1,0 +1,15 @@
+{
+  "run_id": "run_c70bdd930f06d9495ed84fc1",
+  "task_id": "C-06",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "**I cannot compute a definitive embedded-emissions figure for this scenario.**\n\nThe ruleset selects the default SEE jointly by CN code and country of production, and the two sources name different countries:\n\n- **Email:** the mill is in T\u00fcrkiye.\n- **Declaration header:** the country of production is China.\n\nBoth countries have a factor for CN 7214 20 00 (T\u00fcrkiye: 2.31 tCO2e/t; China: 3.169 tCO2e/t), so the conflict cannot be resolved from the factor table. Choosing either value would be an assumption, and the ruleset does not permit that.\n\n**Inputs needed to finish the calculation:**\n\n1. **Confirmed country of production** for the 2,000 t of CN 7214 20 00 ribbed bar. The declaration header and the supporting email must agree, or the discrepancy must be corrected in the declaration or supporting documentation (for example, the mill's documented location or the production site identifier).\n\nOnce the country is confirmed, the calculation is: SEE for (7214 20 00, confirmed country) \u00d7 2,000 t, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 969,
+    "output_tokens": 702
+  },
+  "latency_s": 3.8913,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

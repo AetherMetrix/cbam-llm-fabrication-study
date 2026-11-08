@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6848def41db45d95769e0ee5",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the good\u2019s CN code is conflicting.\n\n**Required clarification:** Confirm the correct CN code:\n- **7207 11 90** \u2014 semi-finished products, as stated in the text; or\n- **7214 20 00** \u2014 bars and rods, as listed in the line item.\n\nThe country (**T\u00fcrkiye**) and quantity (**1,100 tonnes**) are provided, but the applicable SEE cannot be selected until the CN code is confirmed.",
+  "usage": {
+    "input_tokens": 673,
+    "output_tokens": 106
+  },
+  "latency_s": 3.19,
+  "stop_reason": "completed",
+  "truncated": false
+}

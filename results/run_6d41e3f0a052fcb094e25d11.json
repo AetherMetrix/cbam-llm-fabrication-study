@@ -1,0 +1,15 @@
+{
+  "run_id": "run_6d41e3f0a052fcb094e25d11",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive emissions figure because the provided data contains conflicting information regarding a required input. \n\nSpecifically, the following input is missing/unresolved:\n* **Definitive quantity in tonnes (c):** There is a discrepancy between the sum of the declared line items (2,000 t + 1,500 t = 3,500 t) and the stated summary total (4,000 t). Without clarification on whether the 500 t difference is an unstated line item or an arithmetic error in the summary total, a definitive calculation cannot be made without estimating or assuming which figure is correct.",
+  "usage": {
+    "input_tokens": 769,
+    "output_tokens": 136
+  },
+  "latency_s": 4.2695,
+  "stop_reason": "STOP",
+  "truncated": false
+}

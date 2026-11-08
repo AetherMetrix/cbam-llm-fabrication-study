@@ -1,0 +1,15 @@
+{
+  "run_id": "run_ca4d66646086dcab1237b97e",
+  "task_id": "B-O06",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure from the supplied information.\n\nThe quantity is **1,000 tonnes**, but these required inputs are missing:\n- **Good CN code:** \u201cSteel\u201d does not identify a specific code in the table.\n- **Country of production:** T\u00fcrkiye, China, or India, as listed for the selected code.\n\nBoth are needed to select the applicable default SEE.",
+  "usage": {
+    "input_tokens": 641,
+    "output_tokens": 83
+  },
+  "latency_s": 3.6888,
+  "stop_reason": "completed",
+  "truncated": false
+}

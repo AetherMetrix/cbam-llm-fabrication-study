@@ -1,0 +1,15 @@
+{
+  "run_id": "run_59424101b97fb5a2576729ee",
+  "task_id": "C-04",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure for this scenario because the declared quantity is internally inconsistent.\n\n**Inputs verified:**\n- **CN code:** 7207 11 90 (Semi-finished products of iron or non-alloy steel) is in the factor table.\n- **Country:** India is listed for this CN code.\n- **Default SEE:** 4.32 tCO2e/t for CN 7207 11 90, India.\n\n**Missing or unresolved input:**\n- **Quantity (tonnes):** The line items sum to 2,000 t + 1,500 t = 3,500 t, but the summary total states 4,000 t. Under the ruleset, the quantity must be a single confirmed figure, and I cannot choose between 3,500 t and 4,000 t.\n\n**To complete the calculation, please provide one of the following:**\n1. A corrected summary total that matches the line items (3,500 t if the line items are correct), or\n2. Confirmation that the summary total is correct and a missing line item (500 t) should be identified, or\n3. Any other source document that establishes the quantity actually produced and declared.\n\nOnce the quantity is confirmed, embedded emissions = 4.32 tCO2e/t \u00d7 confirmed tonnes, reported to 2 decimal places (round half-up).",
+  "usage": {
+    "input_tokens": 964,
+    "output_tokens": 1067
+  },
+  "latency_s": 5.9797,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

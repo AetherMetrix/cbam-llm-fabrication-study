@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fb570dd70cc3e4f740d8e8f1",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# I Cannot Compute a Definitive Figure\n\nThe ruleset requires a definitive quantity in tonnes (input c), and this declaration gives two that conflict.\n\n## Input Check\n\n| Required input | Status |\n|---|---|\n| (a) CN code in table | \u2705 7214 20 00 (bars and rods, ribbed) |\n| (b) Country listed for that good | \u2705 India, default SEE = **4.27 tCO2e/t** |\n| (c) Quantity in tonnes | \u274c **Conflicting** |\n\n## The Quantity Conflict\n\n- **Summary total:** 1,000 t\n- **Sum of line items:** 300 + 400 + 250 = **950 t**\n\nThe 50 t difference could come from a missing line item, a typo in a lot quantity, or an error in the summary. The ruleset gives no way to decide which figure is correct, so choosing one would be an estimate.\n\n## Missing Input\n\n1. **The confirmed quantity of CN 7214 20 00 produced in India.** Specifically, you need to either:\n   - confirm the summary total of 1,000 t and supply the missing or corrected line item(s) that make up the extra 50 t, **or**\n   - confirm the line items total of 950 t and correct the summary.\n\n## Once the Quantity Is Confirmed\n\nEmbedded emissions = confirmed quantity (t) \u00d7 4.27 tCO2e/t, rounded half-up to 2 decimal places.\n\nFor reference only, these are not a determination:\n- If 1,000 t is confirmed: 4,270.00 tCO2e\n- If 950 t is confirmed: 4,056.50 tCO2e",
+  "usage": {
+    "input_tokens": 979,
+    "output_tokens": 905
+  },
+  "latency_s": 9.1411,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run_9810fbfd13e95c3f056dc3e5",
+  "task_id": "A05",
+  "category": "A",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "# Embedded Emissions: China-Produced Steel Ingots\n\n**Total embedded emissions: 1,392.00 tCO2e**\n\n## Input Check\n\n| Required input | Provided | In table? |\n|---|---|---|\n| (a) CN code | 7206 10 00 | \u2705 Yes |\n| (b) Country of production | China | \u2705 Yes, listed for 7206 10 00 |\n| (c) Quantity | 800 tonnes | \u2705 Yes |\n\nAll required inputs are present and valid, so a definitive figure can be computed.\n\n## Factor Selection\n\nThe SEE is selected by the combination of CN code and country:\n\n- **CN 7206 10 00** (Ingots, of iron and non-alloy steel) **and China** gives a **default SEE of 1.74 tCO2e/t**.\n\n## Calculation\n\nEmbedded emissions = SEE \u00d7 Quantity\n= 1.74 tCO2e/t \u00d7 800 t\n= **1,392.00 tCO2e**",
+  "usage": {
+    "input_tokens": 931,
+    "output_tokens": 411
+  },
+  "latency_s": 4.2801,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

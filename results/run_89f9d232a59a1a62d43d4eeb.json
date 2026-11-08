@@ -1,0 +1,15 @@
+{
+  "run_id": "run_89f9d232a59a1a62d43d4eeb",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "**Result: embedded emissions cannot be finalized until the CN code is resolved.**\n\nThe form gives two different CN codes for the same declared good, and the ruleset does not say which one governs. Both codes are in the factor table and both list China, so each can be calculated, but they produce different results:\n\n| CN code | Good (per table) | Country | SEE (tCO2e/t) | Quantity (t) | Embedded emissions (tCO2e) |\n|---|---|---|---|---|---|\n| 7201 | Pig iron and spiegeleisen, in pigs, blocks or other primary forms | China | 1.66 | 900 | **1,494.00** |\n| 7206 10 00 | Ingots, of iron and non-alloy steel (excl. remelted scrap ingots) | China | 1.74 | 900 | **1,566.00** |\n\n**Recommendation:** The description (\"pig iron\") matches CN 7201, which would give **1,494.00 tCO2e**. Code 7206 10 00 covers ingots of non-alloy steel, a different good. Before reporting, the declarant should confirm the correct CN code and correct the form. If 7201 is confirmed, the figure is 1,494.00 tCO2e. If 7206 10 00 is confirmed, the figure is 1,566.00 tCO2e.",
+  "usage": {
+    "input_tokens": 901,
+    "output_tokens": 935
+  },
+  "latency_s": 4.617,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

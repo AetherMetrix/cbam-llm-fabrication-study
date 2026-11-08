@@ -1,0 +1,15 @@
+{
+  "run_id": "run_8bea9d0b02b5eb48dd4faab5",
+  "task_id": "C-02",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 2,
+  "raw_output": "**Result: 1,992.00 tCO2e** for the declared total of 1,200 t, but the input quantity needs confirmation before reporting.\n\n**Inputs**\n- CN code: 7201 (pig iron and spiegeleisen), which is in the factor table\n- Country: China, which is listed for 7201\n- SEE: 1.66 tCO2e/t\n- Quantity: the stated total is 1,200 t, but the two shipment lines (500 t + 500 t) sum to 1,000 t\n\n**Calculation (stated total)**\n1,200 t \u00d7 1.66 tCO2e/t = **1,992.00 tCO2e**\n\n**Discrepancy**\nThe stated total does not match the shipment lines. If the quantity is 1,000 t, the result is 1,000 t \u00d7 1.66 = **1,660.00 tCO2e**.\n\nI have not chosen between these figures on your behalf. The 200 t difference needs to be reconciled against the shipment records (for example, a missing third shipment line or a transcription error in the total) before the figure is reported. Once the correct quantity is confirmed, the result is that quantity multiplied by 1.66, rounded to 2 decimal places.",
+  "usage": {
+    "input_tokens": 898,
+    "output_tokens": 830
+  },
+  "latency_s": 4.2549,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

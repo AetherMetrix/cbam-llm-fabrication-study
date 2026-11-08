@@ -1,0 +1,15 @@
+{
+  "run_id": "run_824b51a68f5b0d63d0d4e82d",
+  "task_id": "B-O05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 2,
+  "raw_output": "# Cannot compute: CN code missing\n\nI cannot compute a definitive embedded-emissions figure from the information provided.\n\n## Input check\n\n| Required input | Provided? | Status |\n|---|---|---|\n| (a) Good CN code in the table | No. Only \"steel goods\" is given. | **Missing** |\n| (b) Country of production listed for that good | India | Provided (India appears for every CN code in the table) |\n| (c) Quantity in tonnes | 3,000 t | Provided |\n\n## Why the CN code matters\n\nThe default SEE is selected by both CN code and country. \"Steel goods\" does not match a single CN code. The table lists four possible codes for India, each with a different SEE:\n\n- 7201: Pig iron and spiegeleisen, 2.53 tCO2e/t\n- 7206 10 00: Ingots, of iron and non-alloy steel, 2.64 tCO2e/t\n- 7207 11 90: Semi-finished products of iron or non-alloy steel, 4.32 tCO2e/t\n- 7214 20 00: Bars and rods, of iron or non-alloy steel, with indentations, 4.27 tCO2e/t\n\nBecause these values differ, the result depends on which code applies. Under the ruleset, I won't pick one or estimate.\n\n## What I need\n\nThe CN code of the good, which must be one of the four codes above. If the 3,000 t covers more than one good, I need each CN code and the tonnage under each.\n\nOnce you provide this, I'll calculate SEE \u00d7 quantity and report the total rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 938,
+    "output_tokens": 757
+  },
+  "latency_s": 8.1137,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

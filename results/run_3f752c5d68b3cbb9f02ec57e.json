@@ -1,0 +1,15 @@
+{
+  "run_id": "run_3f752c5d68b3cbb9f02ec57e",
+  "task_id": "C-09",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "The CN code is conflicting, so a single total cannot be determined without clarification. For **China, 900 tonnes**:\n\n- **If CN 7201:** 1.66 \u00d7 900 = **1,494.00 tCO2e**\n- **If CN 7206 10 00:** 1.74 \u00d7 900 = **1,566.00 tCO2e**\n\nPlease confirm which CN code is correct.",
+  "usage": {
+    "input_tokens": 631,
+    "output_tokens": 95
+  },
+  "latency_s": 3.0534,
+  "stop_reason": "completed",
+  "truncated": false
+}

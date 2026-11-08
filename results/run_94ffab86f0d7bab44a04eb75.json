@@ -1,0 +1,15 @@
+{
+  "run_id": "run_94ffab86f0d7bab44a04eb75",
+  "task_id": "B-S13",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 1,
+  "raw_output": "I cannot compute a definitive embedded-emissions figure because the **good\u2019s CN code is missing** (to be confirmed).\n\nProvided inputs:\n- Quantity: **1,000 tonnes**\n- Country of production: **T\u00fcrkiye**\n\nPlease provide the confirmed CN code listed in the table so the applicable country-specific SEE can be selected.",
+  "usage": {
+    "input_tokens": 675,
+    "output_tokens": 68
+  },
+  "latency_s": 3.2012,
+  "stop_reason": "completed",
+  "truncated": false
+}

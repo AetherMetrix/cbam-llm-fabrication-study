@@ -1,0 +1,15 @@
+{
+  "run_id": "run_764a0049b10b9d045e4c58af",
+  "task_id": "B-S04",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 3,
+  "raw_output": "I can't calculate an embedded-emissions figure for this shipment.\n\nThe CN code (7206 10 00) and quantity (900 t) are valid inputs, but the factor table has no default SEE for this good from Brazil. The table lists only T\u00fcrkiye, China, and India for CN 7206 10 00. Under the ruleset, if the country of production isn't listed for the good, I must not estimate.\n\nTo proceed, the importer or your team would need one of the following:\n- **A default SEE for Brazil** for CN 7206 10 00 from the authoritative source, to be added to the factor table.\n- **Actual (verified) embedded-emissions data** for this specific shipment, if the importer uses that route, which falls outside this ruleset and would need separate verification.\n\nFor reference only, the table's values for this CN code are T\u00fcrkiye 1.96, China 1.74, and India 2.64 tCO2e/t. These can't be applied to the Brazilian production, so I haven't used them.",
+  "usage": {
+    "input_tokens": 960,
+    "output_tokens": 360
+  },
+  "latency_s": 2.2535,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

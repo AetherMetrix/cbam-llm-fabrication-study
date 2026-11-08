@@ -1,0 +1,15 @@
+{
+  "run_id": "run_14d2396338ebb2b2a4dd8908",
+  "task_id": "C-01",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 1,
+  "raw_output": "Based on the provided ruleset and factor table, the inputs are:\n\n* **Good CN code:** 7214 20 00\n* **Country of production:** India\n* **Default SEE:** 4.27 tCO2e/t\n\nHowever, there is a discrepancy in the required **quantity in tonnes** input:\n* The declaration summary states **1,000 t**.\n* The sum of the declared line items (300 t + 400 t + 250 t) is **950 t**.\n\nBecause the ruleset states not to estimate if a required input is missing or ambiguous, below are the exact calculations for both declared quantities so you can apply the one corresponding to your verified customs weight:\n\n**Option 1: Based on the sum of the line items (950 tonnes)**\n* Calculation: 950 t \u00d7 4.27 tCO2e/t = 4,056.5 tCO2e\n* **Total Embedded Emissions:** **4056.50 tCO2e**\n\n**Option 2: Based on the summary total (1,000 tonnes)**\n* Calculation: 1,000 t \u00d7 4.27 tCO2e/t = 4,270 tCO2e\n* **Total Embedded Emissions:** **4270.00 tCO2e**",
+  "usage": {
+    "input_tokens": 745,
+    "output_tokens": 313
+  },
+  "latency_s": 5.6685,
+  "stop_reason": "STOP",
+  "truncated": false
+}

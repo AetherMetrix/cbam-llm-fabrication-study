@@ -1,0 +1,15 @@
+{
+  "run_id": "run_0049f9a3c0d898c83f87dafa",
+  "task_id": "B-S12",
+  "category": "B",
+  "condition": 1,
+  "sample_idx": 0,
+  "raw_output": "# CBAM Embedded Emissions: HRC 5,000 t (CN 7208, China)\n\n**I can't calculate this from the provided table, because CN 7208 is not listed.**\n\n## Input check\n\n| Required input | Provided | Status |\n|---|---|---|\n| (a) CN code in table | 7208 (flat-rolled products of iron or non-alloy steel, hot-rolled) | \u274c Not in table |\n| (b) Country listed for that good | China | \u26a0\ufe0f Can't be checked, since the good is absent |\n| (c) Quantity in tonnes | 5,000 t | \u2705 Provided |\n\nThe table covers only these CN codes:\n- 7201\n- 7206 10 00\n- 7207 11 90\n- 7214 20 00\n\nHot-rolled coil (CN 7208) is not among them. The ruleset says that if a required input is missing or not in the table, the value must not be estimated.\n\n## Why no proxy was used\n\nThe closest entries are 7207 11 90 (semi-finished, China: 3.314) and 7214 20 00 (bars and rods, China: 3.169). Substituting either would be an estimate, which the ruleset prohibits. Default values are tied to a specific CN code and country, and a wrong value could cause a misstated CBAM declaration.\n\n## What's needed to proceed\n\nAny one of the following would allow a calculation:\n1. **An updated factor table** with a default SEE for CN 7208 (ideally at 8-digit level, such as 7208 xx xx) and China as the country of production.\n2. **Actual installation-specific emissions data** from the producing mill, if a ruleset permitting actual values is provided.\n3. **Confirmation of the full CN code** for the coil (e.g., by thickness or pickled status), so the correct default value can be found once the table is extended.\n\nOnce a valid SEE is available, the calculation will be:\n**Embedded emissions = SEE (tCO2e/t) \u00d7 5,000 t**, rounded half-up to 2 decimal places.",
+  "usage": {
+    "input_tokens": 927,
+    "output_tokens": 695
+  },
+  "latency_s": 7.2998,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

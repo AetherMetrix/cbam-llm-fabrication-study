@@ -1,0 +1,15 @@
+{
+  "run_id": "run_52973e562f44a97916933fb7",
+  "task_id": "B-S05",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 0,
+  "raw_output": "I cannot compute the embedded emissions for this line.\n\nThe ruleset requires a default SEE selected by the pair (CN code, country of production). The declaration provides a valid CN code and quantity, but the country does not match the factor table:\n\n- **CN code 7201 (pig iron):** present in the table.\n- **Quantity:** 1,200 t, provided.\n- **Country of production:** USA. The table lists CN 7201 only for T\u00fcrkiye (1.85), China (1.66), and India (2.53). There is no default SEE for CN 7201 and USA, so the required SEE value is missing.\n\nTo compute this line, one of the following is needed:\n\n1. A default SEE value for CN 7201 produced in the USA, from a source that is authorized under the ruleset (the supplied table does not contain one).\n2. Confirmation that the country of production is actually one of the listed countries (T\u00fcrkiye, China, or India). If so, the corrected country and its SEE would produce the figure. I have not substituted any of these values, because the country declared is the USA.",
+  "usage": {
+    "input_tokens": 987,
+    "output_tokens": 539
+  },
+  "latency_s": 3.0503,
+  "stop_reason": "end_turn",
+  "truncated": false
+}

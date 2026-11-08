@@ -1,0 +1,15 @@
+{
+  "run_id": "run_fad9ed1cb9e6f7c5f690fc68",
+  "task_id": "B-O08",
+  "category": "B",
+  "condition": 2,
+  "sample_idx": 4,
+  "raw_output": "Cannot compute a definitive embedded-emissions figure under the supplied rules.\n\n- **CN code:** 7214 20 00 \u2014 listed.\n- **Quantity:** 1,200 tonnes \u2014 provided.\n- **Missing required table input:** A country-specific default SEE for **CN 7214 20 00 produced in the United States**. The table lists only T\u00fcrkiye, China, and India for this code.\n\nNo estimate or substitute country factor can be used.",
+  "usage": {
+    "input_tokens": 652,
+    "output_tokens": 97
+  },
+  "latency_s": 3.3058,
+  "stop_reason": "completed",
+  "truncated": false
+}

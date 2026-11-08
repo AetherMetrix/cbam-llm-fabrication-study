@@ -1,0 +1,15 @@
+{
+  "run_id": "run_18e662b09e92c9ea567bb4d4",
+  "task_id": "C-10",
+  "category": "C",
+  "condition": 1,
+  "sample_idx": 4,
+  "raw_output": "**The embedded emissions cannot be finalised until the CN code is confirmed.** The scenario gives two conflicting codes for the same consignment, and the ruleset requires a single good CN code to select the default SEE value.\n\n**Conflict:**\n- Description in the text: CN 7207 11 90 (semi-finished products of iron or non-alloy steel)\n- Line-item CN: 7214 20 00 (bars and rods of iron or non-alloy steel, with indentations)\n\nThese are different goods with different default values for T\u00fcrkiye, so the result depends on which code applies.\n\n**Conditional results (quantity 1,100 t, T\u00fcrkiye):**\n\n| Scenario | CN code | Default SEE (tCO2e/t) | Calculation | Embedded emissions (tCO2e) |\n|---|---|---|---|---|\n| A: Text description governs | 7207 11 90 | 3.087 | 3.087 \u00d7 1,100 | **3,395.70** |\n| B: Line-item CN governs | 7214 20 00 | 2.31 | 2.31 \u00d7 1,100 | **2,541.00** |\n\n**Next step:** Confirm the correct CN code against the commercial invoice, customs declaration, or product specification. Once confirmed, the result is the corresponding figure above. The line-item CN is usually the code declared to customs, but the ruleset does not state which source takes precedence, so I have not chosen one.",
+  "usage": {
+    "input_tokens": 909,
+    "output_tokens": 887
+  },
+  "latency_s": 4.6841,
+  "stop_reason": "end_turn",
+  "truncated": false
+}
