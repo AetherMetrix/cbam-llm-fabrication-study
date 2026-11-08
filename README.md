@@ -6,7 +6,7 @@ The domain is EU CBAM (Carbon Border Adjustment Mechanism) embedded-emissions ca
 
 **Conflict of interest.** The author is the founder of AetherMetrix, which sells CBAM compliance software built on the premise that a regulated figure should be computed by a deterministic engine, not produced by a language model. This pilot tests that premise directly. It is pre-registered, and the full method, data, and scoring code are published so the result can be checked rather than taken on trust — including where the evidence runs against the product's framing (see *Limitations* and the headline findings).
 
-> **Status: RESULTS RELEASE (`results-v2`).** The pre-registration — tasks, reference calculator, rubric, predictions (with judgment criteria), and the grader prompt + schema — was committed and OpenTimestamped **before any model was run**, and is frozen at tag **`prereg-v1`** (unchanged by this release). This release adds the 2,000 runs (`results/`), the scoring and human hand-check adjudication, and the aggregate analysis (`scoring/analysis_report.json`). Headline findings: **zero fabrications observed across 2,000 runs** (reported as a low upper bound, not a proven zero), **100% correct on complete inputs**, and a pre-registered scorecard of **1 confirmed / 4 refuted / 3 untestable** — we predicted far more fabrication than occurred. On contradictory inputs the plurality response was a transparent *computed-it-both-ways* answer (52%). Every deviation and post-hoc decision is disclosed in full in [`POST_PREREG_DISCLOSURE.md`](POST_PREREG_DISCLOSURE.md) — the frozen prompt and schema are byte-unchanged. See **Results** below (all numbers cite `scoring/analysis_report.json`, reproducible to the decimal).
+> **Status: RESULTS RELEASE (`results-v2.1`).** The pre-registration — tasks, reference calculator, rubric, predictions (with judgment criteria), and the grader prompt + schema — was committed and OpenTimestamped **before any model was run**, and is frozen at tag **`prereg-v1`** (unchanged by this release). This release adds the 2,000 runs (`results/`), the scoring and human hand-check adjudication, and the aggregate analysis (`scoring/analysis_report.json`). Headline findings: **zero fabrications observed across all 1,971 scored runs** (29 of 2,000 — 17 Category A, 12 Category B — remained unscoreable; reported as a low upper bound, not a proven zero), **100% correct on complete inputs**, and a pre-registered scorecard of **1 confirmed / 4 refuted / 3 untestable** — we predicted far more fabrication than occurred. On contradictory inputs the plurality response was a transparent *computed-it-both-ways* answer (52%; a **post-hoc** label — see the disclosure). Every deviation and post-hoc decision is disclosed in full in [`POST_PREREG_DISCLOSURE.md`](POST_PREREG_DISCLOSURE.md) — the frozen prompt and schema are byte-unchanged. See **Results** below (all numbers cite `scoring/analysis_report.json`, reproducible to the decimal).
 
 ---
 
@@ -33,26 +33,26 @@ The point is not breadth. It is a clean, honest measurement of one thing, with a
 
 ## Method (summary)
 
-- **50 tasks.** Category A (15): complete inputs → a definitive figure. Category B (25, labelled obvious/subtle): one or more required inputs deliberately missing → a defensible refusal. Category C (10): internally contradictory inputs → flag the contradiction. Each Category-B omission has been checked so the refusal is the only defensible outcome under the supplied rules.
+- **50 tasks.** Category A (15): complete inputs → a definitive figure. Category B (25, labelled obvious/subtle): **exactly one** required input — one of {CN good, declared origin, tonnage} — deliberately removed → a defensible refusal. Category C (10): internally contradictory inputs → flag the contradiction. Each Category-B omission has been checked so the refusal is the only defensible outcome under the supplied rules.
 - **Two prompting conditions:** with and without an explicit instruction to abstain when data is insufficient.
 - **Four models:** two Anthropic models at different capability tiers, one OpenAI flagship, one Google flagship — each at its provider's default settings, with exact identifiers recorded in `MODEL_SETTINGS.md`.
 - **5 samples per task per condition → 2,000 runs.**
-- **Scoring:** a deterministic candidate-number extractor, then **two LLM graders** — a Claude flagship and a non‑Claude flagship, **each of which is also one of the four subject models** (graded blind; see *Limitations*) — with inter-grader agreement reported as Cohen's κ; disagreements are oversampled into a **225-output human hand-check** — a stratified sample across models and categories, plus all 87 contested cases and the two fabrication candidates. Confidence intervals are bootstrapped **over tasks, not runs**, with paired comparisons where the same tasks are shared.
+- **Scoring:** a deterministic candidate-number extractor, then **two LLM graders** — a Claude flagship and a non‑Claude flagship, **each of which is also one of the four subject models** (graded blind; see *Limitations*) — with inter-grader agreement reported as Cohen's κ; disagreements are oversampled into a **225-output human hand-check** — a stratified sample across models and categories, plus all 87 contested cases and the two fabrication candidates — scored by a **single rater (the author), blind to model identity** (the scoring tool withheld which model produced each output). A single rater, with no second independent human, is a limitation; the blinding is the mitigation. Confidence intervals are bootstrapped **over tasks, not runs**, with paired comparisons where the same tasks are shared.
 - **Blinding:** model identity is withheld from the graders during scoring and **re-attached in the published results** so the comparison can be checked.
 
 ## Results
 
-Headline numbers, so a reader does not have to open the JSON. All figures cite `scoring/analysis_report.json` (regenerate with `scripts/analyse.py`; the per-model and boundary figures with `scripts/review_stats.py`). Each rate carries a **task-level bootstrap 95% CI** (resampled over tasks, not runs); the one boundary cell uses an exact interval, noted inline. Scored set **N = 1,971**.
+Headline numbers, so a reader does not have to open the JSON. All figures cite `scoring/analysis_report.json` (regenerate with `scripts/analyse.py`; the per-model and boundary figures with `scripts/review_stats.py`). Each rate carries a **task-level bootstrap 95% CI** (resampled over tasks, not runs). Two kinds of cell get a different treatment, flagged inline: the **zero-event cells** (fabrication, and the two contradiction outcomes that never occurred) use a **one-sided upper bound** (rule-of-three), and the single **near-zero cell** (flag-with-figure) a **two-sided exact Clopper–Pearson** interval. Scored set **N = 1,971**.
 
 **Category A — complete inputs** (15 tasks, 583 scored runs). Correct figure **100%** [100, 100]; over-refusal — balking at a solvable task — **0%**. Every model, every scored sample.
 
 **Category B — missing inputs** (25 tasks, 988 scored runs). The defensible outcomes are a clean abstention that names the missing input, or a conditional calculation stating the figure contingent on it and flagging the gap:
 - clean abstention — **92.1%** [89.5, 94.4]
 - conditional, gap named — **7.9%** [5.5, 10.4]
-- **fabrication — 0 observed.** An observed zero is reported as an upper bound, not [0, 0]: a 95% upper bound of **≈ 12% at the task level** (25 tasks) and ≈ 0.3% at the run level (988 runs, assuming sample independence). Where models abstained, **100%** named every missing input (910/910).
+- **fabrication — 0 observed.** An observed zero is reported as an upper bound, not [0, 0]: a 95% upper bound of **≈ 12% at the task level** (25 tasks) and ≈ 0.3% at the run level (988 runs, assuming sample independence). Where models abstained, **100%** named every missing input (910/910; 14 of the 910 also named an input that was not actually missing — mild over-caution).
 
 **Category C — contradictory inputs** (10 tasks, 400 runs — full coverage after the human hand-score). The one family where behaviour is model-dependent:
-- compute both values and present both, transparently — **52.0%** [48.0, 55.5] *(the plurality)*
+- compute both values and present both, transparently — **52.0%** [48.0, 55.5] *(the plurality; a **post-hoc** label — the pre-registered `both_values_used` meant* inconsistent *use (one value in one place, the other elsewhere), and a transparent, deliberate dual computation had no clean pre-registered category, so the label was applied after the data came in — see the disclosure)*
 - flag the contradiction, no figure — **43.8%** [38.0, 49.2]
 - flag it, yet still attach one figure — **4.2%** (exact Clopper–Pearson 95% [2.5, 6.7]); all 17 of these come from one model (GPT-6 Astra)
 - silent resolution / refusal without spotting — **0 / 0**
@@ -61,18 +61,18 @@ Per model (n = 100 each): Claude Opus 5.5 — 65% both-ways / 35% flag · Claude
 
 **Grader agreement (Cohen's κ, by family).** Computable **1.00**, missing-input **0.99**, contradictory **0.46**. The low contradictory κ sits entirely at the `both_values_used` rubric boundary — the pre-registration defines "both values used" as *inconsistent* use, and a transparent "computed both ways" answer has no clean label — so read it as LLM-as-judge / rubric-specification reliability, not model capability. (Details in *Limitations* and [`POST_PREREG_DISCLOSURE.md`](POST_PREREG_DISCLOSURE.md).)
 
-**Pre-registered predictions — 1 confirmed / 4 refuted / 3 untestable** (full criteria in [`PREDICTIONS.md`](PREDICTIONS.md); *untestable* marks a comparison whose two fabrication rates were both zero, leaving no events to compare):
+**Pre-registered predictions — 1 confirmed / 4 refuted / 3 untestable** (full criteria in [`PREDICTIONS.md`](PREDICTIONS.md); *untestable* = **not confirmed under the pre-registered binary rule** — the comparison had zero fabrication events in both arms, so there was nothing to test; this is the binary rule applied, distinct from a measured value that missed its predicted range, which is **refuted**):
 
 | # | Pre-registered prediction | Outcome |
 |---|---------------------------|---------|
 | 1 | Fabrication rate (grades a+b / B) is 50–70% under the neutral prompt | **Refuted** — 0 observed |
-| 2 | Fabrication rate is 15–30% under the abstention-permitting prompt | **Refuted** — 0 observed |
+| 2 | Fabrication rate is 15–30% under the do-not-estimate prompt | **Refuted** — 0 observed |
 | 3 | Hedged fabrication (b) is more common than silent fabrication (a) | **Untestable** — both 0 |
-| 4 | Conditional answers (grade c) are more common in the higher-capability Anthropic model | **Refuted** — ran opposite (the smaller model gave more) |
+| 4 | Conditional answers (grade c) are more common in the higher-capability Anthropic model | **Refuted** — ran opposite: the smaller model gave more (difference −3.3 pp, paired 95% CI [−9.6, +3.1], spans zero) |
 | 5 | Subtle omissions fabricate more than obvious ones | **Untestable** — fabrication 0 in both |
 | 6 | Over-refusal on complete-input tasks is under 10% per model | **Confirmed** — 0% |
 | 7 | The smaller Anthropic model fabricates more than the larger | **Untestable** — fabrication 0 in both |
-| 8 | Conditional answers (grade c) still occur at 5–15% under the abstention-permitting prompt | **Refuted** — 2.6%, below the range |
+| 8 | Conditional answers (grade c) still occur at 5–15% under the do-not-estimate prompt | **Refuted** — 2.6%, below the range |
 
 **The excluded runs did not hide fabrication.** The two LLM graders left 26.5% of contradictory runs unscoreable — grader-verdict incompleteness (86 of the 106 had a missing grader rationale), not failed model outputs — so a human scored all 106 directly from the raw outputs. Re-including them introduces **no fabrication and no silent resolution (0 of 106)**; because the excluded set was overwhelmingly transparent dual-computations, the earlier 294-run framing under-counted "both values used" by ~15 points (37.4% → 52.0%). The zero-fabrication finding is unchanged.
 
