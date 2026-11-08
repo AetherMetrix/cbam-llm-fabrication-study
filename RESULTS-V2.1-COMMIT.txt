@@ -1,0 +1,24 @@
+Fabricated Precision pilot — results release v2.1 anchor
+========================================================
+tag:    results-v2.1
+commit: eb66fe377dc1e69b7a44d3e2680bf24f5da45940
+tree:   96a11a7a5f69a66918688f4bab1b99cebf347a85
+
+The OpenTimestamps proof for this file (RESULTS-V2.1-COMMIT.txt.ots) anchors the date the
+results-v2.1 release existed, independent of git commit metadata. The commit SHA above is git's
+content hash of the full results-v2.1 tree, so timestamping this file timestamps the whole tree.
+
+What v2.1 is: a documentation revision of results-v2 from a third round of reviewer feedback —
+copy-level edits to the README and the deviation disclosure (POST_PREREG_DISCLOSURE.md). No
+re-run and no recompute. The data, the analysis, and every reported figure are unchanged from
+results-v2, except that prediction 4's already-computed paired confidence interval ([-9.6, +3.1],
+which spans zero) is now surfaced in text. Clarifications include: the contradictory
+"both values used" label is marked post-hoc; the human hand-scorer is noted as a single blind
+rater; the "untestable" predictions are framed as the pre-registered binary rule applied; and the
+boundary-cell interval method is stated per cell.
+
+The pre-registration (tag prereg-v1), the first results release (tag results-v1), and the
+full-coverage results release (tag results-v2) are frozen and unchanged by this revision.
+
+Verify:  git rev-parse results-v2.1   # == the commit above
+         ots verify RESULTS-V2.1-COMMIT.txt.ots
