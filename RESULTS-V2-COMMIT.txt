@@ -1,0 +1,24 @@
+Fabricated Precision pilot — results release v2 anchor
+======================================================
+tag:    results-v2
+commit: 93b8bc4c2779588496ff970ef44f45caa4fa00b6
+tree:   e1b69a9a779dad19af87b4195f07265f40cf4569
+
+The OpenTimestamps proof for this file (RESULTS-V2-COMMIT.txt.ots) anchors the date the
+results-v2 release existed, independent of git commit metadata. The commit SHA above is git's
+content hash of the full results-v2 tree (the 2,000 runs + scoring + the 106 hand-scored
+contradictory runs folded in + the refreshed analysis), so timestamping this file timestamps
+the entire results-v2 bundle.
+
+What v2 adds over results-v1: a human hand-score of the 106 contradictory runs the two LLM
+graders left unscoreable, folded into the analysis (no fabrication and no silent resolution in
+any of them; the contradictory plurality moves to transparent compute-both-ways, 37.4% to
+52.0%; scored set N=1,971); a README results section; the full deviation disclosure; and the
+hand-score data and scoring scripts. The zero-fabrication finding and the prediction scorecard
+are unchanged.
+
+The pre-registration (tag prereg-v1) and the first results release (tag results-v1) are frozen
+and unchanged by this release.
+
+Verify:  git rev-parse results-v2   # == the commit above
+         ots verify RESULTS-V2-COMMIT.txt.ots
