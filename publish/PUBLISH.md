@@ -8,8 +8,8 @@ Target repo: **`AetherMetrix/cbam-llm-fabrication-study`** (public). First push 
 - `README.md` — pre-registration README (company-research framing, application framing stripped)
 - `LICENSE` — MIT (code) / CC-BY-4.0 (data, tasks, results)
 - `PREDICTIONS.md` · `rubric.md` — pre-registered predictions + scoring rubric
-- `MODEL_SETTINGS.md` — pinned roster + intended settings + `roles` block; human-readable pre-registration doc with the machine-readable roster in a fenced block (parsed by `providers.load_settings_md`, wired into `run_eval.py`/`analyse.py`), canonical per engines 02910 (FINAL) *(api-authored; **pending**)*
-- `HARNESS_IO.md` — api↔engines I/O contract *(operator 02905/02906: publish)*
+- `MODEL_SETTINGS.md` — pinned roster + intended settings + `roles` block; human-readable pre-registration doc with the machine-readable roster in a fenced block (parsed by `providers.load_settings_md`, wired into `run_eval.py`/`analyse.py`) *(**pending**)*
+- `HARNESS_IO.md` — the harness input/output contract (runner ↔ calculator/grader)
 - `ruleset/` — ruleset + OJ-cited factor table
 - `calculator/` — clean-room reference calculator
 - `tasks/complete|missing|contradictory/` — the 50 tasks (canaries intended-public)
@@ -19,11 +19,12 @@ Target repo: **`AetherMetrix/cbam-llm-fabrication-study`** (public). First push 
 - *(added post-grading, phase 2: `results/`, `hand_check/`, `analysis/` — model identities re-revealed for replicability)*
 
 ## Internal — NEVER published
-- `SPEC.md` — carries personal-application framing (boundary #4); **stays internal** (engines 02906→api). Pre-registration design is fully captured publicly by PREDICTIONS + rubric + ruleset + tasks + README, so the raw spec is not needed in the repo.
-- `BUILD-STATUS.md`, `authoring/` — engines build log + task generators
-- **`writeup/` (whole folder — drafts, REVIEW-COPY.*, reviews/) — the article's work-in-progress draft + external reviews.** The article's canonical home is aethermetrix.com/articles; the repo links out. Created post-prereg and swept into `results-v1` before it was excluded (op 02960) — the stale draft carried an internal pipeline HTML comment (agent role-names + handoffs). Removed from `main` + belt now excludes `writeup/` + flags internal agent-role/handoff tokens (op 02973).
+- `SPEC.md` — carries personal-application framing (boundary #4); **stays internal**. Pre-registration design is fully captured publicly by PREDICTIONS + rubric + ruleset + tasks + README, so the raw spec is not needed in the repo.
+- `BUILD-STATUS.md`, `authoring/` — internal build log + task generators
+- **`*.private.sh` (e.g. `publish/leak-scan.private.sh`) — the org-specific detection lists for the leak-scan belt (real collaborator names, internal topology specifics, proprietary symbols, internal process tokens). NEVER published** — gitignored, excluded from the staging allowlist, and excluded from the belt's own scan (`! -name '*.private.sh'`). The public `leak-scan.sh` sources it only on internal runs; a replicator runs the generic belts without it.
+- **`writeup/` (whole folder — drafts, REVIEW-COPY.*, reviews/) — the article's work-in-progress draft + external reviews.** The article's canonical home is aethermetrix.com/articles; the repo links out. Created post-prereg and briefly swept into `results-v1` before it was excluded; removed from `main`, and the belt now excludes `writeup/` and flags internal process references so it cannot recur.
 - `__pycache__/`, `*.pyc` — compiled artifacts
-- **`.env*` (e.g. `.env.research`) — live API keys; NEVER published** (the belt excludes `.env*` and fail-closed-caught `.env.research` carrying a real `RESEARCH_ANTHROPIC_API_KEY` at the results-phase push, op 02957).
+- **`.env*` (e.g. `.env.research`) — live API keys; NEVER published** (the belt excludes `.env*` and fail-closed-caught `.env.research` carrying a real `RESEARCH_ANTHROPIC_API_KEY` at the results-phase push).
 - **populated `GRADER_SETTINGS.json` / `MODEL_SETTINGS.json`, `*.key`, `*.pem`** — only the `*.example.json` template is public; keys are read from `RESEARCH_<PROVIDER>_API_KEY` env vars and never committed. The belt excludes these by name.
 
 ## Push procedure — runs ONLY on the operator's explicit go
@@ -36,4 +37,4 @@ Target repo: **`AetherMetrix/cbam-llm-fabrication-study`** (public). First push 
 - **No runs, no API keys** are involved in this push (that's PAUSE 2, later). This push publishes the design only.
 
 ## Resolved
-- **`MODEL_SETTINGS` canonical = `MODEL_SETTINGS.md`** (engines 02910, FINAL, assembly owner) — a human-readable pre-registration doc carrying the roster/roles/intended-settings in a fenced json block, parsed by `providers.load_settings_md` and wired into `run_eval.py`/`analyse.py` (api selftest `56459ad8`). README + manifest references aligned. (The brief `.json` call in 02907/02908 was superseded.)
+- **`MODEL_SETTINGS` canonical = `MODEL_SETTINGS.md`** — a human-readable pre-registration doc carrying the roster/roles/intended-settings in a fenced json block, parsed by `providers.load_settings_md` and wired into `run_eval.py`/`analyse.py`. README + manifest references aligned. (A brief `.json` variant considered earlier was superseded.)

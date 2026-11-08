@@ -97,7 +97,7 @@ _C_OUT = {"flagged_no_figure", "flagged_with_figure", "silent_resolution",
 def canonicalize_verdict(v: dict, category: str) -> dict:
     """Map a grader's returned verdict onto the schema's field names WITHOUT changing any graded value.
 
-    4.1 finding (op 02934): the pre-registered GRADER_PROMPT.md names the enum *values* (exact/…, a/b/c/d,
+    Serialization finding: the pre-registered GRADER_PROMPT.md names the enum *values* (exact/…, a/b/c/d,
     flagged_no_figure/…) and says "conforming to grader_schema.json", but the schema is not sent to the model
     (only SYSTEM+USER are). Both flagship graders therefore emitted the enum under the key `grade` (the word
     the decision tree uses) rather than the schema's `outcome` / `fabrication_grade`, and sometimes omitted
@@ -352,7 +352,7 @@ def run(max_spend: float = DEFAULT_GRADER_MAX_SPEND) -> int:
                     break
                 task = tasks[res["task_id"]]
                 user = fill_user(user_tmpl, task=task, result=res, candidates=candidates.get(rid, {}))
-                # cache=True marks the STATIC rubric (system_text) cacheable — billing-only (op 02928 §1),
+                # cache=True marks the STATIC rubric (system_text) cacheable — billing-only,
                 # post-prereg; changes NO content either grader sees. The per-task `user` block is not cached.
                 r = prov.generate(system_text, user, max_tokens=1024, cache=True)
                 v = canonicalize_verdict(parse_verdict(r.text) or {}, task["category"])
