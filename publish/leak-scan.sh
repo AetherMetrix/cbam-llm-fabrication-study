@@ -45,6 +45,7 @@ scan_paths() {
     ! -path '*/.git/*' \
     ! -path '*/__pycache__/*' ! -name '*.pyc' \
     ! -path '*/authoring/*' \
+    ! -path '*/writeup/*' \
     ! -path '*/publish/*' \
     ! -name 'BUILD-STATUS.md' \
     ! -name 'SPEC.md' \
@@ -65,6 +66,12 @@ ENGINE_RE='(^|[^A-Za-z0-9_])(from|import)[[:space:]]+system_(engines|api)([^A-Za
 NAME_RE='\b(Matt|Matthew|Chen|John|Maxwell|Sam|Samantha|Alex|Bolton|Turner|David|Zack|Crooks|Mason|Simmons)\b'
 INFRA_RE='Lightsail|\b10\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\b|\b192\.168\.[0-9]{1,3}\.[0-9]{1,3}\b|\b172\.(1[6-9]|2[0-9]|3[01])\.[0-9]{1,3}\.[0-9]{1,3}\b|aethermetrix-system|\.internal\b'
 APPFRAME_RE='application essay|Link [0-9]+ in (the |my )?application|in (my|the) application|temperature-zero anecdote|personal (statement|application)|my application'
+# internal multi-agent process references (op 02973): the agent role-names + handoff markers that
+# leaked via the writeup/ draft's HTML comment. system-frontend/system-db/Handoffs:/"Authored by
+# system-" never appear in legitimate public content; system-api/system-engines DO appear in the
+# scripts' clean-room disclaimers ("no import of system-api/"), so those are matched only OUTSIDE
+# a disclaimer line (belt_internal filters import/clean-room lines).
+INTERNAL_UNCOND_RE='system-frontend|system-db|Handoffs:|Authored by system-'
 
 # ---- one belt: $1=label $2=dir $3=regex $4=ci(i|"") $5=canary_strip(1|0) -----
 belt() {
@@ -86,13 +93,31 @@ belt() {
   add_hits "$hits"
 }
 
-run_all() {   # $1=dir ; runs all 5 belts, leaves the total in TOTAL_FILE
+# internal-process belt: unconditional role/handoff tokens, plus system-api/engines only OUTSIDE
+# a clean-room-disclaimer line (so "no import of system-api/" passes, "Authored by system-api" fails).
+belt_internal() {
+  local dir="$1" hits=0 f out
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    out=$( { grep -nE "$INTERNAL_UNCOND_RE" "$f" 2>/dev/null
+             grep -nE 'system-(api|engines)' "$f" 2>/dev/null | grep -viE 'import|clean-room'; } | sort -u )
+    if [ -n "$out" ]; then
+      echo "  [internal] ${f#"$dir"/}"
+      printf '%s\n' "$out" | sed 's/^/        /'
+      hits=$((hits + $(printf '%s\n' "$out" | grep -c .)))
+    fi
+  done < <(scan_paths "$dir")
+  add_hits "$hits"
+}
+
+run_all() {   # $1=dir ; runs all 6 belts, leaves the total in TOTAL_FILE
   echo 0 > "$TOTAL_FILE"
   belt secret   "$1" "$SECRET_RE"   "" 1
   belt engine   "$1" "$ENGINE_RE"   "" 0
   belt name     "$1" "$NAME_RE"     "" 0
   belt infra    "$1" "$INFRA_RE"    "" 0
   belt appframe "$1" "$APPFRAME_RE" i 0
+  belt_internal "$1"
 }
 
 # ---- neg-test: the probe must be able to fail (positive anchor + must-fire) --
@@ -116,14 +141,15 @@ from system_engines import pcf_composer
 Reviewed by Turner and Mason.
 Deployed on Lightsail at 10.0.1.164
 See Link 1 in application; the temperature-zero anecdote from my application.
+Authored by system-api. Handoffs: system-frontend = content owner; system-db awareness.
 EOF
   echo "=== NEG-TEST findings on dirty fixture ==="
   run_all "$tmp"; dirty_hits=$(cat "$TOTAL_FILE")
   echo "=== NEG-TEST result ==="
   echo "  clean fixture hits (expect 0): $clean_hits"
-  echo "  dirty fixture hits (expect >=5): $dirty_hits"
-  if [ "${clean_hits:-1}" -eq 0 ] && [ "${dirty_hits:-0}" -ge 5 ]; then
-    echo "  PASS — silent on clean+canary+disclaimer; fires on all 5 planted leaks."
+  echo "  dirty fixture hits (expect >=6): $dirty_hits"
+  if [ "${clean_hits:-1}" -eq 0 ] && [ "${dirty_hits:-0}" -ge 6 ]; then
+    echo "  PASS — silent on clean+canary+disclaimer; fires on all 6 planted leaks."
     exit 0
   fi
   echo "  FAIL — belt mis-calibrated."
@@ -138,7 +164,7 @@ echo "----"
 run_all "$REPO_ROOT"; total=$(cat "$TOTAL_FILE")
 echo "----"
 if [ "${total:-0}" -eq 0 ]; then
-  echo "==> research leak-scan: CLEAN — 0 findings across all 5 belts."
+  echo "==> research leak-scan: CLEAN — 0 findings across all 6 belts."
   exit 0
 fi
 echo "==> research leak-scan: $total FINDING(S) — fail-closed. Resolve at source before any public push."
